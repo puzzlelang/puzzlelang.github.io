@@ -3,37 +3,36 @@
 luke as an abstract, extendable programming language that allows custom syntax for domain specific solutions.
 
 
-## Install
+# Install
 
 luke runs on JavaScript Engines and can be used on Node, Browsers and via it's CLI.
 
 
-### CLI
+## CLI
 
 ```shell
 $ npm i luke --global`
 ```
 
 
-### npm module
+## npm module
 
 ```javascript
 npm i luke --save
 ```
 
-### Browser
+## Browser
 
 ```html
 <script src="luke.js">
 ```
 
-## Usage
+# Usage
 
-### Standalone
 
 After you have installed luke via npm, you can use it in your terminal as an interactive CLI or run your luke script files
 
-#### Interactive Shell
+## Interactive Shell
 
 ```shell
 $ luke
@@ -41,7 +40,7 @@ $ print "Hello World!"
 "Hello World"
 ```
 
-#### Run a File
+## Run a File
 
 ```javascript
 // hello.luke
@@ -55,7 +54,7 @@ $ luke run hello.luke
 ```
 
 
-### Embedded (JavaScript)
+## Embedded (JavaScript)
 
 luke scripts can also be run inside JavaScript:
 
@@ -71,13 +70,13 @@ const luke = require('luke-lang');
 luke.parse('Hello, I am embedded!')
 ```
 
-## Language
+# Language
 
 The luke language aims to provide simple syntax to build solutions that are taylored for different domains.
 Instructions are delimeted by semicolon.
 
 
-### Example
+## Example
 
 ```luke
 print "This is my first luke script";
@@ -94,7 +93,7 @@ POST {name: "Peter"} to "https://api.com"
 
 ```
 
-### Modules
+## Modules
 
 luke has an extendable module system. Modules provide custom syntax for different domains and usages.
 
@@ -104,7 +103,7 @@ How to use a module?
 use example.luke.js;
 ```
 
-### Namespaces
+## Namespaces
 
 Namespaces provide a way to seperate syntax from different modules. Namespaces begin with the `ns` keyword and end when another namespace begins or on the end of the script.
 
@@ -118,7 +117,7 @@ ns default;
 // default code
 ```
 
-#### Default namespace
+***Default namespace***
 
 luke comes with a default namespace, which is initalized by default. The default nameapace contains some basic syntax:
 
@@ -131,9 +130,7 @@ Syntax from the default namespace will automatically be available in any other m
 
 
 
-## Contribute
-
-### Create a Syntax
+## Create a Syntax
 
 
 ```javascript
@@ -174,6 +171,6 @@ command  command  command command delimeter;
 
 
 
-### Contribute to the luke core
+## Contribute to luke-lang
 
-## License
+# License
