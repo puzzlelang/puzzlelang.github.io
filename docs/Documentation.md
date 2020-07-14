@@ -11,7 +11,7 @@ luke runs on JavaScript Engines and can be used on Node, Browsers and via it's C
 ## CLI
 
 ```shell
-$ npm i luke --global`
+$ npm i luke --global
 ```
 
 
@@ -72,26 +72,15 @@ luke.parse('Hello, I am embedded!')
 
 # Language
 
-The luke language aims to provide simple syntax to build solutions that are taylored for different domains.
-Instructions are delimeted by semicolon.
+The luke language aims to provide simple language to build solutions that are taylored for different domains and probblems.
+
+The main concepts of luke are:
 
 
-## Example
-
-```luke
-print "This is my first luke script";
-
-// use a module
-use rest.luke.js;
-
-// set the module's namespace
-ns rest;
-
-// write module-specific code
-
-POST {name: "Peter"} to "https://api.com"
-
-```
+* Simple, clean language
+* Understandable for developers and non-developers
+* Custom syntax creation
+* Open and free platform for modules
 
 ## Modules
 
@@ -102,6 +91,10 @@ How to use a module?
 ```luke
 use example.luke.js;
 ```
+
+Modules can be written by yourself or be loaded from the official module repository.
+
+Got to [ luke-catalog ](---)
 
 ## Namespaces
 
@@ -119,19 +112,46 @@ ns default;
 
 ***Default namespace***
 
-luke comes with a default namespace, which is initalized by default. The default nameapace contains some basic syntax:
+luke comes with a default namespace, which is initalized by default. The default nameapace contains some basic functionalities.
 
-```luke
-use <module>;
-ns <namespcace>
-```
+[ View the module ](...)
 
 Syntax from the default namespace will automatically be available in any other module-specific namespace.
 
 
 
+## Syntax
+
+The luke language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
+
+
+A simple syntax could look like this:
+
+```luke
+use rest.luke.js;
+ns rest;
+
+// the rest module provides a simple syntax:
+
+POST {name: "Peter"} to "https://api.com"
+```
+
+A more complex one could look like this;
+
+```luke
+use lower.luke.js
+ns lower;
+
+// the lower module uses the following syntax:
+
+[lowerCase]-> "Hello" 
+// prints: hello
+```
+
+
 ## Create a Syntax
 
+Building your own custom syntax is fairly simple.
 
 ```javascript
 dsl = {
