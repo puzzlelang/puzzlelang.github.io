@@ -6,7 +6,7 @@
 > An abstract, extendable programming language and syntax platform 
 
 - Simple language design
-- Custom syntax creation
+- Extendable, custom syntax
 - Open collaborative platform
 
 
