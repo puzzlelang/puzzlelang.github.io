@@ -2,45 +2,35 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-
-  <title>LX</title>
-  
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js"></script>
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" type="text/css" href="./leto-min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Scripts -->
-  <script>
+    <meta charset="utf-8">
+    <title>LX</title>
+    <link rel="manifest" href="manifest.json">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./leto-min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Scripts -->
+    <script>
     delete module.exports
-  </script>
-  <script src="./window.js"></script>
-
+    </script>
+    <script src="./window.js"></script>
 </head>
 
 <body>
-	<div id="app" class="leto-frame">
-
-		<div class="sidebar">
-			
-			<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
-						<div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
-						<div class="leto-bubble-md leto-bubble-mmd"> {{k.substring(0, 3) || '...'}} </div>
-						<label><!--span >{{k.substring(0, 8) || '(empty)'}}</span--> 
-							
-						</label>
-
-					</div>
-					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
-
-		</div>
-
-		<div class="main-content leto-pt-xs">
-
-			
-			<!--div class="tab-bar">
+    <div id="app" class="leto-frame">
+        <div class="sidebar">
+            <div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
+                <div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
+                <div class="leto-bubble-md leto-bubble-mmd"> {{k.substring(0, 3) || '...'}} </div>
+                <label>
+                    <!--span >{{k.substring(0, 8) || '(empty)'}}</span-->
+                </label>
+            </div>
+            <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
+        </div>
+        <div class="main-content leto-pt-xs">
+            <!--div class="tab-bar">
 				<div class="leto-bubble-wrapper-lg" v-for="(project, k) in projects" v-on:click="useTab(k)">
 					<div class="leto-bubble leto-bubble-mmd leto-text-white " v-bind:class="{'tab-active': k == currentTab}">
 						<span >{{k.substring(3) || '...'}}</span> 
@@ -51,8 +41,7 @@
 			</div>
 
 			<br-->
-
-			<!--div class="tab-bar">
+            <!--div class="tab-bar">
 				<div>
 					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div->
 					<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
@@ -66,41 +55,33 @@
 					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
 				</div>
 			</div-->
-
-			<br>
-
-			<div class="tab-bar">
-				<div>
-					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div-->
-					<div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-if="tab.project == currentProject" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useTab(k)">
-						{{tab.content.substring(0, 4) || '...'}} 
-						<span >{{tab.content.substring(0, 8) || '(empty)'}}</span> 
-							<div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteTab(k)">&times;</div>
-						
-					</div>
-					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addTab(undefined, '', '', currentProject)">+</div>
-				</div>
-			</div>
-
-			<br>
-			<br>
-
-			
-			<div id="editor" class="leto-mt-sm"></div>
-			<br>
-			<div style="margin-left: 35px;display: inline-block;">
-				<div class="leto-button-xs leto-text-white" v-on:click="runCode(content)">RUN</div>
-				<div class="leto-button-xs leto-text-white" v-on:click="saveContent()"><span class="fa fa-save"></span></div>
-			</div>
-			<br>
-			<div class="leto-text-white leto-p" style="margin-left: 20px;display: inline-block;color:#999999" v-html="output"></div>
-		</div>
-	
-	</div>
-
-	<script src="./ace-builds-1.1.4/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="./index.js"></script>
+            <br>
+            <div class="tab-bar">
+                <div>
+                    <!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div-->
+                    <div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-if="tab.project == currentProject" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useTab(k)">
+                        {{tab.content.substring(0, 4) || '...'}}
+                        <span>{{tab.content.substring(0, 8) || '(empty)'}}</span>
+                        <div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteTab(k)">&times;</div>
+                    </div>
+                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addTab(undefined, '', '', currentProject)">+</div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="editor" class="leto-mt-sm"></div>
+            <br>
+            <div style="margin-left: 35px;display: inline-block;">
+                <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="runCode(content)">RUN</div>
+                <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="saveContent()"><span class="fa fa-save"></span></div>
+            </div>
+            <br>
+            <div class="leto-text-white leto-p" style="margin-left: 20px;display: inline-block;color:#999999" v-html="output"></div>
+        </div>
+    </div>
+    <script src="./ace-builds-1.1.4/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
