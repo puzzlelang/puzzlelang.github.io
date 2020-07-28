@@ -61,3 +61,21 @@ html {
 	height: 50px !important;
     width: 50px !important;
 }
+
+.bubble-badge {
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    right: -50px;
+    margin-right: -20px;
+    margin-bottom: -37px;
+}
+
+.times-hover:hover .times {
+  display: inline-block;
+}
+
+.times {
+  display: none;
+  color: #999999 !important;
+}

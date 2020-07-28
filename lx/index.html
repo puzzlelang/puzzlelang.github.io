@@ -45,14 +45,15 @@
 			<div class="tab-bar">
 				<div>
 					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div-->
-					<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
+					<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
+						<div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
 						<div class="leto-bubble-md leto-bubble-mmd"> {{k.substring(0, 3) || '...'}} </div>
 						<label><!--span >{{k.substring(0, 8) || '(empty)'}}</span--> 
-							<div v-if="k == currentProject" class="leto-ml-xs leto-color-grey leto-click" v-on:click="deleteProject(k)">&times;</div>
+							
 						</label>
 
 					</div>
-					<div class="leto-button-xs leto-text-white leto-border-none" v-on:click="addProject(undefined)">+</div>
+					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
 				</div>
 			</div>
 
@@ -61,13 +62,13 @@
 			<div class="tab-bar">
 				<div>
 					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div-->
-					<div class="leto-button-xs leto-text-white leto-border-none" v-for="(tab, k) in tabs" v-if="tab.project == currentProject" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useTab(k)">
+					<div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-if="tab.project == currentProject" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useTab(k)">
 						{{tab.content.substring(0, 4) || '...'}} 
 						<span >{{tab.content.substring(0, 8) || '(empty)'}}</span> 
-							<div v-if="k == currentTab" class="leto-ml-xs leto-color-grey leto-click" v-on:click="deleteTab(k)">&times;</div>
+							<div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteTab(k)">&times;</div>
 						
 					</div>
-					<div class="leto-button-xs leto-text-white leto-border-none" v-on:click="addTab(undefined, '', '', currentProject)">+</div>
+					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addTab(undefined, '', '', currentProject)">+</div>
 				</div>
 			</div>
 
