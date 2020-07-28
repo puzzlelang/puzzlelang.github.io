@@ -16,7 +16,7 @@ html {
 }
 
 .main-content{
-	top: 0px;
+	 top: 0px;
     height:100px;
     width: 100%;
     left: 55px;
@@ -30,7 +30,8 @@ html {
 }
 
 .sidebar{
-	width:40px;
+	width:150px;
+  padding-top:20px;
 	height:100%;
 	display: block;
 	float:left;
@@ -65,10 +66,11 @@ html {
 .bubble-badge {
     display: inline-block;
     position: relative;
-    top: -25px;
+    top: -20px;
     right: -50px;
     margin-right: -20px;
-    margin-bottom: -37px;
+    margin-bottom: -30px;
+    margin-top: 8px
 }
 
 .times-hover:hover .times {

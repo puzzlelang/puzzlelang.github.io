@@ -25,6 +25,16 @@
 
 		<div class="sidebar">
 			
+			<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
+						<div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
+						<div class="leto-bubble-md leto-bubble-mmd"> {{k.substring(0, 3) || '...'}} </div>
+						<label><!--span >{{k.substring(0, 8) || '(empty)'}}</span--> 
+							
+						</label>
+
+					</div>
+					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
+
 		</div>
 
 		<div class="main-content leto-pt-xs">
@@ -42,20 +52,20 @@
 
 			<br-->
 
-			<div class="tab-bar">
+			<!--div class="tab-bar">
 				<div>
-					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div-->
+					<!--div class="leto-button-xs leto-text-white leto-border-none"><b>MAIN</b></div->
 					<div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)">
 						<div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
 						<div class="leto-bubble-md leto-bubble-mmd"> {{k.substring(0, 3) || '...'}} </div>
-						<label><!--span >{{k.substring(0, 8) || '(empty)'}}</span--> 
+						<label><!--span >{{k.substring(0, 8) || '(empty)'}}</span-> 
 							
 						</label>
 
 					</div>
 					<div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
 				</div>
-			</div>
+			</div-->
 
 			<br>
 
