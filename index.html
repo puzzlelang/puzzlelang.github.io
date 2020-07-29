@@ -293,24 +293,26 @@ echo "hello";
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
-                            <div class="leto-text-xl">Interactive Web platform: LUKE-X</div>
+                            <div class="leto-text-xl">The basics</div>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
                             <pre style="border-radius: 10px">
 <div class="leto-width-full">
 <pre style="border-radius: 10px">
 <code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >
-use https://domain.com/lx-html.luke.js;
+// simple print
+print "hello world"
 
-render (
-    <div>hello world</div>
-)
+// Variables
+var msg "my message";
+print msg;
 
-style "color:red";
+// Functions
+func saySomething (input) { print input }
+saySomething();
 
-js: (
-    console.log('script loaded')
-)
+// Conditions
+if 2>1 then (print "it's larger")
 
 </code>
 </pre>
