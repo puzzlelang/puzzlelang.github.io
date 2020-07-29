@@ -38,7 +38,7 @@
 </head>
 
 <body class="leto-frame-dark">
-    <div class="leto-frame-dark" id="app">
+    <div class="leto-frame-dark" id="app" name="app">
         <div class="leto-container-full leto-p-xl leto-pt-none leto-pb-none">
             <div class="leto-card leto-bg-black leto-width-full leto-text-white leto-border-none leto-pb-none leto-roundness-md leto-p-xl">
                 <div class="leto-group leto-vertical-center">
@@ -69,26 +69,64 @@
                 </div>
                 <br>
             </div>
-            <div class="leto-group leto-horizontal-center leto-vertical-center  ">
+            <div class="leto-group leto-horizontal-center leto-vertical-center" name="getit" id="getit">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
                         <div class="leto-width-full leto-horizontal-center leto-vertical-center">
                             <center>
-                                <!--div class="leto-block">
-                                    <div class="leto-button" v-on:click="showInstallOptions = !showInstallOptions">&nbsp; Install &nbsp;<span class="fa fa-chevron-down leto-pr-sm" v-bind:class="{'fa-chevron-up' : showInstallOptions}"></span></div>
+                                <div class="leto-block">
+                                    <div class="leto-button" v-on:click="showInstallOptions = !showInstallOptions">&nbsp; Get it &nbsp;<span class="fa fa-chevron-down leto-pr-sm" v-bind:class="{'fa-chevron-up' : showInstallOptions}"></span></div>
 
-                                     <div class="leto-button" ><span class="fa fa-book leto-pr-sm"></span> Learn</div>
+                                     <a class="leto-button" target="_blank" href="https://luke-lang.github.io/docs"><span class="fa fa-book leto-pr-sm"></span> Learn</a>
 
-                                </div-->
-                                <span v-if="showInstallOptions || true">
-                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang -g')"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
-                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang -S')"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
-                                    <div class="leto-button" v-on:click="showInstall('<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>')"><span class="fa fa-code leto-pr-sm"></span> browser</div>
-                                    <div class="leto-button" v-on:click="showInstall('import luke from \'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.js\'')"><span class="fa fa-file-code leto-pr-sm"></span> deno</div>
+                                </div>
+                                <span v-if="showInstallOptions">
+                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang -g');installFormat='center'"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
+                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang --save');installFormat='center'"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
+                                    <div class="leto-button" v-on:click="showInstall('<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>');installFormat='center'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
+                                    <div class="leto-button" v-on:click="showInstall('import luke from \'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.js\'');installFormat='center'"><span class="fa fa-file-code leto-pr-sm"></span> deno</div>
+
+                                    <!--div class="leto-button" v-on:click="showInstall(`# 1. Dockerfile
+FROM luke-alpine
+ADD ./script.luke /
+CMD luke ./script.luke
+
+# 2. build
+docker build luke .
+
+# 3. run
+docker run luke
+`);installFormat='left'"><span class="fab fa-docker leto-pr-sm"></span> docker</div>
+
+                                    <div class="leto-button" v-on:click="showInstall(`# 1. yaml file
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: luke-deployment
+  labels:
+    app: luke
+spec:
+  selector:
+    matchLabels:
+      app: luke
+  template:
+    metadata:
+      labels:
+        app: luke
+    spec:
+      containers:
+      - name: luke
+        image: luke-lang:1.14.2
+
+# 2. run
+kubectl apply luke.yaml
+`);installFormat='left'"><span class="fa fa-ship leto-pr-sm"></span> kubernetes</div-->
+
+
                                     <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; LUKE-X</a>
-                                    <div v-if="installInstruction" class="leto-click leto-bg-black" v-on:click="clipboard(installInstruction)">
+                                    <div v-if="installInstruction" class="leto-click leto-bg-black leto-width-half leto-text-center" v-on:click="clipboard(installInstruction)">
                                         <br>
-                                        {{installInstruction}}
+                                        <pre class="leto-text-white" v-bind:class="{'leto-text-left': installFormat == 'left', 'leto-text-center': installFormat == 'center'}">{{installInstruction}}</pre>
                                     </div>
                                     <span v-if="copied">
                                         <br>
@@ -114,8 +152,7 @@
 <code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >
 use email.js;
 
-send email 
-    to "peter@griffin.com" 
+send email to "peter@griffin.com" 
     with subject "Hi" 
     and body "there";
 
@@ -128,7 +165,7 @@ send email
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Modules for any purpose</div>
+                        <div class="leto-text-xl">Collaborative module ecosystem</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
@@ -136,8 +173,7 @@ send email
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
 use rest.js;
-use email.js;
-use machine.js;
+use https://cdnjs.com/email.js;
 
 post {name: "Peter"} 
    to "http://sdgsg"
@@ -176,24 +212,44 @@ syntax = {
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-green leto-text-black leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Runs everywhere</div>
+                        <div class="leto-text-xl">Code examples</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
-                        <div class="leto-text-bild">CLI:</div>
-                        <pre style="border-radius: 10px">
-<code class="shell" style="font-size:20px;background:#151515;padding:20px" >$ luke
-> print "Hello World"
-# or
-$ luke run example.luke
-</code>
-</pre>
+
+                        
+<b>BASICS</b><br>
+
+<div class="leto-button" v-on:click="showExample('print \'hello world\'')">Hello World</div>
+
+<div class="leto-button" v-on:click="showExample(`var name Nicole;
+print name;
+
+func saySomething (text) { print text };
+sayHello('hello there');`)">variables/functions</div>
+
+<div class="leto-button" v-on:click="showExample(`if 1 > 2 then print true`)">if else</div>
+
+<br><br>
+<b>MODULES</b><br>
+
+
+<div class="leto-button" v-on:click="showExample(`use rest.luke.js;
+GET {name: 'test'} FROM https://url.com`)">REST</div>
+
+<div class="leto-button" v-on:click="showExample(`// This lets you create visual scripts on LUKE-X
+// See luke-lang.github.io/lx
+
+use lx_html.luke.js;
+
+render (
+  <div>hi there</div>
+)`)">lx-html</div>
+
+<br> <br>
+
+                        <pre style="border-radius: 10px;font-size:20px;background:#151515;padding:20px;color:white">{{codeExample}}</pre>
                         <br>
-                        JavaScript:
-                        <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >luke.parse('print "Hi there"')
-</code>
-</pre>
                     </div>
                 </div>
             </div>
@@ -215,6 +271,9 @@ $ luke run example.luke
         <div class="leto-group leto-horizontal-center">
             <a target="_blank" href="https://luke-lang.github.io/docs" class="leto-button leto-ml-none">
                 Learn luke
+            </a>
+            <a href="#app" v-on:click="showInstallOptions=true" class="leto-button leto-ml-none">
+                Get luke
             </a>
         </div>
         <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl leto-text-center">luke is open source and released under the MIT License. &copy; luke collaborators</div>

@@ -24,10 +24,15 @@ var app = new Vue({
         },
         showInstall: function(text){
         	this.installInstruction = text;
+        },
+        showExample: function(text){
+            this.codeExample = text;
         }
     },
     data: {
     	copied:false,
+        installFormat:'center',
+        codeExample: "print 'check out some code examples'",
     	installInstruction:null,
     	showInstallOptions:false,
         currentPreview: 1,
