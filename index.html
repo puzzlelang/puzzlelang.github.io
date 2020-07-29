@@ -47,13 +47,13 @@
                     </div>
                     <div class="leto-left leto-mb-sm">
                     </div>
-                    <a class="leto-mh-sm">
+                    <a class="leto-mh-sm" href="#what">
                         <div class="leto-button leto-border-none">What?</div>
                     </a>
-                    <a class="leto-mh-sm" href="https://luke-lang.github.io/modules">
+                    <a class="leto-mh-sm" target="_blank" href="https://luke-lang.github.io/modules">
                         <div class="leto-button leto-border-none">Modules</div>
                     </a>
-                    <a class="leto-mh-sm" href="https://luke-lang.github.io/docs">
+                    <a class="leto-mh-sm" target="_blank" href="https://luke-lang.github.io/docs">
                         <div class="leto-button leto-border-none">Docs</div>
                     </a>
                     <!--a class="leto-mh-sm">
@@ -63,56 +63,38 @@
                 <div class="leto-group leto-horizontal-center leto-mt-xl">
                     <div class="leto-group leto-mt-xxl">
                         <div class=" leto-text-xxl leto-text-center">
-                            Your simple, abstract and extendable programming language for domain specific solutions
+                            An abstract, simple cross-platform scripting platform
                         </div>
                     </div>
-                    <br>
                 </div>
-                <!--div class="leto-group leto-horizontal-center leto-vertical-center  ">
-                    <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-mt-xl">
-                        <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                            <!--div class="leto-left leto-mb-sm">
-                                <div class="leto-group leto-vertical-center leto-horizontal-left leto-text-white">
-                                    <!--div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click">RUNS WITH:</div->
-                                    <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click" v-for="item in langs" v-on:click="currentLang=item">
-                                        <div class="leto-bubble-xxs" v-bind:class="{'leto-bg-white': currentLang==item}"></div>
-                                        <div>{{item}}</div>
-                                    </div>
-                                </div>
-                            </div-->
-                <!--div class="leto-width-full">
-                                <pre style="border-radius: 10px" >
-<code class="javascript" style="font-size:20px;background:#191919;padding:20px">
-use email.js;
-
-send email to "peter@griffin.com" with subject "Hi" and body "there";
-
-</code>
-</pre>
-
-                            </div-->
+                <br>
             </div>
-            <!--div class="leto-width-third leto-mt-xxl">
-                        <div class="leto-mt-xl">
-
-                              <div class="leto-text-xl">Simple, abstract</div>
-
-                              <br>
-
-                             A language made for making for smart and easy applications
-                             
-                        </div>
-                    </div->
-                    </div>
-                    <br>
-                </div-->
             <div class="leto-group leto-horizontal-center leto-vertical-center  ">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
                         <div class="leto-width-full leto-horizontal-center leto-vertical-center">
                             <center>
-                                <div class="leto-button"><span class="fa fa-download leto-pr-sm"></span> npm i -g luke-lang</div> 
-                                <a href="https://luke-lang.github.io/lx" class="leto-button"><span class="fa fa-wifi leto-pr-sm"></span> luke LX</a> 
+                                <!--div class="leto-block">
+                                    <div class="leto-button" v-on:click="showInstallOptions = !showInstallOptions">&nbsp; Install &nbsp;<span class="fa fa-chevron-down leto-pr-sm" v-bind:class="{'fa-chevron-up' : showInstallOptions}"></span></div>
+
+                                     <div class="leto-button" ><span class="fa fa-book leto-pr-sm"></span> Learn</div>
+
+                                </div-->
+                                <span v-if="showInstallOptions || true">
+                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang -g')"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
+                                    <div class="leto-button" v-on:click="showInstall('npm i luke-lang -S')"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
+                                    <div class="leto-button" v-on:click="showInstall('<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>')"><span class="fa fa-code leto-pr-sm"></span> browser</div>
+                                    <div class="leto-button" v-on:click="showInstall('import luke from \'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.js\'')"><span class="fa fa-file-code leto-pr-sm"></span> deno</div>
+                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; LUKE-X</a>
+                                    <div v-if="installInstruction" class="leto-click leto-bg-black" v-on:click="clipboard(installInstruction)">
+                                        <br>
+                                        {{installInstruction}}
+                                    </div>
+                                    <span v-if="copied">
+                                        <br>
+                                        copied!
+                                    </span>
+                                </span>
                             </center>
                         </div>
                     </div>
@@ -120,10 +102,10 @@ send email to "peter@griffin.com" with subject "Hi" and body "there";
             </div>
             <br>
             <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl ">
-                <div class="leto-group leto-width-full leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
-                            <div class="leto-text-xl">A clean and simple language</div>
+                            <div class="leto-text-xl">Simple language, quick solutions</div>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
                             <pre style="border-radius: 10px">
@@ -144,9 +126,9 @@ send email
                 </div>
             </div>
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
-                <div class="leto-column leto-width-four-fifths leto-mt-xxl leto-ph-xl">
+                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Modules for any domain</div>
+                        <div class="leto-text-xl">Modules for any purpose</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
@@ -158,7 +140,7 @@ use email.js;
 use machine.js;
 
 post {name: "Peter"} 
-    to "http://sdgsg"
+   to "http://sdgsg"
 
 </code>
 </pre>
@@ -168,72 +150,62 @@ post {name: "Peter"}
         </div>
         <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl">
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
-                <div class="leto-column leto-width-four-fifths leto-mt-xxl leto-ph-xl">
+                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Build your own syntax and contribute</div>
+                        <div class="leto-text-xl">Custom syntax creation</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
                         <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
-dsl.lang = {
-    $: {
-        define: ["$object", "{name}"]
+syntax = {
+  $: {
+    'print': {
+      follow: ["{text}"],
+      method: (ctx, text) => {
+        console.log(text)
     }
+  }
 }
 </code>
 </pre>
                     </div>
                 </div>
             </div>
-            <div class="leto-group leto-width-half leto-horizontal-center ">
-                <div class="leto-width-four-fifths ">
-                    <div class="leto-mt-xl leto-vertical-right">
+            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-green leto-text-black leto-m">
+                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                    <div class="leto-mt-xl">
                         <div class="leto-text-xl">Runs everywhere</div>
-                        <!--br>
-                        luke itself is written in JavaScript meaning that it can be run in any JS environment.<br-->
                         <br>
-                        <br>
+                    </div>
+                    <div class="leto-width-full">
                         <div class="leto-text-bild">CLI:</div>
                         <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >$ luke
-?> print "Hello World"
+<code class="shell" style="font-size:20px;background:#151515;padding:20px" >$ luke
+> print "Hello World"
+# or
+$ luke run example.luke
 </code>
 </pre>
                         <br>
-                        Luke files:
+                        JavaScript:
                         <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >$ luke run example.luke
-</code>
-</pre>
-                        <br>
-                        Embedded in JavaScript:
-                        <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >const luke = require('luke');
-luke.parse('print "Hi there"')
-</code>
-</pre>
- <br>
-                        Web IDE (LX):
-                        <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >luke-lang.github.io/lx
+<code class="javascript" style="font-size:20px;background:#151515;padding:20px" >luke.parse('print "Hi there"')
 </code>
 </pre>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-      
-        <div class="leto-group leto-horizontal-center leto-vertical-center ">
+        <div class="leto-group leto-horizontal-center leto-vertical-center " id="what" name="what">
             <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                 <div class="leto-width-full leto-mt-xxl">
                     <div class="leto-mt-lg leto-group leto-horizontal-center leto-vertical-center">
                         <div class="leto-text-xl">What is luke?</div>
                     </div>
-                    <div class="leto-mt leto-group leto-horizontal-center leto-vertical-center">
-                        luke is actually two things: a language and a language-platform. ...
+                    <div class="leto-mt leto-group leto-horizontal-center leto-text-center leto-vertical-center">
+                        Luke is a programming platform for simple scripting, quick prototyping and automation. It's goal is create a scripting language based upon a collaborative modules ecosystem to make scripting super easy and accessible for developers and even non-developers.
                     </div>
                 </div>
             </div>
@@ -241,14 +213,11 @@ luke.parse('print "Hi there"')
     </div>
     <div class="leto-container-full leto-p-xl ">
         <div class="leto-group leto-horizontal-center">
-            <div class="leto-button leto-ml-none">
-                Docs
-            </div>
-            <div class="leto-button leto-ml-none">
-                Install
-            </div>
+            <a target="_blank" href="https://luke-lang.github.io/docs" class="leto-button leto-ml-none">
+                Learn luke
+            </a>
         </div>
-        <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl">luke is open source and released under the MIT License.</div>
+        <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl leto-text-center">luke is open source and released under the MIT License. &copy; luke collaborators</div>
     </div>
     </div>
     <script>
