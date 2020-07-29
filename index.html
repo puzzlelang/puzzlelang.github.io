@@ -83,16 +83,20 @@
                                 <span v-if="showInstallOptions || true">
                                     <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang -g
 
-$ luke`);installFormat='left'"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
+$ luke
+> print hello
+
+$ luke run myfile.luke`);installFormat='left'"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
                                     <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang --save
 
-const luke = require('luke-lang')`);installFormat='left'"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
+const luke = require('luke-lang')
+luke.parse('print hello')`);installFormat='left'"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
                                     <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
 
-luke.parse('...')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
+luke.parse('print hello')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
                                     <div class="leto-button" v-on:click="showInstall(`import luke from \'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.js\'
 
-luke.parse('...')`);installFormat='left'"><span class="fa fa-file-code leto-pr-sm"></span> deno</div>
+luke.parse('print hello')`);installFormat='left'"><span class="fa fa-file-code leto-pr-sm"></span> deno</div>
 
                                     <!--div class="leto-button" v-on:click="showInstall(`# 1. Dockerfile
 FROM luke-alpine
@@ -136,6 +140,7 @@ kubectl apply luke.yaml
                                         <br>
                                         <pre class="leto-text-white leto-inline-block" v-bind:class="{'leto-text-left': installFormat == 'left', 'leto-text-center': installFormat == 'center'}">{{installInstruction}}</pre>
                                     </div>
+
                                     <!--span v-if="copied">
                                         <br>
                                         copied!
