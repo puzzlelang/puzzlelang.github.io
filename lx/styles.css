@@ -81,3 +81,8 @@ html {
   display: none;
   color: #999999 !important;
 }
+
+.disabled {
+  color: #3e3e3e !important;
+  border-color: #3e3e3e !important;
+}
