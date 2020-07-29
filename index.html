@@ -156,7 +156,7 @@ kubectl apply luke.yaml
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
-                            <div class="leto-text-xl">Modules many purposes</div>
+                            <div class="leto-text-xl">Modules for many purposes</div>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
                             <pre style="border-radius: 10px">
@@ -216,6 +216,8 @@ print "hello";
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// world.luke
 include hello.luke;
+// even from remote:
+include https://url.com/hello.luke;
 
 print "world";
 </code>
