@@ -74,13 +74,13 @@
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
                         <div class="leto-width-full leto-horizontal-center leto-vertical-center">
                             <center>
-                                <div class="leto-block">
+                                <!--div class="leto-block">
                                     <div class="leto-button" v-on:click="showInstallOptions = !showInstallOptions">&nbsp; Get it &nbsp;<span class="fa fa-chevron-down leto-pr-sm" v-bind:class="{'fa-chevron-up' : showInstallOptions}"></span></div>
 
                                      <a class="leto-button" target="_blank" href="https://luke-lang.github.io/docs"><span class="fa fa-book leto-pr-sm"></span> Learn</a>
 
-                                </div>
-                                <span v-if="showInstallOptions">
+                                </div-->
+                                <span v-if="showInstallOptions || true">
                                     <div class="leto-button" v-on:click="showInstall('npm i luke-lang -g');installFormat='center'"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
                                     <div class="leto-button" v-on:click="showInstall('npm i luke-lang --save');installFormat='center'"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
                                     <div class="leto-button" v-on:click="showInstall('<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>');installFormat='center'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
