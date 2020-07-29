@@ -156,18 +156,21 @@ kubectl apply luke.yaml
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
-                            <div class="leto-text-xl">Modules for many purposes</div>
+                            <div class="leto-text-xl">Simple language, quick solutions</div>
+                            <br>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
-                            <pre style="border-radius: 10px">
+                           
 <div class="leto-width-full">
-<pre style="border-radius: 10px">
-<code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >// Use a module from url
-use https://url.com/module.luke.js;
-// or from file
-use module.luke.js;
 
-print "modules loaded";
+<pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
+print "starting my program";
+
+use https://rest.luke.js;
+
+post {name: "Peter"} to "http://api.com";
 
 </code>
 </pre>
@@ -178,18 +181,17 @@ print "modules loaded";
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Simple, natural language</div>
+                        <div class="leto-text-xl">Modules for many purposes</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
                         <pre style="border-radius: 10px">
+<code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >// Use a module from url
+use https://url.com/module.luke.js;
+// or from file
+use module.luke.js;
 
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
-print "starting my program";
-
-use https://rest.luke.js;
-
-post {name: "Peter"} to "http://api.com";
+print "modules loaded";
 
 </code>
 </pre>
