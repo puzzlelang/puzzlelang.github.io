@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>LX</title>
+    <title>LX beta</title>
     <link rel="manifest" href="manifest.json">
     <!--script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luke-lang/luke@0.0.3/luke.browser.js"></script-->
     <script type="text/javascript" src="luke-local.js"></script>
@@ -53,7 +53,7 @@
             </div>
 
             <!-- canvas for custom html from the lxhtml module -->
-            <div class="leto-m leto-text-white" id="html-canvas" v-html="customContent.html" v-bind:style="customContent.style" v-show="content.includes('lxhtml/index.luke.js')"></div>
+            <div class="leto-m-lg leto-text-white" id="html-canvas" v-html="customContent.html" v-bind:style="customContent.style" v-show="customContent.html"></div>
             <br>
 
             <!-- the main editor (ace.js) -->
@@ -64,7 +64,7 @@
                 <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="saveContent()"><span class="fa fa-save"></span></div>
             </div>
             <br>
-            <div class="leto-text-white leto-p" style="margin-left: 20px;display: inline-block;color:#999999" v-html="output"></div>
+            <pre class="leto-text-white leto-p" style="margin-left: 20px;display: inline-block;color:#999999" v-html="output"></pre>
         </div>
     </div>
     <script src="./ace-builds-1.1.4/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
