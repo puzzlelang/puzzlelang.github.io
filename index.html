@@ -156,18 +156,18 @@ kubectl apply luke.yaml
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
-                            <div class="leto-text-xl">Simple language, quick solutions</div>
+                            <div class="leto-text-xl">Modules many purposes</div>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
                             <pre style="border-radius: 10px">
 <div class="leto-width-full">
 <pre style="border-radius: 10px">
-<code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >
-use email.js;
+<code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >// Use a module from url
+use https://url.com/module.luke.js;
+// or from file
+use module.luke.js;
 
-send email to "peter@griffin.com" 
-    with subject "Hi" 
-    and body "there";
+print "modules loaded";
 
 </code>
 </pre>
@@ -178,18 +178,18 @@ send email to "peter@griffin.com"
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Collaborative module ecosystem</div>
+                        <div class="leto-text-xl">Simple, natural language</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
                         <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
-use rest.js;
-use https://cdnjs.com/email.js;
+print "starting my program";
 
-post {name: "Peter"} 
-   to "http://sdgsg"
+use https://rest.luke.js;
+
+post {name: "Peter"} to "http://api.com";
 
 </code>
 </pre>
@@ -201,22 +201,23 @@ post {name: "Peter"}
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Custom syntax creation</div>
+                        <div class="leto-text-xl">Reuse scripts</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
                         <pre style="border-radius: 10px">
 
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
-syntax = {
-  $: {
-    'print': {
-      follow: ["{text}"],
-      method: (ctx, text) => {
-        console.log(text)
-    }
-  }
-}
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// hello.luke
+print "hello";
+</code>
+</pre>
+
+<pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// world.luke
+include hello.luke;
+
+print "world";
 </code>
 </pre>
                     </div>
@@ -225,48 +226,99 @@ syntax = {
             <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-green leto-text-black leto-m">
                 <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
                     <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Code examples</div>
+                        <div class="leto-text-xl">Standalone or embedded</div>
                         <br>
                     </div>
                     <div class="leto-width-full">
+                        <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// cli
+$ luke run file.luke
+</code>
+</pre>
 
-                        
-<b>BASICS</b><br>
+<pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// embedded (JavaScript)
+const luke = require('luke');
 
-<div class="leto-button" v-on:click="showExample('print \'hello world\'')">Hello World</div>
-
-<div class="leto-button" v-on:click="showExample(`var name Nicole;
-print name;
-
-func saySomething (text) { print text };
-sayHello('hello there');`)">variables/functions</div>
-
-<div class="leto-button" v-on:click="showExample(`if 1 > 2 then print true`)">if else</div>
-
-<br><br>
-<b>MODULES</b><br>
-
-
-<div class="leto-button" v-on:click="showExample(`use rest.luke.js;
-GET {name: 'test'} FROM https://url.com`)">REST</div>
-
-<div class="leto-button" v-on:click="showExample(`// This lets you create visual scripts on LUKE-X
-// See luke-lang.github.io/lx
-
-use lx_html.luke.js;
-
-render (
-  <div>hi there</div>
-)`)">lx-html</div>
-
-<br> <br>
-
-                        <pre style="border-radius: 10px;font-size:20px;background:#151515;padding:20px;color:white">{{codeExample}}</pre>
-                        <br>
+luke.parse('print hello')
+</code>
+</pre>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+
+        <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl ">
+                
+            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
+                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                    <div class="leto-mt-xl">
+                        <div class="leto-text-xl">Create a custom module</div>
+                        <br>
+                    </div>
+                    <div class="leto-width-full">
+                        <pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >//mymodule.luke.js
+syntax = {
+  $: {
+    'echo': {
+      follow: ["{text}"],
+      method: (ctx, text) => {
+        console.log(text)
+    }
+  }
+}
+
+</code>
+</pre>
+<pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
+use mymodule.luke.js;
+
+echo "hello";
+
+</code>
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
+                    <div class="leto-width-four-fifths leto-mt-xxl">
+                        <div class="leto-mt-xl leto-vertical-right">
+                            <div class="leto-text-xl">Interactive Web platform: LUKE-X</div>
+                        </div>
+                        <div class="leto-width-full" v-show="currentPreview==1">
+                            <pre style="border-radius: 10px">
+<div class="leto-width-full">
+<pre style="border-radius: 10px">
+<code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >
+use https://domain.com/lx-html.luke.js;
+
+render (
+    <div>hello world</div>
+)
+
+style "color:red";
+
+js: (
+    console.log('script loaded')
+)
+
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+
         <div class="leto-group leto-horizontal-center leto-vertical-center " id="what" name="what">
             <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                 <div class="leto-width-full leto-mt-xxl">
