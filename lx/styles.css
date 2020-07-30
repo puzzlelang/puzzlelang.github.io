@@ -32,7 +32,7 @@ html {
 }
 
 .sidebar {
-    width: 150px;
+    width: 50px;
     padding-top: 20px;
     height: 100%;
     display: block;
@@ -75,10 +75,10 @@ html {
 .bubble-badge {
     display: inline-block;
     position: relative;
-    top: -20px;
+    top: -25px;
     right: -50px;
     margin-right: -20px;
-    margin-bottom: -30px;
+    margin-bottom: -37px;
     margin-top: 8px
 }
 

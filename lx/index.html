@@ -15,36 +15,40 @@
 
 <body>
     <div id="app" class="leto-frame">
-        
-        <div class="welcome-msg leto-text-white leto-horizontal-center leto-group leto-vertical-center" v-if="welcomeMsg"> 
+        <div class="welcome-msg leto-text-white leto-horizontal-center leto-group leto-vertical-center" v-if="welcomeMsg">
             <div class="leto-text-center">
                 <div class="leto-text-xxl">
                     Welcome to LUKE-X
                 </div>
-            	<br> LX is a web-based, interactive UI for luke scripting. It let's you:
-            	<br>
-            	<br>
-            	* Run luke scripts
-            	<br>
-            	* Save scripts and organize projects
-            	<br>
-            	* Create simple, custom user interfaces
-            	<br>
-            	<br>
-            	<div class="leto-button" v-on:click="hideWelcomeMsg()">Start</div>
+                <br> LX is a web-based, interactive UI for luke scripting. It let's you:
+                <br>
+                <br>
+                * Run luke scripts
+                <br>
+                * Save scripts and organize projects
+                <br>
+                * Create simple, custom user interfaces
+                <br>
+                <br>
+                <div class="leto-button" v-on:click="hideWelcomeMsg()">Start</div>
             </div>
         </div>
-
-        <!-- sidebar for projects -->
+        <!-- sidebar spacing -->
         <div class="sidebar">
-            <div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
-                <div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
-                <div class="leto-bubble-md leto-bubble-mmd"> {{k || '...'}} </div>
-            </div>
-            <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
         </div>
         <!-- main content -->
         <div class="main-content leto-pt-xs">
+            <br>
+            <!-- tab bar for projects -->
+            <div class="tab-bar">
+                <div>
+                    <div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'leto-border-thickness-xxl': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
+                        <div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
+                        <div class="leto-bubble-md leto-bubble-mmd"> {{k || '...'}} </div>
+                    </div>
+                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
+                </div>
+            </div>
             <br>
             <!-- tab bar -->
             <div class="tab-bar">

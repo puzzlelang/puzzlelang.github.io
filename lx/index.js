@@ -159,6 +159,8 @@ var app = new Vue({
 
         var self = this;
 
+        console.info("Welcome to LX");
+
         if (!localStorage.getItem('welcomeMsgHidden')) this.welcomeMsg = true;
 
         // initialize ace.js editor
