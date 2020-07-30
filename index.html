@@ -94,8 +94,6 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-npm leto-p
                                     <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
 
 luke.parse('print hello')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
-
-
                                     <!--div class="leto-button" v-on:click="showInstall(`# 1. Dockerfile
 FROM luke-alpine
 ADD ./script.luke /
@@ -131,14 +129,11 @@ spec:
 # 2. run
 kubectl apply luke.yaml
 `);installFormat='left'"><span class="fa fa-ship leto-pr-sm"></span> kubernetes</div-->
-
-
-                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; LUKE-X</a>
+                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; Web (LUKE-X) <span class="fa fa-chevron-right leto-ml-sm"></span></a>
                                     <div v-if="installInstruction" class="leto-click leto-bg-black leto-text-center" v-on:click="clipboard(installInstruction)">
                                         <br>
                                         <pre class="leto-text-white leto-inline-block" v-bind:class="{'leto-text-left': installFormat == 'left', 'leto-text-center': installFormat == 'center'}">{{installInstruction}}</pre>
                                     </div>
-
                                     <!--span v-if="copied">
                                         <br>
                                         copied!
@@ -158,10 +153,8 @@ kubectl apply luke.yaml
                             <br>
                         </div>
                         <div class="leto-width-full" v-show="currentPreview==1">
-                           
-<div class="leto-width-full">
-
-<pre style="border-radius: 10px">
+                            <div class="leto-width-full">
+                                <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
 var welcome_msg "starting script";
@@ -172,18 +165,18 @@ post {name: "Peter"} to "http://api.com";
 
 </code>
 </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
-                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                    <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Modules for many purposes</div>
-                        <br>
-                    </div>
-                    <div class="leto-width-full">
-                        <pre style="border-radius: 10px">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
+                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                        <div class="leto-mt-xl">
+                            <div class="leto-text-xl">Modules for many purposes</div>
+                            <br>
+                        </div>
+                        <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
 <code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >// Use a module from url
 use https://url.com/module.luke.js;
 // or from file
@@ -193,26 +186,25 @@ print "modules loaded";
 
 </code>
 </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl">
-            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
-                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                    <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Reuse scripts</div>
-                        <br>
-                    </div>
-                    <div class="leto-width-full">
-                        <pre style="border-radius: 10px">
+            <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
+                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                        <div class="leto-mt-xl">
+                            <div class="leto-text-xl">Reuse scripts</div>
+                            <br>
+                        </div>
+                        <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// hello.luke
 print "hello";
 </code>
 </pre>
-
-<pre style="border-radius: 10px">
+                            <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// world.luke
 include hello.luke;
@@ -222,49 +214,45 @@ include https://url.com/hello.luke;
 print "world";
 </code>
 </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-green leto-text-black leto-m">
-                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                    <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Standalone, embedded or interactive</div>
-                        <br>
-                    </div>
-                    <div class="leto-width-full">
-                        <pre style="border-radius: 10px">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-green leto-text-black leto-m">
+                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                        <div class="leto-mt-xl">
+                            <div class="leto-text-xl">Standalone, embedded or interactive</div>
+                            <br>
+                        </div>
+                        <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// cli
 $ luke run file.luke
 </code>
 </pre>
-
-<pre style="border-radius: 10px">
+                            <pre style="border-radius: 10px">
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// embedded (JavaScript)
 luke.parse('print hello')
 </code>
 </pre>
-
-<pre style="border-radius: 10px">
+                            <pre style="border-radius: 10px">
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// interactive web ui: LUKE-X
 Visit luke-lang.github.io/lx
 </code>
 </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-
-        <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl ">
-                
-            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
-                <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                    <div class="leto-mt-xl">
-                        <div class="leto-text-xl">Create a custom module</div>
-                        <br>
-                    </div>
-                    <div class="leto-width-full">
-                        <pre style="border-radius: 10px">
+            <br>
+            <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl ">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-purple leto-m">
+                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                        <div class="leto-mt-xl">
+                            <div class="leto-text-xl">Create a custom module</div>
+                            <br>
+                        </div>
+                        <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >//mymodule.luke.js
 syntax = {
@@ -279,20 +267,18 @@ syntax = {
 
 </code>
 </pre>
-<pre style="border-radius: 10px">
+                            <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
 use mymodule.luke.js;
-
 echo "hello";
 
 </code>
 </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
                     <div class="leto-width-four-fifths leto-mt-xxl">
                         <div class="leto-mt-xl leto-vertical-right">
                             <div class="leto-text-xl">The basics</div>
@@ -322,11 +308,8 @@ if 2>1 then (print "it's larger")
                     </div>
                 </div>
             </div>
-
         </div>
         <br>
-
-
         <div class="leto-group leto-horizontal-center leto-vertical-center " id="what" name="what">
             <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                 <div class="leto-width-full leto-mt-xxl">
@@ -334,7 +317,7 @@ if 2>1 then (print "it's larger")
                         <div class="leto-text-xl">What is luke?</div>
                     </div>
                     <div class="leto-mt leto-group leto-horizontal-center leto-text-center leto-vertical-center">
-                        Luke is a programming platform for simple scripting, quick prototyping and automation. It's goal is create a scripting language based upon a collaborative modules ecosystem to make scripting super easy and accessible for developers and even non-developers.
+                        Luke is a programming platform for simple scripting, quick prototyping and automation, using simple syntax. It's goal is create a scripting language based upon a collaborative module ecosystem to make scripting super easy and accessible for developers and even non-developers.
                     </div>
                 </div>
             </div>
