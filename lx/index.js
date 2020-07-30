@@ -6,12 +6,14 @@ var isObject = (a) => {
 };
 
 // overwrite console log and delegate arguments to ui, since luke output comes through it.
-console.log = function() {
-    console.info(arguments);
+console.info = function() {
     var args = Array.from(arguments);
-
     var i;
     for (i = 0; i < args.length; i++) {
+        if (Array.isArray(args[i])) {
+          args[i] = JSON.stringify(args[i], null, 4);
+        }
+
         if (isObject(args[i])) args[i] = JSON.stringify(args[i], null, 4);
     }
 
@@ -77,6 +79,7 @@ var app = new Vue({
         // run a luke script
         runCode: function(code) {
             this.output = '';
+            console.log('running', code)
             luke.parse(code);
         },
 
@@ -109,7 +112,6 @@ var app = new Vue({
 
             var tab = {
                 content: c,
-                output: o,
                 project: t
             };
 
@@ -123,7 +125,6 @@ var app = new Vue({
 
         useTab: function(k) {
             this.content = this.tabs[k].content;
-            this.output = this.tabs[k].output;
             bus.$emit('set-content', this.content);
             this.currentTab = k;
             if ((this.contenx || "").includes('lx_autorun')) this.runCode(this.contenx);
@@ -141,7 +142,6 @@ var app = new Vue({
             if (this.currentTab) {
                 var tab = {
                     content: this.content,
-                    output: this.output,
                     project: this.currentProject
                 };
 
@@ -150,17 +150,16 @@ var app = new Vue({
                 Vue.set(this.tabs, this.currentTab, tab)
             } else this.addTab(undefined, this.content, this.output)
         },
-        hideWelcomeMsg: function()
-        {
-          localStorage.setItem('welcomeMsgHidden', true)
-          this.welcomeMsg = false;
+        hideWelcomeMsg: function() {
+            localStorage.setItem('welcomeMsgHidden', true)
+            this.welcomeMsg = false;
         }
     },
     created: function() {
 
         var self = this;
 
-        if(!localStorage.getItem('welcomeMsgHidden')) this.welcomeMsg = true;
+        if (!localStorage.getItem('welcomeMsgHidden')) this.welcomeMsg = true;
 
         // initialize ace.js editor
         document.addEventListener('DOMContentLoaded', function() {
@@ -173,7 +172,7 @@ var app = new Vue({
 
 
             editor.on('change', (arg, activeEditor) => {
-                self.content = activeEditor.getSession().getValue();
+                Vue.set(self, 'content', activeEditor.getSession().getValue());
 
                 const aceEditor = activeEditor;
                 const newHeight = aceEditor.getSession().getScreenLength() *
@@ -183,7 +182,7 @@ var app = new Vue({
             });
 
             bus.$on('set-content', function(k) {
-                console.info(editor.session)
+                console.log(editor.session)
                 editor.getSession().setValue(k)
             })
 
@@ -210,9 +209,9 @@ var app = new Vue({
 
         })
 
-        if(Object.keys(self.projects).length == 0 && Object.keys(self.tabs).length == 0){
-          self.addProject('HME');
-          self.addTab('default', '', '', 'HME');
+        if (Object.keys(self.projects).length == 0 && Object.keys(self.tabs).length == 0) {
+            self.addProject('HME');
+            self.addTab('default', '', '', 'HME');
         }
 
         // key handlers for save, run and add tab
@@ -229,6 +228,7 @@ var app = new Vue({
 
             if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.keyCode == 13) {
                 e.preventDefault();
+                console.log(self.content);
                 self.runCode(self.content)
             }
         }, false);

@@ -47,6 +47,10 @@ html {
     background: #222222;
 }
 
+.ace_gutter-cell {
+    color: #3c3c3c;
+}
+
 .ace-monokai .ace_marker-layer .ace_active-line {
     background: #222222 !important;
 }
