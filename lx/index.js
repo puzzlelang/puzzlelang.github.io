@@ -26,6 +26,7 @@ var emojis = [
 var app = new Vue({
     el: '#app',
     data: {
+        welcomeMsg: false,
         msg: 'Hello Vue!',
         content: "",
         output: "",
@@ -148,11 +149,18 @@ var app = new Vue({
 
                 Vue.set(this.tabs, this.currentTab, tab)
             } else this.addTab(undefined, this.content, this.output)
+        },
+        hideWelcomeMsg: function()
+        {
+          localStorage.setItem('welcomeMsgHidden', true)
+          this.welcomeMsg = false;
         }
     },
     created: function() {
 
         var self = this;
+
+        if(!localStorage.getItem('welcomeMsgHidden')) this.welcomeMsg = true;
 
         // initialize ace.js editor
         document.addEventListener('DOMContentLoaded', function() {
@@ -198,7 +206,14 @@ var app = new Vue({
                 var project = localStorage.getItem(k);
                 if (!self.projects[project]) self.addProject(project);
             }
+
+
         })
+
+        if(Object.keys(self.projects).length == 0 && Object.keys(self.tabs).length == 0){
+          self.addProject('HME');
+          self.addTab('default', '', '', 'HME');
+        }
 
         // key handlers for save, run and add tab
         document.addEventListener("keydown", function(e) {

@@ -1,65 +1,70 @@
-html, body, .container-fluid {
-  height: 100%;
-  background-color: #222222;
-  color:#EFEFEF;
-  padding: 0px;
-  margin: 0px;
+html,
+body,
+.container-fluid {
+    height: 100%;
+    background-color: #222222;
+    color: #EFEFEF;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
-  -webkit-app-region: drag;
+    -webkit-app-region: drag;
 }
 
 #app {
-	height:100%;
-	background-color: #222222;
+    height: 100%;
+    background-color: #222222;
 }
 
-.main-content{
-	 top: 0px;
-    height:100px;
+.main-content {
+    top: 0px;
+    height: 100px;
     width: 100%;
     left: 55px;
     max-width: 80%;
     display: inline-block;
 }
 
-#editor { 
-    min-height:30px !important;
+#editor {
+    min-height: 30px !important;
     width: calc(100% - 120px);
 }
 
-.sidebar{
-	width:150px;
-  padding-top:20px;
-	height:100%;
-	display: block;
-	float:left;
-	background: #222222;
+.sidebar {
+    width: 150px;
+    padding-top: 20px;
+    height: 100%;
+    display: block;
+    float: left;
+    background: #222222;
 }
 
-.ace_gutter-cell, .ace_scroller, .ace_content, .ace_gutter-layer {
-	background: #222222;
+.ace_gutter-cell,
+.ace_scroller,
+.ace_content,
+.ace_gutter-layer {
+    background: #222222;
 }
 
 .ace-monokai .ace_marker-layer .ace_active-line {
-	background: #222222 !important;
+    background: #222222 !important;
 }
 
 .tab-bar {
-	max-width: 100%;
+    max-width: 100%;
     overflow: scroll;
     margin-left: 20px;
     display: inline-block;
 }
 
 .tab-active {
-	font-weight: bold;
-	//text-decoration: underline;
+    font-weight: bold;
+    //text-decoration: underline;
 }
 
 .leto-bubble-mmd {
-	height: 50px !important;
+    height: 50px !important;
     width: 50px !important;
 }
 
@@ -74,15 +79,23 @@ html {
 }
 
 .times-hover:hover .times {
-  display: inline-block;
+    display: inline-block;
 }
 
 .times {
-  display: none;
-  color: #999999 !important;
+    display: none;
+    color: #999999 !important;
 }
 
 .disabled {
-  color: #3e3e3e !important;
-  border-color: #3e3e3e !important;
+    color: #3e3e3e !important;
+    border-color: #3e3e3e !important;
+}
+
+.welcome-msg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #222222;
+    z-index: 999;
 }

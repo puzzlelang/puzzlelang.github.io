@@ -7,7 +7,6 @@
     <link rel="manifest" href="manifest.json">
     <!--script type="text/javascript" src="https://cdn.jsdelivr.net/gh/luke-lang/luke@0.0.3/luke.browser.js"></script-->
     <script type="text/javascript" src="luke-local.js"></script>
-    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" type="text/css" href="./leto-min.css">
@@ -17,8 +16,26 @@
 <body>
     <div id="app" class="leto-frame">
         
+        <div class="welcome-msg leto-text-white leto-horizontal-center leto-group leto-vertical-center" v-if="welcomeMsg"> 
+            <div class="leto-text-center">
+                <div class="leto-text-xxl">
+                    Welcome to LUKE-X
+                </div>
+            	<br> LX is a web-based, interactive UI for luke scripting. It let's you:
+            	<br>
+            	<br>
+            	* Run luke scripts
+            	<br>
+            	* Save scripts and organize projects
+            	<br>
+            	* Create simple, custom user interfaces
+            	<br>
+            	<br>
+            	<div class="leto-button" v-on:click="hideWelcomeMsg()">Start</div>
+            </div>
+        </div>
 
-    	<!-- sidebar for projects -->
+        <!-- sidebar for projects -->
         <div class="sidebar">
             <div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'tab-active': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
                 <div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
@@ -26,10 +43,8 @@
             </div>
             <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
         </div>
-
         <!-- main content -->
         <div class="main-content leto-pt-xs">
-           
             <br>
             <!-- tab bar -->
             <div class="tab-bar">
@@ -42,22 +57,16 @@
                 </div>
             </div>
             <br>
-
             <!-- canvas for quixui scripts (experimental) -->
             <div class="leto-m leto-text-white" v-if="content.includes('quixui.luke.js')">
-            	
-           		quix canvas...
-
-           		<div class="leto-button">btn1</div>
-
+                quix canvas...
+                <div class="leto-button">btn1</div>
             </div>
-
             <!-- canvas for custom html from the lxhtml module -->
             <div class="leto-m-lg leto-text-white" id="html-canvas" v-html="customContent.html" v-bind:style="customContent.style" v-show="customContent.html"></div>
             <br>
-
             <!-- the main editor (ace.js) -->
-            <div id="editor" class="leto-mt-sm" ></div>
+            <div id="editor" class="leto-mt-sm"></div>
             <br>
             <div style="margin-left: 35px;display: inline-block;">
                 <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="runCode(content)">RUN</div>
