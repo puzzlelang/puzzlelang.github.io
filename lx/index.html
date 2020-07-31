@@ -33,31 +33,31 @@
                 <div class="leto-button" v-on:click="hideWelcomeMsg()">Start</div>
             </div>
         </div>
-        <!-- sidebar spacing -->
+        <!-- sidebar -->
         <div class="sidebar">
+            <div v-for="(project, k) in projects">
+                <div class="leto-text-white leto-block leto-pl-sm leto-p-sm times-hover- leto-click" v-bind:class="{'leto-border-thickness-xxl': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
+                   
+                    <b>{{k || '...'}}</b>  <span class="leto-color-grey leto-click bubble-badge-" v-on:click="deleteProject(k)">&times;</span>
+                </div>
+                <div v-for="(file, t) in files" v-if="file.project == k" >
+                    <div class="leto-ml-lg leto-text-white leto-pb-xxs leto-click" v-on:click="useFile(t);useTab(t)"><span>{{file.content.substring(0, 18) || '(empty)'}}</span></div>
+                </div>
+                 <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addFile(undefined, '', '', k)"><span class="super-grey-label">+ file</span></div>
+            </div>
+            <div class="leto-button-xs leto-text-white leto-border-none" v-on:click="addProject(undefined)"><span class="super-grey-label">+ project</span></div>
         </div>
         <!-- main content -->
         <div class="main-content leto-pt-xs">
             <br>
-            <!-- tab bar for projects -->
-            <div class="tab-bar">
-                <div>
-                    <div class="leto-bubble-wrapper-lg leto-text-white leto-border-none times-hover" v-for="(project, k) in projects" v-bind:class="{'leto-border-thickness-xxl': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
-                        <div class="leto-ml-xs leto-color-grey leto-click bubble-badge times" v-on:click="deleteProject(k)">&times;</div>
-                        <div class="leto-bubble-md leto-bubble-mmd"> {{k || '...'}} </div>
-                    </div>
-                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addProject(undefined)">+</div>
-                </div>
-            </div>
-            <br>
             <!-- tab bar -->
             <div class="tab-bar">
                 <div>
-                    <div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-if="tab.project == currentProject" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useTab(k)">
+                    <div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useFile(k)">
                         <span>{{tab.content.substring(0, 8) || '(empty)'}}</span>
                         <div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteTab(k)">&times;</div>
                     </div>
-                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addTab(undefined, '', '', currentProject)">+</div>
+                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addFile(undefined, '', '', currentProject)">+</div>
                 </div>
             </div>
             <br>

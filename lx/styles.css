@@ -32,7 +32,7 @@ html {
 }
 
 .sidebar {
-    width: 50px;
+    width: 250px;
     padding-top: 20px;
     height: 100%;
     display: block;
@@ -94,6 +94,10 @@ html {
 .disabled {
     color: #3e3e3e !important;
     border-color: #3e3e3e !important;
+}
+
+.super-grey-label {
+    color:#454545;
 }
 
 .welcome-msg {

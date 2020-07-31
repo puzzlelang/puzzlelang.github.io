@@ -11,7 +11,7 @@ console.info = function() {
     var i;
     for (i = 0; i < args.length; i++) {
         if (Array.isArray(args[i])) {
-          args[i] = JSON.stringify(args[i], null, 4);
+            args[i] = JSON.stringify(args[i], null, 4);
         }
 
         if (isObject(args[i])) args[i] = JSON.stringify(args[i], null, 4);
@@ -33,6 +33,7 @@ var app = new Vue({
         content: "",
         output: "",
         tabs: {},
+        files: {},
         projects: {},
         currentTab: null,
         currentProject: null,
@@ -64,8 +65,8 @@ var app = new Vue({
 
             if (!newName) return;
 
-            Object.keys(this.tabs).forEach(function(t) {
-                if (self.tabs[t].project == k) self.tabs[t].project = newName;
+            Object.keys(this.files).forEach(function(t) {
+                if (self.files[t].project == k) self.files[t].project = newName;
             })
 
             delete this.projects[k];
@@ -107,32 +108,56 @@ var app = new Vue({
             bus.$emit('set-content', this.content);
         },
 
-        addTab: function(k, c, o, t) {
+        addFile: function(k, c, o, t) {
             if (!k) k = Math.random();
 
-            var tab = {
+            var file = {
                 content: c,
                 project: t
             };
 
-            Vue.set(this.tabs, k, tab)
+            Vue.set(this.files, k, file)
 
             this.currentTab = k;
-            this.useTab(k)
+            this.useFile(k)
 
-            localStorage.setItem('lx_' + k, JSON.stringify(tab))
+            localStorage.setItem('lx_' + k, JSON.stringify(file))
+        },
+
+        useFile: function(k) {
+            this.content = this.files[k].content;
+            bus.$emit('set-content', this.content);
+            this.currentTab = k;
+            this.currentProject = this.files[k].project;
+
+            if ((this.contenx || "").includes('lx_autorun')) this.runCode(this.contenx);
+        },
+
+        deleteFile: function(k) {
+            Vue.delete(this.files, k);
+            localStorage.removeItem('lx_' + k);
+            this.content = "";
+            this.output = "";
+            bus.$emit('set-content', this.content);
         },
 
         useTab: function(k) {
-            this.content = this.tabs[k].content;
+
+            if (!this.files[k]) return;
+            this.content = this.files[k].content;
             bus.$emit('set-content', this.content);
+
+            Vue.set(this.tabs, k, { content: this.content });
+
             this.currentTab = k;
             if ((this.contenx || "").includes('lx_autorun')) this.runCode(this.contenx);
+
+            localStorage.setItem('lxt_' + k, true)
         },
 
         deleteTab: function(k) {
             Vue.delete(this.tabs, k);
-            localStorage.removeItem('lx_' + k);
+            localStorage.removeItem('lxt_' + k);
             this.content = "";
             this.output = "";
             bus.$emit('set-content', this.content);
@@ -147,8 +172,8 @@ var app = new Vue({
 
                 localStorage.setItem('lx_' + this.currentTab, JSON.stringify(tab))
 
-                Vue.set(this.tabs, this.currentTab, tab)
-            } else this.addTab(undefined, this.content, this.output)
+                Vue.set(this.files, this.currentTab, tab)
+            } else this.addFile(undefined, this.content, this.output)
         },
         hideWelcomeMsg: function() {
             localStorage.setItem('welcomeMsgHidden', true)
@@ -199,8 +224,13 @@ var app = new Vue({
         // add saved tabs/projects on start
         Object.keys(localStorage).forEach(function(k) {
             if (k.indexOf('lx_') == 0) {
+                var file = JSON.parse(localStorage.getItem(k));
+                if (!self.files[k.substring(3)]) self.addFile(k.substring(3), file.content, file.output, file.project)
+            }
+
+            if (k.indexOf('lxt_') == 0) {
                 var tab = JSON.parse(localStorage.getItem(k));
-                if (!self.tabs[k.substring(3)]) self.addTab(k.substring(3), tab.content, tab.output, tab.project)
+                if (!self.tabs[k.substring(3)]) self.useTab(k.substring(4), tab.content, tab.output, tab.project)
             }
 
             if (k.indexOf('lxp_') == 0) {
@@ -213,7 +243,7 @@ var app = new Vue({
 
         if (Object.keys(self.projects).length == 0 && Object.keys(self.tabs).length == 0) {
             self.addProject('HME');
-            self.addTab('default', '', '', 'HME');
+            self.addFile('default', '', '', 'HME');
         }
 
         // key handlers for save, run and add tab
@@ -225,7 +255,7 @@ var app = new Vue({
 
             if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.keyCode == 84) {
                 e.preventDefault();
-                self.addTab(undefined, "", "", self.currentProject);
+                self.addFile(undefined, "", "", self.currentProject);
             }
 
             if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.keyCode == 13) {
