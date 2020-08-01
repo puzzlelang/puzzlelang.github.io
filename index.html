@@ -63,7 +63,7 @@
                 <div class="leto-group leto-horizontal-center leto-mt-xl">
                     <div class="leto-group leto-mt-xxl">
                         <div class=" leto-text-xxl leto-text-center">
-                            An abstract, simple cross-platform scripting language
+                            An abstract multi-purpose programming language that makes complex things simple.
                         </div>
                     </div>
                 </div>
@@ -157,10 +157,10 @@ kubectl apply luke.yaml
                                 <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >
-var welcome_msg "starting script";
-print welcome_msg;
+print "starting script...";
 
-use https://rest.luke.js;
+use 'https://rest.luke.js';
+
 post {name: "Peter"} to "http://api.com";
 
 </code>
@@ -178,9 +178,9 @@ post {name: "Peter"} to "http://api.com";
                         <div class="leto-width-full">
                             <pre style="border-radius: 10px">
 <code class="javascript"  style="font-size:20px;background:#232323;padding:20px" >// Use a module from url
-use https://url.com/module.luke.js;
+use 'https://url.com/module.luke.js';
 // or from file
-use module.luke.js;
+use 'module.luke.js';
 
 print "modules loaded";
 
