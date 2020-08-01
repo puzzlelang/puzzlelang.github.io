@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" type="text/css" href="./leto-min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
 </head>
 
 <body>
@@ -40,8 +41,10 @@
                    
                     <b>{{k || '...'}}</b>  <span class="leto-color-grey leto-click bubble-badge-" v-on:click="deleteProject(k)">&times;</span>
                 </div>
-                <div v-for="(file, t) in files" v-if="file.project == k" >
-                    <div class="leto-ml-lg leto-text-white leto-pb-xxs leto-click" v-on:click="useFile(t);useTab(t)"><span>{{file.content.substring(0, 18) || '(empty)'}}</span></div>
+                <div v-for="(file, t) in files" v-if="file.project == k" class="times-hover">
+                    <div class="leto-ml-lg leto-text-white leto-pb-xxs leto-click" v-on:click="useFile(t);useTab(t)"><span>{{file.content.substring(0, 18) || '(empty)'}}</span>
+                    <div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteFile(t)">&times;</div>
+                </div>
                 </div>
                  <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addFile(undefined, '', '', k)"><span class="super-grey-label">+ file</span></div>
             </div>
