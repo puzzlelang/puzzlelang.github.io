@@ -248,6 +248,78 @@ var lang = {
                     lang.context['_' + file + 'permanent'] = true;
                 }
             },
+            write: {
+                follow: ["$file"],
+                method: function(ctx) {
+                    lang.context.fileOperation = 'write';
+                }
+            },
+            read: {
+                follow: ["$file"],
+                method: function(ctx) {
+                    lang.context.fileOperation = 'read';
+                }
+            },
+            remove: {
+                follow: ["$file", "$dir"],
+                method: function(ctx) {
+                    lang.context.fileOperation = 'remove';
+                    lang.context.dirOperation = 'remove';
+                }
+            },
+            make: {
+                follow: ["$dir"],
+                method: function(ctx) {
+                    lang.context.dirOperation = 'make';
+                }
+            },
+            file: {
+                follow: ["{name,content}"],
+                method: function(ctx, file) {
+                    var content = file.content;
+                    if(environment == 'web') content = new TextEncoder("utf-8").encode(file.content);
+
+                    switch(lang.context.fileOperation){
+                        case 'write':
+                        fs.writeFile(file.name, content, 'utf8', function(err, data){
+                            if(err) return global.luke.output(err);
+                            global.luke.output(data);
+                        })
+                        break;
+                        case 'read':
+                        fs.readFile(file.name, function(err, data){
+                            if(err) return global.luke.output(err);
+                            global.luke.output(data.toString());
+                        })
+                        break;
+                        case 'remove':
+                        fs.unlink(file.name, function(err, data){
+                            if(err) return global.luke.output(err);
+                            global.luke.output(data);
+                        })
+                        break;
+                    }
+                }
+            },
+            dir: {
+                follow: ["{dir}"],
+                method: function(ctx, dir) {
+                    switch(lang.context.dirOperation){
+                        case 'make':
+                        fs.mkdir(dir, {}, function(err, data){
+                            if(err) return global.luke.output(err);
+                            global.luke.output(data);
+                        })
+                        break;
+                        case 'remove':
+                        fs.rmdir(dir, function(err, data){
+                            if(err) return global.luke.output(err);
+                            global.luke.output(data);
+                        })
+                        break;
+                    }
+                }
+            },
             print: {
                 follow: ["{text}"],
                 method: function(ctx, text) {
