@@ -12,6 +12,17 @@
     <link rel="stylesheet" type="text/css" href="./leto-min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
+    <script src="https://unpkg.com/isomorphic-git@beta"></script>
+    <script type="module">
+    fs = new LightningFS('fs');
+	import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js';
+	window.http = http;
+	</script>
+	    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
 </head>
 
 <body>
@@ -36,31 +47,63 @@
         </div>
         <!-- sidebar -->
         <div class="sidebar">
+        	
+        	<div class="leto-pl-sm">
+        		<span v-if="!addOptionsShown" >
+        		<div class="leto-bubble-xs leto-p-none leto-mr-none times leto-text-white leto-border-none leto-bold leto-click" v-on:click="addProject(undefined)"><div class="fa fa-plus" style="font-size: 16px"></div></div>
+        		<!--div class="leto-bubble-xs leto-p-none leto-mr-none times leto-text-white leto-bold leto-click" v-on:click="currentProject=null;addTab(undefined, '//Run a quick script;\n')"><div class="fa fa-terminal" style="font-size: 16px"></div></div-->
+
+        		<div class="leto-bubble-xs leto-p-none leto-mr-none times leto-text-white leto-bold leto-click leto-border-none" v-on:click="addOptionsShown=true"><div class="fa fa-ellipsis-h" style="font-size: 16px"></div></div>
+        	</span>
+        		<span v-if="addOptionsShown">
+        			<div class="leto-bubble-xs leto-p-none leto-mr-none times leto-text-white leto-bold leto-click leto-border-none" v-on:click="addOptionsShown=false"><div class="fa fa-chevron-left" style="font-size: 16px"></div></div>
+        			<div class="leto-bubble-xs leto-p-none leto-mr-none times leto-text-white leto-border-none leto-bold leto-click" v-on:click="gitCommand('clone')"><div class="fa fa-git" style="font-size: 16px"></div></div>
+        		</span>
+        	</div>
+
             <div v-for="(project, k) in projects">
-                <div class="leto-text-white leto-block leto-pl-sm leto-p-sm times-hover- leto-click" v-bind:class="{'leto-border-thickness-xxl': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
+                <div class="leto-text-white leto-block leto-pl-sm leto-p-sm times-hover leto-click" v-bind:class="{'leto-border-thickness-xxl': k == currentProject}" v-on:click="useProject(k)" v-on:dblclick="changeProjectName(k)">
                    
-                    <b>{{k || '...'}}</b>  <span class="leto-color-grey leto-click bubble-badge-" v-on:click="deleteProject(k)">&times;</span>
+                    <span class="fa leto-text-xs leto-mr-none times" v-bind:class="{'fa-chevron-down': structoreHidden[k], 'fa-chevron-up': !structoreHidden[k]}" v-on:click="toggleStructureHidden(k)"></span> 
+
+                    <b v-bind:class="{'active': k == currentProject}">{{k || '...'}}</b>  
+
+					<span class="leto-color-grey leto-click bubble-badge- leto-mr-xs times" v-on:click="toggleGitControls(k)"><div class="fa fa-git" style="font-size: 16px"></div></span>
+                    <span class="leto-color-grey leto-click bubble-badge- times" v-on:click="deleteProject(k)">&times;</span>
+
+                     <div v-if="gitControls[k]" class="leto-text-sm leto-ml-md leto-mt-sm">
+		            	
+		            	<div class="leto-block leto-m-xxs" v-on:click="gitCommand('repo')">
+		            		repo: {{(gitSettings[k] || {}).repo || '...'}}
+		            	</div>
+		            	<div class="leto-block leto-m-xxs" v-on:click="gitCommand('checkout')">
+		            		branch: {{(gitSettings[k] || {}).branch || 'master'}}
+		            	</div>
+
+		            	<div  v-if="currentProject" class="leto-button-xs leto-ph-xs leto-text-white leto-m-xxs" v-on:click="gitCommand('pull')">pull</div>
+		            	<div  v-if="currentProject" class="leto-button-xs leto-ph-xs leto-text-white leto-m-xxs" v-on:click="gitCommand('commit')">commit</div>
+		            	<div  v-if="currentProject" class="leto-button-xs leto-ph-xs leto-text-white leto-m-xxs" v-on:click="gitCommand('push')">push</div>
+		            </div>
+
                 </div>
-                <div v-for="(file, t) in files" v-if="file.project == k" class="times-hover">
-                    <div class="leto-ml-lg leto-text-white leto-pb-xxs leto-click" v-on:click="useFile(t);useTab(t)"><span>{{file.content.substring(0, 18) || '(empty)'}}</span>
-                    <div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteFile(t)">&times;</div>
-                </div>
-                </div>
-                 <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addFile(undefined, '', '', k)"><span class="super-grey-label">+ file</span></div>
+
+                <subdir v-if="!structoreHidden[k]" :k="k" />
+
             </div>
-            <div class="leto-button-xs leto-text-white leto-border-none" v-on:click="addProject(undefined)"><span class="super-grey-label">+ project</span></div>
         </div>
+
         <!-- main content -->
         <div class="main-content leto-pt-xs">
             <br>
+
             <!-- tab bar -->
-            <div class="tab-bar">
+            <div class="tab-bar" >
                 <div>
-                    <div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-bind:class="{'tab-active': k == currentTab}" v-on:click="useFile(k)">
-                        <span>{{tab.content.substring(0, 8) || '(empty)'}}</span>
+                    <div class="leto-button-xs leto-text-white leto-border-none times-hover" v-for="(tab, k) in tabs" v-bind:class="{'active': k == currentTab}" >
+                        <span v-on:click="useTab(k, tab.content)">{{tab.content.substring(0, 8) || '(empty)'}}</span>
                         <div class="leto-ml-xs leto-color-grey leto-click times" v-on:click="deleteTab(k)">&times;</div>
                     </div>
-                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addFile(undefined, '', '', currentProject)">+</div>
+                    <div class="leto-button-xs leto-text-white leto-border-none times" v-on:click="addTab(undefined, '')">+</div>
                 </div>
             </div>
             <br>
@@ -77,7 +120,7 @@
             <br>
             <div style="margin-left: 35px;display: inline-block;">
                 <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="runCode(content)">RUN</div>
-                <div class="leto-button-xs leto-text-white" v-bind:class="{'disabled': !content}" v-on:click="saveContent()"><span class="fa fa-save"></span></div>
+                <div class="leto-button-xs leto-text-white" v-if="currentProject" v-bind:class="{'disabled': !content}" v-on:click="saveContent()"><span class="fa fa-save"></span></div>
             </div>
             <br>
             <pre class="leto-text-white leto-p" style="margin-left: 20px;display: inline-block;color:#999999" v-html="output"></pre>
@@ -85,6 +128,7 @@
     </div>
     <script src="./ace-builds-1.1.4/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./subdir.js"></script>
     <script src="./index.js"></script>
 </body>
 
