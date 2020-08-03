@@ -2,11 +2,7 @@
   "short_name": "LX",
   "name": "Luke X Web Platform",
   "description": "Web IDE for luke scripting",
-  "start_url": "/?source=pwa",
   "background_color": "#111111",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#3367D6",
   "icons": [
     {
       "src": "https://luke-lang.github.io/icons/luke.png",
