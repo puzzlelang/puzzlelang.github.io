@@ -94,56 +94,21 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-npm leto-p
                                     <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
 
 luke.parse('print hello')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
-                                    <!--div class="leto-button" v-on:click="showInstall(`# 1. Dockerfile
-FROM luke-alpine
-ADD ./script.luke /
-CMD luke ./script.luke
-
-# 2. build
-docker build luke .
-
-# 3. run
-docker run luke
-`);installFormat='left'"><span class="fab fa-docker leto-pr-sm"></span> docker</div>
-
-                                    <div class="leto-button" v-on:click="showInstall(`# 1. yaml file
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: luke-deployment
-  labels:
-    app: luke
-spec:
-  selector:
-    matchLabels:
-      app: luke
-  template:
-    metadata:
-      labels:
-        app: luke
-    spec:
-      containers:
-      - name: luke
-        image: luke-lang:1.14.2
-
-# 2. run
-kubectl apply luke.yaml
-`);installFormat='left'"><span class="fa fa-ship leto-pr-sm"></span> kubernetes</div-->
+                                   
                                     <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; Web <span class="fa fa-chevron-right leto-ml-sm"></span></a>
                                     <div v-if="installInstruction" class="leto-click leto-bg-black leto-text-center" v-on:click="clipboard(installInstruction)">
                                         <br>
                                         <pre class="leto-text-white leto-inline-block" v-bind:class="{'leto-text-left': installFormat == 'left', 'leto-text-center': installFormat == 'center'}">{{installInstruction}}</pre>
                                     </div>
-                                    <!--span v-if="copied">
-                                        <br>
-                                        copied!
-                                    </span-->
+                                   
                                 </span>
                             </center>
                         </div>
                     </div>
                 </div>
             </div>
+
+           
             <br>
             <div class="leto-group leto-horizontal-center leto-vertical-top leto-mt-xl ">
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-blue leto-m">
