@@ -1,3 +1,5 @@
 [submodule "lx"]
 	path = lx
 	url = https://github.com/4ty711/lx
+[submodule "bar1"]
+	branch = master
