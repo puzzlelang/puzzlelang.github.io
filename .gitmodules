@@ -3,3 +3,6 @@
 	url = https://github.com/4ty711/lx.git
 [submodule "bar1"]
 	branch = master
+[submodule "luke-ui"]
+	path = luke-ui
+	url = https://github.com/luke-lang/luke-ui
