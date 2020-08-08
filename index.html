@@ -40,6 +40,10 @@
         overflow: scroll;
         white-space: nowrap;
     }
+
+    .large-icon {
+        font-size: 35px;
+    }
     </style>
 </head>
 
@@ -266,13 +270,15 @@ echo "hello";
                                 <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" v-for="e in examples" style="background: #313131;">
 
                                     <div class="leto-text-xl leto-text-center">
-                                        {{e.title}}
+                                        <span class="large-icon fa" v-bind:class="'fa-'+e.icon"></span> {{e.title}}
                                     </div>
                                     <pre style="border-radius: 10px" >
 <code class="javascript" style="font-size:20px;background:#313131;padding:20px" >
 {{e.code}}
 </code>
 </pre>
+<br>
+<a class="leto-text-center" v-bind:href="e.link">{{e.linkText}}</a>
                                 </div>
 
 
@@ -282,9 +288,6 @@ echo "hello";
                     </div>
                 </div>
             </div>
-
-
-
 
 
 <br>
