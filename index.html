@@ -231,64 +231,18 @@ echo "hello";
                             <center>
                               
 
-                                <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" style="background: #313131;">
+                                <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" v-for="e in examples" style="background: #313131;">
 
                                     <div class="leto-text-xl leto-text-center">
-                                        Abstract an API
+                                        {{e.title}}
                                     </div>
                                     <pre style="border-radius: 10px" >
 <code class="javascript" style="font-size:20px;background:#313131;padding:20px" >
-use 'https://rest.luke.js';
-
-post {name: "Peter"}
-    to "http://api.com";
+{{e.code}}
 </code>
 </pre>
                                 </div>
 
-                                   <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" style="background: #313131;">
-
-                                    <div class="leto-text-xl leto-text-center">
-                                        Build a UI
-                                    </div>
-                                    <pre style="border-radius: 10px" >
-<code class="javascript" style="font-size:20px;background:#313131;padding:20px" >
-use webtechnologies.luke.js;
-
-render (
-    <element>öö</element>
-)
-</code>
-</pre>
-                                </div>
-
-                                   <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" style="background: #313131;">
-
-                                    <div class="leto-text-xl leto-text-center">
-                                        Build your DSL
-                                    </div>
-                                    <pre style="border-radius: 10px" >
-<code class="javascript" style="font-size:20px;background:#313131;padding:20px" >
-use mydsl.luke.js;
-
-create product with name "test";
-</code>
-</pre>
-                                </div>
-
-                                   <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" style="background: #313131;">
-
-                                    <div class="leto-text-xl leto-text-center">
-                                        Build your DSL
-                                    </div>
-                                    <pre style="border-radius: 10px" >
-<code class="javascript" style="font-size:20px;background:#313131;padding:20px" >
-use mydsl.luke.js;
-
-create product with name "test";
-</code>
-</pre>
-                                </div>
 
 
                             </center>

@@ -30,6 +30,15 @@ var app = new Vue({
         }
     },
     data: {
+        examples: [/*{
+            title: 'Abstract an API',
+            code: `
+use 'https://rest.luke.js';
+
+post {name: "Peter"}
+    to "http://api.com";
+            `
+        }*/],
     	copied:false,
         installFormat:'center',
         codeExample: "print 'check out some code examples'",
