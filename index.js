@@ -30,6 +30,7 @@ var app = new Vue({
         }
     },
     data: {
+        featured: [],
         examples: [/*{
             title: 'Abstract an API',
             code: `
