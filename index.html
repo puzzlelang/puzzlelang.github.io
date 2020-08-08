@@ -94,16 +94,24 @@
 
                                 </div-->
                                 <span v-if="showInstallOptions || true">
+
+                                    <b>GET IT: </b>
+
+                                    <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang -g
+
+$ luke run myfile.luke`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> Standalone</div>
+
                                     <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang -g
 
 $ luke
-> print hello
+> print hello`)"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
+</span>
 
-$ luke run myfile.luke`);installFormat='left'"><span class="fa fa-terminal leto-pr-sm"></span> CLI</div>
+
                                     <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang --save
 
 const luke = require('luke-lang')
-luke.parse('print hello')`);installFormat='left'"><span class="fab fa-npm leto-pr-sm"></span> Node</div>
+luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js leto-pr-sm"></span> Node</div>
                                     <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
 
 luke.parse('print hello')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
