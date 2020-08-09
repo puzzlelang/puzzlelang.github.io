@@ -1,3 +1,4 @@
 <!-- _navbar.md -->
 
-* [Modules](https://luke-lang.github.io/modules/#/?id=objy)
+* [Examples](https://luke-lang.github.io/quickstart)
+* [Modules](https://luke-lang.github.io/modules)
