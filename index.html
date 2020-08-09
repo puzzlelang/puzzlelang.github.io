@@ -111,7 +111,7 @@ const luke = require('luke-lang')
 luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js leto-pr-sm"></span> Node</div>
                                     <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
 
-luke.parse('print hello')`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
+<script>luke.parse('print hello')</script>`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
                                    
                                     <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; Web <span class="fa fa-chevron-right leto-ml-sm"></span></a>
                                     <div v-if="installInstruction" class="leto-click leto-bg-black leto-text-center" v-on:click="clipboard(installInstruction)">
