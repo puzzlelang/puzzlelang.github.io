@@ -98,7 +98,7 @@
                                 </div-->
                                 <span v-if="showInstallOptions || true">
 
-                                    <b>GET IT FOR: </b>
+                                    <b>DEVELOP FOR: </b>
 
                                     <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang -g
 
@@ -108,15 +108,27 @@ $ luke
 > print hello`);installFormat='left'"><span class="fa fa-terminal leto-pr-sm"></span> Terminal</div>
 
                                  
-                                    <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang --save
+                                    <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
+
+<script type='text/x-luke'>
+    print hello
+</script>
+
+<script type='text/x-luke' src='myfile.luke' />`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> Browser</div>
+
+ <!--div class="leto-button" v-on:click="showInstall(`luke bundle desktop`);installFormat='left'"><span class="fa fa-desktop leto-pr-sm"></span> Desktop</div-->
+
+   <div class="leto-button" v-on:click="showInstall(`$ npm i luke-lang --save
 
 const luke = require('luke-lang')
 luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js leto-pr-sm"></span> Node</div>
-                                    <div class="leto-button" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
-
-<script>luke.parse('print hello')</script>`);installFormat='left'"><span class="fa fa-code leto-pr-sm"></span> browser</div>
                                    
-                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; Web <span class="fa fa-chevron-right leto-ml-sm"></span></a>
+                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-button"><span class="fa fa-window-restore leto-pl-sm"></span> &nbsp; Web Platform<span class="fa fa-chevron-right leto-ml-sm"></span></a>
+                                    
+                                   
+                                        
+                  
+
                                     <div v-if="installInstruction" class="leto-click leto-bg-black leto-text-center" v-on:click="clipboard(installInstruction)">
                                         <br>
                                         <pre class="leto-text-white leto-inline-block" v-bind:class="{'leto-text-left': installFormat == 'left', 'leto-text-center': installFormat == 'center'}">{{installInstruction}}</pre>
