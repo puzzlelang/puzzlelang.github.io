@@ -2,7 +2,7 @@
 
 ## Install
 
-## Terminal
+### Terminal
 
 ***1. Install***
 
