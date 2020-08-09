@@ -1,8 +1,7 @@
 # Quickstart Examples
 
-## Install
 
-### Terminal
+## Terminal
 
 ***1. Install***
 
@@ -22,27 +21,32 @@ $ "print 'hello world'" > myfile.luke;
 $ luke run myfile.luke
 ```
 
-### CLI
-
-***1. Install***
-
-```shell
-$ npm i luke-lang --global
-```
-
-***2. Start the CLI***
+or
 
 ```shell
 $ luke
-```
-
-***3. Run a command***
-
-```shell
 > print "hello world"
 ```
 
-### Node (embedded)
+
+## Browser 
+
+
+```javascript
+<html>
+  <head>
+    <script src="..." />
+    <script type="text/x-luke">
+      print "hello world";
+    </script>
+  </head>
+</html>
+```
+
+
+
+
+## Node (embedded)
 
 ***1. Install***
 
@@ -65,23 +69,3 @@ luke.parse(`
 ```shell
 node index.js
 ```
-
-
-### Browser (embedded)
-
-***1. Install***
-
-```html
-<script src="..." />
-```
-
-***2. Embed luke***
-
-```javascript
-// luke will be available as part of the global window object.
-
-luke.parse(`
-  print "hello world";
-`)
-```
-
