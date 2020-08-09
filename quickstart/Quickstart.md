@@ -1,5 +1,7 @@
 # Quickstart Examples
 
+## Install
+
 ## Terminal
 
 ***1. Install***
@@ -20,7 +22,7 @@ $ "print 'hello world'" > myfile.luke;
 $ luke run myfile.luke
 ```
 
-## CLI
+### CLI
 
 ***1. Install***
 
@@ -40,7 +42,7 @@ $ luke
 > print "hello world"
 ```
 
-## Node (embedded)
+### Node (embedded)
 
 ***1. Install***
 
@@ -54,7 +56,7 @@ $ npm i luke-lang --save
 const luke = require('luke-lang');
 
 luke.parse(`
-  print "helo world";
+  print "hello world";
 `)
 ```
 
@@ -65,7 +67,7 @@ node index.js
 ```
 
 
-## Browser (embedded)
+### Browser (embedded)
 
 ***1. Install***
 
@@ -79,7 +81,7 @@ node index.js
 // luke will be available as part of the global window object.
 
 luke.parse(`
-  print "helo world";
+  print "hello world";
 `)
 ```
 
