@@ -30,6 +30,8 @@ var app = new Vue({
         }
     },
     data: {
+        featured: [],
+        examples: [],
     	copied:false,
         installFormat:'center',
         codeExample: "print 'check out some code examples'",
