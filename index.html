@@ -76,7 +76,7 @@
                 <div class="leto-group leto-horizontal-center leto-mt-xl">
                     <div class="leto-group leto-mt-xxl">
                         <div class=" leto-text-xxl leto-text-center">
-                            An abstract programming language for making complex things simple
+                            An abstract programming language that makes things simple
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,26 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js le
             </div>
 
 
-            <br>
+
+            <div class="leto-group leto-horizontal-center leto-mt-xxl">
+                <div class="leto-two-thirds" v-show="currentPreview==1">
+                            <div class="leto-width-full">
+                                <pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >print (
+    Welcome, developer!
+    This is a luke script.
+)
+
+use 'https://rest.luke.js';
+
+post {name: "Peter"} to "http://api.com";
+</code>
+</pre>
+                            </div>
+                        </div>
+            </div>
+
 
 
               <div class="leto-group leto-horizontal-center leto-vertical-center" v-if="featured.length > 0">
@@ -180,10 +199,11 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js le
                             <div class="leto-width-full">
                                 <pre style="border-radius: 10px">
 
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >print "starting script...";
-use 'https://rest.luke.js';
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >use 'https://objy.luke.js';
 
-post {name: "Peter"} to "http://api.com";
+define object;
+
+add object with name "test";
 </code>
 </pre>
                             </div>
