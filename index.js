@@ -30,7 +30,7 @@ var app = new Vue({
         }
     },
     data: {
-        featured: [{title:'build browser apps', icon: 'globe'}, {title:'create backends', icon: 'terminal'}, {title:'custom languages', icon: 'code'}, {title:'user interfaces', icon: 'code'}, {title:'and more', icon: 'ellipsis-h'}],
+        featured: [],
         examples: [],
     	copied:false,
         installFormat:'center',

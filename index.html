@@ -222,12 +222,13 @@ add object with name "test";
                     </div>
                 </div>
             </div>
-            <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl">
+
+              <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl">
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
                     <div class="leto-column leto-width-full  leto-ph-xl">
                         <div class="leto-mv-xxl">
                             <div class="leto-text-xl">
-                                <b><u>Multi-domain</u></b> with modules for anything . The language is built upon an open module ecosystem that lets you create things for different domains.
+                                Runs on <b><u>many platforms</u></b>.<br>Since luke itself runs on javascript, luke applications can be run in any JS environment, like browsers or node.
                             </div>
                       
                         </div>
@@ -238,11 +239,23 @@ add object with name "test";
                        
                         <div class="leto-width-full">
                             <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// Use a module from url or file
-use 'https://url.com/module.luke.js';
-use 'module.luke.js';
-
-print "modules loaded";
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >&lt;script type="text/x-luke"&gt;
+    print "hello world";
+&lt;/script&gt;
+</code>
+</pre>
+                          
+                        </div>
+<div class="leto-width-full">
+                            <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >$ luke run file.luke
+</code>
+</pre>
+                          
+                        </div>
+                         <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >const luke = require('luke-lang');
 </code>
 </pre>
                           
@@ -250,6 +263,8 @@ print "modules loaded";
                     </div>
                 </div>
             </div>
+
+
             <br>
             <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl ">
                 <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl  leto-m">
@@ -282,7 +297,7 @@ echo "hello";
                     <div class="leto-width-four-fifths ">
                         <div class="leto-mv-xxl leto-vertical-right">
                             <div class="leto-text-xl">
-                                Create <b><u>your own syntax</u></b>!
+                                Create <b><u>your own language</u></b>!
                                 <br>
                                 Build a custom language for developing in your domain. Use your syntax as module and even collaborate to the ecosystem.
                             </div>
@@ -293,42 +308,7 @@ echo "hello";
         </div>
         <br>
 
-          <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl">
-                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
-                    <div class="leto-column leto-width-full  leto-ph-xl">
-                        <div class="leto-mv-xxl">
-                            <div class="leto-text-xl">
-                                Runs on <b><u>many platforms</u></b>.<br>Since luke itself runs on javascript, luke applications can be run in any JS environment, like browsers or node.
-                            </div>
-                      
-                        </div>
-                    </div>
-                </div>
-                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-text-black leto-m">
-                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
-                       
-                        <div class="leto-width-full">
-                            <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// browser
-&lt;script type="text/x-luke"&gt;
-    print "hello world";
-&lt;/script&gt;
-</code>
-</pre>
-                          
-                        </div>
-                         <div class="leto-width-full">
-                            <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >//node
-const luke = require('luke-lang');
-</code>
-</pre>
-                          
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        
 
              <div class="leto-group leto-horizontal-center leto-vertical-center" name="getit" id="getit">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
@@ -359,6 +339,37 @@ const luke = require('luke-lang');
                 </div>
             </div>
 
+
+
+
+            <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl">
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-bg-yellow leto-text-black leto-m">
+                    <div class="leto-column leto-width-full  leto-ph-xl">
+                        <div class="leto-mv-xxl">
+                            <div class="leto-text-xl">
+                                <b><u>Multi-domain</u></b> with modules for anything . The language is built upon an open module ecosystem that lets you create things for different domains.
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="leto-group leto-width-half leto-horizontal-center leto-mt-xl leto-text-black leto-m">
+                    <div class="leto-column leto-width-full leto-mt-xxl leto-ph-xl">
+                       
+                        <div class="leto-width-full">
+                            <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// Use a module from url or file
+use 'https://url.com/module.luke.js';
+use 'module.luke.js';
+
+print "modules loaded";
+</code>
+</pre>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 <br>
 
