@@ -165,16 +165,16 @@ post {name: "Peter"} to "http://api.com";
               <div class="leto-group leto-horizontal-center leto-vertical-center" v-if="featured.length > 0">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
-                        <div class="leto-width-full leto-horizontal-center leto-scroll-h leto-vertical-center">
+                        <div class="leto-width-full leto-horizontal-center leto-vertical-center">
                             <center>
                               
 
-                                <div class="leto-bubble-wrapper-xxl leto-text-center leto-border-none leto-mh-xxl" v-for="e in featured">
+                                <div class="leto-bubble-wrapper-xxl leto-text-center  leto-border-none leto-mh-xxl" v-for="e in featured">
 
-                                    <div class="leto-bubble-lg leto-border-none">
+                                    <div class="leto-bubble-lg leto-border-none leto-text-dark-grey">
                                         <span class="fa" v-bind:class="'fa-'+e.icon"></span>
                                     </div>
-                                    <label class="leto-text-xl">
+                                    <label class="leto-text-lg leto-text-dark-grey">
                                         {{e.title}}
                                     </label>
                                   
@@ -333,7 +333,7 @@ const luke = require('luke-lang');
              <div class="leto-group leto-horizontal-center leto-vertical-center" name="getit" id="getit">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
-                        <div class="leto-width-full leto-horizontal-center leto-scroll-h leto-vertical-center">
+                        <div class="leto-width-full leto-horizontal-center leto-vertical-center">
                             <center>
                               
 
