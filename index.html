@@ -151,6 +151,7 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js le
     This is a luke script.
 )
 
+// Use a module
 use 'https://rest.luke.js';
 
 post {name: "Peter"} to "http://api.com";
@@ -161,7 +162,45 @@ post {name: "Peter"} to "http://api.com";
             </div>
 
 
+
+
             <div class="leto-text-xl leto-text-center leto-mt-xxl leto-text-dark-grey">
+
+                Build stuff like:
+
+            </div>
+
+              <div class="leto-group leto-horizontal-center leto-vertical-center" v-if="buildFeatured.length > 0">
+                <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
+                    <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
+                        <div class="leto-width-full leto-horizontal-center leto-vertical-center">
+                            <center>
+                              
+
+                                <div class="leto-bubble-wrapper-xxl leto-text-center  leto-border-none leto-mh-xl" v-for="e in buildFeatured">
+
+                                    <div class="leto-bubble-lg leto-border-none leto-text-dark-grey">
+                                        <span class="fa" v-bind:class="'fa-'+e.icon"></span>
+                                    </div>
+                                    <label class="leto-text-lg leto-text-dark-grey">
+                                        {{e.title}}
+                                    </label>
+                                  
+                                </div>
+
+
+
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--div class="leto-text-xl leto-text-center leto-mt-xxl leto-text-dark-grey">
 
                 Runs on:
 
@@ -191,7 +230,7 @@ post {name: "Peter"} to "http://api.com";
                         </div>
                     </div>
                 </div>
-            </div>
+            </div-->
 
 
 
