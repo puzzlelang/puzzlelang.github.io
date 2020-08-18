@@ -4,4 +4,4 @@
 * [Language](./LANGUAGE.md)
 * [Examples](../examples/README.md)
 * [Extend](./EXTEND.md)
-* [Modules...](https://github.com/luke-lang/luke-catalog)
+* [Modules...](https://luke-lang.github.io/luke-catalog)
