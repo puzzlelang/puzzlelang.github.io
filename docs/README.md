@@ -2,21 +2,7 @@
 
 luke as an abstract, extendable programming language and platform that allows custom syntax for domain specific solutions.
 
-
 ***Important:*** The luke project is in early stage and under development. It's not yet production ready. If you'd like to contribute to the code or the module ecosystem, feel free to open a PR.
-
-
-# Table of contents
-
-* [Get started](#get-started)
-* [Language](#language)
-* [Custom modules](#custom-syntax-modules)
-* [Contribute](#contribute)
-* [License](#license)
-
-# Examples
-
-If you'd like to start with an example for every supported environment, see [Quick Start](https://luke-lang.github.io/quickstart)
 
 
 # Get started
