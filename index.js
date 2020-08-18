@@ -30,7 +30,7 @@ var app = new Vue({
         }
     },
     data: {
-        featured: [],
+        featured: [{title:'browsers', icon: 'globe'}, {title:'backends', icon: 'server'}, {title:'terminal', icon: 'terminal'}, {title:'node', icon: 'code'}],
         examples: [],
     	copied:false,
         installFormat:'center',
