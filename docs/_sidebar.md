@@ -1,4 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-* [Examples](../quickstart/Quickstart.md)
-* [Docs](https://raw.githubusercontent.com/luke-lang/luke/master/README.md)
+* [Docs](./README.md)
+* [Examples](../examples/README.md)
+* [Modules](https://raw.githubusercontent.com/luke-lang/luke-catalog/master/Readme.md)
