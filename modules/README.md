@@ -24,8 +24,8 @@ use path/to/<MODULE>.js
 
 # Modules
 
-| Module        | Description           |
-| ------------- |-------------| -----|
+| Module        | Description  |
+| ------------- |-------------| 
 | [Default (built-in)](...) | Default module that contains the basic luke syntax | 
 | [REST]() | ... | 
 
@@ -40,7 +40,7 @@ In order to add your module to this repo, it must comply with the following cond
 * Module main file must be called `index.luke.js`
 * A proper module documentation (Readme.md) must be added to your module directory
 
-## Different environments
+> Different environments
 
 If you have different bundles for different environments (like browser or node) you should name them so.
 
