@@ -4,4 +4,4 @@
 * [Language](./LANGUAGE.md)
 * [Examples](../examples/README.md)
 * [Extend](./EXTEND.md)
-* [Modules](../modules/README.md)
+* [Modules](../MODULES.md)
