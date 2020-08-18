@@ -1,8 +1,4 @@
-# luke modules
-
-A collection of official luke modules.
-
-## How to use modules from here
+## How to use modules
 
 You can directly load your required module remotely (without installation) from this repo or use it locally
 
