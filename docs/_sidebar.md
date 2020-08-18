@@ -1,5 +1,7 @@
 <!-- docs/_sidebar.md -->
 
-* [Docs](./README.md)
+* [Get started](./GETSTARTED.md)
+* [Language](./LANGUAGE.md)
 * [Examples](../examples/README.md)
+* [Extend](./EXTEND.md)
 * [Modules](../modules/README.md)
