@@ -30,9 +30,38 @@ var app = new Vue({
         }
     },
     data: {
-        buildFeatured: [{title:'browser apps', icon: 'globe'}, {title:'terminal apps', icon: 'terminal'}, {title:'backends', icon: 'code'}, {title:'UIs', icon: 'window-restore'}, {title:'automations', icon: 'robot'}, {title:'languages', icon: 'smile'}],
+        buildFeatured: [{title:'browser apps', icon: 'globe'}, {title:'terminal apps', icon: 'terminal'}, {title:'backends', icon: 'code'}, {title:'UIs', icon: 'window-restore'}, {title:'runner scripts', icon: 'robot'}, {title:'DSLs', icon: 'smile'}],
         featured: [{title:'browsers', icon: 'globe'}, {title:'backends', icon: 'server'}, {title:'terminal', icon: 'terminal'}, {title:'node', icon: 'code'}],
-        examples: [],
+        examples: [{title:"browser app", code: `
+<script type="text/x-luke">
+   print "hello world"
+</script>
+`},
+{title:"backend", code: `
+use express.luke.js;
+
+get /test {}
+`},
+{title:"terminal apps", code: `
+$ luke
+> print "welcome..."
+`},
+{title:"UI", code: `
+render (
+    <div>hello world</div>
+)
+
+js ( ... )
+`},
+{title:"custom languages", code: `
+use mylang.luke.js;
+
+....
+`},
+{title:"custom CLIs", code: `
+> add object with name test;
+...
+`}],
     	copied:false,
         installFormat:'center',
         codeExample: "print 'check out some code examples'",
