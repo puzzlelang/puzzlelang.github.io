@@ -30,7 +30,7 @@ var app = new Vue({
         }
     },
     data: {
-        buildFeatured: [{title:'browser apps', icon: 'globe'}, {title:'terminal apps', icon: 'terminal'}, {title:'backends', icon: 'code'}, {title:'UIs', icon: 'window-restore'}, {title:'automations', icon: 'robot'}, {title:'custom languages', icon: 'smile'}],
+        buildFeatured: [{title:'browser apps', icon: 'globe'}, {title:'terminal apps', icon: 'terminal'}, {title:'backends', icon: 'code'}, {title:'UIs', icon: 'window-restore'}, {title:'automations', icon: 'robot'}, {title:'languages', icon: 'smile'}],
         featured: [{title:'browsers', icon: 'globe'}, {title:'backends', icon: 'server'}, {title:'terminal', icon: 'terminal'}, {title:'node', icon: 'code'}],
         examples: [],
     	copied:false,
