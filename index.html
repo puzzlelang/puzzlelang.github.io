@@ -85,7 +85,30 @@
 
 
 
-            <div class="leto-group leto-horizontal-center leto-vertical-center" name="getit" id="getit">
+           
+
+            <div class="leto-group leto-horizontal-center leto-mt-xxl">
+                <div class="leto-two-thirds" v-show="currentPreview==1">
+                            <div class="leto-width-full">
+                                <pre style="border-radius: 10px">
+
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >print (
+    Welcome, developer!
+    This is a luke script.
+)
+
+// Use a module
+use 'https://rest.luke.js';
+
+post {name: "Peter"} to "http://api.com";
+</code>
+</pre>
+                            </div>
+                        </div>
+            </div>
+
+
+             <div class="leto-group leto-horizontal-center leto-vertical-center" name="getit" id="getit">
                 <div class="leto-group leto-width-full leto-horizontal-center leto-vertical-center leto-mt">
                     <div class="leto-column leto-width-full leto-vertical-center leto-mt-lg leto-ph-xl">
                         <div class="leto-width-full leto-horizontal-center leto-vertical-center">
@@ -141,33 +164,12 @@ luke.parse('print hello')`);installFormat='left'"><span class="fab fa-node-js le
 
 
 
-            <div class="leto-group leto-horizontal-center leto-mt-xxl">
-                <div class="leto-two-thirds" v-show="currentPreview==1">
-                            <div class="leto-width-full">
-                                <pre style="border-radius: 10px">
-
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >print (
-    Welcome, developer!
-    This is a luke script.
-)
-
-// Use a module
-use 'https://rest.luke.js';
-
-post {name: "Peter"} to "http://api.com";
-</code>
-</pre>
-                            </div>
-                        </div>
-            </div>
-
-
              <br>
 
             <center>
             <div class="leto-text-xl leto-text-center leto-two-thirds leto-mt-xxl leto-text-dark-grey" name="what" id="what">
 
-                Make simple things simple!
+                Make things simple!
                 <br>
                 luke is a javascript-based programming language that serves as a platform for simple syntax to create anything in an always-abstract way. build stuff like:
 
