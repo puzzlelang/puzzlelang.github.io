@@ -32,7 +32,7 @@ var app = new Vue({
     data: {
         buildFeatured: [{title:'browser apps', icon: 'globe'}, {title:'terminal apps', icon: 'terminal'}, {title:'backends', icon: 'code'}, {title:'UIs', icon: 'window-restore'}, {title:'runner scripts', icon: 'robot'}, {title:'DSLs', icon: 'smile'}],
         featured: [{title:'browsers', icon: 'globe'}, {title:'backends', icon: 'server'}, {title:'terminal', icon: 'terminal'}, {title:'node', icon: 'code'}],
-        examples: [{title:"browser app", code: `
+ /*       examples: [{title:"browser app", code: `
 <script type="text/x-luke">
    print "hello world"
 </script>
@@ -61,7 +61,14 @@ use mylang.luke.js;
 {title:"custom CLIs", code: `
 > add object with name test;
 ...
-`}],
+`}],*/
+        examples: [{title:"Browser apps"},
+{title:"Backends"},
+{title:"Terminal apps"},
+{title:"UIs"},
+{title:"Custom languages"},
+{title:"Custom CLIs"},
+{title:"..."}],
     	copied:false,
         installFormat:'center',
         codeExample: "print 'check out some code examples'",

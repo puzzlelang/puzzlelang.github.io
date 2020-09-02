@@ -440,16 +440,12 @@ print "modules loaded";
                             <center>
                               
 
-                                <div class="leto-card leto-border-none leto-p leto-m leto-bg-black leto-text-left" v-for="e in examples" style="background: #313131;">
+                                <div class="leto-card leto-border-none  leto-text-left" v-for="e in examples" >
 
                                     <div class="leto-text-lg leto-text-center">
                                         <span class="large-icon fa" v-bind:class="'fa-'+e.icon"></span> {{e.title}}
                                     </div>
-                                    <pre >
-<code class="javascript" style="font-size:15px;background:#313131;padding:10px" >
-{{e.code}}
-</code>
-</pre>
+
                                 </div>
 
                             </center>
