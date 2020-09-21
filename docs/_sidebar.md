@@ -4,4 +4,4 @@
 * [Language](./LANGUAGE.md)
 * [Examples](../examples/README.md)
 * [Extend](./EXTEND.md)
-* [Modules...](https://luke-lang.github.io/luke-catalog)
+* [Modules...](https://puzzlelang.github.io/puzzle-catalog)

@@ -1,4 +1,4 @@
 <!-- _navbar.md -->
 
-* [Website](https://luke-lang.org)
-* [Github](https://github.com/luke-lang)
+* [Website](https://puzzlelang.org)
+* [Github](https://github.com/puzzlelang)

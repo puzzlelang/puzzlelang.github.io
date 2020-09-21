@@ -10,5 +10,5 @@
 - Open collaborative platform
 
 
-[GitHub](https://github.com/luke-lang/luke)
-[Docs](#luke)
+[GitHub](https://github.com/puzzlelang/puzzle)
+[Docs](#puzzle)

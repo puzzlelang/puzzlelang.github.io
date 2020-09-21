@@ -2,11 +2,11 @@
 ## Interactive Shell (CLI)
 
 ```shell
-$ npm i luke --global
+$ npm i puzzle --global
 ```
 
 ```shell
-$ luke
+$ puzzle
 $ print "Hello World!"
 "Hello World"
 ```
@@ -14,46 +14,46 @@ $ print "Hello World!"
 ## Run a File
 
 ```shell
-$ npm i luke --global
+$ npm i puzzle --global
 ```
 
 ```javascript
-// hello.luke
-print "I am a luke file"
+// hello.puzzle
+print "I am a puzzle file"
 ```
 
 
 ```shell
-$ luke run hello.luke
-"I am a luke file"
+$ puzzle run hello.puzzle
+"I am a puzzle file"
 ```
 
 
 ## Embedded (JavaScript)
 
-luke scripts can also be run inside JavaScript
+puzzle scripts can also be run inside JavaScript
 
 > Node
 
 ```javascript
-npm i luke --save
+npm i puzzle --save
 ```
 
 ```javascript
-luke.parse('print "Hello, I am embedded"')
+puzzle.parse('print "Hello, I am embedded"')
 ```
 
 
 > Browsers
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js">
+<script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js">
 ```
 
 ```javascript
 // For Node.js
-const luke = require('luke-lang');
+const puzzle = require('puzzle-lang');
 
 // For browsers:
-<script src="luke.js"/>
+<script src="puzzle.js"/>
 ```

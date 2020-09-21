@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="newlogo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>luke</title>
+    <title>puzzle</title>
     <link rel="icon" 
       type="image/png" 
-      href="icons/lk.png">
+      href="icons/puzzle-invert.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
@@ -56,27 +56,27 @@
             <div class="leto-card leto-bg-black leto-width-full leto-text-white leto-border-none leto-pb-none leto-roundness-md leto-p-xl">
                 <div class="leto-group leto-vertical-center">
                     <div class="leto-mr-lg">
-                        <img src="icons/lk.png" style="height:80px">
+                        <img src="icons/puzzle-invert.png" style="height:100px">
                     </div>
                     <div class="leto-left leto-mb-sm">
                     </div>
                     <a class="leto-mh-sm" href="#what">
                         <div class="leto-button leto-border-none">What?</div>
                     </a>
-                    <a class="leto-mh-sm" target="_blank" href="https://luke-lang.github.io/modules">
+                    <a class="leto-mh-sm" target="_blank" href="https://puzzle-lang.github.io/modules">
                         <div class="leto-button leto-border-none">Modules</div>
                     </a>
-                    <a class="leto-mh-sm" target="_blank" href="https://luke-lang.github.io/docs">
+                    <a class="leto-mh-sm" target="_blank" href="https://puzzle-lang.github.io/docs">
                         <div class="leto-button leto-border-none">Docs</div>
                     </a>
                     <!--a class="leto-mh-sm">
                         Docs
                     </a-->
                 </div>
-                <div class="leto-group leto-horizontal-center leto-mt-xl">
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xl">
                     <div class="leto-group leto-mt-xxl">
                         <div class=" leto-text-xxl leto-text-center">
-                            An abstract programming language that makes things simple
+                            An abstract programming language that makes things simple. Runs on javascript engines.
                         </div>
                     </div>
                 </div>
@@ -94,11 +94,11 @@
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >print (
     Welcome, developer!
-    This is a luke script.
+    This is a puzzle script.
 )
 
 // Use a module
-use 'https://rest.luke.js';
+use 'https://rest.puzzle.js';
 
 post {name: "Peter"} to "http://api.com";
 </code>
@@ -116,41 +116,41 @@ post {name: "Peter"} to "http://api.com";
                                 <div class="leto-block">
                                     <!--div class="leto-button" v-on:click="showInstallOptions = !showInstallOptions">&nbsp; Start coding &nbsp;<span class="fa fa-chevron-down leto-pr-sm" v-bind:class="{'fa-chevron-up' : showInstallOptions}"></span></div>
 
-                                     <a class="leto-button" target="_blank" href="https://luke-lang.github.io/docs"><span class="fa fa-book leto-pr-sm"></span> Learn</a-->
+                                     <a class="leto-button" target="_blank" href="https://puzzle-lang.github.io/docs"><span class="fa fa-book leto-pr-sm"></span> Learn</a-->
 
                                         <div class="leto-text-xl leto-text-dark-grey leto-mb-xxl">Get started:</div>
 
                                 </div>
                                 <span v-if="showInstallOptions || true">
 
-                                    <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`$ npm i luke-lang -g
+                                    <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`$ npm i puzzle-lang -g
 
-$ luke run myfile.luke;
+$ puzzle run myfile.puzzle;
 $ # or
-$ luke
+$ puzzle
 > print hello`);installFormat='left'"><div class="leto-bubble-md"><span class="fa fa-terminal"></span></div> <label>Terminal</label></div>
 
                                  
-                                    <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js\'>
+                                    <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`<script src=\'https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js\'>
 
-<script type='text/x-luke'>
+<script type='text/x-puzzle'>
     print hello
 </script>
 
-<script type='text/x-luke' src='myfile.luke' />`);installFormat='left'"><div class="leto-bubble-md"><span class="fa fa-code"></span></div> <label>Browser</label></div>
+<script type='text/x-puzzle' src='myfile.puzzle' />`);installFormat='left'"><div class="leto-bubble-md"><span class="fa fa-code"></span></div> <label>Browser</label></div>
 
- <!--div class="leto-button" v-on:click="showInstall(`luke bundle desktop`);installFormat='left'"><span class="fa fa-desktop leto-pr-sm"></span> Desktop</div-->
+ <!--div class="leto-button" v-on:click="showInstall(`puzzle bundle desktop`);installFormat='left'"><span class="fa fa-desktop leto-pr-sm"></span> Desktop</div-->
 
-   <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`$ npm i luke-lang --save
+   <div class="leto-bubble-wrapper-lg leto-mh leto-click" v-on:click="showInstall(`$ npm i puzzle-lang --save
 
-const luke = require('luke-lang')
-luke.parse('print hello')`);installFormat='left'"><div class="leto-bubble-md"><span class="fab fa-node-js"></span></div> <label>Node</label></div>
+const puzzle = require('puzzle-lang')
+puzzle.parse('print hello')`);installFormat='left'"><div class="leto-bubble-md"><span class="fab fa-node-js"></span></div> <label>Node</label></div>
                                    
-                                    <a href="https://luke-lang.github.io/lx" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-window-restore"></span></div> <label>Web IDE</label> </a>
+                                    <a href="https://puzzle-lang.github.io/lx" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-window-restore"></span></div> <label>Web IDE</label> </a>
 
-                                     <a href="https://luke-lang.github.io/lx/cli" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-globe "></span></div> <label>Web CLI</label> </a>
+                                     <a href="https://puzzle-lang.github.io/lx/cli" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-globe "></span></div> <label>Web CLI</label> </a>
 
-                                      <a href="https://luke-lang.github.io/lx/runner" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-robot"></span></div> <label>Script Runner</label></a>
+                                      <a href="https://puzzle-lang.github.io/lx/runner" target="_blank" class="leto-bubble-wrapper-lg leto-mh leto-click"><div class="leto-bubble-md"><span class="fa fa-robot"></span></div> <label>Script Runner</label></a>
                                     
                                    
                   
@@ -176,7 +176,7 @@ luke.parse('print hello')`);installFormat='left'"><div class="leto-bubble-md"><s
 
                 Make things simple!
                 <br>
-                luke is a javascript-based programming language that serves as a platform for simple syntax to create anything in an always-abstract way. build stuff like:
+                puzzle is a javascript-based programming language that serves as a platform for simple syntax to create anything in an always-abstract way. build stuff like:
 
             </div>
             </center>
@@ -257,7 +257,7 @@ luke.parse('print hello')`);installFormat='left'"><div class="leto-bubble-md"><s
                             <div class="leto-width-full">
                                 <pre style="border-radius: 10px">
 
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >use 'https://objy.luke.js';
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >use 'https://objy.puzzle.js';
 
 define object;
 
@@ -272,7 +272,7 @@ add object with name "test";
                     <div class="leto-column leto-width-full  leto-ph-xl">
                         <div class="leto-mv-xxl">
                             <div class="leto-text-xl">
-                                In luke, <b><u>abstraction</u></b> is everything!
+                                In puzzle, <b><u>abstraction</u></b> is everything!
                                 <br>
                                 The syntax is lightweight and simple. It allows anyone to easily build stuff easily.
                             </div>
@@ -286,7 +286,7 @@ add object with name "test";
                     <div class="leto-column leto-width-full  leto-ph-xl">
                         <div class="leto-mv-xxl">
                             <div class="leto-text-xl">
-                                Runs on <b><u>many platforms</u></b>.<br>Since luke itself runs on javascript, luke applications can be run in any JS environment, like browsers or node.
+                                Runs on <b><u>many platforms</u></b>.<br>Since puzzle itself runs on javascript, puzzle applications can be run in any JS environment, like browsers or node.
                             </div>
                       
                         </div>
@@ -297,7 +297,7 @@ add object with name "test";
                        
                         <div class="leto-width-full">
                             <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >&lt;script type="text/x-luke"&gt;
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >&lt;script type="text/x-puzzle"&gt;
     print "hello world";
 &lt;/script&gt;
 </code>
@@ -306,14 +306,14 @@ add object with name "test";
                         </div>
 <div class="leto-width-full">
                             <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >$ luke run file.luke
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >$ puzzle run file.puzzle
 </code>
 </pre>
                           
                         </div>
                          <div class="leto-width-full">
                             <pre style="border-radius: 10px">
-<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >const luke = require('luke-lang');
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >const puzzle = require('puzzle-lang');
 </code>
 </pre>
                           
@@ -344,7 +344,7 @@ $: {
                             <pre style="border-radius: 10px">
 
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// 2. Use your syntax as module
-use mymodule.luke.js;
+use mymodule.puzzle.js;
 echo "hello";
 </code>
 </pre>
@@ -417,8 +417,8 @@ echo "hello";
                         <div class="leto-width-full">
                             <pre style="border-radius: 10px">
 <code class="javascript" style="font-size:20px;background:#232323;padding:20px" >// Use a module from url or file
-use 'https://url.com/module.luke.js';
-use 'module.luke.js';
+use 'https://url.com/module.puzzle.js';
+use 'module.puzzle.js';
 
 print "modules loaded";
 </code>
@@ -458,17 +458,19 @@ print "modules loaded";
     </div>
     <div class="leto-container-full leto-p-xl leto-mt-xl">
         <div class="leto-group leto-horizontal-center">
-            <a target="_blank" href="https://luke-lang.github.io/docs" class="leto-button leto-ml-none">
-                Learn luke
+            <a target="_blank" href="https://puzzle-lang.github.io/docs" class="leto-button leto-ml-none">
+                Learn puzzle
             </a>
             <a href="#app" v-on:click="showInstallOptions=true" class="leto-button leto-ml-none">
-                Get luke
+                Get puzzle
             </a>
-             <a href="https://github.com/luke-lang" v-on:click="showInstallOptions=true" class="leto-button leto-ml-none">
+             <a href="https://github.com/puzzle-lang" v-on:click="showInstallOptions=true" class="leto-button leto-ml-none">
                 <span class="fab fa-github"></span>
             </a>
         </div>
-        <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl leto-text-center">luke is open source and released under the MIT License. &copy; luke collaborators</div>
+        <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl leto-text-center">puzzle is open source and released under the MIT License. &copy; puzzle collaborators</div>
+
+      
     </div>
     </div>
     <script>

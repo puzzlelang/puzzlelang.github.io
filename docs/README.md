@@ -1,22 +1,22 @@
-# luke
+# puzzle
 
-luke as an abstract, extendable programming language and platform that allows custom syntax for domain specific solutions.
+puzzle as an abstract, extendable programming language and platform that allows custom syntax for domain specific solutions.
 
-***Important:*** The luke project is in early stage and under development. It's not yet production ready. If you'd like to contribute to the code or the module ecosystem, feel free to open a PR.
+***Important:*** The puzzle project is in early stage and under development. It's not yet production ready. If you'd like to contribute to the code or the module ecosystem, feel free to open a PR.
 
 
 # Get started
 
-luke runs on JavaScript Engines and can be used on Node, Browsers and via it's CLI.
+puzzle runs on JavaScript Engines and can be used on Node, Browsers and via it's CLI.
 
 ## Interactive Shell (CLI)
 
 ```shell
-$ npm i luke --global
+$ npm i puzzle --global
 ```
 
 ```shell
-$ luke
+$ puzzle
 $ print "Hello World!"
 "Hello World"
 ```
@@ -24,56 +24,56 @@ $ print "Hello World!"
 ## Run a File
 
 ```shell
-$ npm i luke --global
+$ npm i puzzle --global
 ```
 
 ```javascript
-// hello.luke
-print "I am a luke file"
+// hello.puzzle
+print "I am a puzzle file"
 ```
 
 
 ```shell
-$ luke run hello.luke
-"I am a luke file"
+$ puzzle run hello.puzzle
+"I am a puzzle file"
 ```
 
 
 ## Embedded (JavaScript)
 
-luke scripts can also be run inside JavaScript
+puzzle scripts can also be run inside JavaScript
 
 > Node
 
 ```javascript
-npm i luke --save
+npm i puzzle --save
 ```
 
 ```javascript
-luke.parse('print "Hello, I am embedded"')
+puzzle.parse('print "Hello, I am embedded"')
 ```
 
 
 > Browsers
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js">
+<script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js">
 ```
 
 ```javascript
 // For Node.js
-const luke = require('luke-lang');
+const puzzle = require('puzzle-lang');
 
 // For browsers:
-<script src="luke.js"/>
+<script src="puzzle.js"/>
 ```
 
 
 # Language
 
-The luke language aims to provide simple language to build solutions that are taylored for different domains and problems.
+The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems.
 
-The main concepts of luke are:
+The main concepts of puzzle are:
 
 
 * ***Simple language design, understandable for developers and non-developers***
@@ -83,15 +83,15 @@ The main concepts of luke are:
 
 ## syntax
 
-The luke syntax is designed to be simple and easily understandable for developers and non-developers. Luke scripts are built up on different statements that execute something in the background.
+The puzzle syntax is designed to be simple and easily understandable for developers and non-developers. puzzle scripts are built up on different statements that execute something in the background.
 Each statement consists of simple, mostly natual word-based commands, like `write file hello.txt 'world';`
 
 ## statements
 
-luke scripts are split up into multiple statements, delimited by a semicolon (`;`). 
+puzzle scripts are split up into multiple statements, delimited by a semicolon (`;`). 
 Each statement can be single line or multiline, as long as it terminates with a semicolon.
 
-```luke
+```puzzle
 print "this is a single line stamement. It ends with a semicolon";
 
 print (
@@ -108,7 +108,7 @@ Statements can have different literals as dynamic input. These literals can be o
 
 These are literals that are contained in a single word or number. Note, that single-worded texts don't need to be written in quotes.
 
-```luke
+```puzzle
 // single-part literals
 print hello;
 print 1;
@@ -121,7 +121,7 @@ These are literals that can consist of multiple parts, like multiple words, line
 
 Multi-part literals must be wrappen in any of these: `""`, `()`, `{}`.
 
-```luke
+```puzzle
 // equivalent multi word example:
 print "hello world";
 print (hello world);
@@ -133,13 +133,13 @@ print (
 );
 ```
 
-> Single-part literals can also be written in the multi-part notation, like `print (hello)` or `use "module.luke.js"`
+> Single-part literals can also be written in the multi-part notation, like `print (hello)` or `use "module.puzzle.js"`
 
 ***code literals***
 
 Code literals define sub scripts that can be used in conditions or loops. They are also wrappen in `""`, `()` or `{}`
 
-```luke
+```puzzle
 while (3>2 AND 4>3) ...
 while "3>2 AND 4>3" ...
 while {3>2 AND 4>3} ...
@@ -148,12 +148,12 @@ while {3>2 AND 4>3} ...
 
 ## modules
 
-The luke language is based upon an open mapper ecosystem.
+The puzzle language is based upon an open mapper ecosystem.
 
 Each module is designed to archieve a specific (mostly domain-specific) goal and brings it's own syntax. 
-Any luke script can use multiple modules, loaded from a remote server or a local file.
+Any puzzle script can use multiple modules, loaded from a remote server or a local file.
 
-```luke
+```puzzle
 // remove module
 use https://afasf.com/module.js;
 
@@ -163,7 +163,7 @@ use module.js;
 
 If you'd like to cache a module, use the `permanent` option:
 
-```luke
+```puzzle
 use permanent https://afasf.com/module.js;
 ```
 
@@ -172,14 +172,14 @@ This will save the module inside a persistent context and make it available, eve
 
 ***Default module***
 
-> luke comes with a built-in default module, which is always initalized. The default module contains some basic functionalities and is available in any other namespace. [ Full reference ](https://luke-lang.github.io/modules)
+> puzzle comes with a built-in default module, which is always initalized. The default module contains some basic functionalities and is available in any other namespace. [ Full reference ](https://puzzle-lang.github.io/modules)
 
 
 ## namespaces
 
 Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
 
-```luke
+```puzzle
 ns mynamespace;
 // namespace will be available here
 ```
@@ -187,8 +187,8 @@ A namespace will be active until another one is set using `ns`.
 
 Note, that after loading a module using `use` will automatically set that modules namespace for you.
 
-```luke
-use mymodule.luke.js;
+```puzzle
+use mymodule.puzzle.js;
 // the mymodule namespace will automatically bbe available here.
 ```
 
@@ -196,7 +196,7 @@ use mymodule.luke.js;
 
 Comments can be written using `//`
 
-```luke
+```puzzle
 // this is a comment
 ```
 
@@ -204,9 +204,9 @@ Comments can be written using `//`
 
 Files can be writen, read and removed.
 
-> In Node, file access is native. In browsers, there is no access to the device's real filesystem. However, luke handles files and directories directly inside the browser's `indexedDb`
+> In Node, file access is native. In browsers, there is no access to the device's real filesystem. However, puzzle handles files and directories directly inside the browser's `indexedDb`
 
-```luke
+```puzzle
 mkdir /test;
 
 write file /test/hello.txt "word";
@@ -214,7 +214,7 @@ read file /test/hello.txt;
 remove file /test/hello.txt;
 ```
 
-```luke
+```puzzle
 // this is a comment
 ```
 
@@ -224,7 +224,7 @@ Conditional code execution can be used with the following pattern:  `if CONDITIO
 
 A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
 
-```luke
+```puzzle
 // single-part literal condition
 if 1<2 then (print true);
 
@@ -242,7 +242,7 @@ if (1<2 OR 2==2) then "print true" else {print false};
 
 Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
 
-```luke
+```puzzle
 // single-part literal condition
 while 1>0 do (print running);
 
@@ -255,21 +255,21 @@ while (1<2 OR 2==2) do {
 
 ## reusing code
 
-Luke scripts can be included into other luke scripts for code reusage using `include`
+puzzle scripts can be included into other puzzle scripts for code reusage using `include`
 
-```luke
+```puzzle
 // local
-include otherscript.luke;
+include otherscript.puzzle;
 
 or remote
-include https://domain.com/otherscript.luke;
+include https://domain.com/otherscript.puzzle;
 ```
 
 ## variables
 
 Variables are set using the `var` keyword.
 
-```luke
+```puzzle
 var name Peter;
 print name;
 // will output Peter
@@ -279,7 +279,7 @@ print name;
 
 Functions are defines with `func`.
 
-```luke
+```puzzle
 func sayHello (param) { print param }
 
 //or
@@ -293,10 +293,10 @@ sayHello(hello);
 
 # Custom modules
 
-The luke language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
+The puzzle language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
 
 
-![module packing](https://raw.githubusercontent.com/luke-lang/luke/master/assets/images/module-packing.png "Custom syntax becomes a module")
+![module packing](https://raw.githubusercontent.com/puzzle-lang/puzzle/master/assets/images/module-packing.png "Custom syntax becomes a module")
 
 
 ## Create a syntax
@@ -359,7 +359,7 @@ Following tokens can either be wildcards for user input (`{param}`) or another t
 These instructions let you create token chains and build your own syntax.
 
 
-```luke
+```puzzle
 
 |-------------- Statement ------------|
 
@@ -374,18 +374,18 @@ command  command  command command delimeter;
 
 ## Publish syntax as module
 
-Your custom syntax modules can be contributed to the official luke module repo.
+Your custom syntax modules can be contributed to the official puzzle module repo.
 
-Learn more: [ Luke Module Repo](https://luke-lang.github.io/modules)
+Learn more: [ puzzle Module Repo](https://puzzle-lang.github.io/modules)
 
 # Contribute
 
-You are welcome to contribute to the luke language and ecosystem. Make sure you familiarize yourself with the [Contribution Guidelines](.github/CONTRIBUTE.md) before opening a PR or Issue.
+You are welcome to contribute to the puzzle language and ecosystem. Make sure you familiarize yourself with the [Contribution Guidelines](.github/CONTRIBUTE.md) before opening a PR or Issue.
 
 # License
 
-luke is open source and released under the MIT License.
+puzzle is open source and released under the MIT License.
 
-[ See the license ](https://github.com/luke-lang/luke/blob/master/LICENSE)
+[ See the license ](https://github.com/puzzle-lang/puzzle/blob/master/LICENSE)
 
-Copyright (c) 2020 - present, Marco Boelling + all luke contributors
+Copyright (c) 2020 - present, Marco Boelling + all puzzle contributors
