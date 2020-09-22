@@ -30,7 +30,7 @@ post {name: "Peter"} to "http://api.com";</code>
 
 
 - ✌️ &nbsp; A language made for both devs and non-devs
-- 🔧 &nbsp; Create learly anything from frontends to backends
+- 🔧 &nbsp; Create nearly anything from frontends to backends
 - 📦 &nbsp; Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
 
 <!--Build stuff like 🌐 Web Apps, 🤖 Backends, 🧯 UIs, 📟 CLIs, 📦 embedded languages-->
