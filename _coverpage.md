@@ -29,7 +29,7 @@ post {name: "Peter"} to "http://api.com";</code>
 
 
 - ✌️ Simple language design, easily adoptable
-- 🔧 Extendable with custom domain-specific code
+- 🔧 Abstract programming model for simple programming
 - 📦 Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
 
 <!--Build stuff like 🌐 Web Apps, 🤖 Backends, 🧯 UIs, 📟 CLIs, 📦 embedded languages-->
