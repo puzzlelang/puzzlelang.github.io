@@ -1,9 +1,9 @@
 # Custom modules
 
-The luke language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
+The puzzle language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
 
 
-![module packing](https://raw.githubusercontent.com/luke-lang/luke/master/assets/images/module-packing.png "Custom syntax becomes a module")
+![module packing](https://raw.githubusercontent.com/puzzle-lang/puzzle/master/assets/images/module-packing.png "Custom syntax becomes a module")
 
 
 ## Create a syntax
@@ -66,7 +66,7 @@ Following tokens can either be wildcards for user input (`{param}`) or another t
 These instructions let you create token chains and build your own syntax.
 
 
-```luke
+```puzzle
 
 |-------------- Statement ------------|
 
@@ -81,6 +81,6 @@ command  command  command command delimeter;
 
 ## Publish syntax as module
 
-Your custom syntax modules can be contributed to the official luke module repo.
+Your custom syntax modules can be contributed to the official puzzle module repo.
 
-Learn more: [ Luke Module Repo](https://luke-lang.github.io/modules)
+Learn more: [ puzzle Module Repo](https://github.com/puzzlelang/modules)

@@ -1,13 +1,13 @@
 # Examples
 
-This is a collection of examples for using luke on different platforms.
+This is a collection of examples for using puzzle on different platforms.
 
 > Before running any of these examples you should familiarize yourself with the [Installation Instructions]()
 
 ## "Hello World" in the CLI
 
 ```shell
-$ luke
+$ puzzle
 > print "hello world"
 ```
 
@@ -18,11 +18,11 @@ $ luke
 ```html
 <html>
   <head>
-  	<!-- Include luke -->
-    <script src="https://cdn.jsdelivr.net/gh/luke-lang/luke/luke.browser.js" />
+  	<!-- Include puzzle -->
+    <script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js" />
 
     <!-- write your script -->
-    <script type="text/x-luke">
+    <script type="text/x-puzzle">
       print "hello world";
     </script>
   </head>
@@ -34,9 +34,9 @@ $ luke
 
 
 ```javascript
-const luke = require('luke-lang');
+const puzzle = require('puzzle-lang');
 
-luke.parse(`
+puzzle.parse(`
   print "hello world";
 `)
 ```
