@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 ![logo](puzzle-invert.png)
-<h1>PUZZLE</h1>
+<h1>PUZZLE lang</h1>
 
 > A simple language for <i>abstract programming</i> on any javascript-based environment
 
@@ -10,8 +10,9 @@
 <div style="padding:20px;border-radius:5px;text-align:left !important;min-width:600px !important;max-width:100% !important;display:inline-block;background:#222222">
 <pre>
 <code>print (
-    Welcome, developer!
-    This is a puzzle script.
+    Anyone can be a puzzle developer!
+    Check out puzzle any learn how you
+    can turn your idea into reality.
 )
 
 // Use a module
@@ -28,14 +29,14 @@ post {name: "Peter"} to "http://api.com";</code>
 <br-->
 
 
-- ✌️ Simple language design, easily adoptable
-- 🔧 Abstract programming model for simple programming
-- 📦 Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
+- ✌️ &nbsp; A language made for both devs and non-devs
+- 🔧 &nbsp; Create learly anything from frontends to backends
+- 📦 &nbsp; Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
 
 <!--Build stuff like 🌐 Web Apps, 🤖 Backends, 🧯 UIs, 📟 CLIs, 📦 embedded languages-->
 
 <br>
 
 [Install](README)
-[Web Runner](https://puzzlelang.github.io/lx)
+[Run in Web](https://puzzlelang.github.io/lx)
 [Learn](LANGUAGE)

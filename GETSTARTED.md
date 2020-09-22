@@ -1,3 +1,6 @@
+## What is puzzle
+
+## What can I do with puzzle
 
 ## Interactive Shell (CLI)
 
