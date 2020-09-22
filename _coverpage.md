@@ -39,5 +39,5 @@ post {name: "Peter"} to "http://api.com";</code>
 
 [Learn](LANGUAGE)
 [Install](README)
-[Run in Web](https://puzzlelang.github.io/lx)
+[Run in Web](https://puzzlelang.github.io/puzzle-web/cli)
 
