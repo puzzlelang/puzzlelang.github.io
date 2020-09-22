@@ -1,14 +1,27 @@
 # Language
 
-The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems.
-
-The main concepts of puzzle are:
+The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems. The main concepts of puzzle are:
 
 
 * ***Simple language design, understandable for developers and non-developers***
 * ***Custom syntax creation***
 * ***Open and free platform for modules***
 
+
+> A quick example
+
+```puzzle
+// Output something
+print 'Welcome future puzzle developer!';
+
+// Include a thrid party module (local or remote)
+use 'https://url.com/module.js';
+
+// stora a variable
+var name 'Marco';
+
+//
+```
 
 ## syntax
 

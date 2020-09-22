@@ -29,11 +29,10 @@ $ puzzle run hello.puzzle
 ```
 
 
-## Embedded (JavaScript)
+## Node
 
 puzzle scripts can also be run inside JavaScript
 
-> Node
 
 ```javascript
 npm i puzzle --save
@@ -44,16 +43,23 @@ puzzle.parse('print "Hello, I am embedded"')
 ```
 
 
-> Browsers
+## Browser
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js">
 ```
 
+> Embedded
+
 ```javascript
 // For Node.js
-const puzzle = require('puzzle-lang');
+puzzle.parse('print hello')
+```
 
-// For browsers:
-<script src="puzzle.js"/>
+> As script tag
+
+```javascript
+<script type="text/x-puzzle" >
+	print hello
+</script>
 ```
