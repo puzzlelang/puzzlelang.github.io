@@ -1,6 +1,3 @@
-[submodule "lx"]
-	path = lx
-	url = https://github.com/4ty711/lx.git
-[submodule "luke-catalog"]
-	path = luke-catalog
-	url = https://github.com/luke-lang/luke-catalog.git
+[submodule "puzzle-web"]
+	path = puzzle-web
+	url = https://github.com/4ty711/puzzle-web.git
