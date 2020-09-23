@@ -16,7 +16,7 @@ Puzzle allows you to develop literally any kind of software that runs in JavaScr
 * Create and package custom languages (DSLs)
 * etc ...
 
-# Install
+# Usage
 
 Puzzle can be installed standalone or for embedded use. See the details below.
 

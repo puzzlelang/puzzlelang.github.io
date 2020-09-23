@@ -1,14 +1,17 @@
-# Custom modules
+# Custom syntax
 
-The puzzle language is a platform for different syntax. Each syntax ist delivered using a module. Basically any module syntax can be different, however they are all aimed at simplicity.
+> Puzzle is a language that can dynamically be extended with custom syntax!
+
+Besides being a simple language, puzzle is also a platform for custom syntax. 
+Each syntax is delivered as a module, that can be used in any puzzle script with `use my_module.js`.
 
 
-![module packing](https://raw.githubusercontent.com/puzzle-lang/puzzle/master/assets/images/module-packing.png "Custom syntax becomes a module")
+![module packing](https://raw.githubusercontent.com/puzzlelang/puzzle/master/assets/images/module-packing.png "Custom syntax becomes a module")
 
 
 ## Create a syntax
 
-Building your own custom syntax is fairly simple. It's defined using a JavaScript Object with a common structure.
+Building your own custom syntax is fairly simple. It's defined with a JavaScript object that follows a given structure.
 
 ```javascript
 syntax = {
@@ -79,8 +82,18 @@ command  command  command command delimeter;
 
 ```
 
+## Use a syntax
+
+Custom syntax (modules) can be used in any puzzle script, loaded locally or remotely
+
+```puzzle
+use my_module.js;
+
+use https://url.com/my_module.js;
+```
+
 ## Publish syntax as module
 
 Your custom syntax modules can be contributed to the official puzzle module repo.
 
-Learn more: [ puzzle Module Repo](https://github.com/puzzlelang/modules)
+Learn more: [ puzzle Module Repo](https://github.com/puzzlelang/puzzle-catalog)

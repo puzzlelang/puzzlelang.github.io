@@ -194,6 +194,15 @@ while (1<2 OR 2==2) do {
 };
 ```
 
+## javascript code
+
+Executes JavaScript code using `js`
+
+```puzzle
+js (
+	console.log('I am JavaScript!')
+)
+```
 
 ## reusing code
 

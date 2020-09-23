@@ -3,7 +3,7 @@
 ![logo](puzzle-invert.png)
 <h1>PUZZLE</h1>
 
-> A simple language for <i>abstract programming</i> on any javascript-based environment
+> A simple , extendable language for <i>abstract programming</i> on any javascript-based environment
 
 <br>
 
@@ -12,10 +12,11 @@
 <code>print (
     Anyone can be a puzzle developer!
     Check out puzzle any learn how you
-    can turn your idea into reality.
+    can turn your idea into reality or
+    even build your own language
 )
 
-// Use a module
+// Example: Use a module
 use 'https://rest.puzzle.js';
 
 post {name: "Peter"} to "http://api.com";</code>
@@ -29,7 +30,7 @@ post {name: "Peter"} to "http://api.com";</code>
 <br-->
 
 
-- ✌️ &nbsp; A language made for both devs and non-devs
+- ✌️ &nbsp; A simple language that is <u>dynamically extendable</u>
 - 🔧 &nbsp; Create nearly anything from frontends to backends
 - 📦 &nbsp; Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
 
@@ -39,5 +40,6 @@ post {name: "Peter"} to "http://api.com";</code>
 
 [About](#what-is-puzzle)
 [Learn](LANGUAGE)
-[Install](#install)
+[Customize](EXTEND)
+[Install](#Usage)
 
