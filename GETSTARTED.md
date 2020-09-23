@@ -23,7 +23,7 @@ Puzzle can be installed standalone or for embedded use. See the details below.
 ## Interactive Shell (CLI)
 
 ```shell
-$ npm i puzzle --global
+$ npm i puzzlelang --global
 ```
 
 ```shell
@@ -35,7 +35,7 @@ $ print "Hello World!"
 ## Run a File
 
 ```shell
-$ npm i puzzle --global
+$ npm i puzzlelang --global
 ```
 
 ```javascript
@@ -56,10 +56,12 @@ puzzle scripts can also be run inside JavaScript
 
 
 ```javascript
-npm i puzzle --save
+npm i puzzlelang --save
 ```
 
 ```javascript
+puzzle = require('puzzlelang');
+
 puzzle.parse('print "Hello, I am embedded"')
 ```
 
@@ -67,7 +69,7 @@ puzzle.parse('print "Hello, I am embedded"')
 ## Browser
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js">
+<script src="https://cdn.jsdelivr.net/gh/puzzlelang/puzzle/puzzle.browser.js">
 ```
 
 > Embedded
