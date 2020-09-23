@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 ![logo](puzzle-invert.png)
-<h1>PUZZLE lang</h1>
+<h1>PUZZLE</h1>
 
 > A simple language for <i>abstract programming</i> on any javascript-based environment
 
@@ -37,7 +37,7 @@ post {name: "Peter"} to "http://api.com";</code>
 
 <br>
 
+[About](#what-is-puzzle)
 [Learn](LANGUAGE)
-[Install](README)
-[Run in Web](https://puzzlelang.github.io/puzzle-web/cli)
+[Install](#install)
 
