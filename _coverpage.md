@@ -1,22 +1,15 @@
 <!-- _coverpage.md -->
 
 ![logo](puzzle-invert.png)
-<h1>PUZZLE</h1>
 
-> A simple , extendable language for <i>abstract programming</i> on any javascript-based environment
+> An abstract programming language that is <i>simple</i>, <i>customizable</i> and <i>extendable</i>
 
 <br>
 
 <div style="padding:20px;border-radius:5px;text-align:left !important;min-width:600px !important;max-width:100% !important;display:inline-block;background:#222222">
 <pre>
-<code>print (
-    Anyone can be a puzzle developer!
-    Check out puzzle any learn how you
-    can turn your idea into reality or
-    even build your own language
-)
+<code>if meaning_of_life==42 then print "welcome to puzzle"
 
-// Example: Use a module
 use 'https://rest.puzzle.js';
 
 post {name: "Peter"} to "http://api.com";</code>
@@ -42,4 +35,3 @@ post {name: "Peter"} to "http://api.com";</code>
 [Learn](LANGUAGE)
 [Customize](EXTEND)
 [Install](#Usage)
-
