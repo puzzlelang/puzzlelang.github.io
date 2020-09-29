@@ -33,5 +33,4 @@ post {name: "Peter"} to "http://api.com";</code>
 
 [About](#what-is-puzzle)
 [Learn](LANGUAGE)
-[Customize](EXTEND)
-[Install](#Usage)
+[Get started](#Usage)

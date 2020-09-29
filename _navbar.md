@@ -2,6 +2,6 @@
 
 * [Learn](./LANGUAGE.md)
 * [Examples](../examples/README.md)
-* [Extend](./EXTEND.md)
+* [Customize](./EXTEND.md)
 * [Modules](https://github.com/puzzlelang/puzzle-catalog)
 * [Github](https://github.com/puzzlelang/puzzle)
