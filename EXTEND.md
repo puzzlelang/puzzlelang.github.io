@@ -91,15 +91,6 @@ command  command  command command delimeter;
 
 ```
 
-## Use a syntax
-
-Custom syntax (modules) can be used in any puzzle script, loaded locally or remotely
-
-```puzzle
-use my_module.js;
-
-use https://url.com/my_module.js;
-```
 
 ## Publish syntax as module
 
