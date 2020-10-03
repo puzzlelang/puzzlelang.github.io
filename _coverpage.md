@@ -23,9 +23,8 @@ post {name: "Peter"} to "http://api.com";</code>
 <br-->
 
 
-- ✌️ &nbsp; A simple language that is <u>dynamically extendable</u>
-- 🔧 &nbsp; Create nearly anything from frontends to backends
-- 📦 &nbsp; Runs: <u>Standalone</u>, <u>Packaged</u>, or in <u>Node</u>, <u>Browsers</u>
+
+ 📦 &nbsp; Runs: <i>Standalone</i>, <i>Packaged</i>, or on <i>Node.js</i> and <i>Browsers</i>
 
 <!--Build stuff like 🌐 Web Apps, 🤖 Backends, 🧯 UIs, 📟 CLIs, 📦 embedded languages-->
 
