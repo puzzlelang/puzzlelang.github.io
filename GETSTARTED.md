@@ -5,6 +5,8 @@ The language design is both simple and versatile, making it easy for developers 
 
 Besides being an abstract programming lanugage, puzzle is also a platform for custom modules that can use their own individual syntax.
 
+![Puzzle architecture](https://puzzlelang.github.io/puzzle-code-feature.png)
+
 # What can I do with puzzle
 
 Puzzle allows you to develop literally any kind of software that runs in JavaScript engines, like browsers or Node.
