@@ -4,7 +4,7 @@ This is a collection of examples for using puzzle on different platforms.
 
 > Before running any of these examples you should familiarize yourself with the [Installation Instructions]()
 
-## "Hello World" in the CLI
+## A CLI script
 
 ```shell
 $ puzzle
@@ -12,7 +12,7 @@ $ puzzle
 ```
 
 
-## "Hello World" in the Browser
+## Simple browser script
 
 
 ```html
@@ -30,7 +30,7 @@ $ puzzle
 ```
 
 
-## "Hello World" in Node
+## Simple Node.js script
 
 
 ```javascript
