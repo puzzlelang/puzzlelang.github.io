@@ -67,7 +67,9 @@ puzzle.parse(`
 
 Let's create a custom little language that prints a simple input. We'll define the keyword `echo` that takes an input and displays it.
 
-Creating custom language definitions is done using the following js object:
+### Syntax as module file
+
+Creating custom language definitions is done using the following js object and save it as a file:
 
 ```javascript
 //mylanguage.js
@@ -94,4 +96,41 @@ var syntax = {
 use mylanguage.js;
 
 echo "hello";
+```
+
+### Syntax as javascript variable
+
+Create a custom syntax by defining it as a js object in the same scope as your puzzle script will run
+
+For instance, in the browser:
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js"></script>
+    <script>
+    	var mysyntax = {
+    		$: {
+				my_namespace: {
+					echo : {
+						follow: ["{input}"],
+						method: (ctx, input) {
+							console.log(input)
+						}
+					}
+				}
+			}
+    	}
+    </script>
+  </head>
+  <body>
+
+    <script type="text/x-puzzle">
+      // include the web module
+      use var:mysyntax;
+
+      echo "hello"
+    </script>
+  </body>
+</html>
 ```
