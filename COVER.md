@@ -67,15 +67,3 @@ puzzle run file.pz;
 ```javascript
 puzzle.parse('print "hello world"')
 ```
-
-
-<br>
-<br>
-
-# License
-
-puzzle is open source and released under the MIT License.
-
-[ See the license ](https://github.com/puzzle-lang/puzzle/blob/master/LICENSE)
-
-Copyright (c) 2020 - present, Marco Boelling + all puzzle contributors
