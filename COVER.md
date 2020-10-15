@@ -1,7 +1,7 @@
 
 # Puzzle. An abstract programming language
 
-Puzzle is a programming language, that has an ***abstract*** language design, is ***customizable*** and runs on any JavaScript runtime
+Puzzle is a programming language, that has an ***abstract*** language design, is ***customizable*** and runs on any ***JavaScript*** runtime
 
 > Abstract language design
 
@@ -10,7 +10,6 @@ Puzzle is a programming language, that has an ***abstract*** language design, is
 > Easy to learn
 
 <br>
-
 <br>
 
 #### &bull; Abstract language
