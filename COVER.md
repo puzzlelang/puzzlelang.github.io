@@ -10,7 +10,7 @@ Puzzle is a programming language, that has an ***abstract*** language design, is
 > Easy to learn
 
 
-![Puzzle architecture](https://puzzlelang.github.io/puzzle-code-feature.png)
+<!--![Puzzle architecture](https://puzzlelang.github.io/puzzle-code-feature.png)-->
 
 <br>
 
