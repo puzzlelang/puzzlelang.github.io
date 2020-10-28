@@ -1,5 +1,5 @@
 <div class="leto-frame-dark">
-    <div class="leto-frame-dark" id="app">
+    <div class="leto-frame-dark" id="app2">
         <div class="leto-container-full leto-p-xl leto-pt-none leto-pb-none">
             <div class="leto-card leto-bg-black leto-width-full leto-text-white leto-border-none leto-pb-none leto-roundness-md leto-p-xl">
                 <div class="leto-group leto-vertical-center leto-mb-xxl">
@@ -28,6 +28,7 @@
                 <div class="leto-text-xxl leto-mt-xl leto-mb-xl ">
                     <small class="leto-text-darker-grey leto">Puzzlelang</small><br>
                     An <i>abstract, extendable</i> programming language for javascript<br>
+                    that runs on third-party or custom syntax
                 </div>
                 <div class="leto-text-xl leto-mt leto-center">
                     <!--div class="leto-bubble-wrapper-xl leto-text-darker-grey">
@@ -61,18 +62,30 @@
                         <label class="leto-text-lg leto-text-darker-grey">DSLs</label>
                     </div-->
                     <!--img src="puzzle-code-feature.png" style="max-width: 100%;width:700px"-->
-                    <div class="leto-width-two-thirds" style="max-width:100%">
-                        <pre style="border-radius: 10px;text-align: left">
-<code class="javascript"  style="font-size:27px;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >&lt;script type="text/x-puzzle">
-
-  if "YOU == developer" then (
-    create button width onclick "alert('welcome developer')"
-  ) else (print "learn puzzle, it's simple!")
-
-&lt;/script>
-
+                    <div class="leto-group leto-row">
+                        <div class="leto-width-full leto-m" style="max-width:100%">
+                            <pre style="border-radius: 10px;text-align: left">Module definition
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >var syntax = {
+  create: {},
+  width: {},
+  text: {},
+  onclick: {}
+} 
 </code>
 </pre>
+                        </div>
+                        <div class="leto-width-full leto-m" style="max-width:100%">
+                            <pre style="border-radius: 10px;text-align: left">Use local or remote modules
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >use my-syntax.js;
+use https://abc.io/syntax.js;
+
+create button width 
+  text "click me"
+  and onclick "alert()"
+</code>
+</pre>
+                        </div>
+                                                
                     </div>
                     <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
                         <div class="leto-bubble-sm leto-text-xl leto-border-none">
