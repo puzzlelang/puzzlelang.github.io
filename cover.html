@@ -27,7 +27,8 @@
                 </div>
                 <div class="leto-text-xxl leto-mt-xl leto-mb-xl ">
                     <small class="leto-text-darker-grey leto">Puzzlelang</small><br>
-                    An <i>abstract, extendable</i> programming language for javascript
+                    An <i>abstract, extendable</i> programming language that runs on<br>
+                    dynamic syntax definitions contributed by you or others
                 </div>
                 <div class="leto-text-xl leto-mt leto-center">
                     <!--div class="leto-bubble-wrapper-xl leto-text-darker-grey">
@@ -61,19 +62,35 @@
                         <label class="leto-text-lg leto-text-darker-grey">DSLs</label>
                     </div-->
                     <!--img src="puzzle-code-feature.png" style="max-width: 100%;width:700px"-->
-                    <div class="leto-width-two-thirds" style="max-width:100%">
+                    <div class="leto-group leto-row">
+                    <div class="leto-width-half" style="max-width:100%">
                         <pre style="border-radius: 10px;text-align: left">
-<code class="javascript"  style="font-size:27px;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >&lt;script type="text/x-puzzle">
-
-  if "YOU == developer" then (
-    create button width onclick "alert('welcome developer')"
-  ) else (print "learn puzzle, it's simple!")
-
-&lt;/script>
-
+<code class="javascript"  style="font-size:27px;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >var syntax = {
+  email: {...},
+  to: {...},
+  subject: {...},
+  text: {...},
+  ...
+}
 </code>
 </pre>
                     </div>
+<div class="leto-group leto-m leto-vertical-center leto-horizontal-center">
+    <i class="fa fa-arrow-circle-right"></i>
+</div>
+                    <div class="leto-width-half" style="max-width:100%">
+                        <pre style="border-radius: 10px;text-align: left">
+<code class="javascript"  style="font-size:27px;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >use email.js;
+
+email to peter@griffin.com 
+  width subject "test"
+  and text "hi there";
+</code>
+</pre>
+                    </div>
+
+                </div>
+
                     <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
                         <div class="leto-bubble-sm leto-text-xl leto-border-none">
                             <i class="fab fa-js leto-text-darker-grey"></i>
