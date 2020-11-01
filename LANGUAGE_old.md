@@ -134,6 +134,76 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically bbe available here.
 ```
 
+## comments
+
+Comments can be written using `//`
+
+```puzzle
+// this is a comment
+```
+
+## files
+
+Files can be writen, read and removed.
+
+> In Node, file access is native. In browsers, there is no access to the device's real filesystem. However, puzzle handles files and directories directly inside the browser's `indexedDb`
+
+```puzzle
+mkdir /test;
+
+write file /test/hello.txt "word";
+read file /test/hello.txt;
+remove file /test/hello.txt;
+```
+
+```puzzle
+// this is a comment
+```
+
+## conditions
+
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
+```
+
+## loops
+
+Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+
+```puzzle
+// single-part literal condition
+while 1>0 do (print running);
+
+// multi-part literal condition
+while (1<2 OR 2==2) do {
+  print true
+};
+```
+
+## javascript code
+
+Executes JavaScript code using `js`
+
+```puzzle
+js (
+	console.log('I am JavaScript!')
+)
+```
+
 ## reusing code
 
 puzzle scripts can be included into other puzzle scripts for code reusage using `include`
