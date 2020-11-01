@@ -2,6 +2,7 @@
 
 * [Introduction](./COVER.md)
 * [Installation](./GETSTARTED.md)
-* [Language Basics](./LANGUAGE.md)
-* [Examples](../examples/README.md)
+* [Syntax](./LANGUAGE.md)
 * [Customization](./EXTEND.md)
+* [Modules](./MODULES.md)
+* [Examples](../examples/README.md)

@@ -1,4 +1,4 @@
-# Learn puzzle
+# Puzzle syntax
 
 The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems. The main concepts of puzzle are:
 
@@ -41,54 +41,19 @@ print (
 );
 ```
 
+## writing code
 
-## modules
+Puzzle code runs on javascript with the puzzle runtime. Code can be written embedded or as standalone.
 
-The puzzle language is based upon an open mapper ecosystem.
+### Standalone
 
-Each module is designed to archieve a specific (mostly domain-specific) goal and brings it's own syntax. 
-Any puzzle script can use multiple modules, loaded from a remote server or a local file.
+Standalone scripts can be saved as files and run with the puzzle runtime:
 
-```puzzle
-// remove module
-use https://afasf.com/module.js;
-
-// local module
-use module.js;
+```shell
+puzzle my-script.pz
 ```
 
-If you'd like to cache a module, use the `permanent` option:
-
-```puzzle
-use permanent https://afasf.com/module.js;
-```
-
-This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (e.g. offline usage)
-
-
-***Default module***
-
-> puzzle comes with a built-in default module, which is always initalized. The default module contains some basic functionalities and is available in any other namespace. [ Full reference ](https://puzzle-lang.github.io/modules)
-
-
-## namespaces
-
-Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
-
-```puzzle
-ns mynamespace;
-// namespace will be available here
-```
-A namespace will be active until another one is set using `ns`.
-
-Note, that after loading a module using `use` will automatically set that modules namespace for you.
-
-```puzzle
-use mymodule.puzzle.js;
-// the mymodule namespace will automatically bbe available here.
-```
-
-## reusing code
+### reusing code
 
 puzzle scripts can be included into other puzzle scripts for code reusage using `include`
 
@@ -98,30 +63,4 @@ include otherscript.puzzle;
 
 or remote
 include https://domain.com/otherscript.puzzle;
-```
-
-## variables
-
-Variables are set using the `var` keyword.
-
-```puzzle
-var name Peter;
-print name;
-// will output Peter
-```
-
-## functions
-
-Functions are defines with `func`.
-
-```puzzle
-func sayHello (param) { print param }
-
-//or
-
-func sayHello (param) { 
-  print param 
-}
-
-sayHello(hello);
 ```
