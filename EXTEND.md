@@ -91,6 +91,39 @@ command  command  command command delimeter;
 
 ```
 
+## Use a custom syntax
+
+Custom syntax can be used in the following ways:
+
+* from a local file
+* from remote (http, https)
+* from an inline variable
+
+### Local file
+
+```puzzle
+use file.js;
+```
+
+### Remote
+
+```puzzle
+use https://somedomain.com/module.js;
+```
+
+### Inline variable
+
+> This method can be used when a custom syntax is defined in the same scope as the puzzle script. The syntax variable must be prefixed with `var:`
+
+```javascript
+var syntax = {
+  ...
+}
+
+puzzle.parse(`
+ use var:syntax;
+`)
+````
 
 ## Publish syntax as module
 

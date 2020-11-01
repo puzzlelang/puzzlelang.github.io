@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css">
-    <link rel="icon" 
-      type="image/png" 
-      href="puzzle-invert.png">
+    <link rel="icon" type="image/png" href="puzzle-invert.png">
     <title>PUZZLE. An abstract programming language</title>
     <meta name="description" content="">
-    <meta name="keywords" content="dabstract, programming">
+    <meta name="keywords" content="abstract, programming">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="leto.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <style type="text/css">
     body {
         background: #212121;
@@ -26,17 +26,17 @@
 
     .leto-frame-dark {
         height: 100%;
-        margin-top:0px !important;
-        margin-bottom:0px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
     }
 
-     a,
+    a,
     .anchor span {
         color: #FFFFFF !important;
     }
 
     section.cover {
-        align-items:start !important;
+        align-items: start !important;
         background: #252525 !important
     }
 
@@ -44,11 +44,20 @@
         margin: 0px !important;
     }
 
-    p, ul {
-        color:#fafafa !important;
+    p,
+    ul {
+        color: #fafafa !important;
+    }
+
+    aside {
+        border: none !important;
+        background: #212121 !important
+    }
+
+    :root {
+        --theme-color: #69b1ff !important;
     }
     </style>
-
 </head>
 
 <body>
@@ -59,7 +68,7 @@
             placeholder: "Search..."
         },
         coverpage: 'cover.html',
-        onlyCover:true,
+        onlyCover: true,
         loadSidebar: true,
         subMaxLevel: 2,
         loadNavbar: true,
@@ -83,6 +92,7 @@
     }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    
 </body>
 
 </html>

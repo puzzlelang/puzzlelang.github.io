@@ -1,87 +1,204 @@
 <div class="leto-frame-dark">
-    <div class="leto-frame-dark" id="app">
+    <div class="leto-frame-dark" id="app2">
         <div class="leto-container-full leto-p-xl leto-pt-none leto-pb-none">
             <div class="leto-card leto-bg-black leto-width-full leto-text-white leto-border-none leto-pb-none leto-roundness-md leto-p-xl">
                 <div class="leto-group leto-vertical-center leto-mb-xxl">
                     <div class="leto-mr-lg leto-group leto-vertical-center">
-                        <img src="puzzle-invert.png" style="width: 100px;"> 
+                        <img src="puzzle-invert.png" style="width: 100px;">
                         <!--div class="leto-text-xl leto-inline-block leto-text-left leto-p leto-text-lighter-grey">An abstract, flexible<br> programming language</div-->
                     </div>
                     <div class="leto-left leto-mb-sm">
-                       
                     </div>
-                    
                     <div class="leto-mh-sm">
-                        <a href="#/README" class=" leto-text-lg leto-ml-none ">
-                            Get started 
+                        <a href="/modules" class=" leto-text-lg leto-ml-none ">
+                            Modules
                         </a>
                     </div>
-
                     <div class="leto-mh-sm">
-                        <a href="#/../examples/README" class=" leto-text-lg leto-ml-none ">
-                            Examples 
+                        <a href="#/./COVER" class=" leto-text-lg leto-ml-none ">
+                            Docs
                         </a>
                     </div>
-
-                    <div class="leto-mh-sm">
-                        <a href="https://github.com/puzzlelang/puzzle-catalog" class=" leto-text-lg leto-ml-none ">
-                            Modules 
-                        </a>
-                    </div>
-                   
-                    <div class="leto-mh-sm">
+                    <!--div class="leto-mh-sm">
                         <a href="#/./LANGUAGE" class="leto-button leto-text-md leto-ml-none">
-                            <b>Learn </b> <span class="fa fa-chevron-right leto-ml-xs"></span>
+                            <b>Docs </b> <span class="fa fa-chevron-right leto-ml-xs"></span>
                         </a>
+                    </div-->
+                </div>
+                <div class="leto-text-xxl leto-mt-xl leto-mb-xl ">
+                    <small class="leto-text-darker-grey leto">Puzzlelang</small><br>
+                    An <i>abstract, extendable</i> programming language for javascript<br>
+                    that runs on a dynamic syntax ecosystem
+                </div>
+                <div class="leto-text-xl leto-mt leto-center">
+                    <!--div class="leto-bubble-wrapper-xl leto-text-darker-grey">
+                        <div class="leto-bubble leto-border-none">
+                            <i class="fa fa-window-restore leto-text-darker-grey"></i>
+                        </div>
+                        <label class="leto-text-lg ">Browsers</label>
                     </div>
-               
-                </div>
-
-                <div class="leto-text-xxl leto-mt-xl">
-                    An <i>extendable</i> language for <i>abstract programming</i> on any javascript runtime
-                </div>
+                    <div class="leto-bubble-wrapper-xl">
+                        <div class="leto-bubble leto-border-none">
+                            <i class="fa fa-server leto-text-darker-grey"></i>
+                        </div>
+                        <label class="leto-text-lg leto-text-darker-grey">Backends</label>
+                    </div>
+                     <div class="leto-bubble-wrapper-xl">
+                        <div class="leto-bubble leto-border-none">
+                            <i class="fa fa-terminal leto-text-darker-grey"></i>
+                        </div>
+                        <label class="leto-text-lg leto-text-darker-grey">Terminal</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-xl">
+                        <div class="leto-bubble leto-border-none">
+                            <i class="fa fa-code leto-text-darker-grey"></i>
+                        </div>
+                        <label class="leto-text-lg leto-text-darker-grey">Embedded</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-xl">
+                        <div class="leto-bubble leto-border-none">
+                            <i class="fa fa-robot leto-text-darker-grey"></i>
+                        </div>
+                        <label class="leto-text-lg leto-text-darker-grey">DSLs</label>
+                    </div-->
+                    <!--img src="puzzle-code-feature.png" style="max-width: 100%;width:700px"-->
                 
-                 
+                    <!--img src="puzzle-code-feature.png" style="max-width: 100%;width:700px"-->
+                    <div class="leto-group leto-row">
+                        <div class="leto-width-full leto-m" style="max-width:100%">
+                            <pre style="border-radius: 10px;text-align: left"> Define a syntax
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >var syntax = {
+  send: {},
+  email: {},
+  to: {},
+  text: {}
+} 
+</code>
+</pre>
+                        </div>
+                        <div class="leto-width-full leto-m" style="max-width:100%">
+                            <pre style="border-radius: 10px;text-align: left"> Use your syntax
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >use my-syntax.js;
 
-                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
+send email
+  to peter@griffin.com
+  width text "hi there"
+
+</code>
+</pre>
+                        </div>
+                    </div>
+
+                        <div class="leto-group leto-column">
+                        <div class="leto-width-full leto-m" style="max-width:100%">
+                            <pre style="border-radius: 10px;text-align: left"> Or use third-party modules
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >use https://abc.io/web.js;
+
+create button width text "click me" and onclick "alert()"
+</code>
+</pre>
+                        </div>
+                    </div>
+
+                    <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
+                        <div class="leto-bubble-sm leto-text-xl leto-border-none">
+                            <i class="fab fa-js leto-text-darker-grey"></i>
+                        </div>
+                        <label>JavaScript</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
+                        <div class="leto-bubble-sm leto-text-xl leto-border-none">
+                            <i class="fab fa-node-js leto-text-darker-grey"></i>
+                        </div>
+                        <label>Node.js</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
+                        <div class="leto-bubble-sm leto-text-xl leto-border-none">
+                            <i class="fa fa-blender leto-text-darker-grey"></i>
+                        </div>
+                        <label>Embedded</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
+                        <div class="leto-bubble-sm leto-text-xl leto-border-none">
+                            <i class="fa fa-terminal leto-text-darker-grey"></i>
+                        </div>
+                        <label>Terminal</label>
+                    </div>
+                    <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
+                        <div class="leto-bubble-sm leto-text-xl leto-border-none">
+                            <i class="fa fa-server leto-text-darker-grey"></i>
+                        </div>
+                        <label>Backend</label>
+                    </div>
+                    <!--div class="leto-group leto-horizontal-center leto-vertical-center leto-mb-xxl">
+                        <div class="leto-wrap leto-group leto-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
+                            <div class="leto-full">
+                                <pre style="border-radius: 10px;text-align: left">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 1.1;display:block" >use https://abc.io/some-module.js
+
+if YOU == developer then print "welcome"
+</code>
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 1.1;display:block" >&lt;script type="text/x-puzzle">
+  
+  use web.js;
+
+  render (
+     &lt;div id="123">hello&lt;/div>
+  )
+  
+  create button inside 123 width text "click me!";
+  
+  get div width 123 set style "background:blue";
+
+&lt;/script>
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div-->
+                </div>
+                <div class="leto-mt-xxl">
+                    <a href="#/./COVER" class="leto-button-lg leto-text-lg leto-text-md leto-ml-none">
+                        Get started
+                    </a>
+                </div>
+                <!--div class="leto-group leto-horizontal-center leto-vertical-center  leto-mb-xxl">
                     <div class="leto-wrap leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                         <div class="leto-column leto-full leto-half-tablet-pc leto-ph-xl">
                             <div class="leto-width-full"><br><br>
                                 <pre style="border-radius: 10px;text-align: left">
-<code class="javascript"  style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 2.1;" >use https://xyz.com/some_module.js;
+<code class="javascript"  style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 2.1;" >use https://xyz.com/web-module.js;
 
- if you == "developer" 
- then print "hi developer";
+ create button with text "click me";
 </code>
 </pre>
                             </div>
                         </div>
                         <div class="leto-full leto-half-pc ">
                             <div class="leto-mt-xl">
-                                <div class="leto-text-xl">Abstract programming</div>
+                                <i class="fa fa-robot leto-mb" style="color: #72a6dc;"></i>
+                                <div class="leto-text-xl leto-text-darker-grey">Abstract language design</div>
                                 <br>
-                                Puzzle is a programming language that has an abstract design for simple and powerful development
+                                <div class="leto-text-xl">Puzzle is a programming language that has an abstract design for simple and powerful development</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <br>
-
-
-             <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
                     <div class="leto-wrap leto-group leto-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                         <div class="leto-column leto-full leto-half-pc leto-ph-xl">
                             <div class="leto-width-full">
-                                <div class="leto-text-xl">Customizable, extendable</div>
+                                <i class="fa fa-wrench leto-mb" style="color: #72a6dc;"></i>
+                                <div class="leto-text-xl leto-text-darker-grey">Define custom languages</div>
                                 <br>
-                                Puzzle allows custom syntax definitions for domain-specific grammars.
+                                <div class="leto-text-xl">Puzzle allows custom syntax definitions for domain-specific grammars.</div>
                             </div>
                         </div>
                         <div class="leto-full leto-half-tablet-pc ">
-
-                             <pre style="border-radius: 10px;text-align: left">
-<code class="javascript"  style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 2.1;" >syntax = {
-     print: {
+                            <pre style="border-radius: 10px;text-align: left">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 2.1;" >syntax = {
+     echo: {
          follow: ["{input}"],
          method: (ctx, input) => {
              console.log(input)
@@ -90,16 +207,14 @@
  }
 
  use my-syntax.js;
+ echo "hello world";
 </code>
 </pre>
-
                         </div>
                     </div>
                 </div>
-
                 <br>
-
-            <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
                     <div class="leto-wrap leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                         <div class="leto-column leto-full leto-half-tablet-pc leto-ph-xl">
                             <div class="leto-width-full">
@@ -117,51 +232,70 @@
                         </div>
                         <div class="leto-full leto-half-tablet-pc ">
                             <div class="leto-mt-xl">
-                                <div class="leto-text-xl">Standalone or embedded</div>
+                                <i class="fab fa-js leto-mb" style="color: #72a6dc;"></i>
+                                <div class="leto-text-xl leto-text-darker-grey">Runs where JavaScript runs</div>
                                 <br>
-                                Runs as standalone executable or in any JavaScript environment, like Node or Browsers
+                                <div class="leto-text-xl">Runs as standalone executable or in any JavaScript environment, like Node or Browsers</div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-            <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt">
-                <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
-                    <div class="leto-width-full leto-mt-xxl">
-                        <div class="leto-mt-lg leto-group leto-horizontal-center leto-vertical-center">
-                            <div class="leto-text-xl">Build nearly anything, from frontends to backends and between with features, like:</div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt-xxl leto-mb-xxl">
+                    <div class="leto-wrap leto-group leto-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
+                        <div class="leto-column leto-full leto-half-pc leto-ph-xl">
+                            <div class="leto-width-full">
+                                <i class="fa fa-puzzle-piece leto-mb" style="color: #72a6dc;"></i>
+                                <div class="leto-text-xl leto-text-darker-grey">Modules for any purpose</div>
+                                <br>
+                                <div class="leto-text-xl">Being an open, extendable language, puzzle is built upon modules for any purpose. Includable from anywhere.</div>
+                            </div>
                         </div>
-                        <!--div class="leto-text-xl leto-mt leto-group leto-horizontal-center leto-vertical-center">
-                            Module System, Custom syntax, Security
-                        </div-->
+                        <div class="leto-full leto-half-tablet-pc ">
+                            <pre style="border-radius: 10px;text-align: left">
+<code class="javascript"  style="font-size:20px;background:#232323;padding:20px;color:#AAAAAA;line-height: 2.1;" >use rest.js;
+  use https://domcian.com/web-module.js;
+
+  use some-other-module.js;
+
+  use var:inline-module;
+</code>
+</pre>
+                        </div>
                     </div>
                 </div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt">
+                    <div class="leto-group leto-width-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
+                        <div class="leto-width-full leto-mt-xxl">
+                            <div class="leto-mt-lg leto-group leto-horizontal-center leto-vertical-center">
+                                <div class="leto-text-xl">"Build nearly anything, from frontends to backends and between"</div>
+                            </div>
+                            <!--div class="leto-text-xl leto-mt leto-group leto-horizontal-center leto-vertical-center">
+                            Module System, Custom syntax, Security
+                        </div->
+                        </div>
+                    </div>
+                </div-->
+                <!--div class="leto-container-full leto-p-xl ">
+                    <div class="leto-group leto-horizontal-center">
+                        <a href="https://www.npmjs.com/package/puzzlelang" target="_blank" class="leto-button  leto-ml-none">
+                            <span class="fab fa-npm"></span>
+                        </a>
+                        <a href="https://github.com/puzzlelang" target="_blank" class="leto-button leto-ml-none">
+                            <span class="fab fa-github"></span>
+                        </a>
+                        
+                    </div>
+                </div-->
             </div>
             <div class="leto-container-full leto-p-xl ">
                 <div class="leto-group leto-horizontal-center">
-                    <a href="https://www.npmjs.com/package/puzzlelang" target="_blank" class="leto-button  leto-ml-none">
-                        <span class="fab fa-npm"></span>
-                    </a>
-                    <a href="https://github.com/puzzlelang" target="_blank" class="leto-button leto-ml-none">
-                        <span class="fab fa-github"></span>
-                    </a>
-                    <a href="#/./LANGUAGE" class="leto-button leto-text-md leto-ml-none">
-                        Learn more <span class="fa fa-chevron-right leto-ml-xs"></span>
-                    </a>
                 </div>
+                <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl">PUZZLE is open source and released under the MIT License. </div>
             </div>
-           
         </div>
-        <div class="leto-container-full leto-p-xl ">
-            <div class="leto-group leto-horizontal-center">
-            </div>
-            <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl">PUZZLE is open source and released under the MIT License. Copyright (c) Marco Boelling</div>
-        </div>
+        <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            hljs.initHighlightingOnLoad();
+        });
+        </script>
     </div>
-
-    <script>
-    hljs.initHighlightingOnLoad();
-    </script>
-</div>

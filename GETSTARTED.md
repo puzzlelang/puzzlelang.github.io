@@ -1,11 +1,6 @@
-# What is puzzle?
+# Usage
 
-Puzzle is a custumizable programming language that runs in any JavaScript environment and is designed to solve problems in an abstract way.
-The language design is both simple and versatile, making it easy for developers and even non-developers to write code.
-
-Besides being an abstract programming lanugage, puzzle is also a platform for custom modules that can use their own individual syntax.
-
-![Puzzle architecture](https://puzzlelang.github.io/puzzle-code-feature.png)
+Puzzle can be installed standalone or for embedded use. See the details below.
 
 # What can I do with puzzle
 
@@ -18,10 +13,6 @@ Puzzle allows you to develop literally any kind of software that runs in JavaScr
 * Create and package custom languages (DSLs)
 * etc ...
 
-
-# Usage
-
-Puzzle can be installed standalone or for embedded use. See the details below.
 
 ## Interactive Shell (CLI)
 
