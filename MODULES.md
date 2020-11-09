@@ -24,9 +24,6 @@ use permanent https://afasf.com/module.js;
 
 This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (e.g. offline usage)
 
-
-***Default module***
-
 > puzzle comes with a built-in default module, which is always initalized. The default module contains some basic functionalities and is available in any other namespace. [ Full reference ](https://puzzle-lang.github.io/modules)
 
 

@@ -1,4 +1,4 @@
-# Puzzle syntax
+# Learn puzzle
 
 The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems. The main concepts of puzzle are:
 
@@ -41,19 +41,124 @@ print (
 );
 ```
 
-## writing code
+## literals
 
-Puzzle code runs on javascript with the puzzle runtime. Code can be written embedded or as standalone.
+Statements can have different literals as dynamic input. These literals can be of two types: single-part literals and multi-part literals.
 
-### Standalone
 
-Standalone scripts can be saved as files and run with the puzzle runtime:
+***single-part literals***
 
-```shell
-puzzle my-script.pz
+These are literals that are contained in a single word or number. Note, that single-worded texts don't need to be written in quotes.
+
+```puzzle
+// single-part literals
+print hello;
+print 1;
+print 2.5;
 ```
 
-### reusing code
+***multi-part literals***
+
+These are literals that can consist of multiple parts, like multiple words, lines or even statements.
+
+Multi-part literals must be wrappen in any of these: `""`, `()`, `{}`.
+
+```puzzle
+// equivalent multi word example:
+print "hello world";
+print (hello world);
+print {hello world};
+
+// multi line example
+print (
+	hello world!
+);
+```
+
+> Single-part literals can also be written in the multi-part notation, like `print (hello)` or `use "module.puzzle.js"`
+
+***code literals***
+
+Code literals define sub scripts that can be used in conditions or loops. They are also wrappen in `""`, `()` or `{}`
+
+```puzzle
+while (3>2 AND 4>3) ...
+while "3>2 AND 4>3" ...
+while {3>2 AND 4>3} ...
+```
+
+
+## comments
+
+Comments can be written using `//`
+
+```puzzle
+// this is a comment
+```
+
+## files
+
+Files can be writen, read and removed.
+
+> In Node, file access is native. In browsers, there is no access to the device's real filesystem. However, puzzle handles files and directories directly inside the browser's `indexedDb`
+
+```puzzle
+mkdir /test;
+
+write file /test/hello.txt "word";
+read file /test/hello.txt;
+remove file /test/hello.txt;
+```
+
+```puzzle
+// this is a comment
+```
+
+## conditions
+
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
+```
+
+## loops
+
+Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+
+```puzzle
+// single-part literal condition
+while 1>0 do (print running);
+
+// multi-part literal condition
+while (1<2 OR 2==2) do {
+  print true
+};
+```
+
+## javascript code
+
+Executes JavaScript code using `js`
+
+```puzzle
+js (
+	console.log('I am JavaScript!')
+)
+```
+
+## reusing code
 
 puzzle scripts can be included into other puzzle scripts for code reusage using `include`
 
@@ -63,4 +168,30 @@ include otherscript.puzzle;
 
 or remote
 include https://domain.com/otherscript.puzzle;
+```
+
+## variables
+
+Variables are set using the `var` keyword.
+
+```puzzle
+var name Peter;
+print name;
+// will output Peter
+```
+
+## functions
+
+Functions are defines with `func`.
+
+```puzzle
+func sayHello (param) { print param }
+
+//or
+
+func sayHello (param) { 
+  print param 
+}
+
+sayHello(hello);
 ```
