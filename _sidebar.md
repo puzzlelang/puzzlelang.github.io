@@ -1,7 +1,8 @@
 <!-- docs/_sidebar.md -->
 
-* [Intro](./COVER.md)
-* [Usage](./GETSTARTED.md)
-* [Learn puzzle](./LANGUAGE.md)
+* [Introduction](./COVER.md)
+* [Installation](./GETSTARTED.md)
+* [Language](./LANGUAGE.md)
+* [Customization](./EXTEND.md)
+* [Modules](./MODULES.md)
 * [Examples](../examples/README.md)
-* [Custom syntax](./EXTEND.md)

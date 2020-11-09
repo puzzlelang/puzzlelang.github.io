@@ -10,12 +10,29 @@ Puzzle is a programming language, that has an ***abstract*** language design, is
 > Easy to learn
 
 
+
+# What can I do with puzzle
+
+Puzzle allows you to develop literally any kind of software that runs in JavaScript engines, like browsers or Node.
+
+* Develop terminal-based apps
+* Embed custom code into existing projects
+* Develop browser-based apps (desktop/mobile)
+* Build backends
+* Create and package custom languages (DSLs)
+* etc ...
+
+
 <!--![Puzzle architecture](https://puzzlelang.github.io/puzzle-code-feature.png)-->
 
 <br>
 <br>
 
-#### &bull; Abstract language
+# Main Concepts
+
+<br>
+
+#### Abstract language design
 
 The puzzle syntax aims to be abstract and follows an easy to understand interface
 
@@ -30,7 +47,7 @@ then print "hi developer";
 <br>
 <br>
 
-#### &bull; Customizable syntax
+#### Customizable syntax
 
 Puzzle is not just a language. It's also a platform for custom syntax, which is easily defined using a simple javascript object
 
@@ -54,7 +71,7 @@ use my-syntax.js;
 <br>
 <br>
 
-#### &bull; Cross Platform
+#### Runs where JavaScript runs
 
 ```shell
 puzzle run file.pz;

@@ -2,17 +2,6 @@
 
 Puzzle can be installed standalone or for embedded use. See the details below.
 
-# What can I do with puzzle
-
-Puzzle allows you to develop literally any kind of software that runs in JavaScript engines, like browsers or Node.
-
-* Develop terminal-based apps
-* Embed custom code into existing projects
-* Develop browser-based apps (desktop/mobile)
-* Build backends
-* Create and package custom languages (DSLs)
-* etc ...
-
 
 ## Interactive Shell (CLI)
 
