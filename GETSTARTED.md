@@ -52,7 +52,7 @@ puzzle.parse('print "Hello, I am embedded"')
 ## Browser
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/puzzlelang/puzzle/puzzle.browser.js">
+<script src="https://cdn.jsdelivr.net/npm/puzzlelang/puzzle.browser.js">
 ```
 
 > Embedded
