@@ -54,6 +54,40 @@
         background: #212121 !important
     }
 
+    .concepts {
+       
+    }
+
+    @media screen and (max-width: 800px) {
+      .concepts {
+            column-count:1;
+        }
+    }
+
+    .concepts>div {
+        border:0px solid red;
+       // width:49%;
+        display: inline-block;
+        //min-height: 1000px;
+        margin:50px;
+        padding:50px;
+        -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+    }
+
+    .concepts>div:nth-child(1), .concepts>div:nth-child(4) {
+        background: #1a1a1a;
+    }
+
+    .concepts>div:nth-child(2) {
+        background: #2a2a2a;
+    }
+
+    .concepts>div:nth-child(3) {
+        background: #1e1e1e;
+    }
+
     :root {
         --theme-color: #69b1ff !important;
     }
