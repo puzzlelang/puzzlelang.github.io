@@ -89,13 +89,11 @@ create button with text "click me" and onclick "alert()"
                     </div>
                         <div class="leto-width-full leto-m" style="max-width:100%">
                             <pre style="border-radius: 10px;text-align: left"><i class="fa fa-wrench leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> Build a custom syntax
-<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >var my_syntax = {
-  send: {
-    follow: ["$email"],
-    method: (ctx) => {...}
-  },
+<code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >{
+  send: {...},
   email: {...},
-  ...
+  to: {...},
+  with: {...}
 } 
 </code>
 </pre>
@@ -137,25 +135,27 @@ create button inside 123 with text "click me" and onclick "alert()"
                         Runtime
                     </div>
                         <div class="leto-width-full leto-m" style="max-width:100%">
-                            <pre style="border-radius: 10px;text-align: left"><i class="fa fa-terminal leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> Runs standalone ...
+                            <pre style="border-radius: 10px;text-align: left"><i class="fa fa-code leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> Standalone 
 <code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >puzzle run myfile.pz;
 </code>
+<i class="fa fa-terminal leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> CLI
 <code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >$ puzzle
 $> print "hello world"
 </code>
 </pre>
                         </div>
                         <div class="leto-width-full leto-m" style="max-width:100%">
-                            <pre style="border-radius: 10px;text-align: left"><i class="fab fa-js leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> ... or embedded in js
+                            <pre style="border-radius: 10px;text-align: left"><i class="fab fa-js leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i>Embedded
 <code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >puzzle.parse(`print "hello world";`)
 </code>
+<i class="fa fa-code leto-mh-xxs leto-mb-sm" style="color: #72a6dc;"></i> As script
 <code class="javascript"  style="font-size:27px;background:#232323;display:block;padding:20px;color:#AAAAAA;line-height: 1.1;" >&lt;script type="text/x-puzzle">
     print "hello world";
 &lt;/script>
 </code>
 </pre>
                         </div>
-                    </div>
+                   
 
                     <div>
 
@@ -206,11 +206,8 @@ $> print "hello world"
                 </div>
 
                    
-                    <br>
-                    <br>
-
-
-                    <div class="leto-text-xl leto-width-full leto-full leto-text-center leto-mv-xxl">
+                  
+                    <!--div class="leto-text-xl leto-width-full leto-full leto-text-center leto-mv-xxl">
                         Develop for:
                     </div>
                     <div class="leto-group leto-column">
@@ -232,7 +229,7 @@ $> print "hello world"
                             <i class="fa fa-blender leto-text-darker-grey"></i>
                         </div>
                         <label>Embedded</label>
-                    </div-->
+                    </div->
                             <div class="leto-bubble-wrapper-lg leto-text-sm leto-text-darker-grey">
                                 <div class="leto-bubble-sm leto-text-xl leto-border-none">
                                     <i class="fa fa-terminal leto-text-darker-grey"></i>
@@ -252,7 +249,7 @@ $> print "hello world"
                                 <label>Frontend</label>
                             </div>
                         </div>
-                    </div>
+                    </div-->
                     <!--div class="leto-group leto-horizontal-center leto-vertical-center leto-mb-xxl">
                         <div class="leto-wrap leto-group leto-two-thirds leto-horizontal-center leto-vertical-center leto-mt-xl">
                             <div class="leto-full">
