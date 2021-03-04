@@ -56,13 +56,23 @@ send email from peter@griffin.com to stewie@griffin.com with text "Hi there"
     ` },
 
      { name: "Custom laguage", code: `
-// create your own language using JS:
-var syntax = {
-    ...
+// create your own language using a js object:
+{
+  echo: {
+    follow: ["{param}", "$and"],
+    method: function(ctx, param){
+      console.log(param)
+    }
+  },
+  and: {
+    follow: ["$echo"],
+    method: function(ctx, param){}
+  }
 }
 
 // in puzzle, use your language as module
 use mylang.js;
+echo hello and echo world;
     ` }]
     }
 })
