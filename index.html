@@ -71,7 +71,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="leto-mh-sm">
                         <a href="https://playcode.io/741263" target="_blank" class="leto-button leto-ml-none">
                             Try online
@@ -89,7 +88,7 @@
                             <img src="puzzle-invert.png" style="width: 48px;"> PUZZLE
                         </div>
                         <div class="leto-text-xl leto-mt-xl leto-mb leto-text-darker-grey">
-                            Puzzle is an abstract "low-code" scripting language that runs in javascript environments<br>
+                            Puzzle is an abstract scripting language that runs in javascript environments<br>
                             and can easily be extended with custom or ready-to-use modules.
                         </div>
                         <div v-show="showInstallInstructions">
@@ -114,8 +113,7 @@
                         <div class="leto-group leto-horizontal-center leto-mt-none leto-mb">
                             <div class="leto-group scroll-h">
                                 <div class="leto-group leto-vertical-center leto-horizontal-left leto-text-white leto-mt-xl ">
-                                    <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click">
-                                        EXAMPLES:</div>
+                                    <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click">EXAMPLES:</div>
                                     <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-text-dark-grey leto-horizontal-left leto-click" v-for="(item, i) in examples" v-on:click="currentExample=i">
                                         <div class="leto-bubble-xxs" v-bind:class="{'leto-bg-white': currentExample==i}"></div>
                                         <div>{{item.name}}</div>
@@ -214,7 +212,7 @@ $> print "hello world"
                                 Puzzle runs on top of javascript which means, it runs where javascript runs:
                                 <br><br>
                                 <b>
-                                Node, Browsers, Servers, Iot Devices, Desktop (Electron), Mobile (PWA), Cloud Functions, ...</b>
+                                    Node, Browsers, Servers, Iot Devices, Desktop (Electron), Mobile (PWA), Cloud Functions, ...</b>
                             </div>
                         </div>
                     </div>
