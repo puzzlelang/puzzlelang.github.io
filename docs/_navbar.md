@@ -1,5 +1,6 @@
 <!-- _navbar.md -->
 
+* [Home](https://puzzlelang.org)
 * [Get started](GETSTARTED.md)
 * [Language](./LANGUAGE.md)
 * [Customization](./EXTEND.md)

@@ -1,132 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css">
-    <link rel="icon" type="image/png" href="puzzle-invert.png">
-    <title>PUZZLE. An abstract programming language</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="abstract, programming">
+    <title>PUZZLE - An abstract extendable low-code language</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="An abstract, extendable programming language">
+    <meta name="keywords" content="programming, low-code, platform, language">
+    <meta name="viewport" content="width=device-width" />
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="leto.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="leto.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <style type="text/css">
     body {
-        background: #212121;
-        font-family: 'Montserrat', sans-serif !important;
+        color: #66615b;
+        font-size: 16px;
+        font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+        height: 100%;
+        letter-spacing: 0.9px;
+    }
+
+    html {
+        height: 100%;
     }
 
     .leto-frame-dark {
         height: 100%;
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
     }
 
-    a,
-    .anchor span {
-        color: #FFFFFF !important;
+    .leto-text-xxxl {
+        font-size: 40px;
     }
 
-    section.cover {
-        align-items: start !important;
-        background: #252525 !important
-    }
+    @media (max-width: 1440px) {
 
-    .cover-main {
-        margin: 0px !important;
-    }
-
-    p,
-    ul {
-        color: #fafafa !important;
-    }
-
-    aside {
-        border: none !important;
-        background: #212121 !important
-    }
-
-    .concepts {
-       
-    }
-
-    @media screen and (max-width: 800px) {
-      .concepts {
-            column-count:1;
+        .leto-full-tablet-pc {
+            width: 100% !important;
         }
-    }
 
-    .concepts>div {
-        border:0px solid red;
-       // width:49%;
-        display: inline-block;
-        //min-height: 1000px;
-        margin:50px;
-        padding:50px;
-        -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
-    }
+        .scroll-h {
+            max-width: 100%;
+            overflow: scroll;
+        }
 
-    .concepts>div:nth-child(1), .concepts>div:nth-child(4) {
-        background: #1a1a1a;
-    }
-
-    .concepts>div:nth-child(2) {
-        background: #2a2a2a;
-    }
-
-    .concepts>div:nth-child(3) {
-        background: #1e1e1e;
-    }
-
-    :root {
-        --theme-color: #69b1ff !important;
     }
     </style>
 </head>
 
-<body>
-    <div id="app"></div>
-    <script>
-    window.$docsify = {
-        search: {
-            placeholder: "Search..."
-        },
-        coverpage: 'cover.html',
-        //onlyCover: true,
-        loadSidebar: false,
-        subMaxLevel: 2,
-        loadNavbar: true,
-        logo: 'puzzle-invert.png',
-        name: 'puzzle',
-        repo: '',
-        themeColor: "#42b983",
-        darkMode: {
-            dark: {
-                background: "#1c2022",
-                toggleBtnBg: "#34495e",
-                textColor: "#b4b4b4"
-            },
-            light: {
-                background: "white",
-                toggleBtnBg: "var(--theme-color)",
-                textColor: "var(--theme-color)"
-            }
-        },
-        homepage: "./GETSTARTED.md"
-    }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    
+<body class="leto-frame-dark">
+    <div class="leto-frame-dark" id="app">
+        <div class="leto-container-full leto-pt-none leto-pb-none">
+            <div class="leto-card leto-bg-black leto-width-full leto-text-white leto-border-none leto-pb-none leto-roundness-md">
+                <div class="leto-group leto-vertical-center scroll-h">
+                    <div class="leto-mr-lg leto-group leto-vertical-center">
+                        <a href="https://abstractcode.org"><img src="ac-logo-label.png"></a>
+                    </div>
+                    <div class="leto-left leto-mb-sm">
+                        <div class="leto-group leto-vertical-center leto-horizontal-left leto-text-white">
+                            <!--div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click">RUNS WITH:</div-->
+                            <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click" v-for="item in langs" v-on:click="currentLang=item">
+                                <div class="leto-bubble-xxs" v-bind:class="{'leto-bg-white': currentLang==item}"></div>
+                                <div>{{item}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div class="leto-mh-sm">
+                        <div class="leto-button leto-ml-none" v-on:click="showInstallInstructions = !showInstallInstructions">
+                            <span v-if="!showInstallInstructions">Install</span><span v-else>Close</span>
+                        </div>
+                    </div-->
+                    <div class="leto-mh-sm">
+                        <a href="https://playcode.io/741263" target="_blank" class="leto-button leto-ml-none">
+                            Try online
+                        </a>
+                    </div>
+                    <div class="leto-mh-sm">
+                        <a href="/docs" target="_blank" class="leto-button leto-ml-none">
+                            Docs <span class="fa fa-chevron-right leto-ml-xs"></span>
+                        </a>
+                    </div>
+                    <!--a class="leto-mh-sm">
+                        Docs
+                    </a-->
+                </div>
+                <div class="leto-group leto-horizontal-center leto-mt-xxl leto-mb-xxl">
+                    <div class=" leto-mt-xxl">
+                        <div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey" style="font-size:50px">
+                            <img src="puzzle-invert.png" style="width: 38px;"> PUZZLE
+                        </div>
+                        <div class="leto-text-xl leto-mt-xl leto-mb leto-text-darker-grey">
+                            Puzzle is a simple scripting language that runs in javascript environments<br> and can be easily extended with custom or ready-to-use modules.
+                        </div>
+                        <div v-show="showInstallInstructions">
+                            <center>
+                                <h4>Node</h4>
+                            </center>
+                            <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >npm install objy
+</code></pre>
+                            <center>
+                                <h4>Browser</h4>
+                            </center>
+                            <pre style="border-radius: 10px">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >&lt;script src="https://cdn.jsdelivr.net/npm/objy/dist/browser.js" />
+</code></pre>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="leto-group leto-horizontal-center ">
+                    <div class="leto-four-fifths leto-full-tablet-pc">
+                        <div class="leto-group leto-horizontal-center leto-mt-none leto-mb">
+                            <div class="leto-group scroll-h">
+                                <div class="leto-group leto-vertical-center leto-horizontal-left leto-text-white leto-mt-xl ">
+                                    <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-horizontal-left leto-click">
+                                        EXAMPLES:</div>
+                                    <div class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-text-dark-grey leto-horizontal-left leto-click" v-for="(item, i) in examples" v-on:click="currentExample=i">
+                                        <div class="leto-bubble-xxs" v-bind:class="{'leto-bg-white': currentExample==i}"></div>
+                                        <div>{{item.name}}</div>
+                                    </div>
+                                    <!--a href="docs/#/DOCUMENTATION" class="leto-group leto-mt-sm leto-mr leto-vertical-center leto-text-dark-grey leto-horizontal-left leto-click">
+                                        + more
+                                    </a-->
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div>
+                            <pre style="border-radius: 10px" class="leto-block">
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" v-html="examples[currentExample].code"></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class=" leto-text-xl leto-text-center leto-text-darker-grey leto-mt-xxl" v-show="!showInstallInstructions">
+                    * Use the abstract language that powers 'low-code' development
+                    <br>
+                    * Use contributed modules from remote urls or local files. No config, code only!
+                    <br>
+                    * Extend PUZZLE with your own language, through a simple api
+                </div>
+                <div class="leto-group leto-horizontal-center leto-mt-xxl">
+                    <div class="leto-group leto-mt-xxl">
+                        <div class="leto-group leto-vertical-center leto-horizontal-left leto-text-white leto-text-xl">
+                            Quick start
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center">
+                    <div class="leto-wrap leto-group leto-width-two-thirds leto-full-tablet-pc leto-horizontal-center leto-mt leto-vertical-center">
+                        <div class="leto-column leto-full leto-vertical-center">
+                            <div class="leto-text-xl leto-pb-xs">Standalone</div>
+                            <div class="leto-width-full leto-vertical-center">
+                                <pre style="border-radius: 10px"><br>
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px" >$ npm i -g puzzlelang
+$ puzzle run file.puzzle
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center">
+                    <div class="leto-wrap leto-group leto-width-two-thirds leto-full-tablet-pc leto-horizontal-centerleto-vertical-center">
+                        <div class="leto-column leto-full leto-mt-xxl  leto-vertical-center">
+                            <div class="leto-text-xl leto-pb-xs">Browser</div>
+                            <div class="leto-width-full leto-vertical-center">
+                                <pre style="border-radius: 10px"><br>
+<code class="html" style="font-size:20px;background:#232323;padding:20px;overflow: hidden;" >&lt;script src="https://cdn.jsdelivr.net/npm/puzzlelang/puzzle.browser.js" />
+&lt;script>
+    print "hello world";
+&lt;/script>
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center">
+                    <div class="leto-wrap leto-group leto-width-two-thirds leto-full-tablet-pc leto-horizontal-centerleto-vertical-center">
+                        <div class="leto-column leto-full leto-mt-xxl  leto-vertical-center">
+                            <div class="leto-text-xl leto-pb-xs">CLI</div>
+                            <div class="leto-width-full leto-vertical-center">
+                                <pre style="border-radius: 10px"><br>
+<code class="javascript" style="font-size:20px;background:#232323;padding:20px;overflow: hidden;" >$ puzzle
+$> print "hello world"
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="leto-group leto-horizontal-center leto-vertical-center">
+                    <div class="leto-wrap leto-group leto-width-two-thirds leto-full-tablet-pc leto-horizontal-centerleto-vertical-center">
+                        <div class="leto-column leto-full leto-mt-xxl  leto-vertical-center">
+                            <div class="leto-text-xl leto-pb-xs">Embedded (js)</div>
+                            <div class="leto-width-full leto-vertical-center">
+                                <pre style="border-radius: 10px"><br>
+<code class="javascript" v-show="currentLang=='JS'" style="font-size:20px;background:#232323;padding:20px;overflow: hidden;" >puzzle.parse(`print "hello world"`)
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leto-group leto-horizontal-center leto-vertical-center leto-mt">
+                    <div class="leto-group leto-width-two-thirds leto-full-tablet-pc leto-horizontal-center leto-vertical-center leto-mt-xl">
+                        <div class="leto-width-full leto-mt-xxl leto-text-center">
+                            <div class="leto-mt-lg leto-group leto-horizontal-center leto-vertical-center">
+                                <div class="leto-text-xl">powerful, yet simple features</div>
+                            </div>
+                            <div class="leto-mt leto-group leto-horizontal-center leto-vertical-center">
+                                Inheritance, Persistence, User management, Acces-control, Pluggable mappers (MDB, InMem, Redis), Custom actions and more
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leto-container-full leto-p-xl ">
+                    <div class="leto-group leto-horizontal-center">
+                        <a href="https://www.npmjs.com/package/objy" target="_blank" class="leto-button leto-ml-none">
+                            <span class="fab fa-npm"></span>
+                        </a>
+                        <a href="https://github.com/objy-org/objy" target="_blank" class="leto-button leto-ml-none">
+                            <span class="fab fa-github"></span>
+                        </a>
+                        <a href="https://objy-org.github.io/docs" target="_blank" class="leto-button leto-ml-none">
+                            Docs <span class="fa fa-chevron-right leto-ml-xs"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="leto-container-full leto-p-xl leto-text-center">
+                <div class="leto-group leto-horizontal-center">
+                </div>
+                <div class="leto-text-xs leto-text-lighter-grey leto-p-xxl">OBJY is open source and released under the MIT License. Copyright (c) OBJY collaborators</div>
+            </div>
+        </div>
+        <script>
+        hljs.initHighlightingOnLoad();
+        </script>
 </body>
+<script type="text/javascript" src="index.js"></script>
 
 </html>

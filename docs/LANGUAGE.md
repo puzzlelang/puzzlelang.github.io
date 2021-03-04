@@ -1,4 +1,4 @@
-# Learn puzzle
+# Language
 
 The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems. The main concepts of puzzle are:
 
