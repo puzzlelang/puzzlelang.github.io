@@ -8,26 +8,25 @@
 
 <a href="#GETSTARTED.md" class="leto-button">GET STARTED</a>
 <a href="#LANGUAGE.md" class="leto-button leto-border-none">LEARN</a>
-<a href="#EXAMPLES.md" class="leto-button leto-border-none">EXAMPLES</a>
-<a href="https://puzzlelang.org/modules" target="_blank" class="leto-button leto-border-none">MODULES <i class="fas fa-external-link-alt leto-ml-sm"></i></a>
+
 <br>
 <br>
 
-### &nbsp; Features
+### &nbsp; Explore
 
 <div class="leto-group">
 	<div class="leto-card">
-		<i class="leto-text-lg leto-m fas fa-language"></i>
-		Abstract Language
+		<br>
+		Abstract Code Development
 	</div>
-	<div class="leto-card">
-		<i class="leto-text-lg leto-m fa fa-wrench"></i>
-		Simply Extendable
-	</div>
-	<div class="leto-card">
-		<i class="leto-text-lg leto-m fa fa-smile"></i>
-		Runs where JS runs
-	</div>
+	<a href="#EXAMPLES.md" class="leto-card">
+		<i class="leto-text-lg leto-m fa fa-code"></i>
+		Code Examples
+	</a>
+	<a href="https://puzzlelang.org/modules" class="leto-card">
+		<i class="leto-text-lg leto-m fa fa-box"></i>
+		Modules
+	</a>
 </div>
 
 ### &nbsp; What to do...
