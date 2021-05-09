@@ -1,4 +1,4 @@
-# Puzzle. An abstract programming language
+# <a href="#"><i class="fa fa-chevron-left leto-mr"></i></a> Puzzle. An abstract programming language
 
 Puzzle is a programming language, that has an ***abstract*** language design, is ***customizable*** and runs on any ***JavaScript*** runtime
 

@@ -1,4 +1,4 @@
-# Custom syntax
+# <a href="#"><i class="fa fa-chevron-left leto-mr"></i></a> Custom syntax
 
 > Puzzle is a language that can dynamically be extended with custom syntax!
 
