@@ -8,7 +8,8 @@
 
 <a href="#GETSTARTED.md" class="leto-button">GET STARTED</a>
 <a href="#LANGUAGE.md" class="leto-button leto-border-none">LEARN</a>
-<a href="https://puzzlelang.org/modules" class="leto-button leto-border-none">MODULES</a>
+<a href="#EXAMPLES.md" class="leto-button leto-border-none">EXAMPLES</a>
+<a href="https://puzzlelang.org/modules" target="_blank" class="leto-button leto-border-none">MODULES <i class="fas fa-external-link-alt leto-ml-sm"></i></a>
 <br>
 <br>
 
