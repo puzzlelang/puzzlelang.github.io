@@ -6,6 +6,13 @@
     Puzzle is an abstract scripting language that runs in javascript environments and can easily be extended with custom or ready-to-use modules.
 </div>
 
+
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >use web;
+create button with text "click me";
+
+</code>
+
+
 <a href="#GETSTARTED.md" class="leto-button">GET STARTED</a>
 <a href="#LANGUAGE.md" class="leto-button leto-border-none">LEARN</a>
 
