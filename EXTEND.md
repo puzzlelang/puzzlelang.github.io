@@ -23,12 +23,12 @@ use mymodule.js;
 Building your own custom syntax is fairly simple. It's defined with a JavaScript object that follows a given structure.
 
 ```javascript
-syntax = {
+var syntax = { // syntax variable
   $: {
     mymodule: { // your namespace name
-      echo: {
-        follow: ["{param}", "$and"],
-        method: function(ctx, param){
+      echo: { // a token
+        follow: ["{param}", "$and"], // possible follor tokens
+        method: function(ctx, param){ // a js method behind a token
           console.log(param)
         }
       },
@@ -44,7 +44,7 @@ syntax = {
 module.exports = lang;
 ```
 
-
+<!--
 
 ***The required keys and fields in your syntax definition are:***
 
@@ -68,6 +68,7 @@ module.exports = lang;
 | `{param1,param2}` | Multiple custom inputs followed by another. These will be available as object parameter: `method: function(obj){//obj.param1, obj.param2}`  | 
 
 
+-->
 
 Define your available tokens as keys under the "$" object. Each key has an attached `method`, which will be executed, when that token is parsed and an array `follow`, which defines, which tokens can follow the current token.
 

@@ -3,5 +3,5 @@
 * [Home](./COVER.md)
 * [Installation](./GETSTARTED.md)
 * [Language](./LANGUAGE.md)
-* [Customization](./EXTEND.md)
+* [Extend / Customize](./EXTEND.md)
 * [Examples](../examples/README.md)
