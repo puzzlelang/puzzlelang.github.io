@@ -1,14 +1,10 @@
 # <a href="#"><i class="fa fa-chevron-left leto-mr"></i></a> Puzzle. An abstract programming language
 
-Puzzle is a programming language, that has an ***abstract*** language design, is ***customizable*** and runs on any ***JavaScript*** runtime
+Puzzle is a programming language, that has an ***&check; abstract*** language design, is ***&check; customizable*** and runs on any ***&check; JavaScript*** runtime
 
-> Abstract language design
+<!--&check; Abstract language design  &nbsp; &check; Simply customizable &nbsp; &check; Easy to learn-->
 
-> Simply customizable
-
-> Easy to learn
-
-
+<br>
 
 # What can I do with puzzle
 
