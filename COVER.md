@@ -1,11 +1,16 @@
 
 <div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey" style="font-size:45px">
-    <img src="puzzle-invert.png" style="width: 48px;"> PUZZLE
+    <!--img src="puzzle-invert.png" style="width: 80px;"--> PUZZLE
 </div>
 <div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey">
-    Puzzle is an abstract scripting language that runs in javascript environments and can easily be extended with custom or ready-to-use modules.
+    An abstract programming language that can be extended
 </div>
 
+
+<a href="#/./GETSTARTED" class="leto-button">GET STARTED</a>
+<a href="#/./LANGUAGE" class="leto-button leto-border-none">LEARN PUZZLE</a>
+
+<br>
 
 <code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >use web;
 create button with text "click me";
@@ -13,22 +18,10 @@ create button with text "click me";
 </code>
 
 
-<a href="#GETSTARTED.md" class="leto-button">GET STARTED</a>
-<a href="#LANGUAGE.md" class="leto-button leto-border-none">LEARN</a>
-
-<br>
-<br>
-
-### &nbsp; Explore
-
 <div class="leto-group">
-	<div class="leto-card">
-		<br>
-		Abstract Code Development
-	</div>
-	<a href="#EXAMPLES.md" class="leto-card">
+	<a href="#/./EXAMPLES" class="leto-card">
 		<i class="leto-text-lg leto-m fa fa-code"></i>
-		Code Examples
+		Examples
 	</a>
 	<a href="https://puzzlelang.org/modules" class="leto-card">
 		<i class="leto-text-lg leto-m fa fa-box"></i>
@@ -36,6 +29,7 @@ create button with text "click me";
 	</a>
 </div>
 
+<!--
 ### &nbsp; What to do...
 
 <div class="leto-group">
@@ -74,3 +68,4 @@ create button with text "click me";
 		Scripts
 	</div>
 </div>
+-->
