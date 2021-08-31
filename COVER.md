@@ -13,7 +13,8 @@
 <br>
 
 <code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >use web;
-create button with text "click me";
+create div with id "container";
+create button inside container with text "click me";
 
 </code>
 
