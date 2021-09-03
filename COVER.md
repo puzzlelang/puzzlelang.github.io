@@ -3,7 +3,7 @@
     <!--img src="puzzle-invert.png" style="width: 80px;"--> PUZZLE
 </div>
 <div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey">
-    An abstract programming language that can be extended
+    An abstract and extendable programming language that runs on top of javascript
 </div>
 
 
