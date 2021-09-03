@@ -5,18 +5,6 @@
 Besides being a simple language, puzzle is also a platform for custom syntax. 
 Each syntax is delivered as a module, that can be used in any puzzle script with `use my_module.js`.
 
-1. ***Write a module file: <u>mymodule.js</u>***
-```javascript
-syntax = {
-  ...
-}
-```
-
-2. ***Use it in your puzzle script***
-```puzzle
-use mymodule.js;
-```
-
 
 ## Create a syntax
 
@@ -42,6 +30,13 @@ var syntax = { // syntax variable
   }
 }
 module.exports = lang;
+```
+
+<b>Then use it in puzzle:</b>
+
+```puzzle
+use syntax.js;
+echo "hello" and "word";
 ```
 
 <!--
