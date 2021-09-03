@@ -8,18 +8,40 @@
 
 
 <a href="#/./GETSTARTED" class="leto-button">GET STARTED</a>
-<a href="#/./LANGUAGE" class="leto-button leto-border-none">LEARN PUZZLE</a>
+<a href="https://github.com/puzzlelang/puzzle" class="leto-button leto-border-none">Github</a>
+<a href="#/./LANGUAGE" class="leto-button leto-border-none">Learn Puzzle</a>
 
 <br>
-
-<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >use web;
-create div with id "container";
-create button inside container with text "click me";
-
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>IN THE BROWSER</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >&#60;script type="text/x-puzzle">
+    use web;
+	create div with id "container";
+&#60;/script>
 </code>
 
+<br>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>STANDALONE</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >//myfile.pz
+write file /hello.txt "world"
+</code>
 
-<div class="leto-group">
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >puzzle myfile.pz
+</code>
+
+<br>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>STANDALONE</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >$ puzzle
+? > if "1 IS 1" then (print right!)
+</code>
+
+<br>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>EMBEDDED</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >puzzle.parse(`
+	send email with text "welcome to puzzle" 
+	to peter.griffin@puzzle.org;
+`)
+</code>
+<!--div class="leto-group">
 	<a href="#/./EXAMPLES" class="leto-card">
 		<i class="leto-text-lg leto-m fa fa-code"></i>
 		Examples
@@ -28,7 +50,7 @@ create button inside container with text "click me";
 		<i class="leto-text-lg leto-m fa fa-box"></i>
 		Modules
 	</a>
-</div>
+</div-->
 
 <!--
 ### &nbsp; What to do...

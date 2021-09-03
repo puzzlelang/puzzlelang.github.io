@@ -19,7 +19,7 @@ $ puzzle
 <html>
   <head>
   	<!-- Include puzzle -->
-    <script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 
     <!-- write your script -->
     <script type="text/x-puzzle">
@@ -35,7 +35,7 @@ $ puzzle
 ```html
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/gh/puzzle-lang/puzzle/puzzle.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
   </head>
   <body>
 
