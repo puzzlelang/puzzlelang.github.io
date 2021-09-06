@@ -113,6 +113,17 @@
         font-size: 14px;
         text-align: center;
     }
+
+    .sidebar ul li a {
+        font-weight: 900;
+    }
+    .sidebar-nav > ul > li > a  {
+        font-weight: 900 !important;
+    }
+
+    code {
+        font-size: 1rem !important;
+    }
     </style>
 </head>
 
@@ -124,7 +135,7 @@
             placeholder: "Search..."
         },
         //onlyCover: true,
-        loadSidebar: true,
+        //loadSidebar: true,
         //hideSidebar: true,
         subMaxLevel: 2,
         logo: '../puzzle-invert-sm.png',
@@ -143,7 +154,7 @@
                 textColor: "var(--theme-color)"
             }
         },
-        homepage: "./COVER.md"
+        homepage: "./index.md"
     }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
