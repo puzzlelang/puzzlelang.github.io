@@ -29,7 +29,7 @@ write file /hello.txt "world"
 </code>
 
 <br>
-<div class="leto-text-white leto-m-sm leto-text-sm"><b>STANDALONE</b></div>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>CLI</b></div>
 <code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >$ puzzle
 ? > if "1 IS 1" then (print right!)
 </code>
@@ -41,6 +41,22 @@ write file /hello.txt "world"
 	to peter.griffin@puzzle.org;
 `)
 </code>
+
+<!--br>
+
+---
+
+<br>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>Modules</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >use https://abc.com/module.js
+print "use module specific code here..."
+</code>
+
+<br>
+<div class="leto-text-white leto-m-sm leto-text-sm"><b>Variables</b></div>
+<code class="javascript" style="font-size:22px;padding:30px;display:block;color:#AAAAAA;" >set name Peter;
+set local name2 Stewie
+</code-->
 <!--div class="leto-group">
 	<a href="#/./EXAMPLES" class="leto-card">
 		<i class="leto-text-lg leto-m fa fa-code"></i>
