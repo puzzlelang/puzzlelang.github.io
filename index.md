@@ -248,28 +248,35 @@ include https://domain.com/otherscript.puzzle;
 
 ## Variables
 
-Variables are set using the `var` keyword.
+Variables are set using the `set` keyword.
 
 ```puzzle
-var name Peter;
+set name Peter;
 print name;
-// will output Peter
 ```
 
-## Functions
-
-Functions are defines with `func`.
+You can also set permanent variables, that are stored locally by using the `local` keyword with `set`
 
 ```puzzle
-func sayHello (param) { print param }
+set local name Peter;
+print name;
+```
 
-//or
+## Runner-functions
 
-func sayHello (param) { 
-  print param 
-}
+Runners are functions that can run predefined puzzle code and are defined with the `runner` keyword.
 
-sayHello(hello);
+```puzzle
+runner sayHello { print hello }
+run sayHello;
+// will output "hello"
+```
+
+When running a Runner, variables can be overwritten with `variable:value`.
+
+```puzzle
+run hello:hi in sayHello;
+// will output "hi"
 ```
 
 ## Modules
