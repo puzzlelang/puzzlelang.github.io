@@ -1,22 +1,4 @@
-<div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey" style="font-size:45px">
-    <!--img src="puzzle-invert.png" style="width: 80px;"--> PUZZLE
-</div>
-
-<div class="leto-text-xxl leto-mt-xl leto-mb leto-text-darker-grey">
-    An <u>abstract</u> and <u>extendable</u> programming language that runs on top of javascript
-</div>
-
-
-<a href="#/?id=install" class="leto-button">GET STARTED</a>
-<a href="https://github.com/puzzlelang/puzzle" class="leto-button leto-border-none">Github</a>
-<a href="#/?id=language" class="leto-button leto-border-none">Learn Puzzle</a>
-
-<br>
-<br>
-
-# Where to use Puzzle
-
-<br>
+# PUZZLE
 
 <b>Browser</b>
 
