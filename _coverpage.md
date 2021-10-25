@@ -3,7 +3,7 @@
 <div style="height:200px"></div>
 <img src="puzzle-invert.png" style="width:40px"> <span style="font-size: 50px;color:#ffffff">PUZZLE</span>
 
-> Abstract programming language
+> Abstract, extendable programming language
 
 <center>
 <div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px">
@@ -17,9 +17,9 @@ create button with action (
 	</pre>
 </div>
 </center>
-
+<br><br>
 <div style="text-align: center;color:#ffffff;">
-		RUNS ON: 
+		RUNS ON: <br><br>
 		&nbsp; <span style=""><i class="fab fa-node-js"></i> Node,
 		&nbsp; <i class="fab fa-js-square"></i> JS,
 		&nbsp; <i class="fa fa-cloud"></i> Cloud,
@@ -29,6 +29,7 @@ create button with action (
 		&nbsp; ...
 	</span>
 	</div>
+<br><br>
 
 [Learn](?id=language)
 [Get Started](?id=puzzle)
