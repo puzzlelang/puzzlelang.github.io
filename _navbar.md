@@ -4,7 +4,7 @@
 
 * [Home]()
 
-* [Learn PUZZLE](chapters/PUZZLE.md)
+* [PUZZLE lang](chapters/PUZZLE.md)
 
 * [Tools](chapters/TOOLS.md)
 

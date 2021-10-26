@@ -3,7 +3,7 @@
 <div style="height:200px"></div>
 <span style="font-size: 50px;color:#e5cbe4">Abstract Code Programming</span>
 
-> Real programming language, but simple
+> PUZZLE. An abstract, extendable programming language
 
 <center>
 <div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px">
