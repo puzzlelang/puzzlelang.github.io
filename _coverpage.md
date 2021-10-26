@@ -31,5 +31,5 @@ create button with action (
 	</div>
 <br><br>
 
-[Learn](?id=language)
-[Get Started](?id=puzzle)
+[Learn](https://abstractcode.org/#/chapters/PUZZLE)
+[abstractcode.org](https://abstractcode.org)
