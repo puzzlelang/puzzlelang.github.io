@@ -1,12 +1,12 @@
 <!-- docs/_sidebar.md -->
 
-* [![AC](https://puzzlelang.org/assets/aclogo-sm.png "Abstract Code")]()
+* [![AC](https://abstractcode.org/assets/aclogo-sm.png "Abstract Code")]()
 
 * [Abstract Code]()
 
-* [PUZZLE lang](chapters/PUZZLE.md)
-
 * [Tools](chapters/TOOLS.md)
+
+* [PUZZLE lang](chapters/PUZZLE.md)
 
 * [Guide](chapters/GUIDES.md)
 
