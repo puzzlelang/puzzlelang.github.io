@@ -1,169 +1,307 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <title>Abstract Code Programming</title>
+    <link rel="icon" type="image/png" href="assets/aclogo-sm.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css">
-    <link rel="icon" type="image/png" href="puzzle-invert.png">
-    <title>PUZZLE. An abstract programming language</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="abstract, programming">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="leto.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <style type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+    :root {
+        --theme-color: #ba80ef;
+    }
+
+    h1 {
+        margin-top: 150px !important;
+    }
+
     body {
-        background: #212121;
-        font-family: 'Montserrat', sans-serif !important;
+        font-family: 'Roboto Slab', serif;
     }
 
-    .leto-frame-dark {
-        height: 100%;
+    nav {
+        width: 100%;
+        right: auto !important;
+        text-align: center !important;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 20px;
+        padding-top: 20px;
         margin-top: 0px !important;
-        margin-bottom: 0px !important;
+        position: fixed !important;
+        background: #FFFFFF;
+        background: none;
+        border-bottom: none;
     }
 
-    a,
-    .anchor span {
-        color: #FFFFFF !important;
+    nav ul li:first-child {
+        position: absolute;
+        left: 25px;
+        top: 5px;
     }
 
-    section.cover {
-        align-items: start !important;
-        background: #252525 !important
+    .sidebar {
+        border-right: none;
     }
 
-    .cover-main {
-        margin: 0px !important;
+    .masonry {
+        width: 100%;
+        column-count: 2;
+        column-gap: 20px;
     }
 
-    p,
-    ul {
-        color: #fafafa !important;
+    .masonry div,
+    .feature {
+        background: #c48effb8;
+        border-radius: 20px;
+        padding: 30px;
+        //padding-top:130px;
+        margin: 0px;
+        //margin-top:1px;
+         margin-bottom:20px;
+        //min-height: 200px;
+        font-size: 22px;
+        font-weight: 100;
+        break-inside: avoid-column;
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
 
-    aside {
-        border: none !important;
-        background: #212121 !important
+    .masonry div a {
+        text-decoration: none;
+        color: #944e84b8;
+        line-height: 1.8;
     }
 
-    .concepts {
-       
+    .markdown-section {
+        max-width: 70%;
+        width: 1000px;
+        //column-count: 2;
+        //column-gap: 50px;
+        text-align: justify;
+    }
+
+    .markdown-section>* {
+        font-size: 19px;
+    }
+
+    .markdown-section a {
+        font-weight: 400 !important;
     }
 
     .content {
-        margin-right: 250px;
+        //right:300px;
+        padding-top: 100px;
     }
 
-    @media screen and (max-width: 800px) {
-      .concepts {
-            column-count:1;
+    .cover-main {
+        //margin-top:120px !important;
+        margin: 0px !important;
+        max-width: 100%;
+    }
+
+    #search-wrapper {
+        position: absolute;
+        top: 460px;
+        width: 100%;
+        left: 25%;
+    }
+
+    .search {
+        margin-top: 80px;
+        border: 1px solid #EEEEEE !important;
+        border-radius: 10px;
+    }
+
+    #search-wrapper input {
+        padding: 10px 30px;
+        font-size: 20px;
+        background: #b9b9b938;
+        border-radius: 100px;
+        width: 50%;
+    }
+
+    .search .matching-post {
+        display: inline-block;
+        text-align: left;
+        margin: 10px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .nolink
+    {
+      text-decoration: none !important;
+    }
+
+    section.cover {
+        align-items: flex-start;
+        min-height: 100%;
+        height: auto !important;
+        //background: none !important;
+        background: #f3f0ff !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .masonry {
+            width: 100%;
+            column-count: 2;
+            column-gap: 0px;
         }
 
-        .content {
-        margin-right: 15px;
-    }
-    }
-
-    .concepts>div {
-        border:0px solid red;
-       // width:49%;
-        display: inline-block;
-        //min-height: 1000px;
-        margin:50px;
-        padding:50px;
-        -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
+        #search-wrapper {
+            width: 90%;
+        }
     }
 
-    .concepts>div:nth-child(1), .concepts>div:nth-child(4) {
-        background: #1a1a1a;
-    }
+    @media only screen and (max-width: 400px) {
+        .masonry {
+            width: 100%;
+            column-count: 1;
+            column-gap: 0px;
+        }
 
-    .concepts>div:nth-child(2) {
-        background: #2a2a2a;
-    }
-
-    .concepts>div:nth-child(3) {
-        background: #1e1e1e;
-    }
-
-    :root {
-        --theme-color: #69b1ff !important;
-    }
-
-    .leto-card
-    {
-        border-radius: 5px;
-        height:120px;
-        width:120px;
-        border: none;
-        background: #111111;
-        color: #EEEEEE;
-        padding:10px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .sidebar ul li a {
-        font-weight: 900;
-        color: #aaaaaa !important;
-    }
-
-    .sidebar .active a {
-        color: #ffffff !important;
+        #search-wrapper {
+            width: 90%;
+        }
     }
 
     .sidebar-nav > ul > li > a  {
-        font-weight: 900 !important;
+        font-weight: bold !important;
     }
 
-    code {
-        font-size: 1rem !important;
+    .sidebar-nav  a  {
+
     }
+
+    .content {
+       // margin-right: 250px;
+       left: 100px !important;
+    }
+
+    article {
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 800px) {
+        .content {
+            //margin-right: 15px;
+        }
+    }
+
+    .sidebar, .content {
+        
+    }
+
     </style>
 </head>
 
 <body>
     <div id="app"></div>
+    <!--div id="search-wrapper"></div-->
     <script>
     window.$docsify = {
-        search: {
-            placeholder: "Search..."
-        },
-        coverpage: true,
-        onlyCover: true,
-        //loadSidebar: true,
-        //hideSidebar: true,
-        subMaxLevel: 2,
+        name: '',
         repo: '',
-        themeColor: "#42b983",
-        darkMode: {
-            dark: {
-                background: "#1c2022",
-                toggleBtnBg: "#34495e",
-                textColor: "#b4b4b4"
-            },
-            light: {
-                background: "white",
-                toggleBtnBg: "var(--theme-color)",
-                textColor: "var(--theme-color)"
-            }
-        },
-        homepage: "./index.md"
+        loadNavbar: true,
+        coverpage:true,
+        subMaxLevel: 2,
+        //onlyCover: true,
+        plugins: [],
+        //loadSidebar: true,
+        //coverpage: 'cover.html',
+        search: {
+            paths: 'auto',
+            placeholder: 'Search...',
+        }
+        //onlyCover:true
     }
+
+    var search;
+    var searchOffset = window.innerHeight;
+
+    function initSearchPlugin() {
+        search = document.getElementsByClassName('search')[0]
+        document.getElementById('search-wrapper').append(search);
+
+        //search.style.top = document.getElementById('search-wrapper-hidden').offsetTop + 'px';
+    }
+
+    function moveSearchPlugin(direction) {
+        var nav = document.getElementsByClassName('sidebar')[0]
+        search = document.getElementsByClassName('search')[0]
+
+        if (direction == 'down') nav.prepend(search)
+        else if (direction == 'up') document.getElementById('search-wrapper').append(search)
+    }
+
+    /*window.onhashchange = function () {
+        if(window.location.hash == '#/') {
+          setTimeout(function(){ initSearchPlugin(); }, 1000)
+        }
+    }*/
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(function() {
+            var nav = document.getElementsByTagName('nav')[0];
+            var search = document.getElementsByClassName('search')[0];
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 5)
+                    nav.style.background = '#FFFFFF';
+                else if (window.pageYOffset < 5) nav.style.background = 'none'
+
+                if (window.pageYOffset > searchOffset) {
+                    moveSearchPlugin('down')
+                } else if (window.pageYOffset < searchOffset) moveSearchPlugin('up')
+            };
+
+            //initSearchPlugin()
+
+        }, 100)
+
+    });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+      <script type="text/javascript">
+        function loadMedium(target){
+          window.setTimeout(function(){
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/abstract-code-programming')
+        .then(response => response.json())
+        .then(data => {
+          data.items.forEach(item => {
+            var post = document.createElement('div');
+            post.style.fontSize = '19px';
+            post.innerHTML = '<p><h3>'+item.title+'</h3> <br> </p>';
+            //post.innerHTML += '<small>by ' + item.author + '</small></p>'
+            post.innerHTML += item.content.split('<hr>')[0];
+            document.getElementById(target).appendChild(post);
+          });
+
+        });
+
+      }, 700)
+      };
+
+      loadMedium('postsSection');
+
+        window.addEventListener('hashchange', () => {
+         
+          if(window.location.hash == '#/chapters/POSTS') loadMedium('postsSectionInner');
+          else loadMedium('postsSection');
+        });
+      </script>
+
 </body>
 
 </html>

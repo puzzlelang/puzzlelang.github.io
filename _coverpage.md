@@ -1,24 +1,25 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<img src="puzzle-invert.png" style="width:40px"> <span style="font-size: 50px;color:#ffffff">PUZZLE</span>
+<span style="font-size: 50px;color:#e5cbe4">Abstract Code Programming</span>
 
-> Abstract, extendable programming language
+> Real programming language, but simple
 
 <center>
 <div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
+set message "hello world";
+
 create button with action (
-    send email to peter@griffin.com
-	with text "hello world"
-) and text "send email"
+	print message;
+)
 </code>
 	</pre>
 </div>
 </center>
-<br><br>
-<div style="text-align: center;color:#ffffff;">
+
+<div style="text-align: center;color:#333333;">
 		RUNS ON: <br><br>
 		&nbsp; <span style=""><i class="fab fa-node-js"></i> Node,
 		&nbsp; <i class="fab fa-js-square"></i> JS,
@@ -29,7 +30,6 @@ create button with action (
 		&nbsp; ...
 	</span>
 	</div>
-<br><br>
 
-[Learn](https://abstractcode.org/#/chapters/PUZZLE)
-[abstractcode.org](https://abstractcode.org)
+[Lean PUZZLE](chapters/PUZZLE)
+[Guides](chapters/GUIDES)

@@ -1,0 +1,249 @@
+html,
+body,
+.container-fluid {
+    height: 100%;
+    background-color: #222222;
+    color: #EFEFEF;
+    padding: 0px;
+    margin: 0px;
+    font-family: "courier new" !important;
+}
+
+html {
+    -webkit-app-region: drag;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#app {
+    height: 100%;
+    background-color: #222222;
+}
+
+.dropdown {
+    display: inline-block;
+    background: #000000 !important;
+    color: white;
+    position: fixed !important;
+    z-index: 999999;
+    left: 0px;
+}
+
+.main-content {
+    top: 0px;
+    //height: 100%;
+    margin-top:20px;
+    width: calc(95% - 25px);
+    display: inline-block;
+    background: #202020;
+    border-radius: 5px;
+    //max-height:60%;
+    overflow: scroll;
+}
+
+.main-content-bottom {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 100px;
+    max-width: 80%;
+    display: inline-grid;
+}
+
+#editor {
+    min-height: 30px !important;
+    //width: calc(100% - 120px);
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: scroll;
+    display: block;
+    float: left;
+    //background: #222222;
+    //background: #232323;
+    //max-width: 100%;
+    //overflow: scroll;
+    //white-space: nowrap;
+    left:0px;
+    padding-left: 0px !important; 
+
+}
+
+.projects-sidebar {
+    min-width: 250px;
+}
+
+.sidebar-left {
+    //width: 800px;
+    width: 200px:;
+    top:10px;
+    display: block;
+    position: fixed;
+    left:0px;
+    height: 100%;
+    background: #232323;
+    z-index: 10000;
+}
+
+.sidebar-hidden {
+    width: 30px;
+    padding-top: 23px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top:0px;
+    background: #1e1e1e;
+    z-index: 10001;
+}
+
+.sidebar-leftbar {
+    float: left;
+    height: 100%;
+}
+
+.ace_gutter-cell,
+.ace_scroller,
+.ace_content,
+.ace_gutter-layer {
+    background: #202020;
+}
+
+
+.show-mobile {
+    display: none !important;
+}
+
+.ace_gutter-cell {
+    color: #4e4e4e;
+}
+
+.ace-monokai .ace_marker-layer .ace_active-line {
+    background: #202020 !important;
+}
+
+.tab-bar {
+    max-width: 100%;
+    overflow: scroll;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.tab-active {
+    font-weight: bold;
+    //text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.leto-bubble-mmd {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.bubble-badge {
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    right: -50px;
+    margin-right: -20px;
+    margin-bottom: -37px;
+    margin-top: 8px
+}
+
+.times-hover:hover .times {
+    display: inline-block;
+}
+
+.times-hover:hover .times-hide {
+    display: none;
+}
+
+.times {
+    display: none;
+    color: #999999 !important;
+}
+
+.disabled {
+    color: #3e3e3e !important;
+    border-color: #3e3e3e !important;
+}
+
+.super-grey-label {
+    color:#454545;
+}
+
+.appbar {
+    //height: 100px;
+    max-width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.output {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #272727;
+}
+
+.bottom-sheet {
+    //height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    min-height:25%;
+    height: 100%;
+    z-index: 1000;
+    box-shadow: 0px -1px 5px 0px #0000001f;
+    background: #252525;
+}
+
+.bottom-sheet-shell {
+    top: 50%;
+    min-height:50%;
+}
+
+.welcome-msg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #222222;
+    z-index: 999;
+}
+
+.tile {
+    background: #151515 !important;
+    border-radius: 5px !important;
+    border: none !important;
+    display: inline-block;
+    height:100px;
+    color:white;
+    width:100px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.main-content {
+width:100% !important;
+margin-left:0px;
+}
+
+.show-mobile {
+    display: inline-block !important;
+}
+
+.hide-mobile {
+    display: none !important;
+}
+
+}
