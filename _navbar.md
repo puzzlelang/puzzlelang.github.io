@@ -2,7 +2,7 @@
 
 * [![AC](https://puzzlelang.org/assets/aclogo-sm.png "Abstract Code")]()
 
-* [Home]()
+* [Abstract Code]()
 
 * [PUZZLE lang](chapters/PUZZLE.md)
 
