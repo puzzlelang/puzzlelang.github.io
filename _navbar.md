@@ -12,8 +12,8 @@
 
 * [Posts](chapters/POSTS.md)
 
-* [Medium](https://medium.com/abstract-code-programming)
-
-* [Basics](chapters/BASICS.md)
+* [Know How](chapters/BASICS.md)
 
 * [About](chapters/about.md)
+
+* [Medium](https://medium.com/abstract-code-programming)
