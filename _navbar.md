@@ -4,9 +4,9 @@
 
 * [Abstract Code]()
 
-* [Tools](chapters/TOOLS.md)
+* [Learn PUZZLE](chapters/PUZZLE.md)
 
-* [PUZZLE lang](chapters/PUZZLE.md)
+* [Tools](chapters/TOOLS.md)
 
 * [Guide](chapters/GUIDES.md)
 
