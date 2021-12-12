@@ -1,9 +1,8 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 50px;color:#e5cbe4">Abstract Code Programming</span>
+<span style="font-size: 50px;color:#e5cbe4">An Abstract Programming Language</span>
 
-> With PUZZLE, an abstract programming language
 
 <center>
 <div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px">
