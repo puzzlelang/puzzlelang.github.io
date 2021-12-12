@@ -2,18 +2,13 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
 
-* [Abstract Code]()
+* [Home]()
 
-* [Learn PUZZLE](chapters/PUZZLE.md)
+* [Learn](chapters/PUZZLE.md)
 
-* [Tools](chapters/TOOLS.md)
-
-* [Guide](chapters/GUIDES.md)
-
-* [Posts](chapters/POSTS.md)
-
-* [Know How](chapters/BASICS.md)
+* [Guides](chapters/GUIDES.md)
 
 * [About](chapters/about.md)
 
-* [Medium](https://medium.com/abstract-code-programming)
+<!--
+* [Abstract Code Magazine](https://abstractcode.org)-->
