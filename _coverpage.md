@@ -30,5 +30,6 @@ create button with action (
 	</span>
 	</div>
 
-[Lean PUZZLE](chapters/PUZZLE)
+[Get](chapters/PUZZLE?id=install)
+[Learn](chapters/PUZZLE)
 [Guides](chapters/GUIDES)
