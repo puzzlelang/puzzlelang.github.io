@@ -1,3 +1,6 @@
 [submodule "shell"]
 	path = shell
 	url = https://github.com/4ty711/puzzle-web.git
+[submodule "editor"]
+	path = puzzle-web
+	url = https://github.com/4ty711/puzzle-web
