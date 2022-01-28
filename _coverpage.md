@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 50px;color:#e5cbe4">An abstract, extendable<br> programming language</span>
+<span style="font-size: 50px;color:#b14aad">An abstract, extendable<br> programming language</span>
 
 
 <center>
