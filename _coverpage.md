@@ -1,7 +1,8 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 50px;color:#b14aad">An abstract, extendable<br> programming language</span>
+<span style="font-size: 40px;color:#b14aad">An "abstract code" programming language
+</span>
 
 
 <center>
@@ -30,6 +31,6 @@ create button with action (
 	</span>
 	</div>
 
+[Try](https://puzzlelang.org/puzzle-web)
 [Get](chapters/PUZZLE?id=install)
-[Learn](chapters/PUZZLE)
 [Guides](chapters/GUIDES)
