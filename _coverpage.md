@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 40px;color:#b14aad">An "abstract code" programming language
+<span style="font-size: 40px;color:#b14aad">An abstract programming language
 </span>
 
 
