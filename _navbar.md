@@ -2,8 +2,6 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
 
-* [Home]()
-
 * [Learn](chapters/PUZZLE.md)
 
 * [Guides](chapters/GUIDES.md)
