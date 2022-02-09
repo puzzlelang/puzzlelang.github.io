@@ -5,25 +5,41 @@
 </span>
 
 
-<center style="width: 100%;">
+<center style="width: 100%;display: flex;align-items: center;justify-content: center;">
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
-<span style="color: grey">// Use in the browser</span>
-
+<span style="color: grey">&#60;!-- Use in Browser --></span>
 &#60;script type="text/puzzle">
 	alert "hi"
 &#60;/script>
+
+<span style="color: grey">// or standalone</span>
+$ puzzle run file.pz
+
+<span style="color: grey">// or embedded</span>
+puzzle.parse('print hi')
 </code>
 	</pre>
 </div>
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
-<span style="color: grey">// Use local or remote modules</span>
+<span style="color: grey">// Abstract syntax examples</span>
 
 use "https://domain.com/web.js"
+
 create button with text "hi"
+
+
+set message "learn puzzle now"
+
+print message;
+
+
+write file /test.txt "hi"
+
+<span style="color: grey">// And way more...</span>
 </code>
 	</pre>
 </div>
@@ -36,11 +52,12 @@ define token echo with
 	method ( console.log(param) )
 	and follow "{param}";
 
+<span style="color: grey">// Use it right away</span>
 echo "hi"
 </code>
 	</pre>
 </div>
-<div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
+<!--div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
 <span style="color: grey">// Use standalone</span>
@@ -60,7 +77,7 @@ set message "learn puzzle now";
 print message;
 </code>
 	</pre>
-</div>
+</div-->
 </center>
 
 <div style="text-align: center;color:#333333;">
