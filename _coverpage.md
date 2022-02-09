@@ -33,7 +33,6 @@ create button with text "hi"
 
 
 set message "learn puzzle now"
-
 print message;
 
 
