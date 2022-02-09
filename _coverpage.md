@@ -4,6 +4,12 @@
 <span style="font-size: 40px;color:#b14aad">An abstract, extendable programming language
 </span>
 
+<br>
+
+<b>START NOW:</b>
+<a href="#chapters/GUIDES" class="btn-primary">Build something <span class="fa fa-arrow-right"></span></a>
+
+<br>
 
 <center style="width: 100%;display: flex;align-items: center;justify-content: center;">
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
@@ -78,7 +84,7 @@ print message;
 	</pre>
 </div-->
 </center>
-
+<br><br>
 <div style="text-align: center;color:#333333;">
 		PUZZLE RUNS IN ANY JS ENVIRONMENT: <br><br>
 		&nbsp; <span style=""><i class="fab fa-node-js"></i> Node,
@@ -89,7 +95,3 @@ print message;
 		&nbsp; ...
 	</span>
 	</div>
-
-[Try](https://puzzlelang.org/puzzle-web)
-[Get](chapters/PUZZLE?id=install)
-[Guides](chapters/GUIDES)
