@@ -5,7 +5,7 @@
 </span>
 
 
-<center style="width: 100%;overflow-y: hidden;overflow-x: scroll;white-space: nowrap;display: flex;align-items: center;">
+<center style="width: 100%;">
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
