@@ -11,7 +11,7 @@
 
 <br>
 
-<center style="width: 100%;display: flex;align-items: center;justify-content: center;">
+<center style="width: 100%;display: flex;align-items: center;justify-content: center;max-width:100%;overflow-x:scroll;overflow-y:hidden;white-space:nowrap">
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
