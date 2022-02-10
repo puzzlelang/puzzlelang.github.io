@@ -11,10 +11,10 @@
 
 <br>
 
-<center style="width: 100%;display: flex;align-items: center;justify-content: center;max-width:100%;overflow-x:scroll;overflow-y:hidden;white-space:nowrap">
+<center style="width: 100%;align-items: center;justify-content: center;max-width:100%;overflow-x:scroll;overflow-y:hidden;white-space:nowrap">
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
-	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
+	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 <span style="color: grey">&#60;!-- Use in Browser --></span>
 &#60;script type="text/puzzle">
 	alert "hi"
@@ -30,7 +30,7 @@ puzzle.parse('print hi')
 </div>
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
-	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
+	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 <span style="color: grey">// Abstract syntax examples</span>
 
 use "https://domain.com/web.js"
@@ -50,7 +50,7 @@ write file /test.txt "hi"
 </div>
 <div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
-	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
+	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 <span style="color: grey">// Extend the language</span>
 
 define token echo with
