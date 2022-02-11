@@ -39,12 +39,6 @@ rootNode body;
 create button with text "click me" and method ( alert('i was clicked') );
 ```
 
-# PUZZLE RUN
-
-PUZZLE RUN is an integrated PUZZLE runtime for building and running PUZZLE programs.
-
-tbd...
-
 # Desktop
 
 To build programs for desktops, you can use web-based frameworks, like
@@ -106,6 +100,14 @@ Main HTML file (index.html)
 </html>
 ```
 
+Service Worker (worker.js)
+
+```javascript
+self.addEventListener("install", installEvent => {
+  console.log('Installed!')
+})
+```
+
 Manifest (manifest.json)
 
 ```json
@@ -119,9 +121,7 @@ Manifest (manifest.json)
 
 # CLI
 
-For using the PUZZLE CLI, you need npm and Node installed on your computer. If not already present, download them here:
-
-...
+For using the PUZZLE CLI, you need npm and Node installed on your computer.
 
 Step 1: Install PUZZLE with npm
 
@@ -146,4 +146,8 @@ puzzle run "print hi"
 
 # Server
 
+tbd
+
 # Cloud Functions
+
+tbd
