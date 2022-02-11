@@ -30,22 +30,13 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 
 After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***web*** module.
 
-```html
-<html>
-	<head>
-		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-	</head>
-	<body>
-		<script type="text/puzzle">
-			// use the web module
-			use web;
+```puzzle
+// use the web module
+use web;
 
-			rootNode body;
+rootNode body;
 
-			create button with text "click me" and method ( alert('i was clicked') );
-		</script>
-	</body>
-</html>
+create button with text "click me" and method ( alert('i was clicked') );
 ```
 
 # PUZZLE RUN
