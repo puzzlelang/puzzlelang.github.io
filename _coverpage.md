@@ -15,7 +15,7 @@
 <div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
-<span style="color: grey">&#60;!-- Use in Browser --></span>
+<span style="color: grey">&#60;!-- Use in browser --></span>
 &#60;script type="text/puzzle">
 	alert "hi"
 &#60;/script>
