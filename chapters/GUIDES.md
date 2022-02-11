@@ -7,7 +7,7 @@ The following chapters will show you how to build software using abstract langua
 
 PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in various ways:
 
-## Including PUZZLE
+***Including PUZZLE***
 
 ```html
 <html>
@@ -26,7 +26,7 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 </html>
 ```
 
-## Building web content
+***Building web content***
 
 After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***web*** module.
 
@@ -46,7 +46,6 @@ To build programs for desktops, you can use web-based frameworks, like
 * electron
 * NW.js
 
-tbc ...
 
 # Mobile
 
@@ -55,9 +54,8 @@ Mobile apps with PUZZLE can either be hybrid apps, build with tools like
 * Nativescript
 * React Native
 
-or ***Progressive Web Apps (PWA)***
 
-## PWA
+# PWA
 
 A PWA is a web app, that allows you to use a couple of "native-feel" capabilities on mobile devices.
 To build a PWA, you need to:
