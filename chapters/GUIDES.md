@@ -15,7 +15,7 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 	</head>
 	<body>
-		<script type="text/puzzle">
+		<script type="text/x-puzzle">
 			print "hi, i am a puzzle script"
 		</script>
 
@@ -80,7 +80,7 @@ Main HTML file (index.html)
     <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
   </head>
   <body>
-    <script type="text/puzzle">
+    <script type="text/x-puzzle">
 		print "hi, i am a puzzle script"
 	</script>
 
