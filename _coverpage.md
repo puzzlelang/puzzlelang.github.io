@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 40px;color:#b14aad">An abstract, extendable programming language
+<span style="font-size: 40px;color:#b14aad">An <i>abstract, extendable</i> programming language<br> <small>that runs in javascript environments</small>
 </span>
 
 <br>
