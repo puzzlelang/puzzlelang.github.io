@@ -1,31 +1,7 @@
 # About PUZZLE
 
-The PUZZLE project is an approach to create a versative programming language that serves as a tool for abstract programming.
+The PUZZLE project is an approach to create a versative programming language that serves as a tool for abstract code programming.
 
-
-# Abstraction
-
-> The goal of "abstracting" [...] is to reduce complexity by removing unnecessary information [<cite>[1]</cite>]
-
-The concept of abstraction itself has been used in computers ever since they were created. Computers work on complex concepts that are split into different layers.
-
-> Abstraction is done with Layers. Each Layer makes the usage of it's underlying layer simpler.
-
-Everbody knows, computers only understand 0 and 1. Programming, however is not done by using zeros and ones. It is done by using readable code. So there must be something in between, something that somehow translates code into 1 and 0. This is where layers join the game. 
-
-Layers are here to abstract the layer beneath it. Computers work on many, many layers. So from a user input, like the press of a key on the keyboard, many different layers are involved, before that command reaches the 1 and 0 level.
-
-![Layers](../../assets/layers2.png "Layers")
-
-<small>([Image source](https://lh6.googleusercontent.com/proxy/erajlo1MU6tYmH76em7xwahjWRRec_jwCYDUM_E0bdOLQNMWEHfQM6AwzbVBqDMUG8vX3rxYu2EgS_ekD2CvvxGD3qor-i6eZyCSBVe_G-8BjKyhjN1B7wxwBx982YuyqAoB=w1823-h1193))</small>
-
-
-Every programming code runs on a pretty high layer of that stack, meaning that code is a layer of abstraction that is fairly simple, compared to the 0 and 1 layer. 
-
-Therefore a programmer usually doesn't have to deal with zeroes and ones.
-
-
-[1]: https://techterms.com/definition/abstraction#:~:text=In%20computer%20science%2C%20abstraction%20has,of%20computers%20in%20abstract%20terms.
 
 # Development Approaches
 
@@ -51,15 +27,21 @@ What that means is that programming is done using graphical tools that let's the
 
 ## No Code
 
+No Code means no code is needed to build applications.
+
+tbd...
+
 ## Low Code
+
+Low Code Platforms are tools to build software, mostly using drag-n-drop elements and adding some amount of custom code. This is oftentimes a domain specific language.
+
+tbd.
 
 
 ## Abstract Code
 
-> First of all, there is no official definition of "Abstract Code". I'll be using this term to describe the principle of this publication.
 
-When you google "Abstract Code", you'll mainly find results that have to do with the concept of [Abstraction](...).
-And the Idea of Abstraction is actually a good point to start. You can read more about abstraction [here]().
+When you google "Abstract Code", you'll mainly find results that have to do with the concept of Abstraction.
 
 What the concept of this publication is about, is finding a way to develop software without the (full) complexity of general purpose programming languages while still having the (full) flexibility of general purpose programming languages.
 
@@ -191,6 +173,33 @@ Different syntax is easy to understand for humans, but not so easy for a compute
 ***From "What is code?" over "What is a Computer?" to "How to run code?"***
 
 ---
+
+
+## Abstraction
+
+> The goal of "abstracting" [...] is to reduce complexity by removing unnecessary information [<cite>[1]</cite>]
+
+The concept of abstraction itself has been used in computers ever since they were created. Computers work on complex concepts that are split into different layers.
+
+> Abstraction is done with Layers. Each Layer makes the usage of it's underlying layer simpler.
+
+Everbody knows, computers only understand 0 and 1. Programming, however is not done by using zeros and ones. It is done by using readable code. So there must be something in between, something that somehow translates code into 1 and 0. This is where layers join the game. 
+
+Layers are here to abstract the layer beneath it. Computers work on many, many layers. So from a user input, like the press of a key on the keyboard, many different layers are involved, before that command reaches the 1 and 0 level.
+
+![Layers](../../assets/layers2.png "Layers")
+
+<small>([Image source](https://lh6.googleusercontent.com/proxy/erajlo1MU6tYmH76em7xwahjWRRec_jwCYDUM_E0bdOLQNMWEHfQM6AwzbVBqDMUG8vX3rxYu2EgS_ekD2CvvxGD3qor-i6eZyCSBVe_G-8BjKyhjN1B7wxwBx982YuyqAoB=w1823-h1193))</small>
+
+
+Every programming code runs on a pretty high layer of that stack, meaning that code is a layer of abstraction that is fairly simple, compared to the 0 and 1 layer. 
+
+Therefore a programmer usually doesn't have to deal with zeroes and ones.
+
+
+[1]: https://techterms.com/definition/abstraction#:~:text=In%20computer%20science%2C%20abstraction%20has,of%20computers%20in%20abstract%20terms.
+
+
 
 ## What is Code?
 
