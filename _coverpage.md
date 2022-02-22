@@ -1,7 +1,14 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 40px;color:#b14aad">An <i>abstract, extendable</i> programming language<br> <small>that runs in javascript environments</small>
+<span style="font-size: 40px;color:#b14aad">An <i>abstract, extendable</i> programming language<br> <small style="font-size:20px">Runs in &nbsp; <span style=""><i class="fab fa-node-js"></i> Node,
+		&nbsp; <i class="fa fa-globe"></i> Browser,
+		&nbsp; <i class="fa fa-cloud"></i> Cloud Functions,
+		&nbsp; <i class="fa fa-desktop"></i> Desktop,
+		&nbsp; <i class="fa fa-mobile-alt"></i> PWA,
+		&nbsp; ...		
+	</span>
+	</div></small>
 </span>
 
 <br>
@@ -11,23 +18,8 @@
 
 <br>
 
-<center style="width: 100%;align-items: center;justify-content: center;max-width:100%;overflow-x:scroll;overflow-y:hidden;white-space:nowrap">
-<div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
-	<pre>
-	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
-<span style="color: grey">&#60;!-- Use in browser --></span>
-&#60;script type="text/puzzle">
-	alert "hi"
-&#60;/script>
+<center style="width: 100%;align-items: center;justify-content: center;max-width:100%;white-space:nowrap">
 
-<span style="color: grey">// or standalone</span>
-$ puzzle run file.pz
-
-<span style="color: grey">// or embedded</span>
-puzzle.parse('print hi')
-</code>
-	</pre>
-</div>
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
@@ -44,13 +36,6 @@ print message;
 
 write file /test.txt "hi"
 
-<span style="color: grey">// And way more...</span>
-</code>
-	</pre>
-</div>
-<div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
-	<pre>
-	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 <span style="color: grey">// Extend the language</span>
 
 define token echo with
@@ -59,6 +44,8 @@ define token echo with
 
 <span style="color: grey">// Use it right away</span>
 echo "hi"
+
+<span style="color: grey">// And way more...</span>
 </code>
 	</pre>
 </div>
@@ -86,12 +73,6 @@ print message;
 </center>
 <br><br>
 <div style="text-align: center;color:#333333;">
-		PUZZLE RUNS IN ANY JS ENVIRONMENT: <br><br>
-		&nbsp; <span style=""><i class="fab fa-node-js"></i> Node,
-		&nbsp; <i class="fa fa-globe"></i> Browser,
-		&nbsp; <i class="fa fa-cloud"></i> Cloud Functions,
-		&nbsp; <i class="fa fa-desktop"></i> Desktop,
-		&nbsp; <i class="fa fa-mobile-alt"></i> PWA,
-		&nbsp; ...
+		PUZZLE RUNS IN ANY JS ENVIRONMENT
 	</span>
 	</div>
