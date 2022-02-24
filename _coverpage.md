@@ -1,11 +1,10 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 40px;color:#b14aad">An <i>abstract, extendable</i> programming language<br> <small style="font-size:20px">Runs in &nbsp; <span style=""><i class="fa fa-globe"></i> Browser,
+<span style="font-size: 40px;color:#b14aad">An <i>abstract, extendable</i> programming language<br> <small style="font-size:20px">Runs in any <i class="fab fa-js"></i> environment:&nbsp; <span style=""><i class="fa fa-globe"></i> Browser,
 		<i class="fab fa-node-js"></i> Node,
 		&nbsp; <i class="fa fa-cloud"></i> Cloud Functions,
 		&nbsp; <i class="fa fa-desktop"></i> UIs,
-		&nbsp; <i class="fa fa-mobile-alt"></i> Web,
 		&nbsp; ...		
 	</span>
 	</div></small>
