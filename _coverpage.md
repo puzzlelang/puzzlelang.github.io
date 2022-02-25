@@ -11,9 +11,9 @@
 
 <br>
 
-<center style="width: 100%;align-items: center;justify-content: center;max-width:100%;white-space:nowrap">
+<center style="width: 100%;">
 
-<div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
+<div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 <span style="color: grey">// Abstract syntax examples</span>
@@ -42,27 +42,38 @@ echo "hi"
 </code>
 	</pre>
 </div>
-<!--div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
+<div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
-<span style="color: grey">// Use standalone</span>
-$ puzzle run file.pz
+<span style="color: grey">&#60;!--In the browser--></span>
+&#60;script src="puzzle.browser.js" />
+&#60;script type="text/x-puzzle">
+	create button with text "click me";
+&#60;/script>
+</code>
+	</pre>
+</div>
 
-<span style="color: grey">// or in Node</span>
+<div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
+	<pre>
+	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
+<span style="color: grey">// In Node</span>
+const puzzle = require('puzzlelang')
 puzzle.parse('print hi')
 </code>
 	</pre>
 </div>
-<div style="background: #111111;width:500px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: inline-block;">
+
+<div style="background: #111111;width:600px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:25px !important;color:#EEEEEE">
-<span style="color: grey">// Build anything</span>
-
-set message "learn puzzle now";
-print message;
+<span style="color: grey"># Standalone</span>
+$ npm i -g puzzlelang
+$ puzzle run file.pz
 </code>
 	</pre>
-</div-->
+</div>
+
 </center>
 <br><br>
 <div style="text-align: center;color:#333333;">
