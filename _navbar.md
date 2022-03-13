@@ -8,5 +8,7 @@
 
 * [About](chapters/about.md)
 
+* [Run](https://puzzlelang.org/run)
+
 <!--
 * [Abstract Code Magazine](https://abstractcode.org)-->

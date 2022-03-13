@@ -5,9 +5,7 @@ The following chapters will show you how to build software using abstract langua
 
 # PUZZLE Run
 
-PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it here or external on [puzzlelang.org/run](https://puzzlelang.org/run)
-
-<iframe src="https://puzzlelang.org/run" style="height:700px"></iframe>
+PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
 # Webbrowser
 
