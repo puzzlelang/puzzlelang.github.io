@@ -1,79 +1,17 @@
 # About PUZZLE
 
-The PUZZLE project is an approach to create a versative programming language that serves as a tool for abstract code programming.
+PUZZLE is an abstract programming language
 
+# Abstract Code Programming
 
-# Development Approaches
-
-***"Programing isn't always just done with code."***
-
-Of course, code is the most common way to program software. But there are other ways to develop software beyond code.
-
-> Code is a set of instructions that tell a computer what to do, remember? These "instructions", however can also be described in other ways as well - beyond code.
-
-
-Code is also the lowest level to describe there instructions. But over time, people have found ways to make software development possible not just by writing code, but by providing more abstract ways to program - beyond code. Common examples range from "No Code" to "Low Code".
-
-* ***No Code*** doesn't require writing any code. Typically programming is done by using WYSIWYG Tools
-* ***Low Code*** does require writing code, but not necesseraly. This is typically a mix of code and WYSIWYG tools.
-
-## WYSIWYG programming tools
-
-WYSISWG stands for "What You See Is What You Get". Tools that work on this principle allow the user (here: programmer) to create something in the same way it will appear in the result. [<cite>[2]</cite>]
-
-What that means is that programming is done using graphical tools that let's the user create something by using drag'n drop, clicking an writing.
-
-[2]: https://www.dictionary.com/browse/wysiwyg
-
-## No Code
-
-No Code means no code is needed to build applications.
-
-tbd...
-
-## Low Code
-
-Low Code Platforms are tools to build software, mostly using drag-n-drop elements and adding some amount of custom code. This is oftentimes a domain specific language.
-
-tbd.
-
-
-## Abstract Code
-
-
-When you google "Abstract Code", you'll mainly find results that have to do with the concept of Abstraction.
-
-What the concept of this publication is about, is finding a way to develop software without the (full) complexity of general purpose programming languages while still having the (full) flexibility of general purpose programming languages.
+Abstract code programming is an approach of finding a way to develop software without the (full) complexity of general purpose programming languages while still having the (full) flexibility of general purpose programming languages.
 
 Naturally, the above statement sounds conflicting -  and hard to achieve. And it is.
 This is why concepts, like Low Code Programming have evolved in the last couple of years.
 
 Let's talk about the three main conpepts of abstract code programing. These concepts actually represent the name of this whole thing:
 
-* Abstract (as in abstraction)
-* Code (computer code)
-* Programming (the process of coding)
-
-
-
-# Abstract Coding Language
-
-***"An abstract programming language"***
-
-![Puzzle](assets/puzzle.png "Puzzle")
-
-As part of this publication, some technologies that make abstract coding possible, are being created and discussed. There technologies are open source.
-
-
-When we talk about abstract code, we need an abstract programming language. The PUZZLE project is an approach to  reate a real programmming language, that is designed with abstraction in mind. Along with the resources shown in this publication, PUZZLE will be discussed.
-
-
-What is a language at all? A Language is a communication format, most notably used by us people. It is used to transfer information from one person to another.
-
-Computers work on the same principle. (Programming-) Language is used to transfer information from a user (developer) to the computer. The computer then processes that information.
-
-
-## Language philosophy
+# Abstract Language philosophy
 
 Every programming language, just like every real (spoken) language is based upon two principles:
 
@@ -165,6 +103,42 @@ if the number 3 is larger than the number 2 print yes. if it is not print no.
 Different syntax is easy to understand for humans, but not so easy for a computer! Computers need predictable syntax within a code in order to understand it. So in an abstract coding language, it should be possible to write code in different ways while still having the same meaning.
 
 > An abstract programming language should be capable of understanding a phrase with certain words missing and/or a different word order. The most important words, however must be present (like 'if' or 'print')
+
+
+# Other Development Approaches
+
+***"Programing isn't always just done with code."***
+
+Of course, code is the most common way to program software. But there are other ways to develop software beyond code.
+
+> Code is a set of instructions that tell a computer what to do, remember? These "instructions", however can also be described in other ways as well - beyond code.
+
+
+Code is also the lowest level to describe there instructions. But over time, people have found ways to make software development possible not just by writing code, but by providing more abstract ways to program - beyond code. Common examples range from "No Code" to "Low Code".
+
+* ***No Code*** doesn't require writing any code. Typically programming is done by using WYSIWYG Tools
+* ***Low Code*** does require writing code, but not necesseraly. This is typically a mix of code and WYSIWYG tools.
+
+## WYSIWYG programming tools
+
+WYSISWG stands for "What You See Is What You Get". Tools that work on this principle allow the user (here: programmer) to create something in the same way it will appear in the result. [<cite>[2]</cite>]
+
+What that means is that programming is done using graphical tools that let's the user create something by using drag'n drop, clicking an writing.
+
+[2]: https://www.dictionary.com/browse/wysiwyg
+
+## No Code
+
+No Code means no code is needed to build applications.
+
+tbd...
+
+## Low Code
+
+Low Code Platforms are tools to build software, mostly using drag-n-drop elements and adding some amount of custom code. This is oftentimes a domain specific language.
+
+tbd.
+
 
 
 # Basic Know-How
