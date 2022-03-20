@@ -7,7 +7,7 @@ The following chapters will show you how to build software using abstract langua
 
 PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
-# Webbrowser
+# Browser
 
 PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in various ways:
 
