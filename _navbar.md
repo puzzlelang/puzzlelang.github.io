@@ -6,7 +6,7 @@
 
 * [Guides](chapters/GUIDES.md)
 
-* [About](chapters/about.md)
+* [Modules](chapters/modules/index.md)
 
 * [Run](https://puzzlelang.org/run)
 
