@@ -2,7 +2,7 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
 
-* [Learn](chapters/PUZZLE.md)
+* [Learn](?id=puzzle)
 
 * [Guides](chapters/GUIDES.md)
 
