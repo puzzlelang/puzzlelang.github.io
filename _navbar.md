@@ -2,11 +2,11 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
 
-* [Learn](chapters/PUZZLE.md)
+* [Learn](?id=puzzle)
 
 * [Guides](chapters/GUIDES.md)
 
-* [About](chapters/about.md)
+* [Modules](chapters/modules/index.md)
 
 * [Run](https://puzzlelang.org/run)
 
