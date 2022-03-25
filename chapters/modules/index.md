@@ -48,7 +48,7 @@ Build frontends for the browser. In order to use it, you need an html file:
         <script type="text/x-puzzle">
             use web
 
-            rootNode "#app"
+            root "#app"
             create button with text hello
         </script>
     </body>

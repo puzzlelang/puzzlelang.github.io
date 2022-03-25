@@ -1,11 +1,6 @@
-# Guide
+# Guides
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
-
-
-# PUZZLE Run
-
-PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
 # Browser
 
@@ -20,7 +15,10 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 	</head>
 	<body>
 		<script type="text/x-puzzle">
-			print "hi, i am a puzzle script"
+			// use the web module
+			use web;
+			root body;
+			create button with text "click me" and method ( alert('i was clicked') );
 		</script>
 	</body>
 </html>
@@ -30,30 +28,47 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 
 After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***web*** module.
 
+
+> -> Browser technology can also be used to build desktop and mobile apps
+
+# Use with Node
+
+To run puzzle on a server, use in node. 
+
 ```puzzle
-// use the web module
-use web;
-
-rootNode body;
-
-create button with text "click me" and method ( alert('i was clicked') );
+// puzzle file: test.pz
+print hi!
 ```
 
-# Desktop
+```javascript
+const puzzle = require("puzzlelang");
+const fs = reuire("fs");
+puzzle.parse(fs.readSync("test.pz"));
+```
 
-To build programs for desktops, you can use web-based frameworks, like
 
-* electron
-* NW.js
+# Embedded (in JS)
 
+Puzzle scripts can be run embedded in javascript, both node and browsers.
 
-# Mobile
+***Node***
 
-Mobile apps with PUZZLE can either be hybrid apps, build with tools like
+```javascript
+const puzzle = require("puzzlelang");
 
-* Nativescript
-* React Native
+puzzle.parse("print hi!")
+```
 
+***Browser***
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+...
+<script>
+	puzzle.parse("print hi!")
+</script>
+...
+```
 
 # CLI
 
@@ -80,10 +95,8 @@ puzzle run puzzlefile.pz
 puzzle run "print hi"
 ```
 
-# Server
 
-tbd
+# PUZZLE Run
 
-# Cloud Functions
+PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
-tbd
