@@ -321,6 +321,17 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
+## Custom tokens
+
+Custom tokens can be defined for executing some javascript code, when that token is used.
+
+```puzzle
+define token echo with follow "{data}" and method "console.log(data)";
+
+// Use it right away
+echo "test";
+```
+
 ## Comments
 
 Comments can be written using `//`

@@ -341,7 +341,7 @@ Comments can be written using `//`
 ```
 
 
-# Custom syntax
+# Build a module
 
 > Puzzle is a language that can dynamically be extended with custom syntax!
 

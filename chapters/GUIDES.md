@@ -22,10 +22,6 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 		<script type="text/x-puzzle">
 			print "hi, i am a puzzle script"
 		</script>
-
-		<script type="text/javascript">
-			puzzle.parse('print "hi"');
-		</script>
 	</body>
 </html>
 ```
