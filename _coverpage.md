@@ -1,13 +1,9 @@
 <!-- _coverpage.md -->
 
 <div style="height:200px"></div>
-<span style="font-size: 40px;color:#b14aad">An <i>abstract</i> programming language<br> that runs in any <i class="fab fa-js"></i> environment
+<span style="font-size: 40px;color:#b14aad">An abstract programming language
 </span>
 
-<br>
-
-<b>START NOW:</b>
-<a href="#chapters/GUIDES" class="btn-primary">Build something <span class="fa fa-arrow-right"></span></a>
 
 <br>
 
@@ -16,18 +12,14 @@
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	<pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
-<span style="color: grey">// Abstract syntax examples</span>
+<span style="color: grey">// Examples</span>
 
 use "https://domain.com/web.js"
 
-create button with text "hi"
 
+set myOutput "hi developer!";
 
-set message "learn puzzle now"
-print message;
-
-
-write file /test.txt "hi"
+create button with text myOutput
 
 <span style="color: grey">// Extend the language</span>
 
