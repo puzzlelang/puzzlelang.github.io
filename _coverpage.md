@@ -21,7 +21,7 @@
 use web
 
 create button with text "Click me"
-and click ( alert('Hello World!') )
+and click ( alert 'Hello World!' )
 </code>
 	</pre>
 </div>
