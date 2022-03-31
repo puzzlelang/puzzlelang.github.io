@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-<div style="height:200px"></div>
+<div style="height:150px"></div>
 <span style="font-size: 40px;color:#b14aad">An abstract programming language
 </span>
 
@@ -35,4 +35,10 @@ echo "hi"
 </code>
 	</pre>
 </div>
+
+<b>START NOW:</b>
+<a href="#chapters/GUIDES" class="btn-primary">Build something</a>
+<a href="#?id=install" class="" style="margin:0px 10px">Install</a>
+<a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>
+<a href="https://www.npmjs.com/package/puzzlelang" class="" target="_blank" style="margin:0px 10px"><span class="fab fa-npm"></span></a>
 </center>
