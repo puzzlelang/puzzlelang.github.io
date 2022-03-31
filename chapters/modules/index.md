@@ -30,10 +30,10 @@ delete from https://domain.com
 patch to https://domain.com
 ```
 
-# Web
+# UI
 
 ```puzzle
-use web;
+use ui;
 ```
 
 Build frontends for the browser. In order to use it, you need an html file:
@@ -46,7 +46,7 @@ Build frontends for the browser. In order to use it, you need an html file:
     <body>
     	<div id="app"></div>
         <script type="text/x-puzzle">
-            use web
+            use ui
 
             root "#app"
             create button with text hello

@@ -15,8 +15,8 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 	</head>
 	<body>
 		<script type="text/x-puzzle">
-			// use the web module
-			use web;
+			// use the ui module
+			use ui;
 			root body;
 			create button with text "click me" and method ( alert('i was clicked') );
 		</script>
@@ -26,7 +26,7 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 
 ***Building web content***
 
-After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***web*** module.
+After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***ui*** module.
 
 
 > -> Browser technology can also be used to build desktop and mobile apps
