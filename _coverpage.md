@@ -11,27 +11,17 @@
 <center style="width: 100%;">
 
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
-	<pre>
+	
+
+<a onclick="alert('Hello World!')" class="btn-white">Click me</a>
+
+
+<pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
-<span style="color: grey">// Examples</span>
+use web
 
-use "https://domain.com/web.js"
-
-
-set myOutput "hi developer!";
-
-create button with text myOutput
-
-<span style="color: grey">// Extend the language</span>
-
-define token echo with
-	method ( console.log(param) )
-	and follow "{param}";
-
-<span style="color: grey">// Use it right away</span>
-echo "hi"
-
-<span style="color: grey">// And way more...</span>
+create button with text "Click me"
+	and onclick ( alert('Hello World!') )
 </code>
 	</pre>
 </div>
