@@ -13,7 +13,7 @@
 <div style="background: #111111;width:550px;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	
 
-<a onclick="alert('Hello World!')" class="btn-white">Click me</a>
+<a onclick="alert('Hello World!')" style="cursor:pointer" class="btn-white">Click me</a>
 
 
 <pre>
@@ -21,7 +21,7 @@
 use web
 
 create button with text "Click me"
-	and onclick ( alert('Hello World!') )
+and click ( alert('Hello World!') )
 </code>
 	</pre>
 </div>
