@@ -259,6 +259,19 @@ You can also set permanent variables, that are stored locally by using the `loca
 set local name Peter;
 print name;
 ```
+## As
+
+Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
+
+```puzzle
+// Example: store the result of a rest call in a viariable
+use rest
+get from https://puzzlelang.org as data
+
+print data
+// prints the website data from the url
+```
+
 
 ## Runner-functions
 
@@ -330,6 +343,24 @@ define token echo with follow "{data}" and method "console.log(data)";
 
 // Use it right away
 echo "test";
+```
+
+## JSON
+
+Parse and stringify JSON data.
+
+```puzzle
+jsonify '{"message": "hi"}' as jsonData
+stringify jsonData as stringData
+```
+
+## base64
+
+Encode and decode base64 data
+
+```puzzle
+encode "hello world" as encoded
+decode encoded as decoded
 ```
 
 ## Comments
