@@ -314,6 +314,16 @@ With the `run` keyword, you can execute an inline script
 run ( print hello )
 ```
 
+This comes handy when storing a script in a variable:
+
+```puzzle
+// store script in variable
+set myScript ( print hi )
+
+// run it
+run myScript
+```
+
 ## Modules
 
 

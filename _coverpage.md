@@ -18,7 +18,7 @@
 
 <pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
-use web
+use ui
 
 create button with text "Click me"
 and click ( alert 'Hello World!' )
