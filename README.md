@@ -222,6 +222,21 @@ while (1<2 OR 2==2) do {
 };
 ```
 
+You can also use loops for **iterating** over some data
+
+```puzzle
+set numbers [1,2,3]
+
+loop over numbers with number do (
+  print number
+)
+
+// will output:
+// 1
+// 2
+// 3
+```
+
 ## JavaScript code
 
 Executes JavaScript code using `js`
@@ -259,6 +274,7 @@ You can also set permanent variables, that are stored locally by using the `loca
 set local name Peter;
 print name;
 ```
+
 ## As
 
 Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
@@ -273,21 +289,29 @@ print data
 ```
 
 
-## Runner-functions
+## Scripts
 
-Runners are functions that can run predefined puzzle code and are defined with the `runner` keyword.
+Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
 ```puzzle
-runner sayHello { print hello }
+script sayHello { print hello }
 run sayHello;
 // will output "hello"
 ```
 
-When running a Runner, variables can be overwritten with `variable:value`.
+When running a script, variables can be overwritten with `variable:value`.
 
 ```puzzle
 run hello:hi in sayHello;
 // will output "hi"
+```
+
+## Run
+
+With the `run` keyword, you can execute an inline script
+
+```puzzle
+run ( print hello )
 ```
 
 ## Modules
