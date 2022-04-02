@@ -100,67 +100,6 @@ puzzle run "print hi"
 
 PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
+# Build something
 
-# Quick tutorials
-
-## Data, types and functions
-
-In programming, you always need to store some information for later use. This information is stored in variables.
-In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
-
-```puzzle
-// Number
-set age 1
-
-// Text
-set message "hello world"
-
-// Boolean
-set decision true
-
-// Objects
-set person {name: Perer, age: 22}
-
-// Array (collection of data)
-set numbers [1,2,3]
-
-// Script
-set say-hello ( print hello )
-```
-
-Functions in puzzle are called scripts. They are pieces of puzzle code, that can be reused anywhere in your code.
-
-```puzzle
-// Create a script
-script say-hello ( print hello )
-
-// You can also use a variable to store a script
-set say-hello ( print hello )
-
-// Run it
-run say-hello
-
-// Overwrite data inside the script (this allows yout to pass parameters, that overwrite keywords inside the function)
-run hello:hi in say-hello
-```
-
-## Control structures
-
-Every program needs control structures, like if-else statements and loops. This allows for creating dynamic programs
-
-```puzzle
-set decision yes
-
-if (decision==yes) then ( print "it's a yes" )
-	else ( print "it's a no" )
-```
-
-```puzzle
-// Loop over an array
-
-set numbers [1,2,3]
-
-// The "loop over" function lets you define an iterator (here: num),
-// that can be usied inside the script to refer to the current element
-loop over numbers with num do ( print num )
-```
+Real world examples tbd...

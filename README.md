@@ -170,6 +170,96 @@ while {3>2 AND 4>3} ...
 ```
 
 
+## Variables
+
+Variables are set using the `set` keyword.
+
+```puzzle
+set name Peter;
+print name;
+```
+
+You can also set permanent variables, that are stored locally by using the `local` keyword with `set`
+
+```puzzle
+set local name Peter;
+print name;
+```
+
+## Datatypes
+
+In programming, you always need to store some information for later use. This information is stored in variables.
+In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
+
+```puzzle
+// Number
+set age 1
+
+// Text
+set message "hello world"
+
+// Boolean
+set decision true
+
+// Objects
+set person {name: Perer, age: 22}
+
+// Array (collection of data)
+set numbers [1,2,3]
+
+// Script
+set say-hello ( print hello )
+```
+
+## As
+
+Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
+
+```puzzle
+// Example: store the result of a rest call in a viariable
+use rest
+get from https://puzzlelang.org as data
+
+print data
+// prints the website data from the url
+```
+
+
+## Scripts
+
+Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
+
+```puzzle
+script sayHello { print hello }
+run sayHello;
+// will output "hello"
+```
+
+When running a script, variables can be overwritten with `variable:value`.
+
+```puzzle
+run hello:hi in sayHello;
+// will output "hi"
+```
+
+## Run
+
+With the `run` keyword, you can execute an inline script
+
+```puzzle
+run ( print hello )
+```
+
+This comes handy when storing a script in a variable:
+
+```puzzle
+// store script in variable
+set myScript ( print hi )
+
+// run it
+run myScript
+```
+
 ## Files
 
 Files can be writen, read and removed.
@@ -259,70 +349,6 @@ or remote
 include https://domain.com/otherscript.puzzle;
 ```
 
-## Variables
-
-Variables are set using the `set` keyword.
-
-```puzzle
-set name Peter;
-print name;
-```
-
-You can also set permanent variables, that are stored locally by using the `local` keyword with `set`
-
-```puzzle
-set local name Peter;
-print name;
-```
-
-## As
-
-Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
-
-```puzzle
-// Example: store the result of a rest call in a viariable
-use rest
-get from https://puzzlelang.org as data
-
-print data
-// prints the website data from the url
-```
-
-
-## Scripts
-
-Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
-
-```puzzle
-script sayHello { print hello }
-run sayHello;
-// will output "hello"
-```
-
-When running a script, variables can be overwritten with `variable:value`.
-
-```puzzle
-run hello:hi in sayHello;
-// will output "hi"
-```
-
-## Run
-
-With the `run` keyword, you can execute an inline script
-
-```puzzle
-run ( print hello )
-```
-
-This comes handy when storing a script in a variable:
-
-```puzzle
-// store script in variable
-set myScript ( print hi )
-
-// run it
-run myScript
-```
 
 ## Modules
 
