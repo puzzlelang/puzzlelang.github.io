@@ -15,13 +15,11 @@ The REST modules allows you to make calls and requests to apis, websites and eve
 
 You can use the following REST methods:
 
-> get, post, put, patch, delete. The results will be available in the underscore (`_`) variable.
-
 ```puzzle
 use rest
 
-get from https://google.com
-print _
+get from https://google.com as result
+print result
 
 post {message: "hello"} to https://domain.com
 
@@ -36,7 +34,7 @@ patch to https://domain.com
 use ui;
 ```
 
-Build frontends for the browser. In order to use it, you need an html file:
+Build frontends for the browser. In order to use it, you need an html file.
 
 ```html
 <html>
@@ -48,9 +46,32 @@ Build frontends for the browser. In order to use it, you need an html file:
         <script type="text/x-puzzle">
             use ui
 
-            root "#app"
+            root #app
             create button with text hello
         </script>
     </body>
 </html>
 ```
+
+Elements can be created and accessed like so;
+
+```puzzle
+create HTMLELEMENT with id ID and ATTRIBUTE VALUE and ATTRIBUTE VALUE and ...
+
+//Example
+create div with id 123 and text hello
+
+// For nesting, do
+create a inside 123 with text link
+```
+
+Functional code:
+
+```puzzle
+alert "Hello"
+
+prompt Say
+
+confirm Really?
+```
+
