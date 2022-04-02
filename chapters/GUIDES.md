@@ -1,4 +1,4 @@
-# Plaform Guides
+# Quick Plaform Guides
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
@@ -100,6 +100,22 @@ puzzle run "print hi"
 
 PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
+
+# Abstract Code on Cloud Platforms
+
+There are many Cloud-based Platforms, that offer managed code editors and run programs on the fly. By adding the ability to write and run Puzzle code, they can become "Abstract-Code-Platforms".
+
+|    | Low-Code-Platforms | Abstracct-Code-Platforms |
+| ----------- | ----------- | ----------- |
+| Building blocks  | Graphical Elements       | Abstract Code    |
+
+## Replit
+
+[Replit.com](https://replit.com)
+
+Replit is an excellent platform for creating and running all kinds of programs. Puzzle programs can also be built on Replit.
+
+
 # Build something
 
-Real world examples tbd...
+...
