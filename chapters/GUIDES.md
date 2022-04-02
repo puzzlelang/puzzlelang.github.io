@@ -31,21 +31,6 @@ After including PUZZLE with the easy steps shown above, you have PUZZLE running 
 
 > -> Browser technology can also be used to build desktop and mobile apps
 
-## Use with Node
-
-To run puzzle on a server, use in node. 
-
-```puzzle
-// puzzle file: test.pz
-print hi!
-```
-
-```javascript
-const puzzle = require("puzzlelang");
-const fs = reuire("fs");
-puzzle.parse(fs.readSync("test.pz"));
-```
-
 
 ## Embedded (in JS)
 
@@ -68,6 +53,21 @@ puzzle.parse("print hi!")
 	puzzle.parse("print hi!")
 </script>
 ...
+```
+
+## Use with Node
+
+To run puzzle on a server, use in node. 
+
+```puzzle
+// puzzle file: test.pz
+print hi!
+```
+
+```javascript
+const puzzle = require("puzzlelang");
+const fs = reuire("fs");
+puzzle.parse(fs.readFileSync('test.pz').toString());
 ```
 
 ## CLI
