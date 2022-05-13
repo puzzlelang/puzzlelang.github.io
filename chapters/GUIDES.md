@@ -1,8 +1,8 @@
-# Quick Plaform Guides
+# Guides
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
-## Browser
+# Browser
 
 PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in various ways:
 
@@ -32,7 +32,7 @@ After including PUZZLE with the easy steps shown above, you have PUZZLE running 
 > -> Browser technology can also be used to build desktop and mobile apps
 
 
-## Embedded (in JS)
+# Embedded (in JS)
 
 Puzzle scripts can be run embedded in javascript, both node and browsers.
 
@@ -55,7 +55,7 @@ puzzle.parse("print hi!")
 ...
 ```
 
-## Use with Node
+# Use with Node
 
 To run puzzle on a server, use in node. 
 
@@ -70,7 +70,7 @@ const fs = reuire("fs");
 puzzle.parse(fs.readFileSync('test.pz').toString());
 ```
 
-## CLI
+# CLI
 
 For using the PUZZLE CLI, you need npm and Node installed on your computer.
 
@@ -96,12 +96,12 @@ puzzle run "print hi"
 ```
 
 
-## PUZZLE Run
+# PUZZLE Run
 
 PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
 
 
-# Abstract Code on Cloud Platforms
+# Cloud Platforms
 
 There are many Cloud-based Platforms, that offer managed code editors and run programs on the fly. By adding the ability to write and run Puzzle code, they can become "Abstract-Code-Platforms".
 
