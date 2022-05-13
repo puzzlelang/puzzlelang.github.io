@@ -25,4 +25,14 @@ create button with text "Try ->"
 </code>
 	</pre>
 </div>
+
+<br>
+
+<a href="#/README">
+<b>
+Learn
+<br>
+<span class=" fa fa-chevron-down"></span>
+</b>
+</a>
 </center>
