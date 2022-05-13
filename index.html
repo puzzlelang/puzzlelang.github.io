@@ -37,6 +37,8 @@
         background: #FFFFFF;
         background: none;
         border-bottom: none;
+        overflow: scroll;
+    white-space: nowrap;
     }
 
     nav ul li:first-child {
@@ -178,6 +180,12 @@
         #search-wrapper {
             width: 90%;
         }
+
+        nav ul li:first-child {
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
     }
 
     .sidebar-nav > ul > li > a  {
@@ -292,7 +300,7 @@
         subMaxLevel: 2,
         //onlyCover: true,
         plugins: [],
-        loadSidebar: true,
+        //loadSidebar: true,
         //coverpage: 'cover.html',
         //homepage: 'chapters/PUZZLE.md'
         search: {

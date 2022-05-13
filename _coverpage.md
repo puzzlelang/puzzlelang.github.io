@@ -13,14 +13,14 @@
 <div style="background: #111111;width:600px;max-width:100%;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	
 
-<a href="#chapters/GUIDES" class="btn-primary">Build something</a>
+<a href="#chapters/GUIDES" class="btn-primary">Get started</a>
 
 
 <pre>
 	<code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">
 use ui
 
-create button with text "Build something"
+create button with text "Get started"
 </code>
 	</pre>
 </div>
@@ -28,8 +28,7 @@ create button with text "Build something"
 <br>
 
 <a href="#/README">
-<b>
-Learn
+
 <br>
 <span class=" fa fa-chevron-down"></span>
 </b>

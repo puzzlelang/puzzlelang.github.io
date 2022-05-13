@@ -79,7 +79,7 @@ The PUZZLE syntax is designed to be simple and easily understandable. Scripts ar
 Each statement consists of simple, mostly natual word-based commands, like `write file hello.txt 'world';`
 
 
-# Statements
+## Statements
 
 puzzle scripts are split up into multiple statements, delimited by a semicolon (`;`). 
 Each statement can be single line or multiline, as long as it terminates with a semicolon.
@@ -92,7 +92,7 @@ print (
 );
 ```
 
-# Literals
+## Literals
 
 ***single-part literals***
 
@@ -123,7 +123,7 @@ print (
 );
 ```
 
-# Variables
+## Variables
 
 Variables are set using the `set` keyword.
 
@@ -139,7 +139,7 @@ set local name Peter;
 print name;
 ```
 
-# Datatypes
+## Datatypes
 
 In programming, you always need to store some information for later use. This information is stored in variables.
 In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
@@ -164,7 +164,7 @@ set numbers [1,2,3]
 set say-hello ( print hello )
 ```
 
-# As
+## As
 
 Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
 
@@ -178,7 +178,7 @@ print data
 ```
 
 
-# Scripts
+## Scripts
 
 Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
@@ -195,7 +195,7 @@ run hello:hi in sayHello;
 // will output "hi"
 ```
 
-# Run
+## Run
 
 With the `run` keyword, you can execute an inline script
 
@@ -213,7 +213,7 @@ set myScript ( print hi )
 run myScript
 ```
 
-# Files
+## Files
 
 Files can be writen, read and removed.
 
@@ -231,7 +231,7 @@ remove file /test/hello.txt;
 // this is a comment
 ```
 
-# Conditions
+## Conditions
 
 Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
 
@@ -251,7 +251,7 @@ if (1<2 OR 2==2) then (print true) else (print false);
 if (1<2 OR 2==2) then "print true" else {print false};
 ```
 
-# Loops
+## Loops
 
 Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
 
@@ -280,7 +280,7 @@ loop over numbers with number do (
 // 3
 ```
 
-# JavaScript code
+## JavaScript code
 
 Executes JavaScript code inside a PUZZLE script using `js`
 
@@ -290,7 +290,7 @@ js (
 )
 ```
 
-# Reusing code
+## Reusing code
 
 PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
 
@@ -303,7 +303,7 @@ include https://domain.com/otherscript.puzzle;
 ```
 
 
-# Modules
+## Modules
 
 The PUZZLE language is based on an open module ecosystem.
 
@@ -327,7 +327,7 @@ use permanent https://afasf.com/module.js;
 This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
 
 
-# Namespaces
+## Namespaces
 
 Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
 
@@ -344,7 +344,7 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
-# Custom tokens
+## Custom tokens
 
 Custom tokens can be defined for executing some javascript code, when that token is used.
 
@@ -355,7 +355,7 @@ define token echo with follow "{data}" and method "console.log(data)";
 echo "test";
 ```
 
-# JSON
+## JSON
 
 Parse and stringify JSON data.
 
@@ -364,7 +364,7 @@ jsonify '{"message": "hi"}' as jsonData
 stringify jsonData as stringData
 ```
 
-# base64
+## base64
 
 Encode and decode base64 data
 
@@ -373,7 +373,7 @@ encode "hello world" as encoded
 decode encoded as decoded
 ```
 
-# Comments
+## Comments
 
 Comments can be written using `//`
 
@@ -387,6 +387,8 @@ Comments can be written using `//`
 Besides being a simple language, PUZZLE is also a platform for custom syntax. 
 Each syntax is delivered as a module, that can be used in any script with `use my_module.js`.
 
+
+## Create a syntax
 
 Building your own custom syntax is simple. It's defined with a JavaScript object that follows a given structure.
 

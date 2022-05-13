@@ -2,6 +2,10 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
 
+* [Learn](README.md)
+
+* [Guides](chapters/GUIDES.md)
+
 * [Modules](chapters/modules/index.md)
 
 * [Try](https://puzzlelang.org/run)
