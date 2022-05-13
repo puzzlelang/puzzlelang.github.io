@@ -2,19 +2,14 @@
 
 <span style="font-size: 50px;color:#e5cbe4">PUZZLE</span>
 
-<blockquote>
-<p>Abstract, extendable programming language</p></blockquote>
-<center>
-<div style="background: #111111;text-align:left;padding:0px;margin:0px;border-radius:5px">
-    <pre style="background:#000000">    <code class="lang-puzzle" style="font-size:25px !important;color:#ffffff;background:#000000">
-set message "hello world";
-print message;
-</code>
-    </p></pre><p></p></div>
-</center>
-
-
-# PUZZLE
+<blockquote style="line-height: 2;"><b>
+-> Runs in every <u>JavaScript</u> environment
+<br>-> Build any JS-based app, like browser apps, backends, ...
+<br>-> Embed in JS or run standalone
+<br>-> Build custom languages (DSLs)
+<br>-> Use in clouds, like GCP, Azure or AWS
+</b>
+</blockquote>
 
 <b>Browser</b>
 
@@ -53,18 +48,6 @@ puzzle.parse(`
 ```
 
 <br>
-
-# What can I do with puzzle
-
-Puzzle allows you to develop literally any kind of software that runs in JavaScript engines, like browsers or Node.
-
-* Develop terminal-based apps
-* Embed custom code into existing projects
-* Develop browser-based apps (desktop/mobile)
-* Build backends
-* Create and package custom languages (DSLs)
-* etc ...
-
 
 # Install
 
