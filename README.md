@@ -16,19 +16,18 @@
 ```puzzle
 <script type="text/x-puzzle">
     use web;
-	create div with id "container";
+	create div with id "container" and text "hello";
 </script>
 ```
 
-<b>Standalone</b>
+<b>Emdedded</b>
 
 ```puzzle
-//myfile.pz
-write file /hello.txt "world"
-```
+// As string
+puzzle.parse(`send email with text "welcome to puzzle" to peter.griffin@puzzle.org`)
 
-```puzzle
-puzzle myfile.pz
+// As file
+puzzle.run('index.pz')
 ```
 
 <b>CLI</b>
@@ -38,14 +37,6 @@ $ puzzle
 ? > if "1 IS 1" then (print right!)
 ```
 
-<b>Emdedded</b>
-
-```puzzle
-puzzle.parse(`
-	send email with text "welcome to puzzle" 
-	to peter.griffin@puzzle.org;
-`)
-```
 
 <br>
 
@@ -65,13 +56,7 @@ $ npm i puzzlelang --global
 
 # Language
 
-The puzzle language aims to provide simple language to build solutions that are taylored for different domains and problems. The main concepts of puzzle are:
-
-
-* ***Simple language design, understandable for developers and non-developers***
-* ***Custom syntax creation***
-* ***Open and free platform for modules***
-
+PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language building blocks.
 
 > A quick example
 
@@ -83,15 +68,15 @@ print 'Welcome future puzzle developer!';
 use 'https://url.com/module.js';
 
 // stora a variable
-var name 'Marco';
-
-//
+set name 'Grace';
 ```
 
 ## Syntax
 
-The puzzle syntax is designed to be simple and easily understandable for developers and non-developers. puzzle scripts are built up on different statements that execute something in the background.
+The PUZZLE syntax is designed to be simple and easily understandable. Scripts are built on different statements that are mapped to some JavaScript functionality.
+
 Each statement consists of simple, mostly natual word-based commands, like `write file hello.txt 'world';`
+
 
 ## Statements
 
@@ -108,12 +93,9 @@ print (
 
 ## Literals
 
-Statements can have different literals as dynamic input. These literals can be of two types: single-part literals and multi-part literals.
-
-
 ***single-part literals***
 
-These are literals that are contained in a single word or number. Note, that single-worded texts don't need to be written in quotes.
+Data, that can be described in one part.
 
 ```puzzle
 // single-part literals
@@ -124,7 +106,7 @@ print 2.5;
 
 ***multi-part literals***
 
-These are literals that can consist of multiple parts, like multiple words, lines or even statements.
+Data that can consist of multiple parts, like multiple words, lines or even statements.
 
 Multi-part literals must be wrappen in any of these: `""`, `()`, `{}`.
 
@@ -139,19 +121,6 @@ print (
 	hello world!
 );
 ```
-
-> Single-part literals can also be written in the multi-part notation, like `print (hello)` or `use "module.puzzle.js"`
-
-***code literals***
-
-Code literals define sub scripts that can be used in conditions or loops. They are also wrappen in `""`, `()` or `{}`
-
-```puzzle
-while (3>2 AND 4>3) ...
-while "3>2 AND 4>3" ...
-while {3>2 AND 4>3} ...
-```
-
 
 ## Variables
 
@@ -312,7 +281,7 @@ loop over numbers with number do (
 
 ## JavaScript code
 
-Executes JavaScript code using `js`
+Executes JavaScript code inside a PUZZLE script using `js`
 
 ```puzzle
 js (
@@ -322,7 +291,7 @@ js (
 
 ## Reusing code
 
-puzzle scripts can be included into other puzzle scripts for code reusage using `include`
+PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
 
 ```puzzle
 // local
@@ -335,11 +304,10 @@ include https://domain.com/otherscript.puzzle;
 
 ## Modules
 
+The PUZZLE language is based on an open module ecosystem.
 
-The puzzle language is based upon an open module ecosystem.
-
-Each module is designed to archieve a specific (mostly domain-specific) goal and brings it's own syntax. 
-Any puzzle script can use multiple modules, loaded from a remote server or a local file.
+Each module is designed to archieve a specific goal and comes with it's own syntax. 
+Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
 
 ```puzzle
 // remove module
@@ -355,9 +323,7 @@ If you'd like to cache a module, use the `permanent` option:
 use permanent https://afasf.com/module.js;
 ```
 
-This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (e.g. offline usage)
-
-> puzzle comes with a built-in default module, which is always initalized. The default module contains some basic functionalities and is available in any other namespace. [ Full reference ](https://puzzle-lang.github.io/modules)
+This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
 
 
 ## Namespaces
@@ -417,15 +383,13 @@ Comments can be written using `//`
 
 # Custom syntax
 
-> Puzzle is a language that can dynamically be extended with custom syntax!
-
-Besides being a simple language, puzzle is also a platform for custom syntax. 
-Each syntax is delivered as a module, that can be used in any puzzle script with `use my_module.js`.
+Besides being a simple language, PUZZLE is also a platform for custom syntax. 
+Each syntax is delivered as a module, that can be used in any script with `use my_module.js`.
 
 
 ## Create a syntax
 
-Building your own custom syntax is fairly simple. It's defined with a JavaScript object that follows a given structure.
+Building your own custom syntax is simple. It's defined with a JavaScript object that follows a given structure.
 
 ```javascript
 var syntax = { // syntax variable
@@ -446,14 +410,7 @@ var syntax = { // syntax variable
     }
   }
 }
-module.exports = lang;
-```
-
-<b>Then use it in puzzle:</b>
-
-```puzzle
-use syntax.js;
-echo "hello" and "word";
+module.exports = syntax;
 ```
 
 <!--
@@ -526,7 +483,7 @@ use https://somedomain.com/module.js;
 
 <b>Inline variable</b>
 
-> This method can be used when a custom syntax is defined in the same scope as the puzzle script. The syntax variable must be prefixed with `var:`
+> This method can be used when a custom syntax is defined in the same scope as the script. The syntax variable must be prefixed with `var:`
 
 ```javascript
 var syntax = {
@@ -540,6 +497,6 @@ puzzle.parse(`
 
 ## Publish syntax as module
 
-Your custom syntax modules can be contributed to the official puzzle module repo.
+Your custom syntax modules can be contributed to the official module repo.
 
-Learn more: [ puzzle Module Repo](https://github.com/puzzlelang/puzzle-catalog)
+Learn more: [ PUZZLE Module Repo](https://github.com/puzzlelang/puzzle-catalog)

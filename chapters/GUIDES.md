@@ -103,12 +103,6 @@ PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with a
 
 # Cloud Platforms
 
-There are many Cloud-based Platforms, that offer managed code editors and run programs on the fly. By adding the ability to write and run Puzzle code, they can become "Abstract-Code-Platforms".
-
-|    | Low-Code-Platforms | Abstract-Code-Platforms |
-| ----------- | ----------- | ----------- |
-| Building blocks  | Graphical Elements       | Abstract Code    |
-
 ## Replit
 
 [Replit.com](https://replit.com)

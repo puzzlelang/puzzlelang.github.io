@@ -20,11 +20,25 @@ use rest
 
 get from https://google.com as result
 print result
+```
 
+GET
+```puzzle
+get from https://google.com as result
+```
+
+POST
+```puzzle
 post {message: "hello"} to https://domain.com
+```
 
+DELETE
+```puzzle
 delete from https://domain.com
+```
 
+PATCH
+```puzzle
 patch to https://domain.com
 ```
 
@@ -53,7 +67,7 @@ Build frontends for the browser. In order to use it, you need an html file.
 </html>
 ```
 
-Elements can be created and accessed like so;
+Elements
 
 ```puzzle
 create HTMLELEMENT with id ID and ATTRIBUTE VALUE and ATTRIBUTE VALUE and ...
@@ -65,7 +79,7 @@ create div with id 123 and text hello
 create a inside 123 with text link
 ```
 
-Functional code:
+Functional code
 
 ```puzzle
 alert "Hello"
