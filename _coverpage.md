@@ -13,7 +13,7 @@
 <div style="background: #111111;width:600px;max-width:100%;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;">
 	
 
-<a href="#chapters/GUIDES" class="btn-primary">Build something</a> <a href="/run" target="_blank" style="color: var(--theme-color)" class="btn">Try -></a>
+<a href="#chapters/GUIDES" class="btn-primary">Build something</a>
 
 
 <pre>
@@ -21,7 +21,6 @@
 use ui
 
 create button with text "Build something"
-create button with text "Try ->"
 </code>
 	</pre>
 </div>
