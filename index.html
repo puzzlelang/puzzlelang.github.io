@@ -38,7 +38,13 @@
         background: none;
         border-bottom: none;
         overflow: scroll;
-    white-space: nowrap;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    nav::-webkit-scrollbar {
+      display: none;
     }
 
     nav ul li:first-child {
