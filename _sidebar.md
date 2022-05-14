@@ -4,4 +4,4 @@
 
 * [***Guides***](chapters/GUIDES.md)
 
-* [***Modules***](chapters/modules/index.md)
+* [***Modules***](chapters/MODULES.md)
