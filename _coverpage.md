@@ -54,12 +54,12 @@ alert name;
 </div>
 
 <div class="cover_codebox" id="5" style="display: none">
-<div style="color:white;font-size: 22px">1 2 3</div>
+<div style="color:white;font-size: 22px">hi there</div>
 <hr>
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">set numbers [1,2,3];
-loop over numbers with number do (
-	print number
-)
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">define token say with follow "{data}"
+and method "console.log(data)";
+
+say "hi there"
 </code></pre>
 </div>
 
@@ -68,7 +68,7 @@ loop over numbers with number do (
 <div class="badge" onclick="showExample(2)">HTML</div>
 <div class="badge" onclick="showExample(3)">REST</div>
 <div class="badge" onclick="showExample(4)">Interaction</div>
-<div class="badge" onclick="showExample(5)">Loop</div>
+<div class="badge" onclick="showExample(5)">Customize</div>
 
 <br>
 
