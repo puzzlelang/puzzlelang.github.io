@@ -48,7 +48,7 @@ patch to https://domain.com
 use ui;
 ```
 
-Build frontends for the browser. In order to use it, you need an html file.
+Build frontends for the browser. This module lets you build and access visual elements and define interactive actions. In order to use it, you need an html file.
 
 ```html
 <html>
@@ -67,7 +67,7 @@ Build frontends for the browser. In order to use it, you need an html file.
 </html>
 ```
 
-Elements
+Create ***Elements*** 
 
 ```puzzle
 create HTMLELEMENT with id ID and ATTRIBUTE VALUE and ATTRIBUTE VALUE and ...
@@ -79,13 +79,32 @@ create div with id 123 and text hello
 create a inside 123 with text link
 ```
 
+Mutate ***Elements*** 
+
+```puzzle
+get ELEMENT with id ID and set ATTRIBUTE VALUE
+
+//Example
+get div with id 123 and set style "color:red";
+```
+
 Functional code
 
 ```puzzle
+// Notification
 alert "Hello"
 
+// User input
 prompt Say
 
+// Confirmation
 confirm Really?
+```
+
+User interactions
+
+```puzzle
+// Key interaction
+on key space (print "space key was pressed")
 ```
 
