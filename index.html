@@ -25,6 +25,19 @@
         font-family: 'Roboto Slab', serif;
     }
 
+    .badge {
+        display: inline-block;
+        background: #bbbbbb;
+        border-radius: 100px;
+        padding:3px 10px;
+        color: #222222;
+        cursor: pointer;
+    }
+
+    .cover_codebox {
+        background: #111111;width:600px;max-width:100%;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;
+    }
+
     nav {
         width: 100%;
         right: auto !important;
@@ -369,6 +382,20 @@
     <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
 
       <script type="text/javascript">
+        var activeElement;
+        var oldElement;
+
+        setTimeout(() => {
+            oldElement = document.getElementById(1);
+        }, 500)
+            
+        function showExample(id){
+            if(oldElement) oldElement.style.display = 'none';
+            activeElement = document.getElementById(id);
+            activeElement.style.display = 'block';
+            oldElement = activeElement;
+        }
+
         function loadMedium(target){
           window.setTimeout(function(){
         fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/abstract-code-programming')
