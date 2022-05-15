@@ -37,19 +37,19 @@ on key enter (alert "enter was pressed")
 </div>
 
 <div class="cover_codebox" id="3" style="display: none">
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-->Browser&#60;/-->
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-- Browser&#60;  -->
 &#60;script type="text/x-puzzle">print "i am runnning in the browser"&#60;/script>
 
 // Embedded
 puzzle.parse("print hi")
 
-# CLI
+// CLI
 puzzle> print hi
 </code></pre>
 </div>
 
 <div class="cover_codebox" id="4" style="display: none">
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Official module
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Use official module
 use rest;
 
 // Remote module
@@ -61,12 +61,23 @@ use path/to/file.js
 </div>
 
 <div class="cover_codebox" id="5" style="display: none">
-<div style="color:white;font-size: 22px">hi there</div>
+<div style="color:white;font-size: 22px">hi</div>
 <hr>
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">define token say with follow "{data}"
-and method "console.log(data)";
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// mysyntax.js
+var syntax = {
+  supermodule: {
+     say: {
+       follow: ["{data}"],
+       method: (ctx, data) => {
+         alert(data)
+       }
+     }
+  }
+}
 
-say "hi there"
+// Puzzle file
+use mysyntax;
+say hi
 </code></pre>
 </div>
 
