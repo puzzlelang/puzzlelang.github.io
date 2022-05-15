@@ -37,19 +37,26 @@ on key enter (alert "enter was pressed")
 </div>
 
 <div class="cover_codebox" id="3" style="display: none">
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use rest
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-->Browser&#60;/-->
+&#60;script type="text/x-puzzle">print "i am runnning in the browser"&#60;/script>
 
-get from https://puzzlelang.org as data;
-print data;
+// Embedded
+puzzle.parse("print hi")
+
+# CLI
+puzzle> print hi
 </code></pre>
 </div>
 
 <div class="cover_codebox" id="4" style="display: none">
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Official module
+use rest;
 
-prompt "Whats your name" as name;
+// Remote module
+use https://domain.com/module.js
 
-alert name;
+// Local module
+use path/to/file.js
 </code></pre>
 </div>
 
@@ -64,10 +71,10 @@ say "hi there"
 </div>
 
 
-<div class="badge" onclick="showExample(1)">UI example</div>
-<div class="badge" onclick="showExample(2)">HTML</div>
-<div class="badge" onclick="showExample(3)">REST</div>
-<div class="badge" onclick="showExample(4)">Interaction</div>
+<div class="badge" onclick="showExample(1)">Example</div>
+<div class="badge" onclick="showExample(2)">Abstract syntax</div>
+<div class="badge" onclick="showExample(3)">Any platform</div>
+<div class="badge" onclick="showExample(4)">Modules</div>
 <div class="badge" onclick="showExample(5)">Customize</div>
 
 <br>
