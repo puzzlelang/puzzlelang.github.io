@@ -24,8 +24,6 @@ create button with text "Get started"
 
 
 <div class="cover_codebox" id="2" style="display: none">
-<div style="color:white;font-size: 22px">Click the enter key</div>
-<hr>
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
 
 render (
@@ -37,14 +35,20 @@ on key enter (alert "enter was pressed")
 </div>
 
 <div class="cover_codebox" id="3" style="display: none">
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-- Browser&#60;  -->
-&#60;script type="text/x-puzzle">print "i am runnning in the browser"&#60;/script>
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-- Browser -->
+&#60;script type="text/x-puzzle">
+	print "i am runnning in the browser"
+&#60;/script>
 
 // Embedded
 puzzle.parse("print hi")
+puzzle.run("myfile.pz")
 
 // CLI
 puzzle> print hi
+
+// Standalone
+puzzle run myfile.pz
 </code></pre>
 </div>
 
@@ -61,8 +65,6 @@ use path/to/file.js
 </div>
 
 <div class="cover_codebox" id="5" style="display: none">
-<div style="color:white;font-size: 22px">hi</div>
-<hr>
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// mysyntax.js
 var syntax = {
   supermodule: {
@@ -86,7 +88,7 @@ say hi
 <div class="badge" onclick="showExample(2)">Abstract syntax</div>
 <div class="badge" onclick="showExample(3)">Any platform</div>
 <div class="badge" onclick="showExample(4)">Modules</div>
-<div class="badge" onclick="showExample(5)">Customize</div>
+<div class="badge" onclick="showExample(5)">Customize with JS</div>
 
 <br>
 
