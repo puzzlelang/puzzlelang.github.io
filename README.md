@@ -201,11 +201,50 @@ run ( print hello )
 This comes handy when storing a script in a variable:
 
 ```puzzle
-// store script in variable
+// Store script in variable
 set myScript ( print hi )
 
 // run it
 run myScript
+```
+
+## After (Timeout script)
+
+Run a piece of code with the `run` keyword delayed.
+
+```puzzle
+// Wait for 2 seconds, then run the code
+after 2000 run "print hello"
+
+// Or run a predefined script
+script sayHi (print hi);
+after 2000 run sayHi;
+```
+
+## Every (Repeating script)
+
+Run a piece of code with the `run` keyword repeatedly.
+
+```puzzle
+// Every 2 seconds, then run the code
+every 2000 run "print hello"
+
+// Or run a predefined script
+script sayHi (print hi);
+every 2000 run sayHi;
+```
+
+## Wait
+
+The wait keyword allows you to break the execution of a script for a certain time.
+
+```puzzle
+print "starting program";
+
+// wait for 2 seconds (time expresses througt milliseconds)
+wait 2000;
+
+print "i will be displayed after 2 seconds"
 ```
 
 ## Files
