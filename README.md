@@ -59,7 +59,7 @@ $ npm i puzzlelang --global
 
 # Language
 
-PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language building blocks.
+PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language.
 
 > A quick example
 
@@ -74,15 +74,10 @@ use 'https://url.com/module.js';
 set name 'Grace';
 ```
 
-The PUZZLE syntax is designed to be simple and easily understandable. Scripts are built on different statements that are mapped to some JavaScript functionality.
-
-Each statement consists of simple, mostly natual word-based commands, like `write file hello.txt 'world';`
-
-
 ## Statements
 
-puzzle scripts are split up into multiple statements, delimited by a semicolon (`;`). 
-Each statement can be single line or multiline, as long as it terminates with a semicolon.
+PUZZLE scripts are split up into multiple statements, delimited by a semicolon (`;`). 
+Each statement can be single line or multiline.
 
 ```puzzle
 print "this is a single line stamement. It ends with a semicolon";
@@ -132,7 +127,7 @@ set name Peter;
 print name;
 ```
 
-You can also set permanent variables, that are stored locally by using the `local` keyword with `set`
+You can also set permanent variables, that are stored locally by using the `local` keyword in combination with `set`
 
 ```puzzle
 set local name Peter;
