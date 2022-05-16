@@ -208,9 +208,9 @@ set myScript ( print hi )
 run myScript
 ```
 
-## After (Timeout script)
+## Time-triggered scripts
 
-Run a piece of code with the `run` keyword delayed.
+Run a piece of code with the `run` keyword <u>delayed</u>.
 
 ```puzzle
 // Wait for 2 seconds, then run the code
@@ -221,9 +221,7 @@ script sayHi (print hi);
 after 2000 run sayHi;
 ```
 
-## Every (Repeating script)
-
-Run a piece of code with the `run` keyword repeatedly.
+Run a piece of code with the `run` keyword <u>repeatedly</u>.
 
 ```puzzle
 // Every 2 seconds, then run the code
