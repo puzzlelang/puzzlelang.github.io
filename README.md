@@ -17,10 +17,10 @@
 <b>Browser</b>
 
 ```puzzle
-<script type="text/x-puzzle">
+<puzzle>
     use web;
 	create div with id "container" and text "hello";
-</script>
+</puzzle>
 ```
 
 <b>Emdedded</b>

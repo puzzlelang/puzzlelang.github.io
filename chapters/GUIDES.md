@@ -14,12 +14,12 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 	</head>
 	<body>
-		<script type="text/x-puzzle">
+		<puzzle>
 			// use the ui module
 			use ui;
 			root body;
 			create button with text "click me" and method ( alert('i was clicked') );
-		</script>
+		</puzzle>
 	</body>
 </html>
 ```
