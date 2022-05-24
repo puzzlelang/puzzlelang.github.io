@@ -77,8 +77,7 @@ var syntax = {
   }
 }
 </code></pre>
-</div>
-<div class="cover_codebox" id="5" style="display: none">
+<br>
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Puzzle file
 use mysyntax;
 say hi
