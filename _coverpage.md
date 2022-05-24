@@ -77,7 +77,7 @@ var syntax = {
   }
 }
 </code></pre>
-<br>
+<br><br>
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Puzzle file
 use mysyntax;
 say hi
