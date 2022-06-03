@@ -36,9 +36,9 @@ on key enter (alert "enter was pressed")
 
 <div class="cover_codebox" id="3" style="display: none">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;!-- Browser -->
-&#60;puzzle>
+&#60;script type="text/x-puzzle">
 	print "i am runnning in the browser"
-&#60;/puzzle>
+&#60;/script>
 
 // Embedded
 puzzle.parse("print hi")

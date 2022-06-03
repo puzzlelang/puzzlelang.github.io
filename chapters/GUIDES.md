@@ -14,12 +14,12 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 	</head>
 	<body>
-		<puzzle>
+		<script type="text/x-puzzle">
 			// use the ui module
 			use ui;
 			root body;
 			create button with text "click me" and method ( alert('i was clicked') );
-		</puzzle>
+		</script>
 	</body>
 </html>
 ```
@@ -49,7 +49,7 @@ puzzle.parse("print hi!")
 ```html
 <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 ...
-<script>
+<script type="text/x-puzzle">
 	puzzle.parse("print hi!")
 </script>
 ...
