@@ -96,20 +96,39 @@ puzzle run "print hi"
 ```
 
 
-# PUZZLE Run
+# Abstract Code Editor
 
-PUZZLE Run is a ready-to-use browser based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://puzzlelang.org/run)
+Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://abstractcode.org). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
 
+# Hosted Clouds
 
-# Cloud Platforms
+PUZZLE can be used on hosted cloud environments.
 
 ## Replit
 
 [Replit.com](https://replit.com)
 
-Replit is an excellent platform for creating and running all kinds of programs. Puzzle programs can also be built on Replit.
+Replit is an excellent platform for creating and running all kinds of programs that unr on web technologies. PUZZLE applications can also be built on Replit.
+
+## Glitch
+
+[Glitch.com](https://glitch.com)
+
+Glitch is another cool hosted cloud platform fpr building and running custom applications. 
 
 
-# Build something
+# Cloud Platforms
 
-...
+Cloud Platforms, like Google Cloud, AWS, Azure, Digital Ocean and others can be used to build, run and ship PUZZLE apps.
+
+TBD
+
+# Abstract Cloud
+
+> Official! Built by the team behind PUZZLE
+
+Abstract Cloud is a framework for building custom cloud platforms and apps using abstract code. It can be deployed on and cloud provider, like Google Cloud, AWS, Azure, you name it.
+
+TBD
+
+
