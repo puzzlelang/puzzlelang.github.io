@@ -4,7 +4,7 @@
 
 * [Learn](README.md)
 
-* [Guides](chapters/GUIDES.md)
+* [Get started](chapters/GUIDES.md)
 
 * [Modules](chapters/MODULES.md)
 

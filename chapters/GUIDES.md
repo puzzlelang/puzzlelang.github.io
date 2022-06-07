@@ -50,7 +50,7 @@ puzzle.parse("print hi!")
 <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 ...
 <script type="text/x-puzzle">
-	puzzle.parse("print hi!")
+	print hi!
 </script>
 ...
 ```
@@ -66,8 +66,7 @@ print hi!
 
 ```javascript
 const puzzle = require("puzzlelang");
-const fs = reuire("fs");
-puzzle.parse(fs.readFileSync('test.pz').toString());
+puzzle.run('test.pz');
 ```
 
 # CLI
