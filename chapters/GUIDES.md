@@ -97,7 +97,7 @@ puzzle run "print hi"
 
 # Abstract Code Editor
 
-Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://abstractcode.org). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
+Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [abstractcode.dev](https://abstractcode.dev). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
 
 ![Replit](../assets/abstractcode.png)
 
