@@ -109,6 +109,8 @@ PUZZLE can be used on hosted cloud environments.
 
 Replit is an excellent platform for creating and running all kinds of programs that unr on web technologies. PUZZLE applications can also be built on Replit.
 
+![Replit](../assets/replit.png)
+
 ## Glitch
 
 [Glitch.com](https://glitch.com)
@@ -135,6 +137,8 @@ TBD
 # Build an API
 
 You can use the `api` module to build your own api, that runs on a server.
+
+> Requires Node.js!
 
 ```puzzle
 use api;
