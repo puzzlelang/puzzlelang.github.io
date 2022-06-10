@@ -99,6 +99,8 @@ puzzle run "print hi"
 
 Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://abstractcode.org). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
 
+![Replit](../assets/abstractcode.png)
+
 # Hosted Clouds
 
 PUZZLE can be used on hosted cloud environments.
