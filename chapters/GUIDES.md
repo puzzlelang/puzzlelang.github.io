@@ -117,7 +117,7 @@ Replit is an excellent platform for creating and running all kinds of programs t
 
 [Glitch.com](https://glitch.com)
 
-Glitch is another cool hosted cloud platform fpr building and running custom applications. 
+Glitch is another cool hosted cloud platform for building and running custom applications. 
 
 
 # Cloud Platforms
