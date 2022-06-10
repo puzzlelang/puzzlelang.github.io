@@ -1,4 +1,4 @@
-# Guides
+# --- GUIDES ---
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
@@ -130,4 +130,18 @@ Abstract Cloud is a framework for building custom cloud platforms and apps using
 
 TBD
 
+# --- EXAMPLES ---
 
+# Build an API
+
+You can use the `api` module to build your own api, that runs on a server.
+
+```puzzle
+use api;
+
+// Start your api on port 80
+start 80;
+
+// Define a route
+on /say-hello return "hello!";
+```
