@@ -1,28 +1,7 @@
-<!-- _coverpage.md -->
-
-<div style="height:150px"></div>
-<span style="font-size: 40px;color:#b14aad">An abstract programming language
-</span>
-
-<br>
-<br>
-<br>
-<br>
-
 <center style="width: 100%;">
 
-
-<!--iframe src="https://puzzlelang.org/run" style="border: none;width:800px;height: 500px;max-width:100%;text-align:left;padding:0px;margin:0px;border-radius:5px; display: block;"></iframe-->
-
 <div class="cover_box">
-<!--div class="cover_codebox" id="1">
-<!--a href="#chapters/GUIDES" class="btn-primary">Get started</a->
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
-
-create button with text "Get started"
-</code></pre>
-</div-->
-
+	<br><br>
 
 <div class="cover_codebox" id="2" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
@@ -103,7 +82,7 @@ say hi
 </a>
 <a href="https://replit.com/@puzzlelang"  class="cover_box_article click" style="width:400px;height: 400px;">
 	<h3>Build, run and deploy in the cloud</h3>
-	With Replit.com
+	Start for free. With Replit.com
 	<img src="assets/replit.png">
 </a>
 <a href="#/chapters/MODULES" class="cover_box_article click">

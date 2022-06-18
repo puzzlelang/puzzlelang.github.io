@@ -1,4 +1,4 @@
-# --- GUIDES ---
+# Get started
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 

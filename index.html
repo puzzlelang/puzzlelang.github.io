@@ -38,6 +38,15 @@
         background: #111111;width:600px;max-width:100%;text-align:left;padding:20px;margin:20px;border-radius:5px; display: block;
     }
 
+    code, pre {
+        background: #333333 !important;
+        color: #dddddd !important;
+    }
+
+    .cover_codebox code, .cover_codebox pre {
+        background: none !important;
+    }
+
     nav {
         width: 100%;
         right: auto !important;
@@ -54,6 +63,8 @@
         white-space: nowrap;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+
+        color: #cccccc;
     }
 
     nav::-webkit-scrollbar {
@@ -234,6 +245,12 @@
         }
     }
 
+    @media screen and (max-width: 900px) {
+        .hide_mobile {
+            display: none;
+        }
+    }
+
     .sidebar, .content {
         
     }
@@ -388,9 +405,13 @@
             var search = document.getElementsByClassName('search')[0];
 
             window.onscroll = function() {
-                if (window.pageYOffset > 5)
+                if (window.pageYOffset > 5) {
                     nav.style.background = '#FFFFFF';
-                else if (window.pageYOffset < 5) nav.style.background = 'none'
+                    nav.style.color = '#000000';
+                }
+                else if (window.pageYOffset < 5) { nav.style.background = 'none';
+                    nav.style.color = '#cccccc';
+                }
 
                 if (window.pageYOffset > searchOffset) {
                     moveSearchPlugin('down')
@@ -413,7 +434,7 @@
         var oldElement;
 
         setTimeout(() => {
-            oldElement = document.getElementById(1);
+            oldElement = document.getElementById(2);
         }, 500)
             
         function showExample(id){
