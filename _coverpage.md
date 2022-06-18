@@ -13,9 +13,9 @@
 
 <!--iframe src="https://puzzlelang.org/run" style="border: none;width:800px;height: 500px;max-width:100%;text-align:left;padding:0px;margin:0px;border-radius:5px; display: block;"></iframe-->
 
-
+<div class="cover_box">
 <div class="cover_codebox" id="1">
-<a href="#chapters/GUIDES" class="btn-primary">Get started</a>
+<!--a href="#chapters/GUIDES" class="btn-primary">Get started</a-->
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
 
 create button with text "Get started"
@@ -91,6 +91,15 @@ say hi
 <div class="badge" onclick="showExample(4)">Modules</div>
 <div class="badge" onclick="showExample(5)">Customize with JS</div>
 
+</div>
+
+<!--br>
+<br>
+
+<div class="cover_box_article">
+	<h3>Get started</h3>
+</div-->
+
 <br>
 
 <a href="#/README">
@@ -99,4 +108,5 @@ say hi
 <span class=" fa fa-chevron-down"></span>
 </b>
 </a>
+
 </center>
