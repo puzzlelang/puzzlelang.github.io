@@ -1,4 +1,4 @@
-# Guides
+# Get started
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
@@ -97,7 +97,9 @@ puzzle run "print hi"
 
 # Abstract Code Editor
 
-Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [puzzlelang.org/run](https://abstractcode.org). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
+Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [abstractcode.dev](https://abstractcode.dev). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
+
+<iframe src="https://abstractcode.dev" style="border:none;height:400px;width:100%"></iframe>
 
 # Hosted Clouds
 
@@ -109,11 +111,13 @@ PUZZLE can be used on hosted cloud environments.
 
 Replit is an excellent platform for creating and running all kinds of programs that unr on web technologies. PUZZLE applications can also be built on Replit.
 
+![Replit](../assets/replit.png)
+
 ## Glitch
 
 [Glitch.com](https://glitch.com)
 
-Glitch is another cool hosted cloud platform fpr building and running custom applications. 
+Glitch is another cool hosted cloud platform for building and running custom applications. 
 
 
 # Cloud Platforms
@@ -130,4 +134,20 @@ Abstract Cloud is a framework for building custom cloud platforms and apps using
 
 TBD
 
+# --- EXAMPLES ---
 
+# Build an API
+
+You can use the `api` module to build your own api, that runs on a server.
+
+> Requires Node.js!
+
+```puzzle
+use api;
+
+// Start your api on port 80
+start 80;
+
+// Define a route
+on /say-hello return "hello!";
+```

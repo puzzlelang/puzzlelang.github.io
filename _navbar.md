@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]()
+* [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]() <span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span>
 
 * [Learn](README.md)
 

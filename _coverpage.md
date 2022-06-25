@@ -1,29 +1,9 @@
-<!-- _coverpage.md -->
-
-<div style="height:150px"></div>
-<span style="font-size: 40px;color:#b14aad">An abstract programming language
-</span>
-
-<br>
-
-<br>
-
 <center style="width: 100%;">
 
+<div class="cover_box">
+	<br><br>
 
-<!--iframe src="https://puzzlelang.org/run" style="border: none;width:800px;height: 500px;max-width:100%;text-align:left;padding:0px;margin:0px;border-radius:5px; display: block;"></iframe-->
-
-
-<div class="cover_codebox" id="1">
-<a href="#chapters/GUIDES" class="btn-primary">Get started</a>
-<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
-
-create button with text "Get started"
-</code></pre>
-</div>
-
-
-<div class="cover_codebox" id="2" style="display: none">
+<div class="cover_codebox" id="2" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
 
 render (
@@ -85,11 +65,30 @@ say hi
 </div>
 
 
-<div class="badge" onclick="showExample(1)">Example</div>
+<!--div class="badge" onclick="showExample(1)">Example</div-->
 <div class="badge" onclick="showExample(2)">Abstract syntax</div>
 <div class="badge" onclick="showExample(3)">Any platform</div>
 <div class="badge" onclick="showExample(4)">Modules</div>
 <div class="badge" onclick="showExample(5)">Customize with JS</div>
+
+</div>
+
+<br>
+<br>
+
+<a href="#/README" class="cover_box_article">
+	<h3>Learn PUZZLE</h3>
+	Now!
+</a>
+<a href="https://replit.com/@puzzlelang"  class="cover_box_article click" style="width:400px;height: 400px;">
+	<h3>Build, run and deploy in the cloud</h3>
+	Start for free. With Replit.com
+	<img src="assets/replit.png">
+</a>
+<a href="#/chapters/MODULES" class="cover_box_article click">
+	<h3>Check out Modules</h3>
+	Modules for many purposes
+</a>
 
 <br>
 
@@ -99,4 +98,7 @@ say hi
 <span class=" fa fa-chevron-down"></span>
 </b>
 </a>
+<br>
+<br>
+
 </center>
