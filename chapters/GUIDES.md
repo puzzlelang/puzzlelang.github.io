@@ -133,21 +133,3 @@ TBD
 Abstract Cloud is a framework for building custom cloud platforms and apps using abstract code. It can be deployed on and cloud provider, like Google Cloud, AWS, Azure, you name it.
 
 TBD
-
-# --- EXAMPLES ---
-
-# Build an API
-
-You can use the `api` module to build your own api, that runs on a server.
-
-> Requires Node.js!
-
-```puzzle
-use api;
-
-// Start your api on port 80
-start 80;
-
-// Define a route
-on /say-hello return "hello!";
-```

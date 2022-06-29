@@ -75,6 +75,14 @@ say hi
 
 <br>
 <br>
+Start: &nbsp;
+<a href="#/chapters/GUIDES?id=browser" class="badge">Browser</a>
+<a href="#/chapters/GUIDES?id=use-with-node" class="badge">Node</a>
+<a href="#/chapters/GUIDES?id=hosted-clouds" class="badge">Replit.com</a>
+<a href="#/chapters/GUIDES" class="badge">more</a>
+
+<br>
+<br>
 
 <a href="#/README" class="cover_box_article">
 	<h3>Learn PUZZLE</h3>
