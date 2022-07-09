@@ -65,19 +65,21 @@ say hi
 </div>
 
 
-<!--div class="badge" onclick="showExample(1)">Example</div-->
-<div class="dot" onclick="showExample(2)"></div>
-<div class="dot" onclick="showExample(3)"></div>
-<div class="dot" onclick="showExample(4)"></div>
-<div class="dot" onclick="showExample(5)"></div>
-
-</div>
 
 <br>
-<b>START: </b>
+<b style="color:#ffffff">START: </b>
 <a href="#/chapters/GUIDES?id=browser" class="bubble">Browser</a><a href="#/chapters/GUIDES?id=use-with-node" class="bubble">Node</a>
 <a href="#/chapters/GUIDES?id=hosted-clouds" class="bubble">Replit.com</a>
 <a href="#/chapters/GUIDES" class="bubble">more</a>
+
+
+<!--div class="badge" onclick="showExample(1)">Example</div-->
+<!--div class="dot" onclick="showExample(2)"></div>
+<div class="dot" onclick="showExample(3)"></div>
+<div class="dot" onclick="showExample(4)"></div>
+<div class="dot" onclick="showExample(5)"></div-->
+
+</div>
 
 <br>
 <br>
