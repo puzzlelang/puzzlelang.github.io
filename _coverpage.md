@@ -66,10 +66,10 @@ say hi
 
 
 <!--div class="badge" onclick="showExample(1)">Example</div-->
-<div class="badge" onclick="showExample(2)">Abstract syntax</div>
-<div class="badge" onclick="showExample(3)">Any platform</div>
-<div class="badge" onclick="showExample(4)">Modules</div>
-<div class="badge" onclick="showExample(5)">Customize with JS</div>
+<div class="dot" onclick="showExample(2)"></div>
+<div class="dot" onclick="showExample(3)"></div>
+<div class="dot" onclick="showExample(4)"></div>
+<div class="dot" onclick="showExample(5)"></div>
 
 </div>
 
