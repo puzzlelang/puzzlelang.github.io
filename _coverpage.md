@@ -67,12 +67,21 @@ say hi
 
 
 <br>
+
+<div class="scroll-h">
 <a href="#/chapters/GUIDES?id=browser" class="bubble">Browser</a>
 <a href="#/chapters/GUIDES?id=use-with-node" class="bubble">Node</a>
 <a href="#/chapters/GUIDES?id=embedded-in-js" class="bubble">Embedded</a>
 <a href="#/chapters/GUIDES?id=hosted-clouds" class="bubble">Hosted</a>
 <a href="#/chapters/GUIDES" class="bubble">more</a>
+</div>
 
+<a href="#/README">
+
+<br>
+<span class=" fa fa-chevron-down"></span>
+</b>
+</a>
 
 <!--div class="badge" onclick="showExample(1)">Example</div-->
 <!--div class="dot" onclick="showExample(2)"></div>
@@ -97,13 +106,5 @@ say hi
 
 <br>
 
-<a href="#/README">
-
-<br>
-<span class=" fa fa-chevron-down"></span>
-</b>
-</a>
-<br>
-<br>
 
 </center>

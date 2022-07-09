@@ -255,6 +255,14 @@
             max-width: 100%;
             overflow: scroll;
         }
+
+        .scroll-h {
+            max-width: 100%;
+            overflow-x: scroll;
+            display: inline-block;
+            white-space: nowrap;
+
+        }
     }
 
     .sidebar, .content {
@@ -340,8 +348,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
         border-radius: 10px;
         background: #3a3a3a;
         color: #aaaaaa !important;
@@ -360,7 +368,7 @@
     }
 
     .bubble {
-        border: 1px solid #bbbbbb;
+        border: 1px solid #777777;
         border-radius: 100px;
         height: 50px;
         width: 50px;
@@ -371,7 +379,7 @@
         font-size: 18px;
         margin: 10px 20px;
         //text-shadow: 0px 1px 1px #64646461;
-        font-weight: bold;
+        //font-weight: bold;
     }
 
     .dot {
@@ -383,6 +391,8 @@
         cursor:  pointer;
         margin: 1px 5px;
     }
+
+
     </style>
 </head>
 
