@@ -75,24 +75,18 @@ say hi
 
 <br>
 <br>
-Start: &nbsp;
-<a href="#/chapters/GUIDES?id=browser" class="badge">Browser</a>
-<a href="#/chapters/GUIDES?id=use-with-node" class="badge">Node</a>
-<a href="#/chapters/GUIDES?id=hosted-clouds" class="badge">Replit.com</a>
-<a href="#/chapters/GUIDES" class="badge">more</a>
-
-<br>
-<br>
 
 <a href="#/README" class="cover_box_article">
 	<h3>Learn PUZZLE</h3>
 	Now!
 </a>
-<a href="https://replit.com/@puzzlelang"  class="cover_box_article click" style="width:400px;height: 400px;">
-	<h3>Build, run and deploy in the cloud</h3>
-	Start for free. With Replit.com
-	<img src="assets/replit.png">
-</a>
+<div href="https://replit.com/@puzzlelang"  class="cover_box_article click" style="width:400px;height: 290px;">
+	<h3>Start</h3>
+<a href="#/chapters/GUIDES?id=browser" class="badge">Browser</a><a href="#/chapters/GUIDES?id=use-with-node" class="badge">Node</a>
+<a href="#/chapters/GUIDES?id=hosted-clouds" class="badge">Replit.com</a>
+<a href="#/chapters/GUIDES" class="badge">more</a>
+
+</div>
 <a href="#/chapters/MODULES" class="cover_box_article click">
 	<h3>Check out Modules</h3>
 	Modules for many purposes
