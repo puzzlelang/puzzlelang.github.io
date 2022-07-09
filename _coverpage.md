@@ -67,9 +67,10 @@ say hi
 
 
 <br>
-<b style="color:#ffffff">START: </b>
-<a href="#/chapters/GUIDES?id=browser" class="bubble">Browser</a><a href="#/chapters/GUIDES?id=use-with-node" class="bubble">Node</a>
-<a href="#/chapters/GUIDES?id=hosted-clouds" class="bubble">Replit.com</a>
+<a href="#/chapters/GUIDES?id=browser" class="bubble">Browser</a>
+<a href="#/chapters/GUIDES?id=use-with-node" class="bubble">Node</a>
+<a href="#/chapters/GUIDES?id=embedded-in-js" class="bubble">Embedded</a>
+<a href="#/chapters/GUIDES?id=hosted-clouds" class="bubble">Hosted</a>
 <a href="#/chapters/GUIDES" class="bubble">more</a>
 
 
