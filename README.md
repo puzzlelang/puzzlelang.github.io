@@ -426,19 +426,17 @@ Building your own custom syntax is simple. It's defined with a JavaScript object
 
 ```javascript
 var syntax = { // syntax variable
-  $: {
-    mymodule: { // your namespace name
-      echo: { // a token
-        follow: ["{param}", "$and"], // possible follor tokens
-        method: function(ctx, param){ // a js method behind a token
-          console.log(param)
-        }
-      },
-      and: {
-        follow: ["{param}", "$and"],
-        method: function(ctx, param){
-          console.log(param)
-        }
+  mymodule: { // your namespace name
+    echo: { // a token
+      follow: ["{param}", "$and"], // possible follor tokens
+      method: function(ctx, param){ // a js method behind a token
+        console.log(param)
+      }
+    },
+    and: {
+      follow: ["{param}", "$and"],
+      method: function(ctx, param){
+        console.log(param)
       }
     }
   }
@@ -490,7 +488,7 @@ These instructions let you create token chains and build your own syntax.
    ^        ^        ^      ^       ^
 command  command  command command delimeter;
 
- $.echo  {param}   $.and  {param}
+   echo  {param}     and  {param}
 
 ```
 
