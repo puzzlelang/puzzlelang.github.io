@@ -3,6 +3,9 @@
 <div class="cover_box">
 	<br><br>
 
+<!--div class="cover_codebox" id="1" style="display: block;">
+  <iframe src="https://abstractcode.dev" style="border:none;width:800px;position:relative;left:-100px;height:300px"></iframe>
+</div-->
 <div class="cover_codebox" id="2" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">&#60;script type="text/x-puzzle">
   
@@ -88,6 +91,7 @@ say hi
 <div class="dot" onclick="showExample(4)"></div>
 <div class="dot" onclick="showExample(5)"></div-->
 <div class="scroll-h">
+<!--div class="bubble" onclick="showExample(1)">Play</div-->
 <div class="bubble" onclick="showExample(2)">Browser</div>
 <div class="bubble" onclick="showExample(3)">Node</div>
 <div class="bubble" onclick="showExample(4)">Embedded</div>
@@ -110,8 +114,6 @@ say hi
 
 </div>
 
-<br>
-
 
 <!--div class="scroll-h">
 <b>START: &nbsp; </b> 
@@ -122,7 +124,7 @@ say hi
 <a href="#/chapters/GUIDES" class="bubble">more</a>
 </div-->
 
-<br>
+<!--br>
 
 
 <a href="#/README" class="cover_box_article">
@@ -134,7 +136,7 @@ say hi
 	Modules for many purposes
 </a>
 
-<br>
+<br-->
 
 
 </center>
