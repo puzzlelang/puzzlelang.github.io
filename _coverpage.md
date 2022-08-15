@@ -19,9 +19,9 @@
 
 &#60;/script>
 </code></pre>
-<center>
+<!--center>
   <a href="#/chapters/GUIDES?id=browser" class="btn">Start on Browser</a>
-</center>
+</center-->
 </div>
 
 <div class="cover_codebox" id="3" style="display: none">
@@ -36,10 +36,10 @@ puzzle> print hi
 // Standalone
 puzzle run myfile.pz
 </code></pre>
-<center>
+<!--center>
   <a href="#/chapters/GUIDES?id=use-with-node" class="btn">Start on Node.js</a>
   <a href="https://www.npmjs.com/package/puzzlelang" class="btn">npm</a>
-</center>
+</center-->
 </div>
 
 <div class="cover_codebox" id="4" style="display: none">
@@ -49,18 +49,18 @@ var name = "Grace";
 
 puzzle.parse("print name")
 </code></pre>
-<center>
+<!--center>
   <a href="#/chapters/GUIDES?id=embedded-in-js" class="btn">Embed</a>
-</center>
+</center-->
 </div>
 
 <div class="cover_codebox" id="5" style="display: none">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">// Use in hosted environments like Replit.com ot others
 </code></pre>
 <img src="assets/replit.png">
-<center>
+<!--center>
   <a href="#/chapters/GUIDES?id=hosted-clouds" class="btn">Explore Clouds</a>
-</center>
+</center-->
 </div>
 
 
@@ -74,9 +74,9 @@ use https://domain.com/module.js
 // Local module
 use path/to/file.js
 </code></pre>
-<center>
+<!--center>
   <a href="#/chapters/MODULES" class="btn">Explore official modules</a>
-</center>
+</center-->
 </div>
 
 
@@ -98,9 +98,9 @@ var syntax = {
 use mysyntax;
 say hi
 </code></pre>
-<center>
+<!--center>
   <a href="#/README?id=custom-syntax" class="btn">Learn more</a>
-</center>
+</center-->
 </div>
 
 
