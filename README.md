@@ -14,49 +14,6 @@
 </b>
 </blockquote>
 
-<b>Browser</b>
-
-```puzzle
-<script type="text/x-puzzle">
-    use web;
-	create div with id "container" and text "hello";
-</script>
-```
-
-<b>Emdedded</b>
-
-```puzzle
-// As string
-puzzle.parse(`send email with text "welcome to puzzle" to peter.griffin@puzzle.org`)
-
-// As file
-puzzle.run('index.pz')
-```
-
-<b>CLI</b>
-
-```puzzle
-$ puzzle
-? > if "1 IS 1" then (print right!)
-```
-
-
-<br>
-
-# Install
-
-<b>NPM</b>
-
-```shell
-$ npm i puzzlelang --global
-```
-
-<b>Browser</b>
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js">
-```
-
 # Language
 
 PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language.

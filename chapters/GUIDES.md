@@ -38,6 +38,10 @@ Puzzle scripts can be run embedded in javascript, both node and browsers.
 
 ***Node***
 
+```shell
+npm i puzzlelang --global
+```
+
 ```javascript
 const puzzle = require("puzzlelang");
 
@@ -58,6 +62,10 @@ puzzle.parse("print hi!")
 # Use with Node
 
 To run puzzle on a server, use in node. 
+
+```shell
+npm i puzzlelang
+```
 
 ```puzzle
 // puzzle file: test.pz
@@ -124,12 +132,4 @@ Glitch is another cool hosted cloud platform for building and running custom app
 
 Cloud Platforms, like Google Cloud, AWS, Azure, Digital Ocean and others can be used to build, run and ship PUZZLE apps.
 
-TBD
-
-# Abstract Cloud
-
-> Official! Built by the team behind PUZZLE
-
-Abstract Cloud is a framework for building custom cloud platforms and apps using abstract code. It can be deployed on and cloud provider, like Google Cloud, AWS, Azure, you name it.
-
-TBD
+TBD...
