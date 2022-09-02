@@ -3,6 +3,7 @@
 <div class="cover_box">
 	<br><br>
 
+  <h3 class="header">PUZZLE is an abstract programming language, that is simple,<br> extendable and runs in any JavaScript-based environment</h3>
 
   <iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe>
 
