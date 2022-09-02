@@ -104,13 +104,16 @@ say hi
 </div>
 
 
+<br>
 
-<!--div class="dot" onclick="showExample(2)"></div>
+<div class="dot" onclick="showExample(2)"></div>
 <div class="dot" onclick="showExample(3)"></div>
 <div class="dot" onclick="showExample(4)"></div>
-<div class="dot" onclick="showExample(5)"></div-->
-<div class="scroll-h">
-<!--div class="bubble" onclick="showExample(1)">Play</div-->
+<div class="dot" onclick="showExample(5)"></div>
+<div class="dot" onclick="showExample(6)"></div>
+<div class="dot" onclick="showExample(7)"></div>
+<!--div class="scroll-h">
+<!-div class="bubble" onclick="showExample(1)">Play</div->
 <div class="bubble" onclick="showExample(2)">Browser</div>
 <div class="bubble" onclick="showExample(3)">Node</div>
 <div class="bubble" onclick="showExample(4)">Embedded</div>
@@ -118,7 +121,7 @@ say hi
 <div class="bubble" onclick="showExample(6)">Modules</div>
 <div class="bubble" onclick="showExample(7)">Customize</div>
 <a href="#/chapters/GUIDES" class="bubble">more...</a>
-</div>
+</div-->
 <br>
 
 
