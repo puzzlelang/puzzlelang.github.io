@@ -15,7 +15,6 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 	</head>
 	<body>
 		<script type="text/x-puzzle">
-			// use the ui module
 			use ui;
 			root body;
 			create button with text "click me" and method ( alert('i was clicked') );
@@ -39,7 +38,7 @@ Puzzle scripts can be run embedded in javascript, both node and browsers.
 ***Node***
 
 ```shell
-npm i puzzlelang --global
+npm i puzzlelang
 ```
 
 ```javascript
