@@ -1,14 +1,27 @@
 <center style="width: 100%;">
 
-<div class="cover_box">
-	<br><br>
 
-  <h3 class="header">PUZZLE is an abstract programming language, that is simple,<br> extendable and runs in any JavaScript-based environment</h3>
+<br><br>
 
-  <iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe>
+<h3 class="header">PUZZLE is an abstract programming language, that is simple,<br> extendable and runs in any JavaScript-based environment</h3>
 
+  <!--iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe-->
+
+
+
+<div class="cover_codebox" style="display: block;">
+<pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
+
+render (
+  &#60;div>Click the enter key&#60;/div>
+)
+
+on key enter (alert "enter was pressed")
+</code></pre>
+<!--center>
+  <a href="#/chapters/GUIDES?id=browser" class="btn">Start on Browser</a>
+</center-->
 </div>
-
 
 <!--div class="scroll-h">
 <b>START: &nbsp; </b> 
