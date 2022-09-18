@@ -46,8 +46,8 @@ puzzle.parse('
  </div>
  <div class="box" style="text-align:left;">
     <img src="assets/replit.png">
-  <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Quickstart on Replit</a></h3>
-  Develop and run in the Cloud<br> Worry-free!
+  <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Quickstart a Project</a></h3>
+  Develop and run in the Cloud<br> Worry-free on Replit
  </div>
 </div>
 <!--div class="cover_codebox" style="display: block;">
