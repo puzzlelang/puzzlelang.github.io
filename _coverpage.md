@@ -9,7 +9,48 @@
 
 
 
-<div class="cover_codebox" style="display: block;">
+<div class="scroll-h" style="display: inline-flex;">
+ <div class="box" style="text-align:left;">
+    
+
+  <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><a onclick="alert('Hello!')" class="btn">Click me</a>
+
+<code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use ui;
+
+create button 
+with text "click me";
+
+</code></pre>
+  <h3><br><a href="#/chapters/MODULES?id=ui">Build User Interfaces</a></h3>
+ </div>
+ <div class="box" style="text-align:left;">
+    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use api;
+
+on get /test run (
+    print "/test was called"
+) and return "done!"
+</code></pre>
+  <h3><a href="#/chapters/MODULES?id=api">Develop Backends</a></h3>
+ </div>
+ <div class="box" style="text-align:left;">
+    <img src="assets/replit.png">
+  <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Run and go in the Cloud</a></h3>
+ </div>
+ <div class="box" style="text-align:left;">
+        <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">
+
+print "Puzzle runs in any
+       JS environment.
+       Build what you want, 
+       like a browser game,
+       a desktop app,
+       a backend ..."
+</code></pre>
+  <h3><a href="#/chapters/GUIDES">Start building</a></h3>
+ </div>
+
+</div>
+<!--div class="cover_codebox" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
 
 render (
@@ -20,8 +61,8 @@ on key enter (alert "enter was pressed")
 </code></pre>
 <!--center>
   <a href="#/chapters/GUIDES?id=browser" class="btn">Start on Browser</a>
-</center-->
-</div>
+</center->
+</div-->
 
 <!--div class="scroll-h">
 <b>START: &nbsp; </b> 
