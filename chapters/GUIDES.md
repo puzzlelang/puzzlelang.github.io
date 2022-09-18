@@ -1,4 +1,4 @@
-# Get started
+# Platforms
 
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
@@ -35,27 +35,10 @@ After including PUZZLE with the easy steps shown above, you have PUZZLE running 
 
 Puzzle scripts can be run embedded in javascript, both node and browsers.
 
-***Node***
-
-```shell
-npm i puzzlelang
-```
-
 ```javascript
-const puzzle = require("puzzlelang");
+let word = "hello";
 
-puzzle.parse("print hi!")
-```
-
-***Browser***
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-...
-<script type="text/x-puzzle">
-	print hi!
-</script>
-...
+puzzle.parse("print word")
 ```
 
 # Use with Node
@@ -100,13 +83,6 @@ puzzle run puzzlefile.pz
 # or
 puzzle run "print hi"
 ```
-
-
-# Abstract Code Editor
-
-Abstract Code (BETA) is a ready-to-use browser-based puzzle environment, that comes with an editor and a virtual file system. You can use it  on [abstractcode.dev](https://abstractcode.dev). As of now, it is intended to be used for trying and playing around with PUZZLE. In the future, the editor will get richer.
-
-<iframe src="https://abstractcode.dev" style="border:none;height:400px;width:100%"></iframe>
 
 # Hosted Clouds
 

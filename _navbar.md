@@ -8,6 +8,8 @@
 
 * [Modules](chapters/MODULES.md)
 
+* [Customize](README?id=custom-syntax)
+
 * [Try](https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330)
 
 * <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>

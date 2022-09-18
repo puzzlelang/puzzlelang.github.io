@@ -21,7 +21,8 @@ create button
 with text "click me";
 
 </code></pre>
-  <h3><a href="#/chapters/MODULES?id=ui">Build Graphical Interfaces</a></h3>
+  <h3><a href="#/chapters/MODULES?id=ui">Graphical Programming</a></h3>
+  For Browsers
  </div>
  <div class="box" style="text-align:left;">
     <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use api;
@@ -31,12 +32,23 @@ on get /test run (
 ) and return "done!"
 </code></pre>
   <h3><a href="#/chapters/MODULES?id=api">Develop Backends</a></h3>
+  Runs on top of Node
+ </div>
+   <div class="box" style="text-align:left;">
+    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">let js_word = "hello";
+
+puzzle.parse('
+  print js_word;
+')
+</code></pre>
+  <h3><a href="#/chapters/GUIDES?id=embedded-in-js">Integrate into JavaScript</a></h3>
+  Mix PUZZLE code with JS code
  </div>
  <div class="box" style="text-align:left;">
     <img src="assets/replit.png">
-  <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Run and go in the Cloud</a></h3>
+  <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Quickstart on Replit</a></h3>
+  Develop and run in the Cloud<br> Worry-free!
  </div>
- 
 </div>
 <!--div class="cover_codebox" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
