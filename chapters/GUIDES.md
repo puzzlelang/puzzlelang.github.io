@@ -31,17 +31,7 @@ After including PUZZLE with the easy steps shown above, you have PUZZLE running 
 > -> Browser technology can also be used to build desktop and mobile apps
 
 
-# Embedded (in JS)
-
-Puzzle scripts can be run embedded in javascript, both node and browsers.
-
-```javascript
-let word = "hello";
-
-puzzle.parse("print word")
-```
-
-# Use with Node
+# Node
 
 To run puzzle on a server, use in node. 
 
@@ -57,6 +47,17 @@ print hi!
 ```javascript
 const puzzle = require("puzzlelang");
 puzzle.run('test.pz');
+```
+
+
+# Embedded
+
+Puzzle scripts can be run embedded in javascript, both node and browsers.
+
+```javascript
+let word = "hello";
+
+puzzle.parse("print word")
 ```
 
 # CLI
