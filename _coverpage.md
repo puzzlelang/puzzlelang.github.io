@@ -11,7 +11,7 @@
  <div class="box" style="text-align:left;">
     
 
-  <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><a onclick="alert('Hello!')" class="btn">Click me</a>
+  <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;">
 
 <code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use ui;
 
