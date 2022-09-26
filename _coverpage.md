@@ -86,7 +86,7 @@ on key enter (alert "enter was pressed")
 <br-->
 
 <br>
-Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox,</a> start a full-stack project on <a href="https://replit.com/@puzzlelang" target="_blank" class="btn">Replit</a> or explore all &nbsp;<a href="#/chapters/GUIDES.md"><u>Platforms</u></a>
+Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> start a full-stack project on <a href="https://replit.com/@puzzlelang" target="_blank" class="btn">Replit</a>
 
   <a href="#/README">
 
