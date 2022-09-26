@@ -7,7 +7,6 @@
 
   <!--iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe-->
 
-
 <div class="scroll-h" style="display: inline-flex;">
  <div class="box" style="text-align:left;">
     
@@ -87,8 +86,7 @@ on key enter (alert "enter was pressed")
 <br-->
 
 <br>
-
-Play with UI programming on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start a full-stack on <a href="https://replit.com/@puzzlelang" target="_blank" class="btn">Replit</a>
+Play on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox,</a> start a full-stack project on <a href="https://replit.com/@puzzlelang" target="_blank" class="btn">Replit</a> or explore all &nbsp;<a href="#/chapters/GUIDES.md"><u>Platforms</u></a>
 
   <a href="#/README">
 
