@@ -4,13 +4,11 @@
 
 * [Learn](README.md)
 
-* [Platforms](chapters/GUIDES.md)
-
 * [Modules](chapters/MODULES.md)
 
 * [Customize](README?id=custom-syntax)
 
-* <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>
+<!--* <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>-->
 
 <!--* [Learn](?id=puzzle)
 
