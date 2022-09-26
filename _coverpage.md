@@ -8,7 +8,6 @@
   <!--iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe-->
 
 
-
 <div class="scroll-h" style="display: inline-flex;">
  <div class="box" style="text-align:left;">
     
@@ -44,11 +43,11 @@ puzzle.parse('
   <h3><a href="#/chapters/GUIDES?id=embedded-in-js">Integrate into JavaScript</a></h3>
   Mix PUZZLE code with JS code
  </div>
- <div class="box" style="text-align:left;">
+ <!--div class="box" style="text-align:left;">
     <img src="assets/replit.png">
   <h3><a href="#/chapters/GUIDES?id=hosted-clouds">Quickstart a Project</a></h3>
   Develop and run in the Cloud<br> Worry-free on Replit
- </div>
+ </div-->
 </div>
 <!--div class="cover_codebox" style="display: block;">
 <pre><code class="lang-puzzle" style="font-size:22px !important;color:#EEEEEE">use ui
@@ -86,6 +85,10 @@ on key enter (alert "enter was pressed")
 </a>
 
 <br-->
+
+<br>
+
+Play with UI programming on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start a full-stack on <a href="https://replit.com/@puzzlelang" target="_blank" class="btn">Replit</a>
 
   <a href="#/README">
 
