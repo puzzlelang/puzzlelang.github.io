@@ -13,10 +13,11 @@
 
   <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;">
 
-<code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use ui;
+<code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">render (
+  &#60;div>hello, world&#60;/div>
 
-create button 
-with text "click me";
+  &#60;a href="...">OK&#60;/>
+)
 
 </code></pre>
   <h3><a href="#/chapters/MODULES?id=ui">Graphical Programming</a></h3>

@@ -1,11 +1,8 @@
-# - Official PUZZLE modules -
+# Official PUZZLE Modules
 
 These are official, tested modules. All modules are hosted on Github and can be used in puzzle like so:
 
 `use MODULENAME`
-
-<!-- UI -->
-[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/ui/Readme.md ':include')
 
 <!-- ELEMENTS -->
 [filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/elements/Readme.md ':include')

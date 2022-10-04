@@ -279,6 +279,55 @@ js (
 )
 ```
 
+## Render HTML
+
+Renders html when used on a web page.
+
+```puzzle
+render (
+  <div>hello</div>
+)
+
+// Or put it inside an existing html element (using query selector)
+inside #someid render (
+  <a>Link</a>
+)
+```
+
+## Define CSS
+
+Defines CSS styles on a web page.
+
+```puzzle
+css (
+  body {
+    background: black;
+  }
+)
+```
+
+## Load web library
+
+When used on a web page, `load` can be used to load an external js library into your site.
+
+```puzzle
+load https://domain.com/library.js
+```
+
+This will include the library equivalent to using a `<script src="...">` tag.
+
+## User interactions
+
+> EXPERIMENTAL! This is subject to change.
+
+When used on a web page, `on key` can be used to react to key events
+
+```puzzle
+on key space (
+  alert "key was pressed"
+)
+```
+
 ## Reusing code
 
 PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
