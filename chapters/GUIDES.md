@@ -23,11 +23,6 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 </html>
 ```
 
-***Building web content***
-
-After including PUZZLE with the easy steps shown above, you have PUZZLE running in your browser. Now, to build web content, you can use any module that makes sense, like the official ***ui*** module.
-
-
 > -> Browser technology can also be used to build desktop and mobile apps
 
 
