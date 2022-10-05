@@ -15,9 +15,9 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 	</head>
 	<body>
 		<script type="text/x-puzzle">
-			use ui;
-			root body;
-			create button with text "click me" and method ( alert('i was clicked') );
+			render (
+				<div>hello</div>
+			)
 		</script>
 	</body>
 </html>
