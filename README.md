@@ -5,14 +5,14 @@
  <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>
  <a href="https://www.npmjs.com/package/puzzlelang" class="" target="_blank" style="margin:0px 10px"><span class="fab fa-npm"></span></a>
 
-<blockquote style="line-height: 2;"><b>
--> Runs in every <u>JavaScript</u> environment
-<br>-> Build any JS-based app, like browser apps, backends, ...
-<br>-> Embed in JS or run standalone
-<br>-> Build custom languages (DSLs)
-<br>-> Use in clouds, like GCP, Azure or AWS
+<b style="color:grey">
+-> Runs in every <span class="highlight-primary">JavaScript</span> environment
+<br>-> Build any JS-based app, like <span class="highlight-primary">browser apps</span>, <span class="highlight-primary">backends</span>, ...
+<br>-> <span class="highlight-primary">Embed</span> in JS or run standalone
+<br>-> Build custom languages <span class="highlight-primary">(DSLs)</span>
+<br>-> Use in manaed environments, like replit.com
 </b>
-</blockquote>
+
 
 # Language
 
