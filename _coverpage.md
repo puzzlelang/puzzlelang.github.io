@@ -3,7 +3,7 @@
 
 <br><br>
 
-<h3 class="header">PUZZLE is an abstract programming language, that is simple,<br> extendable and runs in any JavaScript-based environment</h3>
+<h3 class="header">PUZZLE is an abstract <span class="highlight-primary">programming language</span>, that is <span class="highlight-primary">simple</span>,<br> <span class="highlight-primary">extendable</span> and runs in any <span class="highlight-primary">JavaScript</span>-based environment</h3>
 
   <!--iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe-->
 
@@ -21,27 +21,26 @@
 
 </code></pre>
   <h3><a href="#/chapters/MODULES?id=ui">Graphical Programming</a></h3>
-  For Browsers
  </div>
  <div class="box" style="text-align:left;">
-    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">use api;
+    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">
+use api;
 
 on get /test run (
     print "/test was called"
 ) and return "done!"
 </code></pre>
   <h3><a href="#/chapters/MODULES?id=api">Develop Backends</a></h3>
-  Runs on top of Node
  </div>
    <div class="box" style="text-align:left;">
-    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">let js_word = "hello";
+    <pre style="margin:-10px;padding:10px;border-radius: 10px;background: #000000 !important;"><code style="font-size:14px !important;color:#EEEEEE;background: #000000 !important;">
+let js_word = "hello";
 
 puzzle.parse('
   print js_word;
 ')
 </code></pre>
   <h3><a href="#/chapters/GUIDES?id=embedded-in-js">Integrate into JavaScript</a></h3>
-  Mix PUZZLE code with JS code
  </div>
  <!--div class="box" style="text-align:left;">
     <img src="assets/replit.png">
