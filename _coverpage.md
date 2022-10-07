@@ -3,7 +3,7 @@
 
 <br><br>
 
-<h3 class="header">PUZZLE is an abstract <span class="highlight-primary">programming language</span>, that is <span class="highlight-primary">simple</span>,<br> <span class="highlight-primary">extendable</span> and runs in any <span class="highlight-primary">JavaScript</span>-based environment</h3>
+<h3 class="header">PUZZLE is an abstract <span class="highlight-primary">programming language</span>, that is <span class="highlight-primary">simple</span>,<br> <span class="highlight-primary">extendable</span> and runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
   <!--iframe src="https://abstractcode.dev" style="border:none;height:500px;width:100%"></iframe-->
 
