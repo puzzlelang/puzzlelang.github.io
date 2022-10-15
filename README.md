@@ -112,7 +112,6 @@ Comments can be written using `//`
 ```
 
 
-# Data
 
 ## Variables
 
@@ -168,7 +167,7 @@ print data
 // prints the website data from the url
 ```
 
-# Conditions
+## Conditions
 
 Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
 
@@ -188,7 +187,7 @@ if (1<2 OR 2==2) then (print true) else (print false);
 if (1<2 OR 2==2) then "print true" else {print false};
 ```
 
-# Loops
+## Loops
 
 Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
 
