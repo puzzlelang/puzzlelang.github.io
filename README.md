@@ -1,22 +1,33 @@
 <div class="cover-main"><!-- _coverpage.md -->
+<h3 class="header">PUZZLE is an <span class="highlight-primary">abstract</span> programming language, that is <span class="highlight-primary">simple</span>,<br> <span class="highlight-primary">extendable</span> and runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
-<span style="font-size: 50px;color:#e5cbe4">PUZZLE</span>
 
- <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>
- <a href="https://www.npmjs.com/package/puzzlelang" class="" target="_blank" style="margin:0px 10px"><span class="fab fa-npm"></span></a>
+# Get started
 
-<b style="color:grey">
--> Runs in every <span class="highlight-primary">JavaScript</span> environment
-<br>-> Build any JS-based app, like <span class="highlight-primary">browser apps</span>, <span class="highlight-primary">backends</span>, ...
-<br>-> <span class="highlight-primary">Embed</span> in JS or run standalone
-<br>-> Build custom languages <span class="highlight-primary">(DSLs)</span>
-<br>-> Use in manaed environments, like replit.com
-</b>
+***Browser***
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+```
+
+***Node***
+
+```cli
+npm i puzzlelang -g
+```
 
 
 # Language
 
 PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language.
+
+
+<b style="color:grey">
+> Build any JS-based app, like browser apps, backends, ...
+<br>> Embed in JS or run standalone
+<br>> Build custom languages (DSLs)
+<br>> Use in manaed environments, like replit.com
+</b>
 
 > A quick example
 

@@ -25,6 +25,14 @@
         font-family: 'Roboto Slab', serif;
     }
 
+    li .section-link{
+        color: #9f9f9f !important;
+    }
+
+    .active .section-link{
+        color: #ffffff !important;
+    }
+
     .highlight-primary{
         background: var(--theme-color,#00bc8c);
         color: #3a3a3a;
@@ -90,7 +98,7 @@
 
     nav ul li:first-child {
         position: absolute;
-        left: 25px;
+        left: 0px;
         top: 5px;
     }
 
@@ -103,6 +111,7 @@
 
     .sidebar {
         border-right: none;
+        padding-top: 100px;
     }
 
     .masonry {
@@ -417,9 +426,10 @@
 
     .header {
         color: #ffffff !important;
-        padding: 50px 10px;
+        padding: 0px 10px;
         font-size: 22px;
         font-weight: normal;
+        line-height: 40px;
     }
 
     .box {
@@ -444,17 +454,17 @@
         name: '',
         repo: '',
         loadNavbar: true,
-        coverpage:true,
+        //coverpage:true,
         subMaxLevel: 2,
         //onlyCover: true,
         plugins: [],
         //loadSidebar: true,
         //coverpage: 'cover.html',
         //homepage: 'chapters/PUZZLE.md'
-        search: {
+        /*search: {
             paths: 'auto',
             placeholder: 'Search...',
-        },
+        },*/
         loadFooter: true,
         loadFooter: '_footer.md',
         darkMode: {
@@ -487,8 +497,8 @@
         var nav = document.getElementsByClassName('sidebar')[0]
         search = document.getElementsByClassName('search')[0]
 
-        if (direction == 'down') nav.prepend(search)
-        else if (direction == 'up') document.getElementById('search-wrapper').append(search)
+        //if (direction == 'down') nav.prepend(search)
+        //else if (direction == 'up') document.getElementById('search-wrapper').append(search)
     }
 
     /*window.onhashchange = function () {
@@ -524,7 +534,7 @@
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!--script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script-->
     <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
 
       <script type="text/javascript">
