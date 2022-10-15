@@ -1,6 +1,10 @@
 <div class="cover-main"><!-- _coverpage.md -->
 <h3 class="header">PUZZLE is an <span class="highlight-primary">abstract</span> programming language, that is <span class="highlight-primary">simple</span>,<br> <span class="highlight-primary">extendable</span> and runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
+&nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>
+
+<br>
+
 
 # Get started
 
@@ -16,8 +20,7 @@
 npm i puzzlelang -g
 ```
 
-
-# Language
+# Basics
 
 PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language.
 
@@ -86,6 +89,31 @@ print (
 );
 ```
 
+
+## Reusing code
+
+PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
+
+```puzzle
+// local
+include otherscript.puzzle;
+
+or remote
+include https://domain.com/otherscript.puzzle;
+```
+
+
+## Comments
+
+Comments can be written using `//`
+
+```puzzle
+// this is a comment
+```
+
+
+# Data
+
 ## Variables
 
 Variables are set using the `set` keyword.
@@ -140,8 +168,56 @@ print data
 // prints the website data from the url
 ```
 
+# Conditions
 
-## Scripts
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
+```
+
+# Loops
+
+Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+
+```puzzle
+// single-part literal condition
+while 1>0 do (print running);
+
+// multi-part literal condition
+while (1<2 OR 2==2) do {
+  print true
+};
+```
+
+You can also use loops for **iterating** over some data
+
+```puzzle
+set numbers [1,2,3]
+
+loop over numbers with number do (
+  print number
+)
+
+// will output:
+// 1
+// 2
+// 3
+```
+
+# Scripts
 
 Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
@@ -213,7 +289,7 @@ wait 2000;
 print "i will be displayed after 2 seconds"
 ```
 
-## Files
+# Files
 
 Files can be writen, read and removed.
 
@@ -231,64 +307,7 @@ remove file /test/hello.txt;
 // this is a comment
 ```
 
-## Conditions
-
-Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
-
-A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
-
-```puzzle
-// single-part literal condition
-if 1<2 then (print true);
-
-// multi-part literal condition
-if (1<2 OR 2==2) then (print true);
-
-// if and else
-if (1<2 OR 2==2) then (print true) else (print false);
-
-// different notations for code literals
-if (1<2 OR 2==2) then "print true" else {print false};
-```
-
-## Loops
-
-Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
-
-```puzzle
-// single-part literal condition
-while 1>0 do (print running);
-
-// multi-part literal condition
-while (1<2 OR 2==2) do {
-  print true
-};
-```
-
-You can also use loops for **iterating** over some data
-
-```puzzle
-set numbers [1,2,3]
-
-loop over numbers with number do (
-  print number
-)
-
-// will output:
-// 1
-// 2
-// 3
-```
-
-## JavaScript code
-
-Executes JavaScript code inside a PUZZLE script using `js`
-
-```puzzle
-js (
-	console.log('I am JavaScript!')
-)
-```
+# UI
 
 ## Render HTML
 
@@ -302,6 +321,16 @@ render (
 // Or put it inside an existing html element (using query selector)
 inside #someid render (
   <a>Link</a>
+)
+```
+
+## JavaScript code
+
+Executes JavaScript code inside a PUZZLE script using `js`
+
+```puzzle
+js (
+	console.log('I am JavaScript!')
 )
 ```
 
@@ -339,20 +368,9 @@ on key space (
 )
 ```
 
-## Reusing code
+# Modules
 
-PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
-
-```puzzle
-// local
-include otherscript.puzzle;
-
-or remote
-include https://domain.com/otherscript.puzzle;
-```
-
-
-## Modules
+## Use
 
 The PUZZLE language is based on an open module ecosystem.
 
@@ -393,16 +411,7 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
-## Custom tokens
-
-Custom tokens can be defined for executing some javascript code, when that token is used.
-
-```puzzle
-define token echo with follow "{data}" and method "console.log(data)";
-
-// Use it right away
-echo "test";
-```
+# Utilities
 
 ## JSON
 
@@ -422,20 +431,21 @@ encode "hello world" as encoded
 decode encoded as decoded
 ```
 
-## Comments
-
-Comments can be written using `//`
-
-```puzzle
-// this is a comment
-```
-
-
-# Custom syntax
+# Customize
 
 Besides being a simple language, PUZZLE is also a platform for custom syntax. 
 Each syntax is delivered as a module, that can be used in any script with `use my_module.js`.
 
+## Custom tokens
+
+Custom tokens can be defined for executing some javascript code, when that token is used.
+
+```puzzle
+define token echo with follow "{data}" and method "console.log(data)";
+
+// Use it right away
+echo "test";
+```
 
 ## Create a syntax
 
