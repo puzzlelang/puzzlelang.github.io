@@ -6,7 +6,7 @@
 
 * [Modules](chapters/MODULES.md)
 
-* [Customize](README?id=custom-syntax)
+* [Customize](README?id=customize)
 
 <!--* <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>-->
 

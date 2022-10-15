@@ -1,5 +1,3 @@
-# Official PUZZLE Modules
-
 These are official, tested modules. All modules are hosted on Github and can be used in puzzle like so:
 
 `use MODULENAME`
