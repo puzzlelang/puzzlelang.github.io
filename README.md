@@ -1,9 +1,28 @@
 <div class="cover-main"><!-- _coverpage.md -->
 <h3 class="header">PUZZLE is an <span class="highlight-primary">abstract</span> programming language, that runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
-&nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>
+<!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
 <br>
+
+```puzzle
+print "Welcome to PUZZLE";
+
+// Use remote modules
+use https://domain.com/somemodule.js;
+
+// Variables
+set myname Grace;
+print myname;
+
+// UI programming
+use elements;
+create button with text "click me" and onclick (
+  alert hello!;
+)
+
+// and a whole lot more...
+```
 
 
 # Get started
