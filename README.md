@@ -24,6 +24,7 @@ create button with text "click me" and onclick (
 // and a whole lot more...
 ```
 
+<small><b>RUNS ON</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more</small>
 
 # Get started
 
