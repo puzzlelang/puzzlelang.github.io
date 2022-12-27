@@ -3,7 +3,7 @@ These are official, tested modules. All modules are hosted on Github and can be 
 `use MODULENAME`
 
 <!-- ELEMENTS -->
-[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/elements/Readme.md ':include')
+[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/ui/Readme.md ':include')
 
 <!-- REST -->
 [filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/rest/Readme.md ':include')
