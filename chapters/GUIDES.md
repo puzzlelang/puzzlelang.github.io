@@ -1,6 +1,6 @@
 The following chapters will show you how to build software using abstract language and tools for various platforms.
 
-# Browser
+# Browser App
 
 PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in various ways:
 
@@ -24,7 +24,7 @@ PUZZLE runs in any Webbrowser. It can be included as a script tag and be used in
 > -> Browser technology can also be used to build desktop and mobile apps
 
 
-# Node
+# Node.js
 
 To run puzzle on a server, use in node. 
 
@@ -43,15 +43,8 @@ puzzle.run('test.pz');
 ```
 
 
-# Embedded
 
-Puzzle scripts can be run embedded in javascript, both node and browsers.
 
-```javascript
-let word = "hello";
-
-puzzle.parse("print word")
-```
 
 # CLI
 
@@ -78,7 +71,7 @@ puzzle run puzzlefile.pz
 puzzle run "print hi"
 ```
 
-# Hosted Clouds
+# Hosted API
 
 PUZZLE can be used on hosted cloud environments.
 
