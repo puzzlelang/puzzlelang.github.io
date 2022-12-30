@@ -1,5 +1,5 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header"><span class="highlight-primary">Abstract</span> programming in any <span class="highlight-primary">JavaScript</span> environment</h3>
+<h3 class="header">An <span class="highlight-primary">abstract</span>, extendable programming language, than runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
@@ -17,20 +17,45 @@ use ui;
 create button with text "click me";
 ```
 
-<small><b>RUNS ON</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more</small>
-
 # Get started
 
-***Browser***
+<b>PUZZLE RUNS ON</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more
+
+## ***Online Platforms***
+
+<a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+
+## ***Runner***
+
+Run puzzle files instantly with [PUZZLE Runner](https://puzzlelang.org/runner)
+
+## ***Browser***
 
 ```html
+<script type="text/x-puzzle">
+  include myfile.pz;
+  print hello;
+</script>
 <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 ```
 
-***Node***
+## ***Node***
 
 ```cli
 npm i puzzlelang -g
+```
+```cli
+let pz = require('puzzlelang');
+pz.run('myfile.pz');
+pz.parse('print hi');
+```
+
+## ***CLI***
+
+```cli
+$ npm i puzzlelang -g
+$ puzzle
+> print hi
 ```
 
 # Basics
@@ -380,7 +405,7 @@ stringify jsonData as stringData
 Encode and decode base64 data
 
 ```puzzle
-encode "h^lo world" as encoded
+encode "hlo world" as encoded
 decode encoded as decoded
 ```
 
