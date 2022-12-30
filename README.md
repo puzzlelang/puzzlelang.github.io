@@ -1,27 +1,20 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header">An <span class="highlight-primary">abstract</span> , extendable programming language, that runs in any <span class="highlight-primary">JavaScript</span> environment</h3>
+<h3 class="header"><span class="highlight-primary">Abstract</span> programming in any <span class="highlight-primary">JavaScript</span> environment</h3>
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
 <br>
 
 ```puzzle
-print "Welcome to PUZZLE";
+// Include a thrid party module (local or remote)
+use 'https://url.com/module.js';
 
-// Use remote modules
-use https://domain.com/somemodule.js;
+// stora a variable
+set name 'Grace';
 
-// Variables
-set myname Grace;
-print myname;
-
-// UI programming
-use elements;
-create button with text "click me" and onclick (
-  alert hello!;
-)
-
-// and a whole lot more...
+// Build a ui
+use ui;
+create button with text "click me";
 ```
 
 <small><b>RUNS ON</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more</small>
@@ -42,28 +35,14 @@ npm i puzzlelang -g
 
 # Basics
 
-PUZZLE is a programming language, that has an abstract design and can easily be extended with custom language.
+PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
 
 
-<b style="color:grey">
-> Build any JS-based app, like browser apps, backends, ...
+<b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
 <br>> Embed in JS or run standalone
 <br>> Build custom languages (DSLs)
 <br>> Use in manaed environments, like replit.com
 </b>
-
-> A quick example
-
-```puzzle
-// Output something
-print 'Welcome future puzzle developer!';
-
-// Include a thrid party module (local or remote)
-use 'https://url.com/module.js';
-
-// stora a variable
-set name 'Grace';
-```
 
 ## Statements
 
@@ -328,62 +307,17 @@ remove file /test/hello.txt;
 
 # UI
 
-## Render HTML
-
-Renders html when used on a web page.
+Use the UI module to build user interfaces and graphical applications.
 
 ```puzzle
+use ui;
+
 render (
   <div>hello</div>
 )
 
-// Or put it inside an existing html element (using query selector)
-inside #someid render (
-  <a>Link</a>
-)
-```
-
-## JavaScript code
-
-Executes JavaScript code inside a PUZZLE script using `js`
-
-```puzzle
-js (
-	console.log('I am JavaScript!')
-)
-```
-
-## Define CSS
-
-Defines CSS styles on a web page.
-
-```puzzle
-css (
-  body {
-    background: black;
-  }
-)
-```
-
-## Load web library
-
-When used on a web page, `load` can be used to load an external js library into your site.
-
-```puzzle
-load https://domain.com/library.js
-```
-
-This will include the library equivalent to using a `<script src="...">` tag.
-
-## User interactions
-
-> EXPERIMENTAL! This is subject to change.
-
-When used on a web page, `on key` can be used to react to key events
-
-```puzzle
-on key space (
-  alert "key was pressed"
+create button with text "click" and onclick (
+  alert "hello";
 )
 ```
 
@@ -446,7 +380,7 @@ stringify jsonData as stringData
 Encode and decode base64 data
 
 ```puzzle
-encode "hello world" as encoded
+encode "h^lo world" as encoded
 decode encoded as decoded
 ```
 
