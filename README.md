@@ -19,7 +19,16 @@ create button with text "click me";
 
 # ***Get started online***
 
-<a href="https://playcode.io/puzzlelang" target="_blank"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> <a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+<div style="display: inline-block;">
+  <small style="color:grey">Play around: &nbsp;</small><br>
+<a href="https://playcode.io/puzzlelang" target="_blank"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> 
+<a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank"><img style="height:20px" src="https://www.freelogovectors.net/wp-content/uploads/2022/06/codesandbox-logo-freelogovectors.net_.png"></a> 
+</div>
+&nbsp;
+<div style="display: inline-block;">
+  <small style="color:grey">Build real stuff:</small><br>
+<a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+</div>
 
 # ***Runner***
 
