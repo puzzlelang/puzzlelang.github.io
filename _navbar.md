@@ -4,7 +4,7 @@
 
 * <a href="https://playcode.io/puzzlelang" target="_blank" class="btn">Try</a>
 
-* [Platforms](chapters/GUIDES.md)
+* [Guides](chapters/GUIDES.md)
 
 * [Modules](chapters/MODULES.md)
 
