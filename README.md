@@ -19,11 +19,11 @@ create button with text "click me";
 
 # Get started
 
-<b>PUZZLE RUNS ON</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more
+<b>PUZZLE RUNS, WHERE JS RUNS</b>: Browsers, Servers, Backends, Frontends, Devices, Clouds, Desktop, Mobile and more
 
 ## ***Online Platforms***
 
-<a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+<a href="https://playcode.io/puzzlelang" target="_blank"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> <a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
 
 ## ***Runner***
 
