@@ -2,9 +2,7 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]() <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* <a href="https://playcode.io/puzzlelang" target="_blank" class="btn">Try</a>
-
-* [Guides](chapters/GUIDES.md)
+* <a href="chapters/GUIDES.md" target="_blank" class="btn">Guides</a>
 
 * [Modules](chapters/MODULES.md)
 
