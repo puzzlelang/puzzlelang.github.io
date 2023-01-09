@@ -1,5 +1,5 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header">A <span class="highlight-primary">Low Code</span> programming language on top of JavaScript</h3>
+<h3 class="header">A <span class="highlight-primary">Low Code</span> programming language that runs in JavaScript environments</h3>
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
