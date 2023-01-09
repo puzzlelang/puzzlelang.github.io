@@ -20,14 +20,14 @@ create button with text "click me";
 # ***Get started online***
 
 <div style="display: inline-block;">
-  <small style="color:grey">Play around: &nbsp;</small><br>
-<a href="https://playcode.io/puzzlelang" target="_blank"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> 
-<a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank"><img style="height:20px" src="https://www.freelogovectors.net/wp-content/uploads/2022/06/codesandbox-logo-freelogovectors.net_.png"></a> 
+  <small style="color:grey">Playgrounds: &nbsp;</small><br>
+<a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> 
+<a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank" class="platform-box"><svg aria-label="CodeSandbox" role="presentation" x="0px" y="0px" width="35px" height="18px" viewBox="0 0 452 452" style="vertical-align: middle; margin-left: 0px; margin-top: 2px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 452h452V0H0v452zm405.773-46.227V46.227H46.227v359.546h359.546z" fill="#ffffff"></path></svg> <small>Codesandbox</small><br><br></a> 
 </div>
 &nbsp;
 <div style="display: inline-block;">
   <small style="color:grey">Build real stuff:</small><br>
-<a href="https://replit.com/@puzzlelang" target="_blank"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+<a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
 </div>
 
 # ***Runner***
