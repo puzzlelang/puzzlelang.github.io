@@ -5,58 +5,35 @@
 
 <br>
 
-```puzzle
-// Include a thrid party module (local or remote)
-use 'https://url.com/module.js';
-
-// stora a variable
-set name 'Grace';
-
-// Build a ui
-use ui;
-create button with text "click me";
-```
-
-## ***Get started online***
-
-<div style="display: inline-flex;">
-<a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> 
-<a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank" class="platform-box"><svg aria-label="CodeSandbox" role="presentation" x="0px" y="0px" width="35px" height="18px" viewBox="0 0 452 452" style="vertical-align: middle; margin-left: 0px; margin-top: 2px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 452h452V0H0v452zm405.773-46.227V46.227H46.227v359.546h359.546z" fill="#ffffff"></path></svg> <small>Codesandbox</small><br><br></a> 
-<a href="https://puzzlelang.org/runner" target="_blank" class="platform-box"><img src="assets/puzzle.png"><small> Runner</small><br><br></a> 
-<a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
-</div>
-
-
-## ***Browser***
-
 ```html
 <script type="text/x-puzzle">
-  include myfile.pz;
-  print hello;
+  // Include a thrid party module (local or remote)
+  use 'https://url.com/module.js';
+
+  // stora a variable
+  set name 'Grace';
+
+  // Build a ui
+  use ui;
+  create button with text "click me";
 </script>
 <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 ```
 
-## ***Node***
+# Get started
 
-```cli
-npm i puzzlelang -g
-```
-```cli
-let pz = require('puzzlelang');
-pz.run('myfile.pz');
-pz.parse('print hi');
-```
+<div style="display: inline-flex;">
+<a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
+<a href="#/chapters/GUIDES?id=nodejs" class="platform-box"><span class="fab fa-node" style="font-size:40px"></span></a> 
+<a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> 
+<!--a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank" class="platform-box"><svg aria-label="CodeSandbox" role="presentation" x="0px" y="0px" width="35px" height="18px" viewBox="0 0 452 452" style="vertical-align: middle; margin-left: 0px; margin-top: 2px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 452h452V0H0v452zm405.773-46.227V46.227H46.227v359.546h359.546z" fill="#ffffff"></path></svg> <small>Codesandbox</small><br><br></a--> 
+<a href="https://puzzlelang.org/runner" target="_blank" class="platform-box"><img src="assets/puzzle.png" style="width:20px"><small><br>Runner</small><br><br></a> 
+<a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+</div>
 
-## ***CLI***
 
-```cli
-$ npm i puzzlelang -g
-$ puzzle
-> print hi
-```
 
-# --- LANGUAGE ---
+# LANGUAGE
 
 PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
 
