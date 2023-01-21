@@ -38,11 +38,11 @@
 PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
 
 
-<b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
+<!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
 <br>> Embed in JS or run standalone
 <br>> Build custom languages (DSLs)
 <br>> Use in manaed environments, like replit.com
-</b>
+</b-->
 
 ## Statements
 
