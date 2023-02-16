@@ -22,12 +22,6 @@
 
 # Get started
 
-***JS***
-
-```js
-puzzle.parse("print hi")
-```
-
 ***Browser***
 
 ```html
@@ -46,6 +40,8 @@ puzzle.parse("print hi")
 ```js
 let puzzle = require("puzzlelang");
 puzzle.parse("print hi");
+// or
+puzzle.run("file.pz");
 ```
 
 <!--div style="display: inline-flex;">
