@@ -5,19 +5,13 @@
 
 <br>
 
-```html
-<script type="text/x-puzzle">
-  // Include a thrid party module (local or remote)
-  use 'https://url.com/module.js';
+```puzzle
+ // stora a variable
+ set name 'Grace';
 
-  // stora a variable
-  set name 'Grace';
-
-  // Build a ui
-  use ui;
-  create button with text "click me";
-</script>
-<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+ // Build a ui
+ use ui;
+ create button with text "click me";
 ```
 
 # Get started
