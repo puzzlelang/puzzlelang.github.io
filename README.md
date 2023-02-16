@@ -18,12 +18,18 @@
 
 ***Browser***
 
+`<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>`
+
 ```html
 <script type="text/x-puzzle">
   use ui;
   create button with text "click me";
 </script>
-<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+```
+```html
+<script type="text/javascript">
+  puzzle.parse("print hi")
+</script>
 ```
 
 ***Node***
