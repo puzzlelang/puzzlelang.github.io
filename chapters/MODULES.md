@@ -3,7 +3,7 @@
 
 
 <!-- UI -->
-[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/README.md ':include')
+[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/README.md':include')
 
 <!-- ELEMENTS >
 [filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/elements/Readme.md ':include')
