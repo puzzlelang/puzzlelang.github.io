@@ -26,11 +26,8 @@
   create button with text "click me";
 </script>
 ```
-```html
-<script type="text/javascript">
-  puzzle.parse("print hi")
-</script>
-```
+
+
 
 ***Node***
 
