@@ -1,15 +1,15 @@
-These are official, tested modules. All modules are hosted on Github and can be used in puzzle like so:
 
-`use MODULENAME`
+
+
 
 <!-- UI -->
-[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/ui/Readme.md ':include')
+[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/Readme.md ':include')
 
-<!-- ELEMENTS -->
+<!-- ELEMENTS >
 [filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/elements/Readme.md ':include')
 
-<!-- REST -->
+<!-- REST >
 [filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/rest/Readme.md ':include')
 
-<!-- API -->
-[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/api/Readme.md ':include')
+<!-- API >
+[filename](https://raw.githubusercontent.com/puzzlelang/puzzle-catalog/master/modules/api/Readme.md ':include')-->
