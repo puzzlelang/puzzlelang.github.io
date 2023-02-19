@@ -42,7 +42,6 @@ puzzle.run("file.pz");
 ***Other Platforms***
 
 
-
 <!--div style="display: inline-flex;">
 <a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
 <a href="#/chapters/GUIDES?id=nodejs" class="platform-box"><span class="fab fa-node" style="font-size:50px"></span></a> <!--a href="https://puzzlelang.org/runner" target="_blank" class="platform-box"><img src="assets/puzzle.png" style="width:20px"><small><br>Runner</small><br><br></a-->
@@ -71,7 +70,7 @@ Each statement can be single line or multiline.
 ```puzzle
 print "hello";
 
-Multi-part literals must be wrapped in any of these: `""`, `()`, `{}`.
+//Multi-part literals must be wrapped in any of these: `""`, `()`, `{}`.
 print "
    hello world
 ";
