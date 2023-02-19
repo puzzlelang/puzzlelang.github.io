@@ -27,8 +27,6 @@
 </script>
 ```
 
-
-
 ***Node***
 
 `npm i puzzlelang`
@@ -41,16 +39,20 @@ puzzle.parse("print hi");
 puzzle.run("file.pz");
 ```
 
+***Other Platforms***
+
+
+
 <!--div style="display: inline-flex;">
 <a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
 <a href="#/chapters/GUIDES?id=nodejs" class="platform-box"><span class="fab fa-node" style="font-size:50px"></span></a> <!--a href="https://puzzlelang.org/runner" target="_blank" class="platform-box"><img src="assets/puzzle.png" style="width:20px"><small><br>Runner</small><br><br></a-->
 </div-->
 
-<!--div style="display: inline-flex;"-->
-<!--a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank" class="platform-box"><svg aria-label="CodeSandbox" role="presentation" x="0px" y="0px" width="35px" height="18px" viewBox="0 0 452 452" style="vertical-align: middle; margin-left: 0px; margin-top: 2px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 452h452V0H0v452zm405.773-46.227V46.227H46.227v359.546h359.546z" fill="#ffffff"></path></svg> <small>Codesandbox</small><br><br></a--> 
+<div style="display: inline-flex;">
+<a href="https://codesandbox.io/s/puzzle-playgroud-hw1sfz" target="_blank" class="platform-box"><svg aria-label="CodeSandbox" role="presentation" x="0px" y="0px" width="35px" height="18px" viewBox="0 0 452 452" style="vertical-align: middle; margin-left: 0px; margin-top: 2px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 452h452V0H0v452zm405.773-46.227V46.227H46.227v359.546h359.546z" fill="#ffffff"></path></svg> <small>Codesandbox</small><br><br></a> 
 
-<!--a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
-</div-->
+<a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
+</div>
 
 # LANGUAGE
 
@@ -63,48 +65,18 @@ PUZZLE is a programming language and platform, that has an abstract design and c
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-## Statements
-
 PUZZLE scripts are split up into multiple statements, delimited by a semicolon (`;`). 
 Each statement can be single line or multiline.
 
 ```puzzle
-print "this is a single line stamement. It ends with a semicolon";
+print "hello";
 
-print (
-	this is a multiline statement. It also ends with a semicolon.
-);
-```
-
-## Literals
-
-***single-part literals***
-
-Data, that can be described in one part.
-
-```puzzle
-// single-part literals
-print hello;
-print 1;
-print 2.5;
-```
-
-***multi-part literals***
-
-Data that can consist of multiple parts, like multiple words, lines or even statements.
-
-Multi-part literals must be wrappen in any of these: `""`, `()`, `{}`.
-
-```puzzle
-// equivalent multi word example:
-print "hello world";
+Multi-part literals must be wrapped in any of these: `""`, `()`, `{}`.
+print "
+   hello world
+";
 print (hello world);
 print {hello world};
-
-// multi line example
-print (
-	hello world!
-);
 ```
 
 
