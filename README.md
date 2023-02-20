@@ -41,7 +41,7 @@ puzzle.run("file.pz");
 
 ***Other Platforms***
 
-[Replit](https://replit.com/@puzzlelang), [Codesandbox](https://codesandbox.io/s/puzzle-playgroud-hw1sfz), [more...](#/chapters/GUIDES)
+[Replit](https://replit.com/@puzzlelang), [Codesandbox](https://codesandbox.io/s/puzzle-playgroud-hw1sfz), [more...](#/GUIDES)
 
 <!--div style="display: inline-flex;">
 <a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
