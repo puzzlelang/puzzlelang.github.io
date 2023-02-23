@@ -1,5 +1,5 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header">An <span class="highlight-primary">abstract</span> programming language that runs in JavaScript environments</h3>
+<h3 class="header">An <span class="highlight-primary">abstract</span>, extendable programming language on top of JavaScript</h3>
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
@@ -14,19 +14,13 @@
 </script>
 ```
 
-***Node***
-
-```puzzle
-// myfile.pz
-set name 'Grace';
-print name;
-```
+***Node/Browser***
 
 ```js
-// run a file
-puzzle.run("myfile.pz");
-// or inline
-puzzle.parse("set name 'another name'; print name;");
+puzzle.parse(`
+  set name 'another name';
+  print name;
+`);
 ```
 
 ***Other Platforms***
@@ -46,7 +40,8 @@ puzzle.parse("set name 'another name'; print name;");
 
 # LANGUAGE
 
-PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
+PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. Scripts are split up into multiple statements, delimited by a semicolon (`;`). 
+Each statement can be single line or multiline.
 
 
 <!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
@@ -55,18 +50,46 @@ PUZZLE is a programming language and platform, that has an abstract design and c
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-PUZZLE scripts are split up into multiple statements, delimited by a semicolon (`;`). 
-Each statement can be single line or multiline.
-
 ```puzzle
-print "hello";
-
-//Multi-part literals must be wrapped in any of these: `""`, `()`, `{}`.
 print "
    hello world
 ";
 print (hello world);
 print {hello world};
+```
+
+***Modules*** &nbsp;can help building custom programs:
+
+```puzzle
+// Remote modules
+use https://domain.io/somemodule.js;
+
+// Official modules
+use ui;
+
+// Custom modules
+use myfile.js;
+```
+
+Modules are simple json objects:
+
+```javascript
+var mysyntax = {
+  mymodule: {
+    echo: {
+      follow: ["{param}", "$and"],
+      method: function(ctx, param){
+        console.log(param)
+      }
+    },
+    and: {
+      follow: ["{param}", "$and"],
+      method: function(ctx, param){
+        console.log(param)
+      }
+    }
+  }
+}
 ```
 
 
