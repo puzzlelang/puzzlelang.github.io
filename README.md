@@ -25,10 +25,14 @@ print name;
 ```js
 // run a file
 puzzle.run("myfile.pz");
-// or inline
-puzzle.parse("set name 'another name'; print name;");
 ```
 
+***Inline (Node, Browser or any other)***
+
+
+```js
+puzzle.parse("set name 'another name'; print name;");
+```
 
 ***Other Platforms***
 
