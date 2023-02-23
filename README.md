@@ -51,16 +51,17 @@ Each statement can be single line or multiline.
 </b-->
 
 ```puzzle
+// The default language contains all the basics
 print "
    hello world
 ";
-print (hello world);
-print {hello world};
-```
 
-***Modules*** &nbsp;can help building custom programs:
+set name Grace;
+every 2s run ( print name );
 
-```puzzle
+
+// Modules are for custom and domain-specific code
+
 // Remote modules
 use https://domain.io/somemodule.js;
 
