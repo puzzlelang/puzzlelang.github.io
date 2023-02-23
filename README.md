@@ -5,15 +5,6 @@
 
 <br>
 
-```puzzle
- // stora a variable
- set name 'Grace';
-
- // Build a ui
- use ui;
- create button with text "click me";
-```
-
 ***Browser***
 
 ```html
@@ -25,12 +16,19 @@
 
 ***Node***
 
-```js
-let puzzle = require("puzzlelang");
-puzzle.parse("print hi");
-// or
-puzzle.run("file.pz");
+```puzzle
+// myfile.pz
+set name 'Grace';
+print name;
 ```
+
+```js
+// run a file
+puzzle.run("myfile.pz");
+// or inline
+puzzle.parse("set name 'another name'; print name;");
+```
+
 
 ***Other Platforms***
 
