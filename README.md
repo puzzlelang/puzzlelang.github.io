@@ -17,10 +17,12 @@
 ***Node/Browser***
 
 ```js
-puzzle.parse(`
+var code = `
   set name 'another name';
   print name;
-`);
+`;
+
+puzzle.parse(code);
 ```
 
 ***Other Platforms***
@@ -40,8 +42,7 @@ puzzle.parse(`
 
 # LANGUAGE
 
-PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. Scripts are split up into multiple statements, delimited by a semicolon (`;`). 
-Each statement can be single line or multiline.
+PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. Syntax is defined using simple json objects.
 
 
 <!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
@@ -51,25 +52,11 @@ Each statement can be single line or multiline.
 </b-->
 
 ```puzzle
-// The default language contains all the basics
-print "
-   hello world
-";
-
-set name Grace;
-every 2s run ( print name );
-
-
-// Modules are for custom and domain-specific code
-
-// Remote modules
-use https://domain.io/somemodule.js;
-
-// Official modules
-use ui;
-
 // Custom modules
 use myfile.js;
+
+// Or remote
+use https://domain.io/myfile.js;
 ```
 
 Modules are simple json objects:
@@ -92,7 +79,6 @@ var mysyntax = {
   }
 }
 ```
-
 
 ## Reusing code
 
