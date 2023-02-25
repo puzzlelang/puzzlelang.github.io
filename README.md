@@ -42,43 +42,57 @@ puzzle.parse(code);
 
 # LANGUAGE
 
-PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. Syntax is defined using simple json objects.
+PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
 
+```puzzle
+// The default language contains all the basics
+print "
+   hello world
+";
 
+set name Grace;
+every 2s run ( print name );
+
+// Modules are for custom and domain-specific code
+use https://domain.io/somemodule.js;
+```
 <!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
 <br>> Embed in JS or run standalone
 <br>> Build custom languages (DSLs)
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-```puzzle
-// Custom modules
-use myfile.js;
+## Custom Language
 
-// Or remote
-use https://domain.io/myfile.js;
-```
+Syntax is defined using simple json objects.
 
-Modules are simple json objects:
+***Language definition (module)***
 
 ```javascript
-var mysyntax = {
-  mymodule: {
-    echo: {
-      follow: ["{param}", "$and"],
-      method: function(ctx, param){
-        console.log(param)
-      }
-    },
-    and: {
-      follow: ["{param}", "$and"],
-      method: function(ctx, param){
+// mysyntax.js
+var syntax = { // syntax variable
+  mymodule: { // your namespace name
+    echo: { // a token
+      follow: ["{param}", "$and"], // possible follor tokens
+      method: function(ctx, param){ // a js method behind a token
         console.log(param)
       }
     }
   }
 }
 ```
+
+***Use an syntax:***
+
+```puzzle
+// use the syntax
+use mysyntax.js;
+
+echo "hello world";
+```
+
+> See detailed instructions <a href="#/?id=customize">here</a>
+
 
 ## Reusing code
 
