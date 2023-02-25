@@ -1,9 +1,10 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header">An <span class="highlight-primary">abstract</span>, extendable programming language on top of JavaScript</h3>
+<h2 class="header" style="padding:none !important">An <span class="highlight-primary">abstract</span>, extendable programming language on top of JavaScript. <br>It runs on <span class="highlight-primary">Browsers</span>, <span class="highlight-primary">Node</span>, and other platforms.</h2>
+
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
 
-<br>
+<!--br>
 
 ***Browser***
 
@@ -30,6 +31,7 @@ puzzle.run('myfile.pz');
 ***Other Platforms***
 
 [Replit](https://replit.com/@puzzlelang), [Codesandbox](https://codesandbox.io/s/puzzle-playgroud-hw1sfz), [more...](#/GUIDES)
+-->
 
 <!--div style="display: inline-flex;">
 <a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
@@ -41,6 +43,9 @@ puzzle.run('myfile.pz');
 
 <a href="https://replit.com/@puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431"></a> <a href="https://playcode.io/puzzlelang" target="_blank" class="platform-box"><img style="height:50px" src="https://playcode.io/lstatic/img/social/fb-static.png"></a> <a href="https://glitch.com/edit/#!/puzzlelang" class="platform-box" target="_blank"><img style="height:50px" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Symbol.png"></a>
 </div-->
+
+
+
 
 # LANGUAGE
 
