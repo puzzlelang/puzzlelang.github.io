@@ -23,6 +23,8 @@ var code = `
 `;
 
 puzzle.parse(code);
+// or run a file
+puzzle.run('myfile.pz');
 ```
 
 ***Other Platforms***
