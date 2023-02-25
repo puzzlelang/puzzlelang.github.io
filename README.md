@@ -1,7 +1,7 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h3 class="header">An <span class="highlight-primary">abstract</span>, extendable programming language on top of JavaScript</h3>
+<h3 class="header" style="padding:none !important">An <span class="highlight-primary">abstract</span>, extendable programming language on top of JavaScript. <br>It runs on <span class="highlight-primary">Browsers</span>, <span class="highlight-primary">Node</span>, and other platforms.</h3>
 
-<!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>-->
+<!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>
 
 <br>
 
@@ -28,7 +28,7 @@ puzzle.parse(code);
 ***Other Platforms***
 
 [Replit](https://replit.com/@puzzlelang), [Codesandbox](https://codesandbox.io/s/puzzle-playgroud-hw1sfz), [more...](#/GUIDES)
-
+-->
 <!--div style="display: inline-flex;">
 <a href="#/chapters/GUIDES?id=browser-app" class="platform-box"><span class="fa fa-globe"></span><br>Browser</a> 
 <a href="#/chapters/GUIDES?id=nodejs" class="platform-box"><span class="fab fa-node" style="font-size:50px"></span></a> <!--a href="https://puzzlelang.org/runner" target="_blank" class="platform-box"><img src="assets/puzzle.png" style="width:20px"><small><br>Runner</small><br><br></a-->
