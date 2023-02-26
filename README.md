@@ -3,7 +3,7 @@
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>
 
-<br>
+<br><br>
 
 ***Browser***
 
@@ -42,7 +42,6 @@ puzzle.parse(code);
 
 
 ```puzzle
-// The default language contains all the basics
 print "
    hello world
 ";
@@ -61,7 +60,7 @@ use https://domain.io/somemodule.js;
 
 # GUIDES
 
-* [Get start started ed on Browser](/guides/browser.md)
+* [Get start started on Browser](/guides/browser.md)
 
 * [Get started on Node](/guides/node.md)
 
