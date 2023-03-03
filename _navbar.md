@@ -2,7 +2,7 @@
 
 * [![AC](https://puzzlelang.org/assets/puzzle.png "PUZZLE. Abstract Code")]() <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* <a href="https://dev.to/puzzle" class="btn">Posts</a>
+* <a href="https://dev.to/puzzle" target="_blank" class="btn">Posts</a>
 
 * [Modules](MODULES.md)
 

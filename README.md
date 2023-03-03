@@ -60,11 +60,10 @@ use https://domain.io/somemodule.js;
 
 # GUIDES
 
-* [Get start started on Browser](/guides/browser.md)
+> * [Get start started on Browser](/guides/browser.md)
+> * [Get started on Node](/guides/node.md)
+> * [PUZZLE CLI](/guides/cli.md)
 
-* [Get started on Node](/guides/node.md)
-
-* [PUZZLE CLI](/guides/cli.md)
 # LANGUAE
 
 PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
