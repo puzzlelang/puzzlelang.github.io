@@ -58,11 +58,6 @@ use https://domain.io/somemodule.js;
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-# GUIDES
-
-> * [Get start started on Browser](/guides/browser.md)
-> * [Get started on Node](/guides/node.md)
-> * [PUZZLE CLI](/guides/cli.md)
 
 # LANGUAE
 
