@@ -58,20 +58,6 @@ use https://domain.io/somemodule.js;
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-
-# LANGUAE
-
-PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. It comes with cool features:
-
-* [Custom Syntax](?id=custom-syntax) (Modules)
-* [Variables](?id=variables)
-* [Conditions](?id=conditions) and [Loops](?id=loops)
-* [Scripts](?id=scripts) (functions)
-* [Files](?id=files)
-* Ready-to-use [Modules](/MODULES.md)
-* and more
-
-
 # CUSTOM SYNTAX
 
 Syntax is defined using simple json objects. It can be done using seperate files, or inline.
