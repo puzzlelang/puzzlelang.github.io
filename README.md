@@ -76,8 +76,6 @@ PUZZLE is a programming language and platform, that has an abstract design and c
 
 Syntax is defined using simple json objects. It can be done using seperate files, or inline.
 
-## JavaScript File
-
 ***Language definition***
 
 ```javascript
@@ -94,7 +92,7 @@ var syntax = {
 }
 ```
 
-***Use an syntax:***
+***Use a syntax:***
 
 ```puzzle
 use mysyntax.js;
@@ -105,16 +103,7 @@ echo "Hello";
 use https://domain.com/mysyntax.js;
 ```
 
-## Custom token
-
-Custom tokens can be defined for executing some javascript code, when that token is used.
-
-```puzzle
-define token echo with follow "{data}" and method "console.log(data)";
-
-// Use it right away
-echo "test";
-```
+<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
 
 # BASICS
 
@@ -488,6 +477,17 @@ Encode and decode base64 data
 ```puzzle
 encode "hlo world" as encoded
 decode encoded as decoded
+```
+
+## Custom token
+
+Custom tokens can be defined for executing some javascript code, when that token is used.
+
+```puzzle
+define token echo with follow "{data}" and method "console.log(data)";
+
+// Use it right away
+echo "test";
 ```
 
 <!--
