@@ -105,20 +105,6 @@ echo "Hello";
 use https://domain.com/mysyntax.js;
 ```
 
-## JavaScript Variable
-
-This method can be used when a custom syntax is defined in the same scope as the script. The syntax variable must be prefixed with `var:`
-
-```javascript
-var syntax = {
-  ...
-}
-
-puzzle.parse(`
- use var:syntax;
-`)
-````
-
 ## Custom token
 
 Custom tokens can be defined for executing some javascript code, when that token is used.
@@ -202,6 +188,47 @@ Comments can be written using `//`
 // this is a comment
 ```
 
+## Use
+
+The PUZZLE language is based on an open module ecosystem.
+
+Each module is designed to archieve a specific goal and comes with it's own syntax. 
+Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
+
+```puzzle
+// remove module
+use https://afasf.com/module.js;
+
+// local module
+use module.js;
+```
+
+If you'd like to cache a module, use the `permanent` option:
+
+```puzzle
+use permanent https://afasf.com/module.js;
+```
+
+This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
+
+
+## Namespaces
+
+Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
+
+```puzzle
+ns mynamespace;
+// namespace will be available here
+```
+A namespace will be active until another one is set using `ns`.
+
+Note, that after loading a module using `use` will automatically set that modules namespace for you.
+
+```puzzle
+use mymodule.puzzle.js;
+// the mymodule namespace will automatically be available here.
+```
+
 
 
 # VARIABLES
@@ -265,6 +292,9 @@ Scripts are functions that can run predefined puzzle code and are defined with t
 
 ```puzzle
 script sayHello { print hello }
+// or:
+set sayHello ( print hello )
+
 run sayHello;
 // will output "hello"
 ```
@@ -282,16 +312,8 @@ With the `run` keyword, you can execute an inline script
 
 ```puzzle
 run ( print hello )
-```
-
-This comes handy when storing a script in a variable:
-
-```puzzle
-// Store script in variable
-set myScript ( print hi )
-
-// run it
-run myScript
+// or
+run scriptname;
 ```
 
 ## Time-triggered scripts
@@ -331,6 +353,54 @@ wait 2000;
 print "i will be displayed after 2 seconds"
 ```
 
+# JAVASCRIPT
+
+Puzzle runs in JavaScript. Interpreted, not compiled. This means, that puzzle code has access to the enclosing JavaScript context and the other way around.
+
+## Run JS
+
+JS code can be included in puzzle code.
+
+```puzzle
+js (
+  alert("hello world");
+  console.log('hi');
+)
+```
+
+## Bind variables
+
+By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
+
+```javascript
+let data = {
+  name: "Grace",
+  type: "test"
+}
+```
+
+```puzzle
+bind-vars data;
+
+// access your vars
+print name;
+print type;
+```
+
+## Custom syntax
+
+A custom syntax object can be used as variable in puzzle.
+
+```javascript
+let mysyntax = {
+  ...
+}
+```
+
+```puzzle
+use mysyntax;
+```
+
 # FILES
 
 Files can be writen, read and removed.
@@ -365,47 +435,39 @@ create button with text "click" and onclick (
 )
 ```
 
-# MODULES
+# NETWORKING
 
-## Use
+## Server
 
-The PUZZLE language is based on an open module ecosystem.
-
-Each module is designed to archieve a specific goal and comes with it's own syntax. 
-Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
+Build a server using the server module.
 
 ```puzzle
-// remove module
-use https://afasf.com/module.js;
+use server;
 
-// local module
-use module.js;
+// Start server on specified port
+start 3000;
+
+// Define a route
+on get /test run (
+  print "/test was called"
+) and return "done!"
 ```
 
-If you'd like to cache a module, use the `permanent` option:
+## Fetch (Client)
+
+Use the fetch module to call remote ressources.
 
 ```puzzle
-use permanent https://afasf.com/module.js;
-```
+use fetch;
 
-This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
+post {message: "hello"} to https://domain.com
 
+delete from https://domain.com
 
-## Namespaces
+patch to https://domain.com
 
-Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
-
-```puzzle
-ns mynamespace;
-// namespace will be available here
-```
-A namespace will be active until another one is set using `ns`.
-
-Note, that after loading a module using `use` will automatically set that modules namespace for you.
-
-```puzzle
-use mymodule.puzzle.js;
-// the mymodule namespace will automatically be available here.
+get from https://google.com as result; 
+print result;
 ```
 
 # UTILITIES
