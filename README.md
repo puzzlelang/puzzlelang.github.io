@@ -61,22 +61,32 @@ use https://domain.io/somemodule.js;
 
 # LANGUAE
 
-PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language.
+PUZZLE is a programming language and platform, that has an abstract design and can easily be extended with custom language. It comes with cool features:
+
+* [Custom Syntax](?id=custom-syntax) (Modules)
+* [Variables](?id=variables)
+* [Conditions](?id=conditions) and [Loops](?id=loops)
+* [Scripts](?id=scripts) (functions)
+* [Files](?id=files)
+* Ready-to-use [Modules](/MODULES.md)
+* and more
 
 
-## Custom Language
+# CUSTOM SYNTAX
 
-Syntax is defined using simple json objects.
+Syntax is defined using simple json objects. It can be done using seperate files, or inline.
 
-***Language definition (module)***
+## JavaScript File
+
+***Language definition***
 
 ```javascript
 // mysyntax.js
-var syntax = { // syntax variable
-  mymodule: { // your namespace name
+var syntax = {
+  mymodule: { // syntax name
     echo: { // a token
-      follow: ["{param}", "$and"], // possible follor tokens
-      method: function(ctx, param){ // a js method behind a token
+      follow: ["{param}", "$and"], // possible follow tokens
+      method: function(ctx, param){ // js method thats called when the token is parsed
         console.log(param)
       }
     }
@@ -87,14 +97,89 @@ var syntax = { // syntax variable
 ***Use an syntax:***
 
 ```puzzle
-// use the syntax
 use mysyntax.js;
 
-echo "hello world";
+echo "Hello";
+
+// can also be used from a remote location
+use https://domain.com/mysyntax.js;
 ```
 
-> See detailed instructions <a href="#/?id=customize">here</a>
+## JavaScript Variable
 
+This method can be used when a custom syntax is defined in the same scope as the script. The syntax variable must be prefixed with `var:`
+
+```javascript
+var syntax = {
+  ...
+}
+
+puzzle.parse(`
+ use var:syntax;
+`)
+````
+
+## Custom token
+
+Custom tokens can be defined for executing some javascript code, when that token is used.
+
+```puzzle
+define token echo with follow "{data}" and method "console.log(data)";
+
+// Use it right away
+echo "test";
+```
+
+# BASICS
+
+## Conditions
+
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
+```
+
+## Loops
+
+Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+
+```puzzle
+// single-part literal condition
+while 1>0 do (print running);
+
+// multi-part literal condition
+while (1<2 OR 2==2) do {
+  print true
+};
+```
+
+You can also use loops for **iterating** over some data
+
+```puzzle
+set numbers [1,2,3]
+
+loop over numbers with number do (
+  print number
+)
+
+// will output:
+// 1
+// 2
+// 3
+```
 
 ## Reusing code
 
@@ -119,7 +204,7 @@ Comments can be written using `//`
 
 
 
-## Variables
+# VARIABLES
 
 Variables are set using the `set` keyword.
 
@@ -173,56 +258,8 @@ print data
 // prints the website data from the url
 ```
 
-## Conditions
 
-Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
-
-A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
-
-```puzzle
-// single-part literal condition
-if 1<2 then (print true);
-
-// multi-part literal condition
-if (1<2 OR 2==2) then (print true);
-
-// if and else
-if (1<2 OR 2==2) then (print true) else (print false);
-
-// different notations for code literals
-if (1<2 OR 2==2) then "print true" else {print false};
-```
-
-## Loops
-
-Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
-
-```puzzle
-// single-part literal condition
-while 1>0 do (print running);
-
-// multi-part literal condition
-while (1<2 OR 2==2) do {
-  print true
-};
-```
-
-You can also use loops for **iterating** over some data
-
-```puzzle
-set numbers [1,2,3]
-
-loop over numbers with number do (
-  print number
-)
-
-// will output:
-// 1
-// 2
-// 3
-```
-
-# Scripts
+# SCRIPTS
 
 Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
@@ -294,7 +331,7 @@ wait 2000;
 print "i will be displayed after 2 seconds"
 ```
 
-# Files
+# FILES
 
 Files can be writen, read and removed.
 
@@ -328,7 +365,7 @@ create button with text "click" and onclick (
 )
 ```
 
-# Modules
+# MODULES
 
 ## Use
 
@@ -371,7 +408,7 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
-# Utilities
+# UTILITIES
 
 ## JSON
 
@@ -390,6 +427,8 @@ Encode and decode base64 data
 encode "hlo world" as encoded
 decode encoded as decoded
 ```
+
+<!--
 
 # Customize
 
@@ -431,6 +470,8 @@ var syntax = { // syntax variable
 module.exports = syntax;
 ```
 
+-->
+
 <!--
 
 ***The required keys and fields in your syntax definition are:***
@@ -456,6 +497,8 @@ module.exports = syntax;
 
 
 -->
+
+<!--
 
 Define your available tokens as keys under the "$" object. Each key has an attached `method`, which will be executed, when that token is parsed and an array `follow`, which defines, which tokens can follow the current token.
 
@@ -518,3 +561,4 @@ puzzle.parse(`
 Your custom syntax modules can be contributed to the official module repo.
 
 Learn more: [ PUZZLE Module Repo](https://github.com/puzzlelang/puzzle-catalog)
+-->
