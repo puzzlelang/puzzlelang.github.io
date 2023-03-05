@@ -58,7 +58,7 @@ use https://domain.io/somemodule.js;
 <br>> Use in manaed environments, like replit.com
 </b-->
 
-# CUSTOM SYNTAX
+# DEFINE LANGUAGE
 
 Syntax is defined using simple json objects. It can be done using seperate files, or inline.
 
@@ -91,7 +91,7 @@ use https://domain.com/mysyntax.js;
 
 <!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
 
-# BASICS
+# LANGUAGE BASIC
 
 ## Conditions
 
