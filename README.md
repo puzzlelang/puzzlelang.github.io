@@ -115,7 +115,11 @@ if (1<2 OR 2==2) then "print true" else {print false};
 
 ## Loops
 
-Loops are for repeating code. They can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+Loops are for repeating code. There are different types of loops.
+
+***while***
+
+While loops can be written as `while CONDITION-LITERAL do CODE-LITERAL`
 
 ```puzzle
 // single-part literal condition
@@ -127,7 +131,9 @@ while (1<2 OR 2==2) do {
 };
 ```
 
-You can also use loops for **iterating** over some data
+***iterate***
+
+You can also use loops for iterating over some data
 
 ```puzzle
 set numbers [1,2,3]
@@ -140,6 +146,22 @@ loop over numbers with number do (
 // 1
 // 2
 // 3
+```
+
+***n times***
+
+Run a piece of code repeatedly for a specified number of times
+
+```puzzle
+repeat 3 times (print hi);
+
+// or use variables
+set counter 5;
+repeat counter times "print hi";
+
+// or run predefined scripts
+set myscript "print hi";
+repeat 3 times myscript;
 ```
 
 ## Reusing code
