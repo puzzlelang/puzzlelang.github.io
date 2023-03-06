@@ -214,8 +214,9 @@ Variables are set using the `set` keyword.
 set name Peter;
 print name;
 ```
+## Permanent
 
-You can also set permanent variables, that are stored locally by using the `local` keyword in combination with `set`
+You can also set permanent variables, that are stored locally (stored on disk) by using the `local` keyword in combination with `set`
 
 ```puzzle
 set local name Peter;
