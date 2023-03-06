@@ -204,6 +204,24 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
+## Math
+
+Mathematical operations take numbers and variables for input.
+
+```puzzle
+// simple calculation, takes any mathematical input and the operations +, -, *, /
+calc (2+3) as result;
+calc (4 + myvariable) as result;
+
+// min and max
+min (1,4,6,7) as result;
+max (4,7,8,2) as result;
+
+// add and subtract multiple numbers
+add (4,6,7) as result;
+subtract (10,4,2) as result;
+```
+
 
 
 # VARIABLES
@@ -379,7 +397,7 @@ use mysyntax;
 
 # FILES
 
-Files can be writen, read and removed.
+Files can be written, read and removed.
 
 > In Node, file access is native. In browsers, there is no access to the device's real filesystem. However, puzzle handles files and directories directly inside the browser's `indexedDb`
 
