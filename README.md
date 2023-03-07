@@ -43,15 +43,8 @@ puzzle.parse(code);
 <br>
 
 ```puzzle
-print "
-   hello world
-";
-
 set name Grace;
 every 2s run ( print name );
-
-// Modules are for custom and domain-specific code
-use https://domain.io/somemodule.js;
 ```
 <!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
 <br>> Embed in JS or run standalone
