@@ -63,10 +63,11 @@ Syntax is defined using simple json objects. It can be done using seperate files
 ```javascript
 // mysyntax.js
 var syntax = {
-  mymodule: { // syntax name
+  mymodule: {
     echo: { // a token
-      follow: ["{param}", "$and"], // possible follow tokens
-      method: function(ctx, param){ // js method thats called when the token is parsed
+      follow: ["{param}", "$and"], // follow tokens
+      method: function(ctx, param){
+        // js method thats called when the token is parsed
         console.log(param)
       }
     }
@@ -442,7 +443,7 @@ render (
   <div>hello</div>
 )
 
-create button with text "click" and onclick (
+render button with text "click" and onclick (
   alert "hello";
 )
 ```
