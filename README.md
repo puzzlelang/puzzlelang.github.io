@@ -56,7 +56,7 @@ every 2s run ( print name );
 
 # DEFINE A LANGUAGE
 
-Syntax is defined using simple json objects. It can be done using seperate files, or inline.
+Building a custom language is done with a simple js object, that is included in puzzle
 
 ```puzzle
 use mysyntax.js;
