@@ -54,9 +54,17 @@ every 2s run ( print name );
 
 <br><br>
 
-# DEFINE LANGUAGE
+# DEFINE A LANGUAGE
 
 Syntax is defined using simple json objects. It can be done using seperate files, or inline.
+
+```puzzle
+use mysyntax.js;
+// or
+use https://domain.com/mysyntax.js;
+
+echo "Hello";
+```
 
 ***Language definition***
 
@@ -75,20 +83,9 @@ var syntax = {
 }
 ```
 
-***Use a syntax:***
-
-```puzzle
-use mysyntax.js;
-
-echo "Hello";
-
-// can also be used from a remote location
-use https://domain.com/mysyntax.js;
-```
-
 <!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
 
-# LANGUAGE BASIC
+# BASIC LANGUAGE
 
 ## Conditions
 
