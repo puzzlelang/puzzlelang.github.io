@@ -55,6 +55,131 @@ every 2s run ( print name );
 <br><br>
 
 
+
+# VARIABLES
+
+Variables are set using the `set` keyword.
+
+```puzzle
+set name Peter;
+print name;
+```
+## Permanent
+
+You can also set permanent variables, that are stored locally (stored on disk) by using the `local` keyword in combination with `set`
+
+```puzzle
+set local name Peter;
+print name;
+```
+
+## Datatypes
+
+In programming, you always need to store some information for later use. This information is stored in variables.
+In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
+
+```puzzle
+// Number
+set age 1
+
+// Text
+set message "hello world"
+
+// Boolean
+set decision true
+
+// Objects
+set person {name: Perer, age: 22}
+
+// Array (collection of data)
+set numbers [1,2,3]
+
+// Script
+set say-hello ( print hello )
+```
+
+## As
+
+Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
+
+```puzzle
+// Example: store the result of a rest call in a viariable
+use rest
+get from https://puzzlelang.org as data
+
+print data
+// prints the website data from the url
+```
+
+
+# SCRIPTS
+
+Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
+
+```puzzle
+script sayHello { print hello }
+// or:
+set sayHello ( print hello )
+
+run sayHello;
+// will output "hello"
+```
+
+When running a script, variables can be overwritten with `variable:value`.
+
+```puzzle
+run hello:hi in sayHello;
+// will output "hi"
+```
+
+## Run
+
+With the `run` keyword, you can execute an inline script
+
+```puzzle
+run ( print hello )
+// or
+run scriptname;
+```
+
+## Time-triggered scripts
+
+Run a piece of code with the `run` keyword <u>delayed</u>.
+
+```puzzle
+// Wait for 2 seconds, then run the code
+after 2000 run "print hello"
+
+// Or run a predefined script
+script sayHi (print hi);
+after 2000 run sayHi;
+```
+
+Run a piece of code with the `run` keyword <u>repeatedly</u>.
+
+```puzzle
+// Every 2 seconds, then run the code
+every 2000 run "print hello"
+
+// Or run a predefined script
+script sayHi (print hi);
+every 2000 run sayHi;
+```
+
+## Wait
+
+The wait keyword allows you to break the execution of a script for a certain time.
+
+```puzzle
+print "starting program";
+
+// wait for 2 seconds (time expresses througt milliseconds)
+wait 2000;
+
+print "i will be displayed after 2 seconds"
+```
+
+
 # BASICS
 
 ## Loops
@@ -241,129 +366,6 @@ max (4,7,8,2) as result;
 // add and subtract multiple numbers
 add (4,6,7) as result;
 subtract (10,4,2) as result;
-```
-
-# VARIABLES
-
-Variables are set using the `set` keyword.
-
-```puzzle
-set name Peter;
-print name;
-```
-## Permanent
-
-You can also set permanent variables, that are stored locally (stored on disk) by using the `local` keyword in combination with `set`
-
-```puzzle
-set local name Peter;
-print name;
-```
-
-## Datatypes
-
-In programming, you always need to store some information for later use. This information is stored in variables.
-In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
-
-```puzzle
-// Number
-set age 1
-
-// Text
-set message "hello world"
-
-// Boolean
-set decision true
-
-// Objects
-set person {name: Perer, age: 22}
-
-// Array (collection of data)
-set numbers [1,2,3]
-
-// Script
-set say-hello ( print hello )
-```
-
-## As
-
-Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
-
-```puzzle
-// Example: store the result of a rest call in a viariable
-use rest
-get from https://puzzlelang.org as data
-
-print data
-// prints the website data from the url
-```
-
-
-# SCRIPTS
-
-Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
-
-```puzzle
-script sayHello { print hello }
-// or:
-set sayHello ( print hello )
-
-run sayHello;
-// will output "hello"
-```
-
-When running a script, variables can be overwritten with `variable:value`.
-
-```puzzle
-run hello:hi in sayHello;
-// will output "hi"
-```
-
-## Run
-
-With the `run` keyword, you can execute an inline script
-
-```puzzle
-run ( print hello )
-// or
-run scriptname;
-```
-
-## Time-triggered scripts
-
-Run a piece of code with the `run` keyword <u>delayed</u>.
-
-```puzzle
-// Wait for 2 seconds, then run the code
-after 2000 run "print hello"
-
-// Or run a predefined script
-script sayHi (print hi);
-after 2000 run sayHi;
-```
-
-Run a piece of code with the `run` keyword <u>repeatedly</u>.
-
-```puzzle
-// Every 2 seconds, then run the code
-every 2000 run "print hello"
-
-// Or run a predefined script
-script sayHi (print hi);
-every 2000 run sayHi;
-```
-
-## Wait
-
-The wait keyword allows you to break the execution of a script for a certain time.
-
-```puzzle
-print "starting program";
-
-// wait for 2 seconds (time expresses througt milliseconds)
-wait 2000;
-
-print "i will be displayed after 2 seconds"
 ```
 
 # JAVASCRIPT
