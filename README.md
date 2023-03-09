@@ -158,7 +158,7 @@ Each module is designed to archieve a specific goal and comes with it's own synt
 Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
 
 ```puzzle
-// remove module
+// remote module
 use https://afasf.com/module.js;
 
 // local module
@@ -172,6 +172,40 @@ use permanent https://afasf.com/module.js;
 ```
 
 This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
+
+
+
+## Custom Language
+
+Building a custom language is done with a simple js object, that is included in puzzle
+
+***Language definition***
+
+```javascript
+// mysyntax.js
+var syntax = {
+  mymodule: {
+    echo: { // a token
+      follow: ["{param}", "$and"], // follow tokens
+      method: function(ctx, param){
+        // js method thats called when the token is parsed
+        console.log(param)
+      }
+    }
+  }
+}
+```
+
+```puzzle
+use mysyntax.js;
+// or
+use https://domain.com/mysyntax.js;
+
+echo "Hello";
+```
+
+
+<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
 
 
 ## Namespaces
@@ -208,40 +242,6 @@ max (4,7,8,2) as result;
 add (4,6,7) as result;
 subtract (10,4,2) as result;
 ```
-
-
-## Custom Language
-
-Building a custom language is done with a simple js object, that is included in puzzle
-
-***Language definition***
-
-```javascript
-// mysyntax.js
-var syntax = {
-  mymodule: {
-    echo: { // a token
-      follow: ["{param}", "$and"], // follow tokens
-      method: function(ctx, param){
-        // js method thats called when the token is parsed
-        console.log(param)
-      }
-    }
-  }
-}
-```
-
-```puzzle
-use mysyntax.js;
-// or
-use https://domain.com/mysyntax.js;
-
-echo "Hello";
-```
-
-
-<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
-
 
 # VARIABLES
 
