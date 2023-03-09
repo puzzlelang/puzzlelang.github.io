@@ -55,7 +55,7 @@ every 2s run ( print name );
 <br><br>
 
 
-# LANGUAGE BASICS
+# BASICS
 
 ## Loops
 
@@ -191,6 +191,25 @@ use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
 
+## Math
+
+Mathematical operations take numbers and variables for input.
+
+```puzzle
+// simple calculation, takes any mathematical input and the operations +, -, *, /
+calc (2+3) as result;
+calc (4 + myvariable) as result;
+
+// min and max
+min (1,4,6,7) as result;
+max (4,7,8,2) as result;
+
+// add and subtract multiple numbers
+add (4,6,7) as result;
+subtract (10,4,2) as result;
+```
+
+
 ## Custom Language
 
 Building a custom language is done with a simple js object, that is included in puzzle
@@ -222,25 +241,6 @@ echo "Hello";
 
 
 <!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
-
-## Math
-
-Mathematical operations take numbers and variables for input.
-
-```puzzle
-// simple calculation, takes any mathematical input and the operations +, -, *, /
-calc (2+3) as result;
-calc (4 + myvariable) as result;
-
-// min and max
-min (1,4,6,7) as result;
-max (4,7,8,2) as result;
-
-// add and subtract multiple numbers
-add (4,6,7) as result;
-subtract (10,4,2) as result;
-```
-
 
 
 # VARIABLES
