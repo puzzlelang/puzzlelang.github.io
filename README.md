@@ -43,14 +43,14 @@ puzzle.parse(code);
 <br>
 
 ```puzzle
-set name Grace;
+set name Peter;
 every 2s run ( print name );
+
+use ui;
+render button with text "say ma name" and onclick (
+  alert (name)
+)
 ```
-<!--b style="color:grey">> Build any JS-based app, like browser apps, backends, ...
-<br>> Embed in JS or run standalone
-<br>> Build custom languages (DSLs)
-<br>> Use in manaed environments, like replit.com
-</b-->
 
 <br><br>
 
@@ -180,6 +180,88 @@ print "i will be displayed after 2 seconds"
 ```
 
 
+# JAVASCRIPT
+
+Puzzle runs in JavaScript. Interpreted, not compiled. This means, that puzzle code has access to the enclosing JavaScript context and the other way around.
+
+## Run JS
+
+JS code can be included in puzzle code.
+
+```puzzle
+js (
+  alert("hello world");
+  console.log('hi');
+)
+```
+
+## Bind variables
+
+By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
+
+```javascript
+let data = {
+  name: "Grace",
+  type: "test"
+}
+```
+
+```puzzle
+bind-vars data;
+
+// access your vars
+print name;
+print type;
+```
+
+
+# CUSTOM LANGUAGE
+
+Building a custom language is done with a simple js object, that is included in puzzle.
+
+## File
+
+Define a JS object, stored in a file.
+
+***Language definition***
+
+```javascript
+// mysyntax.js
+var syntax = {
+  mymodule: {
+    echo: { // a token
+      follow: ["{param}", "$and"], // follow tokens
+      method: function(ctx, param){
+        // js method thats called when the token is parsed
+        console.log(param)
+      }
+    }
+  }
+}
+```
+
+```puzzle
+use mysyntax.js;
+// or
+use https://domain.com/mysyntax.js;
+
+echo "Hello";
+```
+
+## Object
+
+Define a JS object, stored as variable. The JS object and the puzzle code needs to be in the same context.
+
+```javascript
+let mysyntax = {
+  ...
+}
+
+puzzle.parse(`
+  use var:mysyntax;
+`)
+```
+
 # BASICS
 
 ## Loops
@@ -299,40 +381,6 @@ use permanent https://afasf.com/module.js;
 This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
 
 
-
-## Custom Language
-
-Building a custom language is done with a simple js object, that is included in puzzle
-
-***Language definition***
-
-```javascript
-// mysyntax.js
-var syntax = {
-  mymodule: {
-    echo: { // a token
-      follow: ["{param}", "$and"], // follow tokens
-      method: function(ctx, param){
-        // js method thats called when the token is parsed
-        console.log(param)
-      }
-    }
-  }
-}
-```
-
-```puzzle
-use mysyntax.js;
-// or
-use https://domain.com/mysyntax.js;
-
-echo "Hello";
-```
-
-
-<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
-
-
 ## Namespaces
 
 Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
@@ -366,54 +414,6 @@ max (4,7,8,2) as result;
 // add and subtract multiple numbers
 add (4,6,7) as result;
 subtract (10,4,2) as result;
-```
-
-# JAVASCRIPT
-
-Puzzle runs in JavaScript. Interpreted, not compiled. This means, that puzzle code has access to the enclosing JavaScript context and the other way around.
-
-## Run JS
-
-JS code can be included in puzzle code.
-
-```puzzle
-js (
-  alert("hello world");
-  console.log('hi');
-)
-```
-
-## Bind variables
-
-By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
-
-```javascript
-let data = {
-  name: "Grace",
-  type: "test"
-}
-```
-
-```puzzle
-bind-vars data;
-
-// access your vars
-print name;
-print type;
-```
-
-## Custom syntax
-
-A custom syntax object can be used as variable in puzzle.
-
-```javascript
-let mysyntax = {
-  ...
-}
-```
-
-```puzzle
-use mysyntax;
 ```
 
 # FILES
