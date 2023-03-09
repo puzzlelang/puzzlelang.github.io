@@ -54,58 +54,8 @@ every 2s run ( print name );
 
 <br><br>
 
-# DEFINE A LANGUAGE
 
-Building a custom language is done with a simple js object, that is included in puzzle
-
-```puzzle
-use mysyntax.js;
-// or
-use https://domain.com/mysyntax.js;
-
-echo "Hello";
-```
-
-***Language definition***
-
-```javascript
-// mysyntax.js
-var syntax = {
-  mymodule: {
-    echo: { // a token
-      follow: ["{param}", "$and"], // follow tokens
-      method: function(ctx, param){
-        // js method thats called when the token is parsed
-        console.log(param)
-      }
-    }
-  }
-}
-```
-
-<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
-
-# BASIC LANGUAGE
-
-## Conditions
-
-Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
-
-A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
-
-```puzzle
-// single-part literal condition
-if 1<2 then (print true);
-
-// multi-part literal condition
-if (1<2 OR 2==2) then (print true);
-
-// if and else
-if (1<2 OR 2==2) then (print true) else (print false);
-
-// different notations for code literals
-if (1<2 OR 2==2) then "print true" else {print false};
-```
+# LANGUAGE BASICS
 
 ## Loops
 
@@ -156,6 +106,27 @@ repeat counter times "print hi";
 // or run predefined scripts
 set myscript "print hi";
 repeat 3 times myscript;
+```
+
+
+## Conditions
+
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
 ```
 
 ## Reusing code
@@ -219,6 +190,38 @@ Note, that after loading a module using `use` will automatically set that module
 use mymodule.puzzle.js;
 // the mymodule namespace will automatically be available here.
 ```
+
+## Custom Language
+
+Building a custom language is done with a simple js object, that is included in puzzle
+
+***Language definition***
+
+```javascript
+// mysyntax.js
+var syntax = {
+  mymodule: {
+    echo: { // a token
+      follow: ["{param}", "$and"], // follow tokens
+      method: function(ctx, param){
+        // js method thats called when the token is parsed
+        console.log(param)
+      }
+    }
+  }
+}
+```
+
+```puzzle
+use mysyntax.js;
+// or
+use https://domain.com/mysyntax.js;
+
+echo "Hello";
+```
+
+
+<!--a href="#/GUIDES.md" class="btn">READ: How to build a custom language <span class="fa fa-chevron-right"></span></a-->
 
 ## Math
 
