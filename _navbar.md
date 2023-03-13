@@ -1,8 +1,10 @@
 <!-- docs/_sidebar.md -->
 
- <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
+<!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
 * <a href="#/GUIDES.md" class="btn">Get started</a>
+
+* [Articles](https://dev.to/abstract-code) 
 
 * [Modules](MODULES.md)
 
