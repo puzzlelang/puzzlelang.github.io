@@ -195,6 +195,18 @@ js (
 )
 ```
 
+## Access JS functions + variables
+
+JS functions and variables can be accessed
+
+```puzzle
+js (navigator.onLine) as result;
+print result;
+
+js (someFunction()) as result;
+print result;
+```
+
 ## Bind variables
 
 By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
