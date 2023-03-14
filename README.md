@@ -195,7 +195,7 @@ js (
 )
 ```
 
-## Access JS functions + variables
+## Access functions + variables
 
 JS functions and variables can be accessed
 
