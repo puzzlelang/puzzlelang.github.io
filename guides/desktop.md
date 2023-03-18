@@ -10,25 +10,18 @@ There are different ways to build desktop apps with PUZZLE. You can use framewor
 
 Neutralino is a simple way to start
 
-## Dependencies
+## Initialize
 
 Before building apps with Neutralino, you need to install it
 
-***Install***
+***Step 1***: Install Neutralino and create app
 
 ```shell
-npm install -g @neutralinojs/neu
+npm install -g @neutralinojs/neu && neu create myapp && cd myapp
 ```
 
-***Create app***
+***Step 2***: Open *index.html* and replace with the following code
 
-```shell
-neu create myapp && cd myapp
-```
-
-***Include PUZZLE***
-
-Open *index.html* and replace with the following code:
 
 ```html
 <html>
