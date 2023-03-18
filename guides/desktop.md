@@ -7,9 +7,9 @@ There are different ways to build desktop apps with PUZZLE. You can use framewor
 * Neuralino
 * ...
 
-We recomment Neuralino, because it's lightweight.
-
 # Neuralino
+
+Neuralino is a simple way to start
 
 ## Dependencies
 
@@ -24,27 +24,12 @@ npm install -g @neutralinojs/neu
 ***Create app***
 
 ```shell
-neu create myapp
+neu create myapp && cd myapp
 ```
-
 
 ***Include PUZZLE***
 
-```shell
-cd myapp
-```
-
-Inside the "myapp" directory, you'll find the following folder structure:
-
-* resources
-	* icons
-	* js
-	* *index.html*
-	* styles.css
-* LICENSE
-* README.md
-
--> Open *index.html* and replace with the following code:
+Open *index.html* and replace with the following code:
 
 ```html
 <html>
@@ -74,17 +59,7 @@ Now, you have two options to write PUZZLE code:
 
 ***Or as seperate files (RECOMMENDED)***
 
-Add files to the (resources) directory:
-
-* resources
-	* icons
-	* js
-	* index.html
-	* *puzzle.pz*
-	* *other-puzzle-file.pz*
-	* styles.css
-
-And include in index.html
+Include in index.html
 
 ```html
 <script type="text/x-puzzle">
