@@ -4,15 +4,15 @@ There are different ways to build desktop apps with PUZZLE. You can use framewor
 
 * Electron
 * NW.js
-* Neuralino
+* Neutralino
 
-# Neuralino
+# Neutralino
 
-Neuralino is a simple way to start
+Neutralino is a simple way to start
 
 ## Dependencies
 
-Before building apps with Neuralino, you need to install it
+Before building apps with Neutralino, you need to install it
 
 ***Install***
 
