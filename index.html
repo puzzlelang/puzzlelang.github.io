@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>PUZZLE - An Abstract Programming Language</title>
     <link rel="icon" type="image/png" href="assets/puzzle.png">
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
@@ -597,6 +598,27 @@
           else loadMedium('postsSection');
         });
       </script>
+
+
+<!--script type="text/x-puzzle">
+use ui;
+define class article_box {
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 150px;
+};
+use fetch;
+get from https://dev.to/api/articles?username=nataliedeweerd as result;
+
+loop over result with res do (
+    print res;
+    ns ui;
+    inside #articles render a with id res.id and text res.title and class article_box;
+)
+</script-->
 
 </body>
 

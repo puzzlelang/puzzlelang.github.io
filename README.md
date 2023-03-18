@@ -52,9 +52,17 @@ render button with text "say ma name" and onclick (
 )
 ```
 
-<br><br>
+<br>
 
+<!--
 
+***New articles***
+
+<div id="articles"></div>
+
+-->
+
+<br>
 
 # VARIABLES
 
