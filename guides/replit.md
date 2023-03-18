@@ -18,4 +18,14 @@ Run using the "Run" button.
 
 # Backend
 
-comming soon...
+## 1. Get the PUZZLE template
+
+Go to [replit.com/@puzzlelang/PUZZLE-on-Nodejs](https://replit.com/@puzzlelang/PUZZLE-on-Nodejs) and get the template.
+
+## 2. Develop
+
+![Replit ui](assets/replit-node.png)
+
+## 3. Run
+
+Run using the "Run" button.
