@@ -1,28 +1,36 @@
-# Node.js
+# Run PUZZLE on Node
 
-To run puzzle on a server, use Node. 
+If you haven't installed Node.js yet, get it here
 
-***Install***
+## 1. Install PUZZLE
 
 ```shell
 npm i puzzlelang
 ```
 
-***Run puzzle files***
+## 2. Write code
 
-```puzzle
-// puzzle file: test.pz
-print hi!
-```
-
-```javascript
-const puzzle = require("puzzlelang");
-puzzle.run('test.pz');
-```
-
-***Run inline***
+### 2.1 Inline PUZZLE 
 
 ```javascript
 const puzzle = require("puzzlelang");
 puzzle.parse('print hi');
+```
+
+### 2.2 PUZZLE files
+
+```javascript
+const puzzle = require("puzzlelang");
+puzzle.run('myfile.pz');
+```
+
+```puzzle
+// myfile.pz
+print hi;
+```
+
+## 3. Run
+
+```shell
+node index.js
 ```

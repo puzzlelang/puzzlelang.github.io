@@ -2,23 +2,32 @@
 
 For using the PUZZLE CLI, you need npm and Node installed on your computer.
 
-Step 1: Install PUZZLE with npm
+## 1. Install
 
 ```shell
 npm i puzzlelang -g
 ```
 
-Step 2: Use the CLI
+## 2. Launch
+
+### 2.1 Interactive mode
 
 ```shell
-$ puzzle
+puzzle
+```
+
+```shell
 > print hello
 ```
 
-Additional: Run files or scripts directly
+### 2.2 Run a file
 
 ```shell
 puzzle run puzzlefile.pz
-# or
+```
+
+### 2.3 Run a script
+
+```shell
 puzzle run "print hi"
 ```
