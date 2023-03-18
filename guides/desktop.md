@@ -5,7 +5,6 @@ There are different ways to build desktop apps with PUZZLE. You can use framewor
 * Electron
 * NW.js
 * Neuralino
-* ...
 
 # Neuralino
 
