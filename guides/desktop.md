@@ -38,37 +38,13 @@ Open *index.html* and replace with the following code:
     </head>
     <body>
     	<script type="text/x-puzzle">
-    		// puzzle code goes here
+    		include puzzle.pz
     	</script>
     </body>
 </html>
 ```
 
-## Write PUZZLE code
-
-Now, you have two options to write PUZZLE code:
-
-***Inside the script tag***
-
-```html
-<script type="text/x-puzzle">
-   print hello;
-</script>
-
-```
-
-***Or as seperate files (RECOMMENDED)***
-
-Include in index.html
-
-```html
-<script type="text/x-puzzle">
-  include puzzle.pz
-</script>
-
-```
-
-Puzzle file example:
+*puzzle.pz*
 
 ```puzzle
 use ui;
