@@ -9,7 +9,7 @@
 
 # Tutorials
 
-* [What do I need to get started with PUZZLE?](/guides/start-from-scratch.md)
+* [What do I need to develop with PUZZLE?](/guides/start-from-scratch.md)
 * [Build a custom language](/guides/custom-language.md)
 * [How to use Variables](/guides/variables.md)
 * [How to use Scripts](/guides/scripts.md)
