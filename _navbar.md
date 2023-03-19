@@ -2,7 +2,7 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* [Home](/)
+* [Home](/#/)
 
 * <a href="#/GUIDES.md" class="btn">Get started</a>
 

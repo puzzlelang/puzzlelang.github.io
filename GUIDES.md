@@ -1,4 +1,4 @@
-# Build for many Platforms
+# Get started
 
 * [PUZZLE Runner](/guides/runner.md)
 * [Browser](/guides/browser.md)
@@ -6,9 +6,6 @@
 * [Desktop](/guides/desktop.md)
 * [Replit](/guides/replit.md)
 * [PUZZLE CLI](/guides/cli.md)
-
-# Tutorials
-
 * [What do I need to develop with PUZZLE?](/guides/start-from-scratch.md)
 * [Build a custom language](/guides/custom-language.md)
 * [How to use Variables](/guides/variables.md)
