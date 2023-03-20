@@ -6,10 +6,14 @@
 <a class="box" href="#/guides/replit.md"><br>Replit.com</a>
 <a class="box" href="#/guides/cli.md"><br>CLI</a>
 
+# Run online 
+
 <a class="box box-light" href="#/guides/graphical.md">Build a graphical app</a>
 <a class="box box-light" href="#/guides/api.md">Create an API</a>
 <a class="box box-light" href="#/guides/desktop.md">Build a Desktop App</a>
-<a class="box box-light" href="#/guides/online-platform.md">Build an online system</a>
+<a class="box box-light" href="#/guides/online-platform.md">Build a complete system</a>
+
+# Fundamentals
 
 <a class="box box-light" href="#/guides/variables.md">How to use Variables</a>
 <a class="box box-light" href="#/guides/scripts.md">How to use Scripts</a>
