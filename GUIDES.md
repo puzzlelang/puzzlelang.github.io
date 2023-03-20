@@ -1,10 +1,10 @@
 # Get started
 
-<a class="box" href="#/guides/runner.md">Sandbox</a>
-<a class="box" href="#/guides/browser.md">Browser</a>
-<a class="box" href="#/guides/node.md">Node</a>
-<a class="box" href="#/guides/replit.md">Replit.com</a>
-<a class="box" href="#/guides/cli.md">CLI</a>
+<a class="box" href="#/guides/runner.md"><br>Sandbox</a>
+<a class="box" href="#/guides/browser.md"><br>Browser</a>
+<a class="box" href="#/guides/node.md"><br>Node</a>
+<a class="box" href="#/guides/replit.md"><br>Replit.com</a>
+<a class="box" href="#/guides/cli.md"><br>CLI</a>
 
 <a class="box box-light" href="#/guides/graphical.md">Build a graphical app</a>
 <a class="box box-light" href="#/guides/api.md">Create an API</a>
