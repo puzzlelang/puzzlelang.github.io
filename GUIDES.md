@@ -1,12 +1,16 @@
-# Get started
+# Platforms
 
-* [Try PUZZLE](/guides/runner.md)
-* [Browser](/guides/browser.md)
-* [Node](/guides/node.md)
-* [Desktop](/guides/desktop.md)
-* [Replit](/guides/replit.md)
-* [PUZZLE CLI](/guides/cli.md)
-* [What do I need to develop with PUZZLE?](/guides/start-from-scratch.md)
-* [Build a custom language](/guides/custom-language.md)
-* [How to use Variables](/guides/variables.md)
-* [How to use Scripts](/guides/scripts.md)
+<a class="box" href="#/guides/runner.md">Sandbox</a>
+<a class="box" href="#/guides/browser.md">Browser</a>
+<a class="box" href="#/guides/desktop.md">Desktop</a>
+<a class="box" href="#/guides/node.md">Node</a>
+<a class="box" href="#/guides/replit.md">Online</a>
+<a class="box" href="#/guides/cli.md">PUZZLE CLI</a>
+
+
+# Fundamentals
+
+<a class="box" href="#/guides/tart-from-scratch.md">Tools needed for PUZZLE development</a>
+<a class="box" href="#/guides/custom-language.md">Build a custom language</a>
+<a class="box" href="#/guides/variables.md">How to use Variables</a>
+<a class="box" href="#/guides/scripts.md">How to use Scripts</a>

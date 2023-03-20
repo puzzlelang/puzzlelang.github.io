@@ -1,5 +1,5 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h2 class="header" style="padding:none !important">An <span class="highlight-primary">abstract</span>, extendable programming language that runs on JavaScript platforms, like <span class="highlight-primary">Browsers</span>, <span class="highlight-primary">Node</span>, and others.</h2>
+<h2 class="header" style="padding:none !important">An <span class="highlight-primary">abstract</span>, extendable programming language that runs on JavaScript platforms.</h2>
 
 <!-- &nbsp; Try on <a href="https://codesandbox.io/s/puzzle-ui-g942w2?file=/index.html:0-330" target="_blank" class="btn">Codesandbox</a> or start on other &nbsp;<a href="#/chapters/GUIDES"><u>Platforms</u></a>
 
