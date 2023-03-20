@@ -1,6 +1,6 @@
 # Get started
 
-* [PUZZLE Runner](/guides/runner.md)
+* [Try PUZZLE](/guides/runner.md)
 * [Browser](/guides/browser.md)
 * [Node](/guides/node.md)
 * [Desktop](/guides/desktop.md)
