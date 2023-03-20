@@ -1,6 +1,6 @@
 # Get started
 
-<a class="box" href="#/guides/runner.md">PUZZLE Sandbox</a>
+<a class="box" href="#/guides/runner.md">Sandbox</a>
 <a class="box" href="#/guides/browser.md">Browser</a>
 <a class="box" href="#/guides/node.md">Node</a>
 <a class="box" href="#/guides/replit.md">Replit.com</a>
