@@ -35,7 +35,15 @@ puzzle.run('index.pz')
 
 index.pz
 ```puzzle
-print "i am the puzzle file"
+use server;
+
+// Start server on specified port
+start 3000;
+
+// Define a route
+on get /test run (
+	print "/test was called"
+) and return "done!"
 ```
 
 ## 5. Run

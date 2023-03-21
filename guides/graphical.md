@@ -35,7 +35,7 @@ index.html
 
 index.pz
 ```puzzle
-print "i am the puzzle file"
+render div with id main and text "Welcome!";
 ```
 
 ## 4. Run
