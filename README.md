@@ -42,17 +42,7 @@ puzzle.parse(code);
 
 <br>
 
-```puzzle
-set name Peter;
-every 2s run ( print name );
-
-use ui;
-render button with text "say ma name" and onclick (
-  alert (name)
-)
-```
-
-<br>
+[filename](GUIDES.md ':include')
 
 <!--
 

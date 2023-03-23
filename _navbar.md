@@ -2,9 +2,9 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* [Home](/#/)
+* [Language](/#/)
 
-* <a href="#/GUIDES.md" class="btn">Get started</a>
+* <a href="#/GETSTARTED.md" class="btn">Get started</a>
 
 * [Modules](MODULES.md)
 
