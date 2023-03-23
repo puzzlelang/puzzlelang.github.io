@@ -10,4 +10,6 @@
 
 [filename](GUIDES.md ':include')
 
+[filename](MOREGUIDES.md ':include')
+
 <!--a class="box box-light" href="#/guides/desktop.md">Build a Desktop App</a-->
