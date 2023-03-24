@@ -2,7 +2,7 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* [Language](/#/)
+* [Language]()
 
 * <a href="#/GETSTARTED.md" class="btn">Get started</a>
 
