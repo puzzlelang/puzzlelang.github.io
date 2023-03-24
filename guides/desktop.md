@@ -10,7 +10,7 @@ There are different ways to build desktop apps with PUZZLE. You can use framewor
 
 Electron is a simple way to start
 
-## 1. Install and initialize
+## • Install and initialize
 
 Before building apps with Neutralino, you need to install it
 
@@ -18,7 +18,7 @@ Before building apps with Neutralino, you need to install it
 npm install -g @neutralinojs/neu && neu create APPNAME && cd APPNAME
 ```
 
-## 2. HTML File
+## • HTML File
 
 The main file should have the following content
 
@@ -42,7 +42,7 @@ use ui;
 alert "welcome to PUZZLE on the desktop"
 ```
 
-## 3. Run (for testing)
+## • Run (for testing)
 
 Inside "myapp" directory run:
 
@@ -52,7 +52,7 @@ neu run
 
 -> This will open your desktop app.
 
-## 4. Build and Distribute
+## • Build and Distribute
 
 > Full guide [here](https://neutralino.js.org/docs/distribution/overview#)
 

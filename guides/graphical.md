@@ -1,6 +1,6 @@
 # Build a graphical app
 
-## 1. Code Editor
+## • Code Editor
 
 For local development, the first thing you need is a *code editor*, or *IDE* to write your PUZZLE code.
 
@@ -8,14 +8,14 @@ Based on their simplicity, we recommend the following ones:
 
 * [Sublime Text](https://www.sublimetext.com/)
 
-## 2. Directory Structure
+## • Directory Structure
 
 Inside your Code Editor, open a directory that has at least an index HTML file. This is the entry point of your application. PUZZLE code can be written inside that HTML file. However, we recommend seperate PUZZLE files, that are included in the HTML file.
 
 * index.html
 * index.pz
 
-## 3. Code
+## • Code
 
 A minimal code boilerplate:
 
@@ -38,6 +38,6 @@ index.pz
 render div with id main and text "Welcome!";
 ```
 
-## 4. Run
+## • Run
 
 Open the *index.html* file in your browser and see the result.

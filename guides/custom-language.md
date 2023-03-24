@@ -3,7 +3,7 @@
 PUZZLE is a platform, that can load any custom syntax.
 Custom syntax is build, using simple JavaScript.
 
-## 1. JavaScript File
+## • JavaScript File
 
 Create a file with the following structure:
 
@@ -21,6 +21,6 @@ var syntax = {
 }
 ```
 
-## 2. Use your language in PUZZLE
+## • Use your language in PUZZLE
 
 tbd
