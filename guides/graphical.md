@@ -1,16 +1,10 @@
 # Build a graphical app
 
-## • Code Editor
-
-For local development, the first thing you need is a *code editor*, or *IDE* to write your PUZZLE code.
-
-Based on their simplicity, we recommend the following ones:
-
-* [Sublime Text](https://www.sublimetext.com/)
+[filename](code-editor.md ':include')
 
 ## • Directory Structure
 
-Inside your Code Editor, open a directory that has at least an index HTML file. This is the entry point of your application. PUZZLE code can be written inside that HTML file. However, we recommend seperate PUZZLE files, that are included in the HTML file.
+Inside your Code Editor, create an index.html file, that is the entry point of your application.
 
 * index.html
 * index.pz

@@ -3,6 +3,15 @@
 PUZZLE is a platform, that can load any custom syntax.
 Custom syntax is build, using simple JavaScript.
 
+[filename](code-editor.md ':include')
+
+## • Directory Structure
+
+Inside your Code Editor, create a JS file, that holds your module.
+
+* mymodule.js
+* index.pz
+
 ## • JavaScript File
 
 Create a file with the following structure:
@@ -23,4 +32,6 @@ var syntax = {
 
 ## • Use your language in PUZZLE
 
-tbd
+```puzzle
+use myfile.js;
+```

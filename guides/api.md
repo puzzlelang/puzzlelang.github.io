@@ -4,7 +4,7 @@ When creating an app without graphical user interface, Node.js is used as javasc
 
 ## • Install Node and PUZZLE
 
-[Install Node.js](https://nodejs.org/en) from their website and then install PUZZLE:
+Install Node from [their website](https://nodejs.org/en) and then install PUZZLE:
 
 Inside a blank directory, run:
 
@@ -12,13 +12,11 @@ Inside a blank directory, run:
 npm i puzzlelang --save
 ```
 
-## • Code Editor
-
-same as above
+[filename](code-editor.md ':include')
 
 ## • Directory Structure
 
-Inside your Code Editor, open a directory that has at least an index JavaScript file. This is the entry point of your application. PUZZLE code can be written inside that HTML file. However, we recommend seperate PUZZLE files, that are included in the JavaScript file.
+Inside your Code Editor, open a directory with an index.js file as the entry point of your application. PUZZLE code is included in that JavaScript file.
 
 * index.js
 * index.pz
