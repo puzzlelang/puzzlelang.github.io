@@ -2,9 +2,11 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
+* <a href=""><img src="assets/puzzle.png" style="height: 28px;margin-bottom:-10px"></a>
+
 * [Language]()
 
-* [Articles](GETSTARTED.md)
+* [Get Started](GETSTARTED.md)
 
 * [Modules](MODULES.md)
 

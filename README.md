@@ -60,6 +60,8 @@ puzzle.parse(code);
 
 <br>
 
+# LANGUAGE
+
 # VARIABLES
 
 Variables are set using the `set` keyword.
