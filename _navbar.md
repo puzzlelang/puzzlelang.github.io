@@ -4,13 +4,15 @@
 
 * [Language]()
 
-* <a href="#/GETSTARTED.md" class="btn">Get started</a>
+* [Articles](GETSTARTED.md)
 
 * [Modules](MODULES.md)
 
 
 
-<!--* <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>-->
+<!--
+* <a href="#/GETSTARTED.md" class="btn">Get started</a>
+* <a href="https://github.com/puzzlelang/puzzle" target="_blank" class="" style="margin:0px 10px"><span class="fab fa-github"></span></a>-->
 
 <!--* [Learn](?id=puzzle)
 
