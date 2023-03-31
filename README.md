@@ -232,6 +232,35 @@ print name;
 print type;
 ```
 
+# MODULES
+
+## Use modules
+
+Modules can be used from any source. Local or remote.
+
+```puzzle
+// Include a remote module
+use https://domain.com/somemodule.js;
+
+// Use the module
+somemodule.echo "Hello";
+```
+## Official modules
+
+There are some official modules, developed by the PUZZLE team:
+
+* [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
+* [Fetch](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/fetch/Readme.md) - Connect and interact with remote servers
+* [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
+
+Official modules can simply be included by their names:
+
+```puzzle
+use ui;
+// or
+use fetch;
+// and so on...
+```
 
 # CUSTOM LANGUAGE
 
@@ -260,10 +289,11 @@ var syntax = {
 
 ```puzzle
 use mysyntax.js;
-// or
+// or from remote
 use https://domain.com/mysyntax.js;
 
-echo "Hello";
+// Use your language
+mymodule.echo "Hello";
 ```
 
 ## Object
