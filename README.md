@@ -234,6 +234,21 @@ print type;
 
 # MODULES
 
+The PUZZLE language is based on an open module ecosystem.
+
+Each module is designed to archieve a specific goal and comes with it's own syntax. 
+Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
+
+## Official modules
+
+There are some official modules, developed by the PUZZLE team:
+
+* [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
+* [Fetch](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/fetch/Readme.md) - Connect and interact with remote servers
+* [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
+
+Official modules can simply be included by their names (`use ui;`)
+
 ## Use modules
 
 Modules can be used from any source. Local or remote.
@@ -244,23 +259,24 @@ use https://domain.com/somemodule.js;
 
 // Use the module
 somemodule.echo "Hello";
+
+// Use official modules
+use ui;
+use fetch;
 ```
-## Official modules
 
-There are some official modules, developed by the PUZZLE team:
+## Permanent modules
 
-* [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
-* [Fetch](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/fetch/Readme.md) - Connect and interact with remote servers
-* [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
-
-Official modules can simply be included by their names:
+If you'd like to cache a module, use the `permanent` option:
 
 ```puzzle
-use ui;
+use permanent https://afasf.com/module.js;
 // or
-use fetch;
-// and so on...
+use permanent ui;
 ```
+
+This will save the module inside a persistent context and make it available, even if the original url is not accessible (offline usage). This works with any module.
+
 
 # CUSTOM LANGUAGE
 
@@ -403,47 +419,6 @@ Comments can be written using `//`
 
 ```puzzle
 // this is a comment
-```
-
-## Use
-
-The PUZZLE language is based on an open module ecosystem.
-
-Each module is designed to archieve a specific goal and comes with it's own syntax. 
-Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
-
-```puzzle
-// remote module
-use https://afasf.com/module.js;
-
-// local module
-use module.js;
-```
-
-If you'd like to cache a module, use the `permanent` option:
-
-```puzzle
-use permanent https://afasf.com/module.js;
-```
-
-This will save the module inside a persistent context and make it available, even if the original path or url is not accessible (offline usage)
-
-
-## Namespaces
-
-Since different functionality comes from different modules, it's important to distinguish module-specific code. This is done by setting a namespace using the `ns` keyword.
-
-```puzzle
-ns mynamespace;
-// namespace will be available here
-```
-A namespace will be active until another one is set using `ns`.
-
-Note, that after loading a module using `use` will automatically set that modules namespace for you.
-
-```puzzle
-use mymodule.puzzle.js;
-// the mymodule namespace will automatically be available here.
 ```
 
 ## Math
