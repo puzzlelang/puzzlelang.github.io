@@ -55,10 +55,10 @@ index.pz
 use server;
 
 // Start server on specified port
-start 3000;
+server.start 3000;
 
 // Define a route
-on get /test run (
+server.on get /test run (
 	print "/test was called"
 ) and return "done!"
 ```

@@ -14,5 +14,5 @@ Paste and try the following exmaple code
 
 ```puzzle
 use ui;
-alert "welcome";
+ui.alert "welcome";
 ```

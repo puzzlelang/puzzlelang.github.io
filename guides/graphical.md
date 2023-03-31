@@ -29,7 +29,9 @@ index.html
 
 index.pz
 ```puzzle
-render div with id main and text "Welcome!";
+use ui;
+
+ui.render div with id main and text "Welcome!";
 ```
 
 ## • Run

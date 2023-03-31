@@ -13,7 +13,9 @@ Create a file with the following content
 	</head>
 	<body>
 		<script type="text/x-puzzle">
-			render (
+			use ui;
+
+			ui.render (
 				<div>hello</div>
 			)
 		</script>

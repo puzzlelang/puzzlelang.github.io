@@ -34,4 +34,6 @@ var syntax = {
 
 ```puzzle
 use myfile.js;
+
+mymodule.echo "Hello World";
 ```
