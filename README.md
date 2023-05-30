@@ -42,12 +42,6 @@ puzzle.parse(code);
 
 <br>
 
-<a class="box" href="#/guides/runner.md"><br>Sandbox</a>
-<a class="box" href="#/guides/browser.md"><br>Browser</a>
-<a class="box" href="#/guides/node.md"><br>Node</a>
-<a class="box" href="#/guides/replit.md"><br>Online</a>
-<a class="box" href="#/guides/cli.md"><br>CLI</a>
-
 [filename](GUIDES.md ':include')
 
 <!--
@@ -59,6 +53,28 @@ puzzle.parse(code);
 -->
 
 <br>
+
+# PLATFORMS
+
+## Browser
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+```
+
+## Node
+
+```shell
+npm i puzzlelang
+```
+
+## Sandbox
+
+[puzzlelang.org/runner](https://puzzlelang.org/runner)
+
+## Replit
+
+[replit.com](https://replit.com/@puzzlelang)
 
 # LANGUAGE
 
