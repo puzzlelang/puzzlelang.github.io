@@ -2,14 +2,29 @@
 
 [filename](code-editor.md ':include')
 
-## • Directory Structure
-
-Inside your Code Editor, create an index.html file, that is the entry point of your application.
-
-* index.html
-* index.pz
-
 ## • Code
+
+### Option 1: Inline
+
+A minimal code boilerplate:
+
+index.html
+```html
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+	</head>
+	<body>
+		<script type="text/x-puzzle">
+			use ui;
+
+ui.render div with id main and text "Welcome!";
+		</script>
+	</body>
+</html>
+```
+
+### Option 1: Puzzle File
 
 A minimal code boilerplate:
 

@@ -70,7 +70,7 @@ npm i puzzlelang
 
 ## Sandbox
 
-[puzzlelang.org/runner](https://puzzlelang.org/runner)
+[playcode.io/puzzlelang](https://playcode.io/puzzlelang)
 
 ## Replit
 
