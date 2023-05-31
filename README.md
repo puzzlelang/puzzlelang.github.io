@@ -78,6 +78,17 @@ npm i puzzlelang
 
 # LANGUAGE
 
+```puzzle
+set message "PUZZLE is an abstract language!";
+repeat 3 times ( print message );
+
+use ui;
+calc (1+1) as result;
+render div with text result;
+
+use https://domain.com/custommodule.js;
+```
+
 # VARIABLES
 
 Variables are set using the `set` keyword.
