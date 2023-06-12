@@ -42,6 +42,8 @@ puzzle.parse(code);
 
 <br>
 
+
+
 [filename](GUIDES.md ':include')
 
 <!--
@@ -53,6 +55,7 @@ puzzle.parse(code);
 -->
 
 <br>
+
 
 # PLATFORMS
 
@@ -76,7 +79,55 @@ npm i puzzlelang
 
 [replit.com](https://replit.com/@puzzlelang)
 
-# LANGUAGE
+
+# EXAMPLES
+
+
+```puzzle
+// SIMPLE GAME EXAMPLE
+
+ui.root "#app";
+
+set mariogif "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
+
+ui.render image with id player and src mariogif;
+
+ui.on key up (
+    ui.get player and move up 15;
+);
+
+ui.on key down (
+    ui.get player and move down 15;
+);
+
+ui.on key right (
+    ui.get player and move right 15;
+);
+
+ui.on key left (
+    ui.get player and move left 15;
+);
+```
+
+```puzzle
+// SIMPLE SERVER
+
+use server;
+
+on /home run (
+  print "home was visited"
+) and return (
+  hello!
+);
+```
+
+```puzzle
+// SIMEPLE UI
+
+fetch.get from https://domain.com/whatever as result;
+
+ui.render box with id test and text result;
+```
 
 ```puzzle
 set message "PUZZLE is an abstract language!";
@@ -88,6 +139,7 @@ render div with text result;
 
 use https://domain.com/custommodule.js;
 ```
+
 
 # VARIABLES
 
