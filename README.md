@@ -71,13 +71,9 @@ puzzle.parse(code);
 npm i puzzlelang
 ```
 
-## Sandbox
+## Other
 
-[playcode.io/puzzlelang](https://playcode.io/puzzlelang)
-
-## Replit
-
-[replit.com](https://replit.com/@puzzlelang)
+[Playground](https://playcode.io/puzzlelang) [Online (Cloud)](https://replit.com/@puzzlelang)
 
 
 # EXAMPLES
