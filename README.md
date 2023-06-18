@@ -82,26 +82,26 @@ npm i puzzlelang
 ```puzzle
 // SIMPLE GAME EXAMPLE
 
-ui.root "#app";
+ui root "#app";
 
 set mariogif "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
 
-ui.render image with id player and src mariogif;
+ui render image with id player and src mariogif;
 
-ui.on key up (
-    ui.get player and move up 15;
+ui on key up (
+    ui get player and move up 15;
 );
 
-ui.on key down (
-    ui.get player and move down 15;
+ui on key down (
+    ui get player and move down 15;
 );
 
-ui.on key right (
-    ui.get player and move right 15;
+ui on key right (
+    ui get player and move right 15;
 );
 
-ui.on key left (
-    ui.get player and move left 15;
+ui on key left (
+    ui get player and move left 15;
 );
 ```
 
@@ -110,7 +110,7 @@ ui.on key left (
 
 use server;
 
-on /home run (
+server on /home run (
   print "home was visited"
 ) and return (
   hello!
@@ -120,9 +120,9 @@ on /home run (
 ```puzzle
 // SIMEPLE UI
 
-fetch.get from https://domain.com/whatever as result;
+fetch from https://domain.com/whatever as result;
 
-ui.render box with id test and text result;
+ui render box with id test and text result;
 ```
 
 ```puzzle
@@ -131,7 +131,7 @@ repeat 3 times ( print message );
 
 use ui;
 calc (1+1) as result;
-render div with text result;
+ui render div with text result;
 
 use https://domain.com/custommodule.js;
 ```
