@@ -279,7 +279,6 @@ Any PUZZLE script can use multiple modules, loaded from a remote server or a loc
 There are some official modules, developed by the PUZZLE team:
 
 * [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
-* [Fetch](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/fetch/Readme.md) - Connect and interact with remote servers
 * [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
 
 Official modules can simply be included by their names (`use ui;`)
