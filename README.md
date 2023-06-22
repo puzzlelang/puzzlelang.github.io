@@ -297,6 +297,10 @@ somemodule.echo "Hello";
 // Use official modules
 use ui;
 use fetch;
+
+// Use module syntax by prepending the module name to any statement that contains module code
+
+ui render div with text "hello";
 ```
 
 ## Permanent modules
