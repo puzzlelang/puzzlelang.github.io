@@ -2,9 +2,7 @@
 
 [filename](code-editor.md ':include')
 
-## • Code
-
-### Option 1: Inline
+## Code
 
 A minimal code boilerplate:
 
@@ -18,37 +16,22 @@ index.html
 		<script type="text/x-puzzle">
 			use ui;
 
-ui.render div with id main and text "Welcome!";
+			ui render div with id main and text "Welcome!";
+
+			// OR INCLUDE A FILE
+			include myfile.pz;
 		</script>
 	</body>
 </html>
 ```
 
-### Option 1: Puzzle File
-
-A minimal code boilerplate:
-
-index.html
-```html
-<html>
-	<head>
-		<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-	</head>
-	<body>
-		<script type="text/x-puzzle">
-			include index.pz;
-		</script>
-	</body>
-</html>
-```
-
-index.pz
+myfile.pz
 ```puzzle
 use ui;
 
 ui.render div with id main and text "Welcome!";
 ```
 
-## • Run
+## Run
 
 Open the *index.html* file in your browser and see the result.

@@ -5,14 +5,14 @@ Custom syntax is build, using simple JavaScript.
 
 [filename](code-editor.md ':include')
 
-## • Directory Structure
+## Directory Structure
 
 Inside your Code Editor, create a JS file, that holds your module.
 
 * mymodule.js
 * index.pz
 
-## • JavaScript File
+## JavaScript File
 
 Create a file with the following structure:
 
@@ -30,7 +30,7 @@ var syntax = {
 }
 ```
 
-## • Use your language in PUZZLE
+## Use your language in PUZZLE
 
 ```puzzle
 use myfile.js;

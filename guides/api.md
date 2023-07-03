@@ -5,7 +5,7 @@ When creating an app without graphical user interface, Node.js is used as javasc
 [filename](code-editor.md ':include')
 
 
-## • Install Node and PUZZLE
+## Install Node and PUZZLE
 
 Install Node from [their website](https://nodejs.org/en) and then install PUZZLE:
 
@@ -17,7 +17,7 @@ npm i puzzlelang --save
 
 
 
-## • Code
+## Code
 
 A minimal code boilerplate:
 
@@ -40,7 +40,7 @@ server.on get /test run (
 ) and return "done!"
 ```
 
-## • Run
+## Run
 
 Open the terminal and run:
 
