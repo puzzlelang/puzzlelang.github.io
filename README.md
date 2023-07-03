@@ -42,6 +42,8 @@ npm i puzzlelang
 ```puzzle
 // SIMPLE GAME EXAMPLE
 
+use ui;
+
 ui root "#app";
 
 set mariogif "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
