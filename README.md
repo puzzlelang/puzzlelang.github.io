@@ -11,6 +11,7 @@
 
 -->
 
+<a href="#/?id=get-started" class="btn">Get started</a>
 
 
 
