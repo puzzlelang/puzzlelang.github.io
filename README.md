@@ -3,9 +3,6 @@
 
 <br>
 
-
-[filename](GUIDES.md ':include')
-
 <!--
 
 ***New articles***
@@ -14,34 +11,33 @@
 
 -->
 
-<br>
 
-
-# PLATFORMS
-
-## Browser
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-```
-
-## Node
-
-```shell
-npm i puzzlelang
-```
-
-## Other
-
-[Playground](https://playcode.io/puzzlelang) [Online (Cloud)](https://replit.com/@puzzlelang)
 
 
 # EXAMPLES
 
+## Simple UI
 
 ```puzzle
-// SIMPLE GAME EXAMPLE
+fetch from https://domain.com/whatever as result;
 
+ui render box with id test and text result;
+```
+## Simple Server
+
+```puzzle
+use server;
+
+server on /home run (
+  print "home was visited"
+) and return (
+  hello!
+);
+```
+
+## Simple Game
+
+```puzzle
 use ui;
 
 ui root "#app";
@@ -67,39 +63,30 @@ ui on key left (
 );
 ```
 
-```puzzle
-// SIMPLE SERVER
 
-use server;
+# GET STARTED
 
-server on /home run (
-  print "home was visited"
-) and return (
-  hello!
-);
+## Browser
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
 ```
 
-```puzzle
-// SIMEPLE UI
+## Node
 
-fetch from https://domain.com/whatever as result;
-
-ui render box with id test and text result;
+```shell
+npm i puzzlelang
 ```
 
-```puzzle
-set message "PUZZLE is an abstract language!";
-repeat 3 times ( print message );
+## Other
 
-use ui;
-calc (1+1) as result;
-ui render div with text result;
+[Playground](https://playcode.io/puzzlelang) 
 
-use https://domain.com/custommodule.js;
-```
+[Online Runtime (Replit)](https://replit.com/@puzzlelang)
 
+# LANGUAGE
 
-# VARIABLES
+## VARIABLES
 
 Variables are set using the `set` keyword.
 
@@ -107,7 +94,7 @@ Variables are set using the `set` keyword.
 set name Peter;
 print name;
 ```
-## Permanent
+### Permanent
 
 You can also set permanent variables, that are stored locally (stored on disk) by using the `local` keyword in combination with `set`
 
@@ -116,7 +103,7 @@ set local name Peter;
 print name;
 ```
 
-## Datatypes
+### Datatypes
 
 In programming, you always need to store some information for later use. This information is stored in variables.
 In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
@@ -141,7 +128,7 @@ set numbers [1,2,3]
 set say-hello ( print hello )
 ```
 
-## As
+### As
 
 Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
 
@@ -155,7 +142,7 @@ print data
 ```
 
 
-# SCRIPTS
+## SCRIPTS
 
 Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
@@ -175,7 +162,7 @@ run hello:hi in sayHello;
 // will output "hi"
 ```
 
-## Run
+### Run
 
 With the `run` keyword, you can execute an inline script
 
@@ -185,7 +172,7 @@ run ( print hello )
 run scriptname;
 ```
 
-## Time-triggered scripts
+### Time-triggered scripts
 
 Run a piece of code with the `run` keyword <u>delayed</u>.
 
@@ -209,7 +196,7 @@ script sayHi (print hi);
 every 2000 run sayHi;
 ```
 
-## Wait
+### Wait
 
 The wait keyword allows you to break the execution of a script for a certain time.
 
@@ -223,11 +210,11 @@ print "i will be displayed after 2 seconds"
 ```
 
 
-# JAVASCRIPT
+## JAVASCRIPT
 
 Puzzle runs in JavaScript. Interpreted, not compiled. This means, that puzzle code has access to the enclosing JavaScript context and the other way around.
 
-## Run JS
+### Run JS
 
 JS code can be included in puzzle code.
 
@@ -238,7 +225,7 @@ js (
 )
 ```
 
-## Access functions + variables
+### Access functions + variables
 
 JS functions and variables can be accessed
 
@@ -250,7 +237,7 @@ js (someFunction()) as result;
 print result;
 ```
 
-## Bind variables
+### Bind variables
 
 By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
 
@@ -269,14 +256,14 @@ print name;
 print type;
 ```
 
-# MODULES
+## MODULES
 
 The PUZZLE language is based on an open module ecosystem.
 
 Each module is designed to archieve a specific goal and comes with it's own syntax. 
 Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
 
-## Official modules
+### Official modules
 
 There are some official modules, developed by the PUZZLE team:
 
@@ -285,7 +272,7 @@ There are some official modules, developed by the PUZZLE team:
 
 Official modules can simply be included by their names (`use ui;`)
 
-## Use modules
+### Use modules
 
 Modules can be used from any source. Local or remote.
 
@@ -305,7 +292,7 @@ use fetch;
 ui render div with text "hello";
 ```
 
-## Permanent modules
+### Permanent modules
 
 If you'd like to cache a module, use the `permanent` option:
 
@@ -318,11 +305,11 @@ use permanent ui;
 This will save the module inside a persistent context and make it available, even if the original url is not accessible (offline usage). This works with any module.
 
 
-# CUSTOM LANGUAGE
+## CUSTOM LANGUAGE
 
 Building a custom language is done with a simple js object, that is included in puzzle.
 
-## File
+### File
 
 Define a JS object, stored in a file.
 
@@ -352,7 +339,7 @@ use https://domain.com/mysyntax.js;
 mymodule.echo "Hello";
 ```
 
-## Object
+### Object
 
 Define a JS object, stored as variable. The JS object and the puzzle code needs to be in the same context.
 
@@ -366,9 +353,9 @@ puzzle.parse(`
 `)
 ```
 
-# BASICS
+## BASICS
 
-## Loops
+### Loops
 
 Loops are for repeating code. There are different types of loops.
 
@@ -420,7 +407,7 @@ repeat 3 times myscript;
 ```
 
 
-## Conditions
+### Conditions
 
 Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
 
@@ -440,7 +427,7 @@ if (1<2 OR 2==2) then (print true) else (print false);
 if (1<2 OR 2==2) then "print true" else {print false};
 ```
 
-## Reusing code
+### Reusing code
 
 PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
 
@@ -453,7 +440,7 @@ include https://domain.com/otherscript.puzzle;
 ```
 
 
-## Comments
+### Comments
 
 Comments can be written using `//`
 
@@ -461,7 +448,7 @@ Comments can be written using `//`
 // this is a comment
 ```
 
-## Math
+### Math
 
 Mathematical operations take numbers and variables for input.
 
@@ -479,7 +466,7 @@ add (4,6,7) as result;
 subtract (10,4,2) as result;
 ```
 
-# FILES
+## FILES
 
 Files can be written, read and removed.
 
@@ -497,7 +484,7 @@ remove file /test/hello.txt;
 // this is a comment
 ```
 
-# UI
+## UI
 
 Use the UI module to build user interfaces and graphical applications.
 
@@ -513,9 +500,9 @@ render button with text "click" and onclick (
 )
 ```
 
-# NETWORKING
+## NETWORKING
 
-## Server
+### Server
 
 Build a server using the server module.
 
@@ -531,7 +518,7 @@ on get /test run (
 ) and return "done!"
 ```
 
-## Fetch (Client)
+### Fetch (Client)
 
 Use fetch methods to call remote resources.
 
@@ -546,9 +533,9 @@ fetch from https://google.com as result;
 print result;
 ```
 
-# UTILITIES
+## UTILITIES
 
-## JSON
+### JSON
 
 Parse and stringify JSON data.
 
@@ -557,7 +544,7 @@ jsonify '{"message": "hi"}' as jsonData
 stringify jsonData as stringData
 ```
 
-## base64
+### base64
 
 Encode and decode base64 data
 
@@ -566,7 +553,7 @@ encode "hlo world" as encoded
 decode encoded as decoded
 ```
 
-## Custom token
+### Custom token
 
 Custom tokens can be defined for executing some javascript code, when that token is used.
 
