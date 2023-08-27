@@ -1,5 +1,6 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h2 class="header" style="padding:none !important">An <span class="highlight-primary">abstract</span>, extendable programming language that runs on JavaScript platforms.</h2>
+<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language</h1>
+<h4>Runs instantly in any JavaScript environment</h4>
 
 <br>
 
