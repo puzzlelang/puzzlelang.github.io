@@ -1,6 +1,6 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language</h1>
-<h4>Runs instantly in any JavaScript environment</h4>
+<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language, that runs instantly in any JavaScript environment</h1>
+
 
 <br>
 
@@ -11,6 +11,44 @@
 <div id="articles"></div>
 
 -->
+
+
+# GET STARTED
+
+
+## Serverless
+
+[Playground](https://playcode.io/puzzlelang) &nbsp; [Replit](https://replit.com/@puzzlelang)
+
+
+## Browser
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+  </head>
+  <body>
+    <script type="text/x-puzzle">
+      use ui;
+
+      ui render (
+        <div>hello</div>
+      )
+    </script>
+  </body>
+</html>
+```
+
+## Node
+
+```shell
+npm i puzzlelang
+```
+```javascript
+const puzzle = require("puzzlelang");
+puzzle.parse('print hi');
+```
 
 
 
@@ -62,44 +100,6 @@ ui on key left (
     ui get player and move left 15;
 );
 ```
-
-
-# GET STARTED
-
-**Browser**
-
-```html
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-  </head>
-  <body>
-    <script type="text/x-puzzle">
-      use ui;
-
-      ui render (
-        <div>hello</div>
-      )
-    </script>
-  </body>
-</html>
-```
-
-**Node**
-
-```shell
-npm i puzzlelang
-```
-```javascript
-const puzzle = require("puzzlelang");
-puzzle.parse('print hi');
-```
-
-**Other**
-
-[Playground](https://playcode.io/puzzlelang) 
-
-[Online Runtime (Replit)](https://replit.com/@puzzlelang)
 
 # VARIABLES
 
