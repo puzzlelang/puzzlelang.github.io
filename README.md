@@ -12,15 +12,9 @@
 
 -->
 
-<<<<<<< HEAD
-
-<br>
-=======
->>>>>>> parent of 4b76e9b (as)
 
 
-# GET STARTED
-
+# EXAMPLES
 
 ## UI
 
@@ -67,6 +61,9 @@ ui on key right ( ui get player and move right 15 );
 ui on key left ( ui get player and move left 15 );
 ```
 
+# PLATFORMS
+
+
 ## Serverless
 
 
@@ -105,6 +102,7 @@ puzzle.parse('print hi');
   </body>
 </html>
 ```
+
 
 
 # VARIABLES
