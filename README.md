@@ -1,6 +1,6 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language</h1>
-<h4>Runs instantly in any JavaScript environment</h4>
+<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language, that runs instantly in any JavaScript environment</h1>
+
 
 <br>
 
@@ -15,20 +15,21 @@
 [UI](UI.md) &nbsp; [Serverless](CLOUD.md) &nbsp; [Desktop](DESKTOP.md) &nbsp; [Games](GAMES.md) &nbsp; [Networking](NETWORKING.md)
 
 
-
-
-# EXAMPLES
-
-**Simple UI**
+<br>
 
 ```puzzle
+// Simple UI
+
 fetch from https://domain.com/whatever as result;
 
 ui render box with id test and text result;
 ```
-**Simple Server**
+
+
 
 ```puzzle
+// Simple Server
+
 use server;
 
 server on /home run (
@@ -38,32 +39,23 @@ server on /home run (
 );
 ```
 
-**Simple Game**
 
 ```puzzle
+// Simple Game
+
 use ui;
 
 ui root "#app";
 
-set mariogif "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
+ui render image with id player and src "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
 
-ui render image with id player and src mariogif;
+ui on key up ( ui get player and move up 15 );
 
-ui on key up (
-    ui get player and move up 15;
-);
+ui on key down ( ui get player and move down 15 );
 
-ui on key down (
-    ui get player and move down 15;
-);
+ui on key right ( ui get player and move right 15 );
 
-ui on key right (
-    ui get player and move right 15;
-);
-
-ui on key left (
-    ui get player and move left 15;
-);
+ui on key left ( ui get player and move left 15 );
 ```
 
 
@@ -274,102 +266,6 @@ print name;
 print type;
 ```
 
-# MODULES
-
-The PUZZLE language is based on an open module ecosystem.
-
-Each module is designed to archieve a specific goal and comes with it's own syntax. 
-Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
-
-## Official modules
-
-There are some official modules, developed by the PUZZLE team:
-
-* [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
-* [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
-
-Official modules can simply be included by their names (`use ui;`)
-
-## Use modules
-
-Modules can be used from any source. Local or remote.
-
-```puzzle
-// Include a remote module
-use https://domain.com/somemodule.js;
-
-// Use the module
-somemodule.echo "Hello";
-
-// Use official modules
-use ui;
-use fetch;
-
-// Use module syntax by prepending the module name to any statement that contains module code
-
-ui render div with text "hello";
-```
-
-## Permanent modules
-
-If you'd like to cache a module, use the `permanent` option:
-
-```puzzle
-use permanent https://afasf.com/module.js;
-// or
-use permanent ui;
-```
-
-This will save the module inside a persistent context and make it available, even if the original url is not accessible (offline usage). This works with any module.
-
-
-# CUSTOM LANGUAGE
-
-Building a custom language is done with a simple js object, that is included in puzzle.
-
-## File
-
-Define a JS object, stored in a file.
-
-***Language definition***
-
-```javascript
-// mysyntax.js
-var syntax = {
-  mymodule: {
-    echo: { // a token
-      follow: ["{param}", "$and"], // follow tokens
-      method: function(ctx, param){
-        // js method thats called when the token is parsed
-        console.log(param)
-      }
-    }
-  }
-}
-```
-
-```puzzle
-use mysyntax.js;
-// or from remote
-use https://domain.com/mysyntax.js;
-
-// Use your language
-mymodule.echo "Hello";
-```
-
-## Object
-
-Define a JS object, stored as variable. The JS object and the puzzle code needs to be in the same context.
-
-```javascript
-let mysyntax = {
-  ...
-}
-
-puzzle.parse(`
-  use var:mysyntax;
-`)
-```
 
 # BASICS
 
@@ -483,6 +379,153 @@ max (4,7,8,2) as result;
 add (4,6,7) as result;
 subtract (10,4,2) as result;
 ```
+
+# UI
+
+Use the UI module to build user interfaces and graphical applications.
+
+```puzzle
+use ui;
+
+render (
+  <div>hello</div>
+)
+
+render button with text "click" and onclick (
+  alert "hello";
+)
+```
+
+# NETWORKING
+
+## Server
+
+Build a server using the server module.
+
+```puzzle
+use server;
+
+// Start server on specified port
+start 3000;
+
+// Define a route
+on get /test run (
+  print "/test was called"
+) and return "done!"
+```
+
+## Fetch (Client)
+
+Use fetch methods to call remote resources.
+
+```puzzle
+post {message: "hello"} to https://domain.com
+
+delete from https://domain.com
+
+patch to https://domain.com
+
+fetch from https://google.com as result; 
+print result;
+```
+
+# MODULES
+
+The PUZZLE language is based on an open module ecosystem.
+
+Each module is designed to archieve a specific goal and comes with it's own syntax. 
+Any PUZZLE script can use multiple modules, loaded from a remote server or a local file.
+
+## Official modules
+
+There are some official modules, developed by the PUZZLE team:
+
+* [UI](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/ui/Readme.md) - Build graphical user interfaces
+* [Server](https://github.com/puzzlelang/puzzle-catalog/blob/master/modules/server/Readme.md) - Build a Server or API
+
+Official modules can simply be included by their names (`use ui;`)
+
+## Use modules
+
+Modules can be used from any source. Local or remote.
+
+```puzzle
+// Include a remote module
+use https://domain.com/somemodule.js;
+
+// Use the module
+somemodule.echo "Hello";
+
+// Use official modules
+use ui;
+use fetch;
+
+// Use module syntax by prepending the module name to any statement that contains module code
+
+ui render div with text "hello";
+```
+
+## Permanent modules
+
+If you'd like to cache a module, use the `permanent` option:
+
+```puzzle
+use permanent https://afasf.com/module.js;
+// or
+use permanent ui;
+```
+
+This will save the module inside a persistent context and make it available, even if the original url is not accessible (offline usage). This works with any module.
+
+
+# CUSTOM LANGUAGE
+
+Building a custom language is done with a simple js object, that is included in puzzle.
+
+## File
+
+Define a JS object, stored in a file.
+
+***Language definition***
+
+```javascript
+// mysyntax.js
+var syntax = {
+  mymodule: {
+    echo: { // a token
+      follow: ["{param}", "$and"], // follow tokens
+      method: function(ctx, param){
+        // js method thats called when the token is parsed
+        console.log(param)
+      }
+    }
+  }
+}
+```
+
+```puzzle
+use mysyntax.js;
+// or from remote
+use https://domain.com/mysyntax.js;
+
+// Use your language
+mymodule.echo "Hello";
+```
+
+## Object
+
+Define a JS object, stored as variable. The JS object and the puzzle code needs to be in the same context.
+
+```javascript
+let mysyntax = {
+  ...
+}
+
+puzzle.parse(`
+  use var:mysyntax;
+`)
+```
+
 
 # FILES
 
