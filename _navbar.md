@@ -2,8 +2,13 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
+* [Browser](BROWSER.md)
 
-* <a href="#/?id=platforms" class="btn" style="float:right;">Get started</a>
+* [Node](NODE.md)
+
+* [Serverless](CLOUD.md)
+
+* [Desktop](DESKTOP.md)
 
 
 

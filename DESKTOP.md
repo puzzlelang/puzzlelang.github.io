@@ -1,14 +1,6 @@
 # Build Desktop Apps
 
-There are different ways to build desktop apps with PUZZLE. You can use frameworks, like:
-
-* Electron
-* NW.js
-* Neutralino
-
-# Electron
-
-Electron is a simple way to start
+There are different ways to build desktop apps with PUZZLE. Electron is a simple way to start
 
 ## Install and initialize
 
