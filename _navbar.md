@@ -2,7 +2,20 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* <a href="#/?id=get-started" class="btn" style="float:right;">Get started</a>
+* [Language]()
+
+* [UI](UI.md)
+
+* [Serverless](CLOUD.md)
+
+* [Desktop](DESKTOP.md)
+
+* [Games](GAMES.md)
+
+* [Networking](NETWORKING.md)
+
+* <a href="#/?id=get-started" class="btn" style="float:right;margin-bottom: -13px;">Get started</a>
+
 
 
 <!--
