@@ -183,6 +183,55 @@ print name;
 print type;
 ```
 
+# UI
+
+Use the UI module to build user interfaces and graphical applications.
+
+```puzzle
+use ui;
+
+render (
+  <div>hello</div>
+)
+
+render button with text "click" and onclick (
+  alert "hello";
+)
+```
+
+# NETWORKING
+
+## Server
+
+Build a server using the server module.
+
+```puzzle
+use server;
+
+// Start server on specified port
+start 3000;
+
+// Define a route
+on get /test run (
+  print "/test was called"
+) and return "done!"
+```
+
+## Fetch (Client)
+
+Use fetch methods to call remote resources.
+
+```puzzle
+post {message: "hello"} to https://domain.com
+
+delete from https://domain.com
+
+patch to https://domain.com
+
+fetch from https://google.com as result; 
+print result;
+```
+
 # MODULES
 
 The PUZZLE language is based on an open module ecosystem.
