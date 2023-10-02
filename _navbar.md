@@ -6,6 +6,8 @@
 
 * [Node](NODE.md)
 
+* [Games](GAMES.md)
+
 * [Serverless](CLOUD.md)
 
 * [Desktop](DESKTOP.md)

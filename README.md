@@ -13,56 +13,6 @@
 -->
 
 
-# EXAMPLES
-
-## Simple UI
-
-```puzzle
-fetch from https://domain.com/whatever as result;
-
-ui render box with id test and text result;
-```
-
-## Simple Server
-
-```puzzle
-use server;
-
-server on /home run (
-  print "home was visited"
-) and return (
-  hello!
-);
-```
-
-## Simple Game
-
-```puzzle
-use ui;
-
-ui root "#app";
-
-set mariogif "https://media.tenor.com/GuYKt4Z_s9EAAAAi/mario-run.gif";
-
-ui render image with id player and src mariogif;
-
-ui on key up (
-    ui get player and move up 15;
-);
-
-ui on key down (
-    ui get player and move down 15;
-);
-
-ui on key right (
-    ui get player and move right 15;
-);
-
-ui on key left (
-    ui get player and move left 15;
-);
-```
-
 # VARIABLES
 
 Variables are set using the `set` keyword.
