@@ -19,46 +19,6 @@
 # GET STARTED
 
 
-## Node
-
-```shell
-npm i puzzlelang
-```
-```javascript
-const puzzle = require("puzzlelang");
-puzzle.parse('print hi');
-```
-
-## Browser
-
-```html
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-  </head>
-  <body>
-    <script type="text/x-puzzle">
-      use ui;
-
-      ui render (
-        <div>hello</div>
-      )
-    </script>
-  </body>
-</html>
-```
-
-## Serverless
-
-
-[Playground](https://playcode.io/puzzlelang) 
-
-[Online Runtime (Replit)](https://replit.com/@puzzlelang)
-
-
-
-
-
 ## UI
 
 ```puzzle
@@ -102,6 +62,45 @@ ui on key down ( ui get player and move down 15 );
 ui on key right ( ui get player and move right 15 );
 
 ui on key left ( ui get player and move left 15 );
+```
+
+## Serverless
+
+
+[Playground](https://playcode.io/puzzlelang) 
+
+[Online Runtime (Replit)](https://replit.com/@puzzlelang)
+
+
+
+
+## Node
+
+```shell
+npm i puzzlelang
+```
+```javascript
+const puzzle = require("puzzlelang");
+puzzle.parse('print hi');
+```
+
+## Browser
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+  </head>
+  <body>
+    <script type="text/x-puzzle">
+      use ui;
+
+      ui render (
+        <div>hello</div>
+      )
+    </script>
+  </body>
+</html>
 ```
 
 
