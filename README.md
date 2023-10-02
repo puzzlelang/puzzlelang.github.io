@@ -54,14 +54,15 @@ puzzle.parse('print hi');
 
 # EXAMPLES
 
-**Simple UI**
+## Simple UI
 
 ```puzzle
 fetch from https://domain.com/whatever as result;
 
 ui render box with id test and text result;
 ```
-**Simple Server**
+
+## Simple Server
 
 ```puzzle
 use server;
@@ -73,7 +74,7 @@ server on /home run (
 );
 ```
 
-**Simple Game**
+## Simple Game
 
 ```puzzle
 use ui;
