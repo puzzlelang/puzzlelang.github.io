@@ -12,10 +12,54 @@
 
 -->
 
-[UI](UI.md) &nbsp; [Serverless](CLOUD.md) &nbsp; [Desktop](DESKTOP.md) &nbsp; [Games](GAMES.md) &nbsp; [Networking](NETWORKING.md)
-
 
 <br>
+
+
+# GET STARTED
+
+
+## Node
+
+```shell
+npm i puzzlelang
+```
+```javascript
+const puzzle = require("puzzlelang");
+puzzle.parse('print hi');
+```
+
+## Browser
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
+  </head>
+  <body>
+    <script type="text/x-puzzle">
+      use ui;
+
+      ui render (
+        <div>hello</div>
+      )
+    </script>
+  </body>
+</html>
+```
+
+## Serverless
+
+
+[Playground](https://playcode.io/puzzlelang) 
+
+[Online Runtime (Replit)](https://replit.com/@puzzlelang)
+
+
+
+
+
+## UI
 
 ```puzzle
 // Simple UI
@@ -25,7 +69,7 @@ fetch from https://domain.com/whatever as result;
 ui render box with id test and text result;
 ```
 
-
+## Server
 
 ```puzzle
 // Simple Server
@@ -39,6 +83,8 @@ server on /home run (
 );
 ```
 
+
+## Game
 
 ```puzzle
 // Simple Game
@@ -58,43 +104,6 @@ ui on key right ( ui get player and move right 15 );
 ui on key left ( ui get player and move left 15 );
 ```
 
-
-# GET STARTED
-
-**Browser**
-
-```html
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/puzzlelang@latest/puzzle.browser.js"></script>
-  </head>
-  <body>
-    <script type="text/x-puzzle">
-      use ui;
-
-      ui render (
-        <div>hello</div>
-      )
-    </script>
-  </body>
-</html>
-```
-
-**Node**
-
-```shell
-npm i puzzlelang
-```
-```javascript
-const puzzle = require("puzzlelang");
-puzzle.parse('print hi');
-```
-
-**Other**
-
-[Playground](https://playcode.io/puzzlelang) 
-
-[Online Runtime (Replit)](https://replit.com/@puzzlelang)
 
 # VARIABLES
 
