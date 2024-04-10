@@ -14,8 +14,33 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 
+
     :root {
-        --theme-color: #ba80ef;
+         --theme-color: #ba80ef;
+
+          /* Tab blocks */
+          --docsifytabs-border-color: transparent;
+          --docsifytabs-border-px: 0px;
+          --docsifytabs-border-radius-px: ;
+          --docsifytabs-margin: 1em 0;
+
+          /* Tabs */
+          --docsifytabs-tab-background: #222222;
+          --docsifytabs-tab-background--active: var(--docsifytabs-content-background);
+          --docsifytabs-tab-color: #999;
+          --docsifytabs-tab-color--active: white;
+
+          --docsifytabs-tab-padding: 0.6em 1em;
+
+          /* Tab content */
+          --docsifytabs-content-background: inherit;
+          --docsifytabs-content-padding: 1rem 0rem;
+        }
+
+    .docsify-tabs--classic>.docsify-tabs__tab--active {
+        box-shadow: none;
+        background: black;
+        border-radius: 5px;
     }
 
     h1 {

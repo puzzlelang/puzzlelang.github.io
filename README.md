@@ -13,19 +13,17 @@
 -->
 
 
+<!-- tabs:start -->
 
-
-
-# EXAMPLES
-
-## Simple UI
+#### **Simple UI**
 
 ```puzzle
 fetch from https://domain.com/whatever as result;
 
 ui render box with id test and text result;
 ```
-## Simple Server
+
+#### **Simple Server**
 
 ```puzzle
 use server;
@@ -37,7 +35,7 @@ server on /home run (
 );
 ```
 
-## Simple Game
+#### **Simple Game**
 
 ```puzzle
 use ui;
@@ -65,10 +63,16 @@ ui on key left (
 );
 ```
 
+<!-- tabs:end -->
+
+
 
 # GET STARTED
 
-## Browser
+
+<!-- tabs:start -->
+
+#### **Browser**
 
 ```html
 <html>
@@ -87,7 +91,7 @@ ui on key left (
 </html>
 ```
 
-## Node
+#### **Node**
 
 ```shell
 npm i puzzlelang
@@ -97,11 +101,15 @@ const puzzle = require("puzzlelang");
 puzzle.parse('print hi');
 ```
 
-## Other
+#### **Other**
 
 [Playground](https://playcode.io/puzzlelang) 
 
 [Online Runtime (Replit)](https://replit.com/@puzzlelang)
+
+<!-- tabs:end -->
+
+
 
 # LANGUAGE
 
