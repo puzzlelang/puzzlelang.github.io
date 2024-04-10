@@ -1,6 +1,6 @@
 <div class="cover-main"><!-- _coverpage.md -->
-<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language</h1>
-<h4>Runs instantly in any JavaScript environment</h4>
+<h1 class="header" style="padding: 0px !important;margin-left:0px;">An <span class="highlight-primary">abstract</span> programming language for any purpose.</h1>
+
 
 <br>
 
@@ -15,7 +15,7 @@
 
 <!-- tabs:start -->
 
-#### **Simple UI**
+#### **Frontend**
 
 ```puzzle
 fetch from https://domain.com/whatever as result;
@@ -23,7 +23,7 @@ fetch from https://domain.com/whatever as result;
 ui render box with id test and text result;
 ```
 
-#### **Simple Server**
+#### **Backend**
 
 ```puzzle
 use server;
@@ -35,7 +35,7 @@ server on /home run (
 );
 ```
 
-#### **Simple Game**
+#### **Game**
 
 ```puzzle
 use ui;
@@ -63,16 +63,13 @@ ui on key left (
 );
 ```
 
-<!-- tabs:end -->
 
 
+#### **GET STARTED**
 
-# GET STARTED
+<br>
 
-
-<!-- tabs:start -->
-
-#### **Browser**
+***Browser***
 
 ```html
 <html>
@@ -91,7 +88,9 @@ ui on key left (
 </html>
 ```
 
-#### **Node**
+<br>
+
+***Node***
 
 ```shell
 npm i puzzlelang
@@ -101,7 +100,9 @@ const puzzle = require("puzzlelang");
 puzzle.parse('print hi');
 ```
 
-#### **Other**
+<br>
+
+***Other***
 
 [Playground](https://playcode.io/puzzlelang) 
 
@@ -109,7 +110,8 @@ puzzle.parse('print hi');
 
 <!-- tabs:end -->
 
-
+<br>
+<br>
 
 # LANGUAGE
 
