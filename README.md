@@ -392,7 +392,7 @@ js (
 )
 ```
 
-## Access functions + variables
+## Binding
 
 JS functions and variables can be accessed
 
@@ -404,7 +404,7 @@ js (someFunction()) as result;
 print result;
 ```
 
-## Bind variables
+*Bind js varibles*
 
 By default, all global variables from the JavaScript context are bound to the puzzle context. You can also bind custom variables, using a js object.
 
@@ -459,7 +459,7 @@ use fetch;
 ui render div with text "hello";
 ```
 
-## Permanent modules
+*Permanent modules*
 
 If you'd like to cache a module, use the `permanent` option:
 
@@ -475,8 +475,6 @@ This will save the module inside a persistent context and make it available, eve
 # CUSTOM LANGUAGE
 
 Building a custom language is done with a simple js object, that is included in puzzle.
-
-## File
 
 Define a JS object, stored in a file.
 
@@ -507,7 +505,7 @@ use https://domain.com/mysyntax.js;
 mymodule.echo "Hello";
 ```
 
-## Object
+*Or use a language object in JS*
 
 Define a JS object, stored as variable. The JS object and the puzzle code needs to be in the same context.
 
