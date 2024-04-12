@@ -2,17 +2,8 @@
 
 <!--span class="hide_mobile" style="position: relative;top: -18px;left: 10px;">An abstract programming language</span-->
 
-* [Browser](BROWSER.md)
-
-* [Node](NODE.md)
-
-* [Games](GAMES.md)
-
-* [Serverless](CLOUD.md)
-
-* [Desktop](DESKTOP.md)
-
-
+* [Examples](EXAMPLES.md)
+* [Try](https://playcode.io/puzzlelang)
 
 <!--
 * <a href="#/GETSTARTED.md" class="btn">Get started</a>
