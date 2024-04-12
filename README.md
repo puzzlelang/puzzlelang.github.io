@@ -140,7 +140,9 @@ puzzle.run('myfile.pz');
 <br>
 <br>
 
-# VARIABLES
+# BASICS
+
+## Variables
 
 Variables are set using the `set` keyword.
 
@@ -148,7 +150,7 @@ Variables are set using the `set` keyword.
 set name Peter;
 print name;
 ```
-## Permanent
+*Permanent*
 
 You can also set permanent variables, that are stored locally (stored on disk) by using the `local` keyword in combination with `set`
 
@@ -157,7 +159,7 @@ set local name Peter;
 print name;
 ```
 
-## Datatypes
+*Datatypes*
 
 In programming, you always need to store some information for later use. This information is stored in variables.
 In puzzle, variables can be created with `set name value`. Puzzle variables can take any type as value:
@@ -182,7 +184,7 @@ set numbers [1,2,3]
 set say-hello ( print hello )
 ```
 
-## As
+*As*
 
 Every piece of code that generates data can be followed by `as ...`. This will store that data in the variable.
 
@@ -196,7 +198,7 @@ print data
 ```
 
 
-# SCRIPTS
+## Scripts
 
 Scripts are functions that can run predefined puzzle code and are defined with the `script` keyword.
 
@@ -216,7 +218,7 @@ run hello:hi in sayHello;
 // will output "hi"
 ```
 
-## Run
+*Run*
 
 With the `run` keyword, you can execute an inline script
 
@@ -226,7 +228,7 @@ run ( print hello )
 run scriptname;
 ```
 
-## Time-triggered scripts
+*Time-triggered scripts*
 
 Run a piece of code with the `run` keyword <u>delayed</u>.
 
@@ -250,7 +252,7 @@ script sayHi (print hi);
 every 2000 run sayHi;
 ```
 
-## Wait
+*Wait*
 
 The wait keyword allows you to break the execution of a script for a certain time.
 
@@ -263,6 +265,117 @@ wait 2000;
 print "i will be displayed after 2 seconds"
 ```
 
+
+## Loops
+
+Loops are for repeating code. There are different types of loops.
+
+***while***
+
+While loops can be written as `while CONDITION-LITERAL do CODE-LITERAL`
+
+```puzzle
+// single-part literal condition
+while 1>0 do (print running);
+
+// multi-part literal condition
+while (1<2 OR 2==2) do {
+  print true
+};
+```
+
+***iterate***
+
+You can also use loops for iterating over some data
+
+```puzzle
+set numbers [1,2,3]
+
+loop over numbers with number do (
+  print number
+)
+
+// will output:
+// 1
+// 2
+// 3
+```
+
+***n times***
+
+Run a piece of code repeatedly for a specified number of times
+
+```puzzle
+repeat 3 times (print hi);
+
+// or use variables
+set counter 5;
+repeat counter times "print hi";
+
+// or run predefined scripts
+set myscript "print hi";
+repeat 3 times myscript;
+```
+
+
+## Conditions
+
+Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
+
+A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
+
+```puzzle
+// single-part literal condition
+if 1<2 then (print true);
+
+// multi-part literal condition
+if (1<2 OR 2==2) then (print true);
+
+// if and else
+if (1<2 OR 2==2) then (print true) else (print false);
+
+// different notations for code literals
+if (1<2 OR 2==2) then "print true" else {print false};
+```
+
+## Reusing code
+
+PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
+
+```puzzle
+// local
+include otherscript.puzzle;
+
+or remote
+include https://domain.com/otherscript.puzzle;
+```
+
+
+## Comments
+
+Comments can be written using `//`
+
+```puzzle
+// this is a comment
+```
+
+## Math
+
+Mathematical operations take numbers and variables for input.
+
+```puzzle
+// simple calculation, takes any mathematical input and the operations +, -, *, /
+calc (2+3) as result;
+calc (4 + myvariable) as result;
+
+// min and max
+min (1,4,6,7) as result;
+max (4,7,8,2) as result;
+
+// add and subtract multiple numbers
+add (4,6,7) as result;
+subtract (10,4,2) as result;
+```
 
 # JAVASCRIPT
 
@@ -408,118 +521,6 @@ puzzle.parse(`
 `)
 ```
 
-# BASICS
-
-## Loops
-
-Loops are for repeating code. There are different types of loops.
-
-***while***
-
-While loops can be written as `while CONDITION-LITERAL do CODE-LITERAL`
-
-```puzzle
-// single-part literal condition
-while 1>0 do (print running);
-
-// multi-part literal condition
-while (1<2 OR 2==2) do {
-  print true
-};
-```
-
-***iterate***
-
-You can also use loops for iterating over some data
-
-```puzzle
-set numbers [1,2,3]
-
-loop over numbers with number do (
-  print number
-)
-
-// will output:
-// 1
-// 2
-// 3
-```
-
-***n times***
-
-Run a piece of code repeatedly for a specified number of times
-
-```puzzle
-repeat 3 times (print hi);
-
-// or use variables
-set counter 5;
-repeat counter times "print hi";
-
-// or run predefined scripts
-set myscript "print hi";
-repeat 3 times myscript;
-```
-
-
-## Conditions
-
-Conditional code execution can be used with the following pattern:  `if CONDITION-LITERAL then CODE-LITERAL else CODE-LITERAL` 
-
-A condition can be either a single-part or multi-part literal. The executable code has to be a code literal.
-
-```puzzle
-// single-part literal condition
-if 1<2 then (print true);
-
-// multi-part literal condition
-if (1<2 OR 2==2) then (print true);
-
-// if and else
-if (1<2 OR 2==2) then (print true) else (print false);
-
-// different notations for code literals
-if (1<2 OR 2==2) then "print true" else {print false};
-```
-
-## Reusing code
-
-PUZZLE scripts can be included into other PUZZLE scripts for code reusage using `include`
-
-```puzzle
-// local
-include otherscript.puzzle;
-
-or remote
-include https://domain.com/otherscript.puzzle;
-```
-
-
-## Comments
-
-Comments can be written using `//`
-
-```puzzle
-// this is a comment
-```
-
-## Math
-
-Mathematical operations take numbers and variables for input.
-
-```puzzle
-// simple calculation, takes any mathematical input and the operations +, -, *, /
-calc (2+3) as result;
-calc (4 + myvariable) as result;
-
-// min and max
-min (1,4,6,7) as result;
-max (4,7,8,2) as result;
-
-// add and subtract multiple numbers
-add (4,6,7) as result;
-subtract (10,4,2) as result;
-```
 
 # FILES
 
