@@ -63,28 +63,6 @@ ui on key left (
 );
 ```
 
-#### **Custom Language**
-
-```javascript
-// mysyntax.js
-var syntax = {
-  mymodule: {
-    echo: {
-      follow: ["{param}"], 
-      method: function(ctx, param){
-        console.log(param)
-      }
-    }
-  }
-}
-```
-
-```puzzle
-use mysyntax.js;
-
-echo "Hello";
-```
-
 #### **CLI**
 
 ```shell
@@ -108,18 +86,7 @@ $ puzzle run "print hello"
 $ puzzle run myfile.pz
 ```
 
-
-
-
-<!-- tabs:end -->
-
-<br>
-<br>
-
-# **GET STARTED**
-
-
-***Browser***
+#### **Browser**
 
 ```html
 <html>
@@ -137,7 +104,7 @@ $ puzzle run myfile.pz
 </html>
 ```
 
-***Node***
+#### **Node**
 
 ```shell
 npm i puzzlelang
@@ -153,11 +120,18 @@ puzzle.parse('print hi');
 puzzle.run('myfile.pz');
 ```
 
+<br>
+
 ***Other***
 
 [Playground](https://playcode.io/puzzlelang) 
 
 [Online Runtime (Replit)](https://replit.com/@puzzlelang)
+
+<!-- tabs:end -->
+
+<br>
+<br>
 
 # BASICS
 
